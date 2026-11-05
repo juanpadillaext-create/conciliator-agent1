@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<DTE version="1.0">
+      <Documento ID="F56500937T33">
+        <Encabezado>
+          <IdDoc>
+            <TipoDTE>33</TipoDTE>
+            <Folio>56500937</Folio>
+            <FchEmis>2026-09-29</FchEmis>
+            <FmaPago>2</FmaPago>
+            <FchVenc>2026-10-29</FchVenc>
+          </IdDoc>
+          <Emisor>
+            <RUTEmisor>82623500-4</RUTEmisor>
+            <RznSoc>Ideal S.A</RznSoc>
+            <GiroEmis>Ideal S.A</GiroEmis>
+            <Telefono />
+            <CorreoEmisor />
+            <Acteco>31171</Acteco>
+            <DirOrigen>Avenida Ca�averal - 870</DirOrigen>
+            <CmnaOrigen>GRANDES CLIENTES</CmnaOrigen>
+            <CiudadOrigen>Santiago</CiudadOrigen>
+          </Emisor>
+          <Receptor>
+            <RUTRecep>77125361-K</RUTRecep>
+            <CdgIntRecep>77125361-K</CdgIntRecep>
+            <RznSocRecep>DELIVERY HERO STORES CHILE SPA.</RznSocRecep>
+            <GiroRecep>SUPERMERCADOS</GiroRecep>
+            <CorreoRecep />
+            <DirRecep>Apoquindo - 3000</DirRecep>
+            <CmnaRecep>Las Condes</CmnaRecep>
+            <CiudadRecep>Santiago</CiudadRecep>
+            <DirPostal>Apoquindo - 3000</DirPostal>
+            <CmnaPostal>Las Condes</CmnaPostal>
+          </Receptor>
+          <Transporte>
+            <Patente>SN</Patente>
+            <PatenteCarro>SN</PatenteCarro>
+            <RUTTrans>15789304-1</RUTTrans>
+            <Chofer>
+              <RUTChofer>15789304-1</RUTChofer>
+              <NombreChofer>Hector Andres Arce Munoz</NombreChofer>
+            </Chofer>
+            <DirDest>Av. Diego Portales - 795</DirDest>
+            <CmnaDest>GRANDES CLIENTES</CmnaDest>
+            <CiudadDest>Santiago</CiudadDest>
+            <Aduana>
+              <NombreTransp>Hector Andres Arce Munoz</NombreTransp>
+              <RUTCiaTransp>15789304-1</RUTCiaTransp>
+              <NomCiaTransp>Hector Andres Arce Munoz</NomCiaTransp>
+            </Aduana>
+            <FchSalida>2026-09-29</FchSalida>
+            <HraSalida>00:00:00</HraSalida>
+            <FchLlegada>2026-09-29</FchLlegada>
+          </Transporte>
+          <Totales>
+            <MntNeto>40440</MntNeto>
+            <MntBase>40440</MntBase>
+            <TasaIVA>19</TasaIVA>
+            <IVA>7684</IVA>
+            <MntTotal>48124</MntTotal>
+          </Totales>
+        </Encabezado>
+        <Detalle>
+          <NroLinDet>1</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>502682</VlrCodigo>
+          </CdgItem>
+          <NmbItem>502682Galleton Chocolate Chip 1p 40g BOL</NmbItem>
+          <DscItem />
+          <QtyItem>60</QtyItem>
+          <PrcItem>337</PrcItem>
+          <MontoItem>20220</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>2</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>502679</VlrCodigo>
+          </CdgItem>
+          <NmbItem>502679Galleton Almendra 1p 40g BOLSA NUR</NmbItem>
+          <DscItem />
+          <QtyItem>60</QtyItem>
+          <PrcItem>337</PrcItem>
+          <MontoItem>20220</MontoItem>
+        </Detalle>
+        <Referencia>
+          <NroLinRef>1</NroLinRef>
+          <TpoDocRef>801</TpoDocRef>
+          <FolioRef>521015</FolioRef>
+          <FchRef>2026-09-29</FchRef>
+          <RazonRef>ORDEN DE COMPRA</RazonRef>
+        </Referencia>
+        <TED version="1.0">
+          <DD>
+            <RE>82623500-4</RE>
+            <TD>33</TD>
+            <F>56500937</F>
+            <FE>2026-09-29</FE>
+            <RR>77125361-K</RR>
+            <RSR>DELIVERY HERO STORES CHILE SPA.</RSR>
+            <MNT>48124</MNT>
+            <IT1>502682Galleton Chocolate Chip 1p 40g BOL</IT1>
+            <CAF version="1.0">
+              <DA>
+                <RE>82623500-4</RE>
+                <RS>IDEAL S.A.</RS>
+                <TD>33</TD>
+                <RNG>
+                  <D>56443885</D>
+                  <H>56643884</H>
+                </RNG>
+                <FA>2026-08-31</FA>
+                <RSAPK>
+                  <M>nMkIj3JwzWQaowq1Hqn4QUS5Q9eLADDqUKT4bhtH/BoAcfr4yjucQe061fwfx7C2Vzbf2pYu7FvrcAYJn+XwSw==</M>
+                  <E>Aw==</E>
+                </RSAPK>
+                <IDK>300</IDK>
+              </DA>
+              <FRMA algoritmo="SHA1withRSA">NHSnWjGYmLGA5nMGc9grB1rkxFE/F0akJDMWAPZcuSfLiax+AlW/tzB9UGQ+9xodtQnG7lH1oPi8bIPeaYr5iw==</FRMA>
+            </CAF>
+            <TSTED>2026-09-29T11:32:28</TSTED>
+          </DD>
+          <FRMT algoritmo="SHA1withRSA">kURt6wixxE19+h0mr2R+iFGIJ0a1+YXJ0E+gL4TGuZyYU+l5ang+/vZBDN9mhXs9Tu4QgbBFZnnN0ZUqfZDCFQ==</FRMT>
+        </TED>
+        <TmstFirma>2026-09-29T12:32:29</TmstFirma>
+      </Documento><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI="#F56500937T33"><Transforms><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>+7wS0j5JSAkMKpjaqc+1D3WShsc=</DigestValue></Reference></SignedInfo><SignatureValue>
+hL4JM4bkYcTwh7i/Nv4HwfXPaYcdmApk7T/P7SCVBlmtJOrlcfayL9d2ZIRyK03I
+N+taahDnbWkwzsXSjA0hpkYbSjsK1Nlqupd8wKIZULZxGlzlJmhGO5hKfmOMAx4u
+Wj8YGEaQBVrrnFvNc51zf3ErJXG1tjObwhLim9QjUKUf4MASvjPmGijr30jCYGb3
+Ei8MSWDC0qBwue1c+GKM1gEUB6lNqD/nlzWqLy2TFpwOr2V24rhbjpbTwE+D3QNJ
+TsLsf1mqO2oDkOb4fJeKmW2R+OybVjVYTlYTYBYfBe2tVXsU/TYdctBZZHd8i6yg
+Tea17FTY18FkPcJi17e2Fw==
+</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>
+oNVnWgCaA/6mOfDZwzldgn+BNL4CyhCzmzH9yHd0PPs9HiI+K+QDrktp/zeN7hdi
+TvEx6pLQdaLfakLzUhz/+Fw6cUQGat0sK9uCnEgtcYAOLPhSUGppIgqd41Un0gDH
+6JC59ABabTivqfG7nryTeCL5bmk4EBoJaKkbnLOk5CoRvNBPC8IVq9NW8fJDZ+AM
+hPnmDg3WwrChNjJyHXYqxJNnVVuNqkMeLRTptADukddrHECLOeJxE+m1k2gDP1YQ
+MdxaPrpK8iA1Mn0vnSAqLimULM+zQc+KvRwifa4GqgOOp50Yz9rfGTb/fVVSKC6z
+6wm4h/hLPVPEn/NbSKsEdw==
+</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>
+MIIG2DCCBcCgAwIBAgIDBn8lMA0GCSqGSIb3DQEBCwUAMIGmMQswCQYDVQQGEwJD
+TDEYMBYGA1UEChMPQWNlcHRhLmNvbSBTLkEuMUgwRgYDVQQDEz9BY2VwdGEuY29t
+IEF1dG9yaWRhZCBDZXJ0aWZpY2Fkb3JhIENsYXNlIDMgUGVyc29uYSBOYXR1cmFs
+IC0gRzQxHjAcBgkqhkiG9w0BCQEWD2luZm9AYWNlcHRhLmNvbTETMBEGA1UEBRMK
+OTY5MTkwNTAtODAeFw0yNjA3MjIxOTQ3MzJaFw0yOTA3MjIxOTQ3MzJaMIGOMQsw
+CQYDVQQGEwJDTDEYMBYGA1UEDBMPUEVSU09OQSBOQVRVUkFMMSAwHgYDVQQDExdG
+UkFOQ0lTQ08gQlVTVE9TIE9SVEVHQTEuMCwGCSqGSIb3DQEJARYfRlJBTkNJU0NP
+LkJVU1RPU0BHUlVQT0JJTUJPLkNPTTETMBEGA1UEBRMKMTU4MjMxNTgtMTCCASIw
+DQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKDVZ1oAmgP+pjnw2cM5XYJ/gTS+
+AsoQs5sx/ch3dDz7PR4iPivkA65Laf83je4XYk7xMeqS0HWi32pC81Ic//hcOnFE
+BmrdLCvbgpxILXGADiz4UlBqaSIKneNVJ9IAx+iQufQAWm04r6nxu568k3gi+W5p
+OBAaCWipG5yzpOQqEbzQTwvCFavTVvHyQ2fgDIT55g4N1sKwoTYych12KsSTZ1Vb
+japDHi0U6bQA7pHXaxxAiznicRPptZNoAz9WEDHcWj66SvIgNTJ9L50gKi4plCzP
+s0HPir0cIn2uBqoDjqedGM/a3xk2/31VUigus+sJuIf4Sz1TxJ/zW0irBHcCAwEA
+AaOCAyMwggMfMAkGA1UdEwQCMAAwHwYDVR0jBBgwFoAUqv29xek3TfaZTVeOwXEa
++evDBuMwHQYDVR0OBBYEFFUIXqAVQnn7CcADSLN+sj/E6UdYMAsGA1UdDwQEAwIE
+8DAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwQwgfoGA1UdIASB8jCB7zCB
+7AYIKwYBBAG1awIwgd8wMQYIKwYBBQUHAgEWJWh0dHBzOi8vYWNnNC5hY2VwdGEu
+Y29tL0NQUy1BY2VwdGFjb20wgakGCCsGAQUFBwICMIGcMBYWD0FjZXB0YS5jb20g
+Uy5BLjADAgECGoGBRWwgdGl0dWxhciBoYSBzaWRvIHZhbGlkYWRvIGVuIGZvcm1h
+IHByZXNlbmNpYWwsIHF1ZWRhbmRvIGhhYmlsaXRhZG8gZWwgQ2VydGlmaWNhZG8g
+cGFyYSB1c28gdHJpYnV0YXJpbywgcGFnb3MsIGNvbWVyY2lvIHkgb3Ryb3MuMFoG
+A1UdEgRTMFGgGAYIKwYBBAHBAQKgDBYKOTY5MTkwNTAtOKAkBggrBgEFBQcIA6AY
+MBYMCjk2OTE5MDUwLTgGCCsGAQQBwQECgQ9pbmZvQGFjZXB0YS5jb20wagYDVR0R
+BGMwYaAYBggrBgEEAcEBAaAMFgoxNTgyMzE1OC0xoCQGCCsGAQUFBwgDoBgwFgwK
+MTU4MjMxNTgtMQYIKwYBBAHBAQKBH0ZSQU5DSVNDTy5CVVNUT1NAR1JVUE9CSU1C
+Ty5DT00wgZ8GCCsGAQUFBwEBBIGSMIGPMFQGCCsGAQUFBzAChkhodHRwczovL2Fj
+ZzQuYWNlcHRhLmNvbS9kZXNjYXJnYXMvYWNlcHRhLmNvbS5nNC5DbGFzZTNQZXJz
+b25hTmF0dXJhbC5jcnQwNwYIKwYBBQUHMAGGK2h0dHBzOi8vYWNnNC5hY2VwdGEu
+Y29tL2FjZzQvb2NzcC9DbGFzZTMtRzQwPwYDVR0fBDgwNjA0oDKgMIYuaHR0cHM6
+Ly9hY2c0LmFjZXB0YS5jb20vYWNnNC9jcmwvQ2xhc2UzLUc0LmNybDANBgkqhkiG
+9w0BAQsFAAOCAQEAuNkIcxEBhHAsJQDyDUjUCM/jp1fUK3JpOqvNz5wOllu/Os31
+78Xgh1k8Piq1edCgH3B8JhymkbVDkFK5tyUw/2UHN9vk0p/+OFRDL4KKvZ8a4jub
+OwTTO3ivy4BGCH87nOrBzR5Y37IUV/Feh+QhlQcPRZdGnstHJYsasfR1Lrny4c3D
+KU8fE7aGslgB149yOVaURVtZNZsGFB5TA5ofGBmXze4QxxpQdKASH0bPwFXlT6JO
+P81wg3rZfw4yKZukCRrV20INNwf6bB7rRpLlxamWSmElTYL/5KeOZ6Pf0xuu08p1
+qHwcY/uYnXw0EqtginBOKj2TrLWuqyT4n5BdYQ==
+</X509Certificate></X509Data></KeyInfo></Signature>
+    </DTE>

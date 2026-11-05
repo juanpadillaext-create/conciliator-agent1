@@ -1,0 +1,16 @@
+# Archivos que no deben subirse a Apps Script
+README.md
+*.md
+.claspignore
+node_modules/**
+package*.json
+buildpy/**
+descargas_andina/**
+descargas_api/**
+facturas_xml/**
+data/**
+dashboard/**
+*.py
+*.csv
+*.sql
+*.env

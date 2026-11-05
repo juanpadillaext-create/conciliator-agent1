@@ -1,0 +1,223 @@
+
+--- PAGE 1 ---
+API  –  Recepción  
+ 
+ 
+ 
+ 
+   API  Recepción   
+ 
+
+--- PAGE 2 ---
+API  –  Recepción  
+ 
+1  Introducción  
+API  permite  obtener  documentos  recibidos  y  pendientes  de  recibir   dentro  de  un  
+rango
+ 
+de
+ 
+fechas
+ 
+especíﬁco,
+ 
+ﬁltrando
+ 
+por
+ 
+tipo
+ 
+y
+ 
+estado
+ 
+de
+ 
+aprobación.
+ 
+La
+ 
+autenticación
+ 
+se
+ 
+realiza
+ 
+mediante
+ 
+un
+ 
+token
+ 
+Bearer.
+ 
+Es  importante  destacar  que,  en  este  manual  se  habla  de  dos  términos:  
+Pendientes
+ 
+de
+ 
+recibir:
+ 
+Documentos
+ 
+que
+ 
+fueron
+ 
+emitidos
+ 
+por
+ 
+el
+ 
+proveedor,
+ 
+llegaron
+ 
+a
+ 
+SII
+ 
+pero
+ 
+que
+ 
+no
+ 
+están
+ 
+en
+ 
+nuestra
+ 
+casilla
+ 
+de
+ 
+intercambio.
+ 
+En
+ 
+este
+ 
+caso
+ 
+NO
+ 
+podemos
+ 
+obtener
+ 
+el
+ 
+PDF
+ 
+y
+ 
+XML.
+ 
+Recibidos :  Documentos  que  fueron  emitidos  por  el  proveedor,  llegaron  a  SII  y  
+también
+ 
+se
+ 
+encuentran
+ 
+en
+ 
+nuestra
+ 
+casilla
+ 
+de
+ 
+intercambio.
+ 
+En
+ 
+este
+ 
+caso
+ 
+podemos
+ 
+obtener
+ 
+el
+ 
+PDF
+ 
+y
+ 
+XML.
+ 
+ 
+2  URLs  
+ Alcance  Método  Endpoint  
+Obtener  listado  de  documentos  recibidos  
+GET  https://services.axteroid.com/rec-docs    
+Obtener  listado  de  documentos  pendientes  de  recibir  
+GET  https://services.axteroid.com/rec-docs/woemail   
+Consultar  xml  documento  
+GET  https://services.axteroid.com/rec-docs/{ID_Doc}?format=xml   Nota:  Aplica  solo  para  documentos  recibidos  
+Consultar  pdf  documento  
+GET  https://services.axteroid.com/rec-docs/{ID_Doc}?format=pdf   Nota:  Aplica  solo  para  documentos  recibidos      
+--- PAGE 3 ---
+API  –  Recepción  
+3  Autenticación  
+ La  autenticación  es  con  un  token  bearer.   CURL  de  ejemplo    curl  --location  'https://services.axteroid..com/' \  --header  'x-ax-workspace:  acc_v7kPkmAnLLOMoq' \  --header  'Authorization:  {token  entregado  por  cliente}' \  --data ''   
+4  Parámetros  de  consulta  
+ Parámetro  Tipo  Descripción  
+created__gte
+ string  
+Fecha  mínima  de  creación  en  formato  ISO  8601  (YYYY-MM-DDTHH:MM:SS±HH:MM).
+ 
+created__lte
+ string  
+Fecha  máxima  de  creación  en  formato  ISO  8601  (YYYY-MM-DDTHH:MM:SS±HH:MM).
+ 
+type
+ string  
+Código  del  tipo  de  documento  a  filtrar  (ejemplo:  CL33).
+ 
+approved  bool  
+Indica  si  se  filtran  solo  documentos  aprobados  (true  o  false).
+ 
+page_size  int  
+Cantidad  máxima  de  documentos  devueltos  por  página.
+ 
+test  bool  
+true:  Prueba  false:  Producción
+ 
+              
+--- PAGE 4 ---
+API  –  Recepción  
+5  Response  
+ Campo  Tipo  Ejemplo  Descripción  funcional  id  string  do_AAABndfggraEZzg3v  ID  interno  del  documento  en  AX  acc_id  string  cl-XXXX  Identificador  de  la  cuenta  asociada  type  string  CL33  Tipo  de  DTE  number  string  493765  Folio  del  documento  filename  string  DOC-33-493765.xml  Nombre  del  archivo  del  documento  size  number  7622  Tamaño  del  archivo  en  bytes  
+digest  string  
+6nQlNHL7bJ0f+DyuOcXxqQ==  Hash  del  documento  source  string  JGN  Origen  del  documento  
+branch_id  string  
+DIVERSEY  IND  Y  COM  D  Sucursal  interna  
+supplier_name  string  
+DIVERSEY  INDUSTRIAL  Y  COMERCIAL  DE  CHILE  LIMITADA  Emisor  tax_id  string  96862200-5  RUT  emisor  customer_name  string  CBA  SPA  Receptor  customer_tax_id  string  78226129-0  RUT  receptor  amount_net  string  63476  Monto  neto  amount_tax  string  12060  IVA  amount_total  string  75536  Total  documento  amount_exempt  string  null  Monto  exento  amount_discount  string  null  Descuentos  amount_subtotal  string  null  Subtotal  currency  string  CLP  Moneda  country  string  CL  País  date  date  2026-02-16  Fecha  del  documento  issued_date  datetime  2026-02-16T03:00:00Z  Fecha  emisión  due_date  date  2026-03-18  Fecha  vencimiento  time  string  0:00:00  Hora  documento  rec_date  datetime  2026-02-16T16:28:17Z  Fecha  y  hora  de  recepción  en  AX  
+created  datetime  
+2026-02-16T16:28:17.185Z  Fecha  creación  registro  
+updated  datetime  
+2026-02-16T16:28:17.987Z  Última  actualización  
+validation_date  datetime  
+2026-02-16T16:28:17.987Z  Fecha  validación  en  SII  
+status  string  APR  
+Estado  general  del  documento.  Puede  ser  APR:  Aprobado  VOI:  Anulado  REJ:  Rechazado  FAI:  Pendiente  de  validar   
+--- PAGE 5 ---
+API  –  Recepción  
+test  boolean  FALSE  Si  es  true  es  un  documento  de  prueba  
+rec_status  string  ROK  
+PEN:  Pendiente  REJ:Rechazado  APR:  Aceptado  rec_status_info  string  DTE  Recibido  OK  Detalle  recepción  rec_status_date  datetime  null  Fecha  estado  recepción  
+agency  string  SII  
+Agencia  tributaria,  para  el  caso  de  CL  es  SII  agency_status  string  DOK  Estadoi  del  documento  en  SII  
+agency_status_info  string  
+Documento  Recibido  por  el  SII...  Detalle  del  estado  del  documento  agency_date  datetime  null  Fecha  respuesta  SII  agency_validated  boolean  null  Validado  por  autoridad  agency_branch_id  string  12289954  Sucursal  informada  a  autoridad  agency_hash  string  null  Hash  autoridad  agency_id  string  null  ID  agencia  agency_voucher  string  null  Comprobante  autoridad  tax_authority_status  string  null  Estado  autoridad  tributaria  tax_authority_send_status  string  null  Estado  envío  a  autoridad  tax_authority_date  datetime  null  Fecha  proceso  autoridad  tax_authority_status_detail_list  array  null  Detalles  autoridad  references  array  [{type:CL801,…}]  Referencias  a  otros  DTE  taxes  array  []  Detalle  impuestos  discounts  array  []  Descuentos  comerciales  charges  array  []  Cargos  comerciales  exchange_rate  number  null  Tipo  cambio  order_reference  string  1032555613022026  Referencia  comercial  book  string  null  Libro  book_date  datetime  null  Fecha  libro  action_book  string  null  Acción  contable  action_book_date  datetime  null  Fecha  acción  contable  action_book_response_code  string  null  Código  respuesta  contable  action_book_response_detail  string  null  Detalle  respuesta  contable  email  string   Email  asociado  email_id  string  em_AAdfghj_Oi0oPIt  ID  envío  email  email_template  string  null  Template  email  distribution_status  string  null  Estado  distribución  distribution_date  datetime  null  Fecha  distribución  distribution_id  string  null  ID  distribución  assignment_amount  number  null  Monto  cesión  
+--- PAGE 6 ---
+API  –  Recepción  
+assignment_date  datetime  null  Fecha  cesión  assignee_name  string  null  Cesionario  assignee_tax_id  string  null  RUT  cesionario  assignor_name  string  null  Cedente  assignor_tax_id  string  null  RUT  cedente  assignment_agency_id  string  null  ID  agencia  cesión  assignment_agency_status  string  null  Estado  cesión  assignment_agency_status_code  string  null  Código  cesión  batch_id  string  null  ID  lote  billing_group  string  null  Grupo  facturación  custom_id  string  null  ID  personalizado  custom_data  object  null  Metadata  cliente  params  object  {}  Parámetros  adicionales  idx_text  string  null  Índice  búsqueda  map_geohash  string  null  Geolocalización  summary_id  string  null  ID  resumen  retries  number  null  Reintentos  stamp  string  null  Timbre  template  string  null  Template  aplicado  pos_id  string  null  Punto  de  venta  cpos_id  string  null  POS  cliente  
+  

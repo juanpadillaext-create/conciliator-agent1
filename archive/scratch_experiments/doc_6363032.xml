@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<DTE version="1.0">
+      <Documento ID="F6363032T61">
+        <Encabezado>
+          <IdDoc>
+            <TipoDTE>61</TipoDTE>
+            <Folio>6363032</Folio>
+            <FchEmis>2026-10-13</FchEmis>
+            <FmaPago>2</FmaPago>
+            <TermPagoGlosa>30 DIAS</TermPagoGlosa>
+            <FchVenc>2026-10-13</FchVenc>
+          </IdDoc>
+          <Emisor>
+            <RUTEmisor>96568970-2</RUTEmisor>
+            <RznSoc>Distribuci�n y Excelencia S.A.</RznSoc>
+            <GiroEmis>DISTRIBUIDORA Y COMERCIALIZADORA DE VINOS Y LICORES</GiroEmis>
+            <Telefono>248 91 500</Telefono>
+            <CorreoEmisor>ventas@desa.cl</CorreoEmisor>
+            <Acteco>512240</Acteco>
+            <DirOrigen>Av. La Monta�a 776 Panamericana Norte KM 16 1/2</DirOrigen>
+            <CmnaOrigen>Lampa</CmnaOrigen>
+            <CiudadOrigen>SANTIAGO</CiudadOrigen>
+          </Emisor>
+          <Receptor>
+            <RUTRecep>77125361-K</RUTRecep>
+            <CdgIntRecep>77125361-K 3</CdgIntRecep>
+            <RznSocRecep>DELIVERY HERO STORES CHILE SPA</RznSocRecep>
+            <GiroRecep>OTROS</GiroRecep>
+            <Contacto>0</Contacto>
+            <DirRecep>APOQUINDO 3000 PISO 7..</DirRecep>
+            <CmnaRecep>LA SERENA</CmnaRecep>
+            <CiudadRecep>LA SERENA</CiudadRecep>
+            <DirPostal>APOQUINDO 3000 PISO 7..</DirPostal>
+            <CmnaPostal>LA SERENA</CmnaPostal>
+            <CiudadPostal>LA SERENA</CiudadPostal>
+          </Receptor>
+          <Transporte>
+            <DirDest>HUANHUALI 839</DirDest>
+            <CmnaDest>LA SERENA</CmnaDest>
+            <CiudadDest>LA SERENA</CiudadDest>
+          </Transporte>
+          <Totales>
+            <MntNeto>2067</MntNeto>
+            <MntExe>0</MntExe>
+            <TasaIVA>19.00</TasaIVA>
+            <IVA>393</IVA>
+            <ImptoReten>
+              <TipoImp>27</TipoImp>
+              <TasaImp>10</TasaImp>
+              <MontoImp>131</MontoImp>
+            </ImptoReten>
+            <MntTotal>2591</MntTotal>
+          </Totales>
+        </Encabezado>
+        <Detalle>
+          <NroLinDet>1</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>BE50055</VlrCodigo>
+          </CdgItem>
+          <NmbItem>BEBIDA ENERGETICA MR. BIG 6X2500CC BOT</NmbItem>
+          <QtyItem>1.000000</QtyItem>
+          <PrcItem>2718.000000</PrcItem>
+          <DescuentoPct>51.93</DescuentoPct>
+          <DescuentoMonto>1411</DescuentoMonto>
+          <RecargoMonto>760</RecargoMonto>
+          <CodImpAdic>27</CodImpAdic>
+          <MontoItem>1307</MontoItem>
+        </Detalle>
+        <DscRcgGlobal>
+          <NroLinDR>1</NroLinDR>
+          <TpoMov>R</TpoMov>
+          <TpoValor>$</TpoValor>
+          <ValorDR>760.00</ValorDR>
+        </DscRcgGlobal>
+        <Referencia>
+          <NroLinRef>1</NroLinRef>
+          <TpoDocRef>33</TpoDocRef>
+          <FolioRef>10207759</FolioRef>
+          <FchRef>2026-10-09</FchRef>
+          <CodRef>3</CodRef>
+        </Referencia>
+        <Referencia>
+          <NroLinRef>2</NroLinRef>
+          <TpoDocRef>801</TpoDocRef>
+          <FolioRef>po524064</FolioRef>
+          <FchRef>2026-10-07</FchRef>
+        </Referencia>
+        <TED version="1.0">
+          <DD>
+            <RE>96568970-2</RE>
+            <TD>61</TD>
+            <F>6363032</F>
+            <FE>2026-10-13</FE>
+            <RR>77125361-K</RR>
+            <RSR>DELIVERY HERO STORES CHILE SPA</RSR>
+            <MNT>2591</MNT>
+            <IT1>BEBIDA ENERGETICA MR. BIG 6X2500CC BOT</IT1>
+            <CAF version="1.0">
+              <DA>
+                <RE>96568970-2</RE>
+                <RS>DISTRIBUCION Y EXCELENCIA S.A.</RS>
+                <TD>61</TD>
+                <RNG>
+                  <D>6355001</D>
+                  <H>6370000</H>
+                </RNG>
+                <FA>2026-07-13</FA>
+                <RSAPK>
+                  <M>pWxvoBdokqzWRI/zZsQyXQ9rW1CsMhDQi0fMdhY2KIle8mU78TegMQs+ykaQwvgyNFqT9CU+JzZRh3uNO94WWQ==</M>
+                  <E>Aw==</E>
+                </RSAPK>
+                <IDK>300</IDK>
+              </DA>
+              <FRMA algoritmo="SHA1withRSA">R8x5YNRTXK1BGMRjwP0wtCsCi3SEQ5GGLdvYYL+Z7D4hUI1UAoee30m/Xkb42pqhBR+WC7yZ4J9hE3HHM91QRA==</FRMA>
+            </CAF>
+            <TSTED>2026-10-13T22:18:38</TSTED>
+          </DD>
+          <FRMT algoritmo="SHA1withRSA">EAY+wHskthSFUQXwGH7EBwR0ICA8MBC0/PKfgPky/JzoOjnh2kjvFaSzNPAy2bCD9C1TYcAL7tXKU4+xinSuiA==</FRMT>
+        </TED>
+        <TmstFirma>2026-10-13T22:18:39</TmstFirma>
+      </Documento><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI="#F6363032T61"><Transforms><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>poehE0up56nKualVv+QcH1t4jFk=</DigestValue></Reference></SignedInfo><SignatureValue>
+TRDVmA8x1QuIa9SGPALwgvKWtwoBbxMN/epAJv4+M4dPymhUHfBE2yDbQSL5+IaU
+5hE2xKbvoE90czB1MmFWCef9iuPm/QtoocejxleB5N+jeD5Tg74Nnrh07eU8Gu0n
+Y/tBSGL0eqBWdvV516Gdtb2B7ixGzveX9X2xpZRQCadqhbuRgePU5UBNHaPf/aTt
+SObp/iS+6zM0vEvgXyk68+DWbvIf7Q2St7G6xd7JoH3TWQuNlM5X4Fbtlitqm2Us
+JfW9jFtVJapBtSQ2rP2uw0Np+QCZ309Tf4ORbxFAy1Raig+S2jic4PGLOePnBfqw
+Lo9qqRcIHfh44Q0VqhAMLA==
+</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>
+ocu1ELnLSczyqo+BPnvSbJy5yo4uIjhvonFqHvOup8IA67oqd5e1XvGQaHDmwips
+Ex8LGgmxD7LYb9MNnxloC787BG1n29KD1RWetdPfIG2otlE4s8eCgb9cuXj7mI4h
+mVeB2x2McUwidC4TXXXR8H1DK5XYRweiwJwxwyMaFSHkPqFSiooFQF7QEmJB4rvv
+2KMrd8clnCz/fvTM7+Ct0VPWul2a89AwALEUnRioZGj9nxEVMLTimrm6SchjKyfG
+HhybPlfmxo7W2isBBF07Qke1gon80Eo/Pnsb0LRNsVZJRjzQga7AmoM8vgZaqWsV
+w3wnT98/3iLpNx2zYhS+7Q==
+</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>
+MIIGbDCCBVSgAwIBAgIDBjoxMA0GCSqGSIb3DQEBCwUAMIGmMQswCQYDVQQGEwJD
+TDEYMBYGA1UEChMPQWNlcHRhLmNvbSBTLkEuMUgwRgYDVQQDEz9BY2VwdGEuY29t
+IEF1dG9yaWRhZCBDZXJ0aWZpY2Fkb3JhIENsYXNlIDIgUGVyc29uYSBOYXR1cmFs
+IC0gRzQxHjAcBgkqhkiG9w0BCQEWD2luZm9AYWNlcHRhLmNvbTETMBEGA1UEBRMK
+OTY5MTkwNTAtODAeFw0yMzEwMTcxNDM5MzlaFw0yNjEwMTcxNDM5MzlaMIGHMQsw
+CQYDVQQGEwJDTDEYMBYGA1UEDBMPUEVSU09OQSBOQVRVUkFMMScwJQYDVQQDEx5K
+VUFOIENBUkxPUyBCQVJSQVpBIExVU0NISU5HRVIxITAfBgkqhkiG9w0BCQEWEmpj
+YmFycmF6YWxAZGVzYS5jbDESMBAGA1UEBRMJODExODE3NC04MIIBIjANBgkqhkiG
+9w0BAQEFAAOCAQ8AMIIBCgKCAQEAocu1ELnLSczyqo+BPnvSbJy5yo4uIjhvonFq
+HvOup8IA67oqd5e1XvGQaHDmwipsEx8LGgmxD7LYb9MNnxloC787BG1n29KD1RWe
+tdPfIG2otlE4s8eCgb9cuXj7mI4hmVeB2x2McUwidC4TXXXR8H1DK5XYRweiwJwx
+wyMaFSHkPqFSiooFQF7QEmJB4rvv2KMrd8clnCz/fvTM7+Ct0VPWul2a89AwALEU
+nRioZGj9nxEVMLTimrm6SchjKyfGHhybPlfmxo7W2isBBF07Qke1gon80Eo/Pnsb
+0LRNsVZJRjzQga7AmoM8vgZaqWsVw3wnT98/3iLpNx2zYhS+7QIDAQABo4ICvjCC
+ArowHwYDVR0jBBgwFoAUZaWrPj/ItlFtEX5fwwoH5kOgCLYwHQYDVR0OBBYEFOID
+PfdgdueEj57oPwkimXPBE6ybMAsGA1UdDwQEAwIE8DAdBgNVHSUEFjAUBggrBgEF
+BQcDAgYIKwYBBQUHAwQwEQYJYIZIAYb4QgEBBAQDAgWgMIH1BgNVHSAEge0wgeow
+gecGCCsGAQQBtWsCMIHaMDEGCCsGAQUFBwIBFiVodHRwczovL2FjZzQuYWNlcHRh
+LmNvbS9DUFMtQWNlcHRhY29tMIGkBggrBgEFBQcCAjCBlzAWFg9BY2VwdGEuY29t
+IFMuQS4wAwIBCRp9RWwgdGl0dWxhciBoYSBzaWRvIHZhbGlkYWRvIGVuIGZvcm1h
+IG9ubGluZSwgcXVlZGFuZG8gaGFiaWxpdGFkbyBlbCBDZXJ0aWZpY2FkbyBwYXJh
+IHVzbyB0cmlidXRhcmlvLCBwYWdvcywgY29tZXJjaW8geSBvdHJvcy4wWgYDVR0S
+BFMwUaAYBggrBgEEAcEBAqAMFgo5NjkxOTA1MC04oCQGCCsGAQUFBwgDoBgwFgwK
+OTY5MTkwNTAtOAYIKwYBBAHBAQKBD2luZm9AYWNlcHRhLmNvbTBbBgNVHREEVDBS
+oBcGCCsGAQQBwQEBoAsWCTgxMTgxNzQtOKAjBggrBgEFBQcIA6AXMBUMCTgxMTgx
+NzQtOAYIKwYBBAHBAQKBEmpjYmFycmF6YWxAZGVzYS5jbDBHBggrBgEFBQcBAQQ7
+MDkwNwYIKwYBBQUHMAGGK2h0dHBzOi8vYWNnNC5hY2VwdGEuY29tL2FjZzQvb2Nz
+cC9DbGFzZTItRzQwPwYDVR0fBDgwNjA0oDKgMIYuaHR0cHM6Ly9hY2c0LmFjZXB0
+YS5jb20vYWNnNC9jcmwvQ2xhc2UyLUc0LmNybDANBgkqhkiG9w0BAQsFAAOCAQEA
+esyBBNTIp6mj83Z5xgK7vxb0uWuYnynjAAGjt9mRHtEIgb0DHh64RyT+PZUGq4va
+Cpsb4MfR0pK7vJSKJX+KmE4bygp3aWqHG00+NxQV/Wwb1x/6ZH6FEYfyzwal02DX
+7uw1Qc90LNsop5knBuwGbO9BRAxOBzcWSUZQq1/+YHyGo74Ycqtv/2Ea/xfgox2o
+7K8Bqu0i3Cld0fWe8v6EJadn6NzhaTwWd2tYgjmKt4Tn4DVtjZLbpx5Za12T/eqI
+hjzDV7XOp2l33dBvXAcbEf0OjqOoa1Xtg6bCGqv+5jfZpnhQrB1Y7QaJsZ/jIUME
+PWThRC0/4nHW/8QzBG4k6w==
+</X509Certificate></X509Data></KeyInfo></Signature>
+    </DTE>

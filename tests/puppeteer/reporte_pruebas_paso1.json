@@ -1,0 +1,65 @@
+{
+  "timestamp": "2026-10-28T21:03:45.013Z",
+  "total_tests": 8,
+  "passed_tests": 6,
+  "failed_tests": 2,
+  "duration_seconds": 8.37,
+  "results": [
+    {
+      "id": "TC-01",
+      "name": "Renderizado Inicial y Controles Clave de Paso 1",
+      "passed": false,
+      "details": "10 facturas renderizadas inicialmente",
+      "durationMs": 3115
+    },
+    {
+      "id": "TC-02",
+      "name": "Filtro Reactivo en Tiempo Real por Folio DTE",
+      "passed": true,
+      "details": "Búsqueda folio \"105275600\": 1 coincidencia(s)",
+      "durationMs": 362
+    },
+    {
+      "id": "TC-03",
+      "name": "Filtro por Razón Social de Proveedor (Embonor)",
+      "passed": true,
+      "details": "10 facturas filtradas exclusivamente",
+      "durationMs": 427
+    },
+    {
+      "id": "TC-04",
+      "name": "Filtro por RUT Emisor (93281000-K)",
+      "passed": true,
+      "details": "10 facturas coincidentes por RUT",
+      "durationMs": 392
+    },
+    {
+      "id": "TC-05",
+      "name": "Limpieza de Búsqueda y Restauración del Catálogo Completo",
+      "passed": true,
+      "details": "Catálogo restablecido con 10 facturas",
+      "durationMs": 338
+    },
+    {
+      "id": "TC-06",
+      "name": "Búsqueda en Vivo y Tarjeta de Vínculo PO (PO521534)",
+      "passed": true,
+      "details": "Título: \"Orden de Compra: PO521534\", Ordenado: $2.387.107, Facturado: $2.387.107 Neto",
+      "durationMs": 354
+    },
+    {
+      "id": "TC-07",
+      "name": "Botón Quitar Filtro PO y Ocultamiento de Tarjeta",
+      "passed": true,
+      "details": "Tarjeta ocultada y catálogo restablecido",
+      "durationMs": 357
+    },
+    {
+      "id": "TC-ERROR",
+      "name": "Excepción no controlada en Suite",
+      "passed": false,
+      "details": "Waiting failed: 3000ms exceeded",
+      "durationMs": 0
+    }
+  ]
+}

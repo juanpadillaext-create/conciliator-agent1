@@ -1,0 +1,1002 @@
+[
+  {
+    "folio": "105275609",
+    "proveedor": "Coca-Cola Embonor S.A.",
+    "rut": "93281000-K",
+    "fecha": "2026-09-30",
+    "monto_neto": 36589,
+    "monto_total": 54687,
+    "oc_asociada": "PO521534",
+    "order_reference": "0000521534",
+    "aforo_tipo": "Bebestibles - Ambiente (Coca-Cola Embonor)",
+    "almacen": "CH_8_Vina del Mar (Sociedad 6202)",
+    "ax_doc_id": "do_AAABoPDUbqdD-9ZI",
+    "items": [
+      {
+        "linea": 1,
+        "codigo": "9507",
+        "ean": "9507",
+        "descripcion": "ALTO DEL CARMEN TRANSP 40 X01 VID 750CC",
+        "cantidad_facturada": 7,
+        "unidad_medida": "UN",
+        "precio_facturado": 5055,
+        "monto_facturado": 35385
+      }
+    ]
+  },
+  {
+    "folio": "105275608",
+    "proveedor": "Coca-Cola Embonor S.A.",
+    "rut": "93281000-K",
+    "fecha": "2026-09-30",
+    "monto_neto": 144911,
+    "monto_total": 185966,
+    "oc_asociada": "PO521534",
+    "order_reference": "0000521534",
+    "aforo_tipo": "Bebestibles - Ambiente (Coca-Cola Embonor)",
+    "almacen": "CH_8_Vina del Mar (Sociedad 6202)",
+    "ax_doc_id": "do_AAABoPDUbn_HbAKX",
+    "items": [
+      {
+        "linea": 1,
+        "codigo": "2009",
+        "ean": "2009",
+        "descripcion": "INCA KOLA X06 PET 3000",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 11787,
+        "monto_facturado": 11787
+      },
+      {
+        "linea": 2,
+        "codigo": "1993",
+        "ean": "1993",
+        "descripcion": "MONSTER ULTRA PEACHY KEEN X06 LAT 473",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 5307,
+        "monto_facturado": 5307
+      },
+      {
+        "linea": 3,
+        "codigo": "1989",
+        "ean": "1989",
+        "descripcion": "MONSTER ZERO SUGAR GREEN X06 LAT 473",
+        "cantidad_facturada": 2,
+        "unidad_medida": "UN",
+        "precio_facturado": 5307,
+        "monto_facturado": 10614
+      },
+      {
+        "linea": 4,
+        "codigo": "1988",
+        "ean": "1988",
+        "descripcion": "MONSTER RIPPER NON JUICE X06 LAT 473",
+        "cantidad_facturada": 2,
+        "unidad_medida": "UN",
+        "precio_facturado": 4997,
+        "monto_facturado": 9994
+      },
+      {
+        "linea": 5,
+        "codigo": "1987",
+        "ean": "1987",
+        "descripcion": "MONSTER AUSSIE LEMONADE X06 LAT 473",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 5307,
+        "monto_facturado": 5307
+      },
+      {
+        "linea": 6,
+        "codigo": "1980",
+        "ean": "1980",
+        "descripcion": "MONSTER ULTRA PARADISE x06 LATA 473 cc",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 5307,
+        "monto_facturado": 5307
+      },
+      {
+        "linea": 7,
+        "codigo": "1978",
+        "ean": "1978",
+        "descripcion": "MONSTER MANGO LOCO X06 LATA 473CC",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 5307,
+        "monto_facturado": 5307
+      },
+      {
+        "linea": 8,
+        "codigo": "1966",
+        "ean": "1966",
+        "descripcion": "MONSTER ULTRA X06 473 CC",
+        "cantidad_facturada": 8,
+        "unidad_medida": "UN",
+        "precio_facturado": 5307,
+        "monto_facturado": 42456
+      },
+      {
+        "linea": 9,
+        "codigo": "1963",
+        "ean": "1963",
+        "descripcion": "MONSTER ENERGY X06 473 CC",
+        "cantidad_facturada": 2,
+        "unidad_medida": "UN",
+        "precio_facturado": 4997,
+        "monto_facturado": 9994
+      },
+      {
+        "linea": 10,
+        "codigo": "2583",
+        "ean": "2583",
+        "descripcion": "AQUARIUS LIMONADA X06 PET 1.600 CC",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 3718,
+        "monto_facturado": 3718
+      },
+      {
+        "linea": 11,
+        "codigo": "2508",
+        "ean": "2508",
+        "descripcion": "BENEDICTINO SIN GAS X06 PET 500 CC",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 2288,
+        "monto_facturado": 2288
+      },
+      {
+        "linea": 12,
+        "codigo": "2509",
+        "ean": "2509",
+        "descripcion": "BENEDICTINO CON GAS X06 PET 500 CC",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 2288,
+        "monto_facturado": 2288
+      }
+    ]
+  },
+  {
+    "folio": "105275606",
+    "proveedor": "Coca-Cola Embonor S.A.",
+    "rut": "93281000-K",
+    "fecha": "2026-09-30",
+    "monto_neto": 277986,
+    "monto_total": 352065,
+    "oc_asociada": "PO521534",
+    "order_reference": "0000521534",
+    "aforo_tipo": "Bebestibles - Ambiente (Coca-Cola Embonor)",
+    "almacen": "CH_8_Vina del Mar (Sociedad 6202)",
+    "ax_doc_id": "do_AAABoPDUblJ--tLK",
+    "items": [
+      {
+        "linea": 1,
+        "codigo": "0476",
+        "ean": "0476",
+        "descripcion": "SCHWEPPES GINGER ALE SA X6 PET 1.5",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 7572,
+        "monto_facturado": 7572
+      },
+      {
+        "linea": 2,
+        "codigo": "0336",
+        "ean": "0336",
+        "descripcion": "COCA COLA LIGTH X06 PET 1500 CC",
+        "cantidad_facturada": 5,
+        "unidad_medida": "UN",
+        "precio_facturado": 8697,
+        "monto_facturado": 43485
+      },
+      {
+        "linea": 3,
+        "codigo": "0377",
+        "ean": "0377",
+        "descripcion": "COCA COLA SIN AZUCAR X06 PET 1.500 CC",
+        "cantidad_facturada": 9,
+        "unidad_medida": "UN",
+        "precio_facturado": 8697,
+        "monto_facturado": 78273
+      },
+      {
+        "linea": 4,
+        "codigo": "4274",
+        "ean": "4274",
+        "descripcion": "FANTA NARANJA ZERO+VITAMC X06 PET 1500",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 7572,
+        "monto_facturado": 7572
+      },
+      {
+        "linea": 5,
+        "codigo": "0757",
+        "ean": "0757",
+        "descripcion": "SPRITE X06 PET 1.500 CC",
+        "cantidad_facturada": 4,
+        "unidad_medida": "UN",
+        "precio_facturado": 7572,
+        "monto_facturado": 30288
+      },
+      {
+        "linea": 6,
+        "codigo": "0694",
+        "ean": "0694",
+        "descripcion": "SPRITE ZERO X06 PET 1500 CC",
+        "cantidad_facturada": 4,
+        "unidad_medida": "UN",
+        "precio_facturado": 7572,
+        "monto_facturado": 30288
+      },
+      {
+        "linea": 7,
+        "codigo": "2004",
+        "ean": "2004",
+        "descripcion": "INCA KOLA ZERO X06 PET 1500 CC",
+        "cantidad_facturada": 2,
+        "unidad_medida": "UN",
+        "precio_facturado": 7572,
+        "monto_facturado": 15144
+      },
+      {
+        "linea": 8,
+        "codigo": "1136",
+        "ean": "1136",
+        "descripcion": "AND MANZANA 1500CC OW X06",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 6662,
+        "monto_facturado": 6662
+      },
+      {
+        "linea": 9,
+        "codigo": "1362",
+        "ean": "1362",
+        "descripcion": "AND DURAZNO LIGHT X06 PET 1500",
+        "cantidad_facturada": 2,
+        "unidad_medida": "UN",
+        "precio_facturado": 6662,
+        "monto_facturado": 13324
+      },
+      {
+        "linea": 10,
+        "codigo": "1462",
+        "ean": "1462",
+        "descripcion": "AND PINA LIGHT X06 PET 1500",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 6662,
+        "monto_facturado": 6662
+      },
+      {
+        "linea": 11,
+        "codigo": "1534",
+        "ean": "1534",
+        "descripcion": "AND NARAN LIGHT PET1500CC BOCAANCHA",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 6662,
+        "monto_facturado": 6662
+      }
+    ]
+  },
+  {
+    "folio": "105275605",
+    "proveedor": "Coca-Cola Embonor S.A.",
+    "rut": "93281000-K",
+    "fecha": "2026-09-30",
+    "monto_neto": 166643,
+    "monto_total": 204136,
+    "oc_asociada": "PO521534",
+    "order_reference": "0000521534",
+    "aforo_tipo": "Bebestibles - Ambiente (Coca-Cola Embonor)",
+    "almacen": "CH_8_Vina del Mar (Sociedad 6202)",
+    "ax_doc_id": "do_AAABoPDUbiVoxQMw",
+    "items": [
+      {
+        "linea": 1,
+        "codigo": "2625",
+        "ean": "2625",
+        "descripcion": "BENEDICTINO FRUTOS ROJOS X6 PET 500 CC",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 2707,
+        "monto_facturado": 2707
+      },
+      {
+        "linea": 2,
+        "codigo": "2624",
+        "ean": "2624",
+        "descripcion": "BENEDICTINO FRUTOS ROJOS X06 PET 1.500 C",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 3707,
+        "monto_facturado": 3707
+      },
+      {
+        "linea": 3,
+        "codigo": "2560",
+        "ean": "2560",
+        "descripcion": "BENEDICTINO POMELO MENTA X06 PET 1.500CC",
+        "cantidad_facturada": 2,
+        "unidad_medida": "UN",
+        "precio_facturado": 3707,
+        "monto_facturado": 7414
+      },
+      {
+        "linea": 4,
+        "codigo": "2559",
+        "ean": "2559",
+        "descripcion": "BENEDICTINO PERA X06 PET 1.500",
+        "cantidad_facturada": 4,
+        "unidad_medida": "UN",
+        "precio_facturado": 3707,
+        "monto_facturado": 14828
+      },
+      {
+        "linea": 5,
+        "codigo": "2558",
+        "ean": "2558",
+        "descripcion": "BENEDICTINO MANZANA X06 PET 1.500",
+        "cantidad_facturada": 6,
+        "unidad_medida": "UN",
+        "precio_facturado": 3707,
+        "monto_facturado": 22242
+      },
+      {
+        "linea": 6,
+        "codigo": "2557",
+        "ean": "2557",
+        "descripcion": "BENEDICTINO LIMON JENJIBRE X06 PET 1.500",
+        "cantidad_facturada": 2,
+        "unidad_medida": "UN",
+        "precio_facturado": 3707,
+        "monto_facturado": 7414
+      },
+      {
+        "linea": 7,
+        "codigo": "2504",
+        "ean": "2504",
+        "descripcion": "BENEDICTINO CON GAS X06 PET 1500 CC",
+        "cantidad_facturada": 2,
+        "unidad_medida": "UN",
+        "precio_facturado": 2702,
+        "monto_facturado": 5404
+      },
+      {
+        "linea": 8,
+        "codigo": "2503",
+        "ean": "2503",
+        "descripcion": "BENEDICTINO SIN GAS X06 PET 1500 CC",
+        "cantidad_facturada": 4,
+        "unidad_medida": "UN",
+        "precio_facturado": 2702,
+        "monto_facturado": 10808
+      },
+      {
+        "linea": 9,
+        "codigo": "2244",
+        "ean": "2244",
+        "descripcion": "VITAL SG X06 PET 2500",
+        "cantidad_facturada": 3,
+        "unidad_medida": "UN",
+        "precio_facturado": 4267,
+        "monto_facturado": 12801
+      },
+      {
+        "linea": 10,
+        "codigo": "2133",
+        "ean": "2133",
+        "descripcion": "VITAL SIN GAS X06 PET 1.600",
+        "cantidad_facturada": 9,
+        "unidad_medida": "UN",
+        "precio_facturado": 3400,
+        "monto_facturado": 30600
+      },
+      {
+        "linea": 11,
+        "codigo": "2233",
+        "ean": "2233",
+        "descripcion": "VITAL CON GAS X06 PET 1.600",
+        "cantidad_facturada": 3,
+        "unidad_medida": "UN",
+        "precio_facturado": 3400,
+        "monto_facturado": 10200
+      }
+    ]
+  },
+  {
+    "folio": "105275603",
+    "proveedor": "Coca-Cola Embonor S.A.",
+    "rut": "93281000-K",
+    "fecha": "2026-09-30",
+    "monto_neto": 413439,
+    "monto_total": 522773,
+    "oc_asociada": "PO521534",
+    "order_reference": "0000521534",
+    "aforo_tipo": "Bebestibles - Ambiente (Coca-Cola Embonor)",
+    "almacen": "CH_8_Vina del Mar (Sociedad 6202)",
+    "ax_doc_id": "do_AAABoPDUbfl899yJ",
+    "items": [
+      {
+        "linea": 1,
+        "codigo": "7223",
+        "ean": "7223",
+        "descripcion": "NEC.DUR X06 TP200CC",
+        "cantidad_facturada": 6,
+        "unidad_medida": "UN",
+        "precio_facturado": 1468,
+        "monto_facturado": 8808
+      },
+      {
+        "linea": 2,
+        "codigo": "1414",
+        "ean": "1414",
+        "descripcion": "AND DEL VALLE PINA LIGHT X06 TETRA 200CC",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 1468,
+        "monto_facturado": 1468
+      },
+      {
+        "linea": 3,
+        "codigo": "3000",
+        "ean": "3000",
+        "descripcion": "FASTLYTE FRUTILLA PET X6 625 ML",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 8449,
+        "monto_facturado": 8449
+      },
+      {
+        "linea": 4,
+        "codigo": "0161",
+        "ean": "0161",
+        "descripcion": "COCA COLA X06 LATA 350 CC",
+        "cantidad_facturada": 49,
+        "unidad_medida": "UN",
+        "precio_facturado": 2767,
+        "monto_facturado": 135583
+      },
+      {
+        "linea": 5,
+        "codigo": "0381",
+        "ean": "0381",
+        "descripcion": "COCA COLA SIN AZUCAR X06 LATA 350 CC",
+        "cantidad_facturada": 18,
+        "unidad_medida": "UN",
+        "precio_facturado": 2939,
+        "monto_facturado": 52902
+      },
+      {
+        "linea": 6,
+        "codigo": "4272",
+        "ean": "4272",
+        "descripcion": "FANTA NARANJA ZERO+VITAMC X06 LATA 350",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 2939,
+        "monto_facturado": 2939
+      },
+      {
+        "linea": 7,
+        "codigo": "0692",
+        "ean": "0692",
+        "descripcion": "SPRITE ZERO X06 LATA 350 CC",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 2939,
+        "monto_facturado": 2939
+      },
+      {
+        "linea": 8,
+        "codigo": "2524",
+        "ean": "2524",
+        "descripcion": "BENEDICTINO SIN GAS X02 PET 6.500 CC",
+        "cantidad_facturada": 34,
+        "unidad_medida": "UN",
+        "precio_facturado": 2899,
+        "monto_facturado": 98566
+      },
+      {
+        "linea": 9,
+        "codigo": "5625",
+        "ean": "5625",
+        "descripcion": "GLL VITAMIN RED x06 PET 1 LT",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 9206,
+        "monto_facturado": 9206
+      },
+      {
+        "linea": 10,
+        "codigo": "5624",
+        "ean": "5624",
+        "descripcion": "GLL VITAMIN ORANGE x06 PET 1 LT",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 9206,
+        "monto_facturado": 9206
+      },
+      {
+        "linea": 11,
+        "codigo": "5575",
+        "ean": "5575",
+        "descripcion": "GLL JUGO MANGO X06 PET 1 LT",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 8516,
+        "monto_facturado": 8516
+      },
+      {
+        "linea": 12,
+        "codigo": "0922",
+        "ean": "0922",
+        "descripcion": "FANTA NAR FULLSUGAR X06 LATA 350 CC",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 2767,
+        "monto_facturado": 2767
+      }
+    ]
+  },
+  {
+    "folio": "105275602",
+    "proveedor": "Coca-Cola Embonor S.A.",
+    "rut": "93281000-K",
+    "fecha": "2026-09-30",
+    "monto_neto": 34844,
+    "monto_total": 46991,
+    "oc_asociada": "PO521534",
+    "order_reference": "0000521534",
+    "aforo_tipo": "Bebestibles - Ambiente (Coca-Cola Embonor)",
+    "almacen": "CH_8_Vina del Mar (Sociedad 6202)",
+    "ax_doc_id": "do_AAABoPDUbcP1knBA",
+    "items": [
+      {
+        "linea": 1,
+        "codigo": "0929",
+        "ean": "0929",
+        "descripcion": "FANTA NAR FULLSUGAR X06 PET 3000 CC",
+        "cantidad_facturada": 2,
+        "unidad_medida": "UN",
+        "precio_facturado": 11787,
+        "monto_facturado": 23574
+      },
+      {
+        "linea": 2,
+        "codigo": "0933",
+        "ean": "0933",
+        "descripcion": "FANTA POMELO FULLSUGAR X06 PET 1500 CC",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 7130,
+        "monto_facturado": 7130
+      }
+    ]
+  },
+  {
+    "folio": "105275607",
+    "proveedor": "Coca-Cola Embonor S.A.",
+    "rut": "93281000-K",
+    "fecha": "2026-09-30",
+    "monto_neto": 122979,
+    "monto_total": 158076,
+    "oc_asociada": "PO521534",
+    "order_reference": "0000521534",
+    "aforo_tipo": "Bebestibles - Ambiente (Coca-Cola Embonor)",
+    "almacen": "CH_8_Vina del Mar (Sociedad 6202)",
+    "ax_doc_id": "do_AAABoPDURlT_jkxu",
+    "items": [
+      {
+        "linea": 1,
+        "codigo": "2529",
+        "ean": "2529",
+        "descripcion": "BENEDICTINO PERA X06 PET 500 CC",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 2707,
+        "monto_facturado": 2707
+      },
+      {
+        "linea": 2,
+        "codigo": "2528",
+        "ean": "2528",
+        "descripcion": "BENEDICTINO MANZANA X06 PET 500 CC",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 2707,
+        "monto_facturado": 2707
+      },
+      {
+        "linea": 3,
+        "codigo": "0177",
+        "ean": "0177",
+        "descripcion": "COKE X06 PET 591 CC",
+        "cantidad_facturada": 3,
+        "unidad_medida": "UN",
+        "precio_facturado": 3959,
+        "monto_facturado": 11877
+      },
+      {
+        "linea": 4,
+        "codigo": "0388",
+        "ean": "0388",
+        "descripcion": "COCA COLA SIN AZUCAR X06 PET 591 CC",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 4205,
+        "monto_facturado": 4205
+      },
+      {
+        "linea": 5,
+        "codigo": "4269",
+        "ean": "4269",
+        "descripcion": "FANTA NAR ZERO X06 PET 591 CC",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 4205,
+        "monto_facturado": 4205
+      },
+      {
+        "linea": 6,
+        "codigo": "0742",
+        "ean": "0742",
+        "descripcion": "SPRITE X06 PET 591 CC",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 4205,
+        "monto_facturado": 4205
+      },
+      {
+        "linea": 7,
+        "codigo": "0688",
+        "ean": "0688",
+        "descripcion": "SPRITE ZERO X06 PET 591 CC",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 4205,
+        "monto_facturado": 4205
+      },
+      {
+        "linea": 8,
+        "codigo": "4654",
+        "ean": "4654",
+        "descripcion": "POWERADE ZERO UVA X06 PET 1.1",
+        "cantidad_facturada": 2,
+        "unidad_medida": "UN",
+        "precio_facturado": 5072,
+        "monto_facturado": 10144
+      },
+      {
+        "linea": 9,
+        "codigo": "4652",
+        "ean": "4652",
+        "descripcion": "POWERADE ZERO FROZEN BLAST X06 PET 1.1",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 5072,
+        "monto_facturado": 5072
+      },
+      {
+        "linea": 10,
+        "codigo": "4651",
+        "ean": "4651",
+        "descripcion": "POWERADE ROJO X06 PET 1.1",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 5072,
+        "monto_facturado": 5072
+      },
+      {
+        "linea": 11,
+        "codigo": "4649",
+        "ean": "4649",
+        "descripcion": "POWERADE FROZEN BLAST X06 PET 1.1",
+        "cantidad_facturada": 2,
+        "unidad_medida": "UN",
+        "precio_facturado": 5072,
+        "monto_facturado": 10144
+      },
+      {
+        "linea": 12,
+        "codigo": "0136",
+        "ean": "0136",
+        "descripcion": "COCA COLA X06 PET 1500 CC",
+        "cantidad_facturada": 5,
+        "unidad_medida": "UN",
+        "precio_facturado": 8189,
+        "monto_facturado": 40945
+      }
+    ]
+  },
+  {
+    "folio": "105275604",
+    "proveedor": "Coca-Cola Embonor S.A.",
+    "rut": "93281000-K",
+    "fecha": "2026-09-30",
+    "monto_neto": 695468,
+    "monto_total": 896939,
+    "oc_asociada": "PO521534",
+    "order_reference": "0000521534",
+    "aforo_tipo": "Bebestibles - Ambiente (Coca-Cola Embonor)",
+    "almacen": "CH_8_Vina del Mar (Sociedad 6202)",
+    "ax_doc_id": "do_AAABoPDUOaXZbdxF",
+    "items": [
+      {
+        "linea": 1,
+        "codigo": "2520",
+        "ean": "2520",
+        "descripcion": "BENEDICTINO SIN GAS X06 PET 3.000 CC",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 3398,
+        "monto_facturado": 3398
+      },
+      {
+        "linea": 2,
+        "codigo": "2521",
+        "ean": "2521",
+        "descripcion": "BENEDICTINO CON GAS X06 PET 3.000 CC",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 3398,
+        "monto_facturado": 3398
+      },
+      {
+        "linea": 3,
+        "codigo": "0154",
+        "ean": "0154",
+        "descripcion": "COCA COLA X06 PET 3000 CC",
+        "cantidad_facturada": 12,
+        "unidad_medida": "UN",
+        "precio_facturado": 12297,
+        "monto_facturado": 147564
+      },
+      {
+        "linea": 4,
+        "codigo": "0354",
+        "ean": "0354",
+        "descripcion": "COCA COLA LIGTH X06 PET 3000 CC",
+        "cantidad_facturada": 2,
+        "unidad_medida": "UN",
+        "precio_facturado": 13059,
+        "monto_facturado": 26118
+      },
+      {
+        "linea": 5,
+        "codigo": "0379",
+        "ean": "0379",
+        "descripcion": "COCA COLA SIN AZUCAR X06 PET 3.000 CC",
+        "cantidad_facturada": 25,
+        "unidad_medida": "UN",
+        "precio_facturado": 13059,
+        "monto_facturado": 326475
+      },
+      {
+        "linea": 6,
+        "codigo": "0579",
+        "ean": "0579",
+        "descripcion": "FANTA ZERO X06 PET 3.000 CC",
+        "cantidad_facturada": 2,
+        "unidad_medida": "UN",
+        "precio_facturado": 12518,
+        "monto_facturado": 25036
+      },
+      {
+        "linea": 7,
+        "codigo": "0767",
+        "ean": "0767",
+        "descripcion": "SPRITE X06 PET 3.000 CC",
+        "cantidad_facturada": 2,
+        "unidad_medida": "UN",
+        "precio_facturado": 12518,
+        "monto_facturado": 25036
+      },
+      {
+        "linea": 8,
+        "codigo": "0679",
+        "ean": "0679",
+        "descripcion": "SPRITE ZERO X06 PET 3000 CC",
+        "cantidad_facturada": 2,
+        "unidad_medida": "UN",
+        "precio_facturado": 12518,
+        "monto_facturado": 25036
+      },
+      {
+        "linea": 9,
+        "codigo": "1423",
+        "ean": "1423",
+        "descripcion": "AND DEL VALLE PINA X06 TETRA 200 CC",
+        "cantidad_facturada": 9,
+        "unidad_medida": "UN",
+        "precio_facturado": 1468,
+        "monto_facturado": 13212
+      },
+      {
+        "linea": 10,
+        "codigo": "1523",
+        "ean": "1523",
+        "descripcion": "AND DEL VALLE NARANJA X06 TETRA 200 CC",
+        "cantidad_facturada": 6,
+        "unidad_medida": "UN",
+        "precio_facturado": 1468,
+        "monto_facturado": 8808
+      },
+      {
+        "linea": 11,
+        "codigo": "1123",
+        "ean": "1123",
+        "descripcion": "AND DEL VALLE MANZANA X06 TETRA 200 CC",
+        "cantidad_facturada": 8,
+        "unidad_medida": "UN",
+        "precio_facturado": 1468,
+        "monto_facturado": 11744
+      },
+      {
+        "linea": 12,
+        "codigo": "1514",
+        "ean": "1514",
+        "descripcion": "AND DEL VALLE NARANJA LIGHT X6 TETRA 200",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 1468,
+        "monto_facturado": 1468
+      }
+    ]
+  },
+  {
+    "folio": "105275601",
+    "proveedor": "Coca-Cola Embonor S.A.",
+    "rut": "93281000-K",
+    "fecha": "2026-09-30",
+    "monto_neto": 136777,
+    "monto_total": 204279,
+    "oc_asociada": "PO521534",
+    "order_reference": "0000521534",
+    "aforo_tipo": "Bebestibles - Ambiente (Coca-Cola Embonor)",
+    "almacen": "CH_8_Vina del Mar (Sociedad 6202)",
+    "ax_doc_id": "do_AAABoPDUOXlpu9FC",
+    "items": [
+      {
+        "linea": 1,
+        "codigo": "9501",
+        "ean": "9501",
+        "descripcion": "ALTO DEL CARMEN ESPEC 35 X06 VID 1000CC",
+        "cantidad_facturada": 2,
+        "unidad_medida": "UN",
+        "precio_facturado": 33883,
+        "monto_facturado": 67766
+      },
+      {
+        "linea": 2,
+        "codigo": "9507",
+        "ean": "9507",
+        "descripcion": "ALTO DEL CARMEN TRANSP 40 X01 VID 750CC",
+        "cantidad_facturada": 7,
+        "unidad_medida": "UN",
+        "precio_facturado": 5055,
+        "monto_facturado": 35385
+      },
+      {
+        "linea": 3,
+        "codigo": "9517",
+        "ean": "9517",
+        "descripcion": "ALTO DEL CARMEN ESPEC 35 X06 VID 750CC",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 28638,
+        "monto_facturado": 28638
+      }
+    ]
+  },
+  {
+    "folio": "105275600",
+    "proveedor": "Coca-Cola Embonor S.A.",
+    "rut": "93281000-K",
+    "fecha": "2026-09-30",
+    "monto_neto": 357471,
+    "monto_total": 491118,
+    "oc_asociada": "PO521534",
+    "order_reference": "0000521534",
+    "aforo_tipo": "Bebestibles - Ambiente (Coca-Cola Embonor)",
+    "almacen": "CH_8_Vina del Mar (Sociedad 6202)",
+    "ax_doc_id": "do_AAABoPDUOUIBkxMc",
+    "items": [
+      {
+        "linea": 1,
+        "codigo": "9410",
+        "ean": "9410",
+        "descripcion": "CERV QUILMES 4,9 1X12 LATA 354CC",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 6506,
+        "monto_facturado": 6506
+      },
+      {
+        "linea": 2,
+        "codigo": "9817",
+        "ean": "9817",
+        "descripcion": "CERV BECKER 4,5 4X6 LATA 473 CC",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 15131,
+        "monto_facturado": 15131
+      },
+      {
+        "linea": 3,
+        "codigo": "9840",
+        "ean": "9840",
+        "descripcion": "CERV CORONA 4,5 X12 VIDRIO 330 CC",
+        "cantidad_facturada": 3,
+        "unidad_medida": "UN",
+        "precio_facturado": 10597,
+        "monto_facturado": 31791
+      },
+      {
+        "linea": 4,
+        "codigo": "9841",
+        "ean": "9841",
+        "descripcion": "CERV CORONA 4,5 X18 VIDRIO 330 CC",
+        "cantidad_facturada": 2,
+        "unidad_medida": "UN",
+        "precio_facturado": 11522,
+        "monto_facturado": 23044
+      },
+      {
+        "linea": 5,
+        "codigo": "9843",
+        "ean": "9843",
+        "descripcion": "CERV CORONA 4,5 4X6 VIDRIO 330 CC",
+        "cantidad_facturada": 5,
+        "unidad_medida": "UN",
+        "precio_facturado": 20762,
+        "monto_facturado": 103810
+      },
+      {
+        "linea": 6,
+        "codigo": "9898",
+        "ean": "9898",
+        "descripcion": "STELLA ARTOIS 5 4X6 VIDRIO 330 CC",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 19038,
+        "monto_facturado": 19038
+      },
+      {
+        "linea": 7,
+        "codigo": "1700",
+        "ean": "1700",
+        "descripcion": "CERV. BALTICA 5,8o 1X6 LATA 473 CC",
+        "cantidad_facturada": 1,
+        "unidad_medida": "UN",
+        "precio_facturado": 1871,
+        "monto_facturado": 1871
+      },
+      {
+        "linea": 8,
+        "codigo": "1718",
+        "ean": "1718",
+        "descripcion": "CERV. QUILMES 4,9o 1X6 LATA 473",
+        "cantidad_facturada": 12,
+        "unidad_medida": "UN",
+        "precio_facturado": 4314,
+        "monto_facturado": 51768
+      },
+      {
+        "linea": 9,
+        "codigo": "1719",
+        "ean": "1719",
+        "descripcion": "CERV.STELLA ARTOIS 5o 1X6 LATA 473",
+        "cantidad_facturada": 13,
+        "unidad_medida": "UN",
+        "precio_facturado": 5205,
+        "monto_facturado": 67665
+      }
+    ]
+  }
+]

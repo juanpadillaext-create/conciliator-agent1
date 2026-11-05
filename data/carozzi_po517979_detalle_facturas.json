@@ -1,0 +1,1217 @@
+[
+  {
+    "factura": "22586652",
+    "codigo": "516923",
+    "descripcion": "VIVO LINE BERRIES 10 X 320 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 9.0,
+    "precio_unitario": 19250.0,
+    "valor_neto": 173250.0
+  },
+  {
+    "factura": "22586652",
+    "codigo": "516920",
+    "descripcion": "VIVO LINE INTEGRAL 10 X 350 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 9.0,
+    "precio_unitario": 19250.0,
+    "valor_neto": 173250.0
+  },
+  {
+    "factura": "22586652",
+    "codigo": "545537",
+    "descripcion": "HNA MONT BLANC S/POLVO 12X1 KG",
+    "unid_vta": "BOL",
+    "cantidad": 14.0,
+    "precio_unitario": 11532.0,
+    "valor_neto": 161447.0
+  },
+  {
+    "factura": "22586652",
+    "codigo": "571655",
+    "descripcion": "MIRAFLORES NAC. G1 LAM 10X1 KG",
+    "unid_vta": "BOL",
+    "cantidad": 18.0,
+    "precio_unitario": 18150.0,
+    "valor_neto": 326701.0
+  },
+  {
+    "factura": "22586652",
+    "codigo": "120113",
+    "descripcion": "TRATTORIA GNOCCHI DE PAPA 12X500 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 1.0,
+    "precio_unitario": 29100.0,
+    "valor_neto": 29100.0
+  },
+  {
+    "factura": "22586652",
+    "codigo": "135304",
+    "descripcion": "POMAROLA SACHET ITALIANA 24X200 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 22.0,
+    "precio_unitario": 13248.0,
+    "valor_neto": 291457.0
+  },
+  {
+    "factura": "22586652",
+    "codigo": "327038",
+    "descripcion": "MIFRUT PLATANO 36X90 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 15.0,
+    "precio_unitario": 14580.0,
+    "valor_neto": 218699.0
+  },
+  {
+    "factura": "22586652",
+    "codigo": "327001",
+    "descripcion": "MIFRUT DURAZNO 36 X 90 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 8.0,
+    "precio_unitario": 14580.0,
+    "valor_neto": 116639.0
+  },
+  {
+    "factura": "22586652",
+    "codigo": "101409",
+    "descripcion": "CAROZZI SPAGHETTI 5 25X400 GR.",
+    "unid_vta": "BOL",
+    "cantidad": 10.0,
+    "precio_unitario": 19475.0,
+    "valor_neto": 194749.0
+  },
+  {
+    "factura": "22586652",
+    "codigo": "545526",
+    "descripcion": "HNA SELECTA S/POLVO 12X1 KG.",
+    "unid_vta": "BOL",
+    "cantidad": 10.0,
+    "precio_unitario": 13860.0,
+    "valor_neto": 138600.0
+  },
+  {
+    "factura": "22586652",
+    "codigo": "134113",
+    "descripcion": "SALSA TOSCANA A LA BOLOGNESA 24X200 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 14.0,
+    "precio_unitario": 16560.0,
+    "valor_neto": 231841.0
+  },
+  {
+    "factura": "22586652",
+    "codigo": "516889",
+    "descripcion": "MONO BALLS 8X400 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 10.0,
+    "precio_unitario": 21312.0,
+    "valor_neto": 213121.0
+  },
+  {
+    "factura": "22586652",
+    "codigo": "327003",
+    "descripcion": "MIFRUT PERA 36 X 90 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 15.0,
+    "precio_unitario": 14580.0,
+    "valor_neto": 218699.0
+  },
+  {
+    "factura": "22586652",
+    "codigo": "327002",
+    "descripcion": "MIFRUT MANZANA 36 X 90 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 15.0,
+    "precio_unitario": 14580.0,
+    "valor_neto": 218699.0
+  },
+  {
+    "factura": "22586652",
+    "codigo": "571656",
+    "descripcion": "MIRAFLORES PREG G1 LAM 10X1 KG.",
+    "unid_vta": "BOL",
+    "cantidad": 9.0,
+    "precio_unitario": 16620.0,
+    "valor_neto": 149579.0
+  },
+  {
+    "factura": "22586652",
+    "codigo": "336575",
+    "descripcion": "VIVO GELATINA BERRIES 40X22 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 3.0,
+    "precio_unitario": 24120.0,
+    "valor_neto": 72360.0
+  },
+  {
+    "factura": "22586652",
+    "codigo": "101672",
+    "descripcion": "PACK 3 SPAGHETTI CZZI+SACHET 8X1,4 KG.",
+    "unid_vta": "CAJ",
+    "cantidad": 3.0,
+    "precio_unitario": 18712.0,
+    "valor_neto": 56136.0
+  },
+  {
+    "factura": "22586652",
+    "codigo": "516223",
+    "descripcion": "VIVO CHECK CACAO 10X360 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 3.0,
+    "precio_unitario": 22150.0,
+    "valor_neto": 66450.0
+  },
+  {
+    "factura": "22586652",
+    "codigo": "336109",
+    "descripcion": "AMB.GELATINA PINA 20 X 100 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 3.0,
+    "precio_unitario": 12260.0,
+    "valor_neto": 36780.0
+  },
+  {
+    "factura": "22586652",
+    "codigo": "111103",
+    "descripcion": "CZZI. RIGATONI 48 30X400 GR.",
+    "unid_vta": "BOL",
+    "cantidad": 6.0,
+    "precio_unitario": 23370.0,
+    "valor_neto": 140220.0
+  },
+  {
+    "factura": "22586652",
+    "codigo": "122632",
+    "descripcion": "NECTAR VIVO PINA 12X1 LT.",
+    "unid_vta": "CAJ",
+    "cantidad": 9.0,
+    "precio_unitario": 10428.0,
+    "valor_neto": 93852.0
+  },
+  {
+    "factura": "22586652",
+    "codigo": "101318",
+    "descripcion": "CAROZZI CORBATA 80 30X400 GR.(FARDO)",
+    "unid_vta": "BOL",
+    "cantidad": 6.0,
+    "precio_unitario": 23370.0,
+    "valor_neto": 140220.0
+  },
+  {
+    "factura": "22586652",
+    "codigo": "101401",
+    "descripcion": "CAROZZI FETTUCCINE 88 25X400 GR.",
+    "unid_vta": "BOL",
+    "cantidad": 4.0,
+    "precio_unitario": 19475.0,
+    "valor_neto": 77900.0
+  },
+  {
+    "factura": "22586652",
+    "codigo": "135517",
+    "descripcion": "POMAROLA SACHET PACK 4BX6UX200 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 85.0,
+    "precio_unitario": 13260.0,
+    "valor_neto": 1127097.0
+  },
+  {
+    "factura": "22586653",
+    "codigo": "120109",
+    "descripcion": "TRATTORIA RAVIOLI CARNE 12X400 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 5.0,
+    "precio_unitario": 25212.0,
+    "valor_neto": 126059.0
+  },
+  {
+    "factura": "22586653",
+    "codigo": "101504",
+    "descripcion": "CAROZZI LASANA 11 10X400GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 5.0,
+    "precio_unitario": 18340.0,
+    "valor_neto": 91700.0
+  },
+  {
+    "factura": "22586653",
+    "codigo": "134115",
+    "descripcion": "SALSA TOSCANA ARRABBIATA 24X200 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 4.0,
+    "precio_unitario": 16560.0,
+    "valor_neto": 66241.0
+  },
+  {
+    "factura": "22586653",
+    "codigo": "518205",
+    "descripcion": "PV SALSA TAQ PICANTE DOYPACK 24 X 200 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 3.0,
+    "precio_unitario": 18048.0,
+    "valor_neto": 54144.0
+  },
+  {
+    "factura": "22586653",
+    "codigo": "518103",
+    "descripcion": "PV TORTILLA L/DURAC NREF 10 UN 20X280 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 3.0,
+    "precio_unitario": 24460.0,
+    "valor_neto": 73379.0
+  },
+  {
+    "factura": "22586653",
+    "codigo": "327061",
+    "descripcion": "VIVO BREAK YOGURT BERRIES PLATANO 18X90G",
+    "unid_vta": "CAJ",
+    "cantidad": 13.0,
+    "precio_unitario": 8460.0,
+    "valor_neto": 109981.0
+  },
+  {
+    "factura": "22586653",
+    "codigo": "518012",
+    "descripcion": "PV BURRITO REF 8 UN 12X350 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 23.0,
+    "precio_unitario": 16452.0,
+    "valor_neto": 378398.0
+  },
+  {
+    "factura": "22586653",
+    "codigo": "134719",
+    "descripcion": "SALSA DIP CRACKELET AJI CHIPOTLE 24X110G",
+    "unid_vta": "CAJ",
+    "cantidad": 3.0,
+    "precio_unitario": 18192.0,
+    "valor_neto": 54576.0
+  },
+  {
+    "factura": "22586653",
+    "codigo": "122635",
+    "descripcion": "NECTAR VIVO MANZANA 12X1 LT",
+    "unid_vta": "CAJ",
+    "cantidad": 3.0,
+    "precio_unitario": 10428.0,
+    "valor_neto": 31284.0
+  },
+  {
+    "factura": "22586653",
+    "codigo": "141101",
+    "descripcion": "CZZI.MASCARRONI 45 30X400 GR",
+    "unid_vta": "BOL",
+    "cantidad": 3.0,
+    "precio_unitario": 23370.0,
+    "valor_neto": 70110.0
+  },
+  {
+    "factura": "22586653",
+    "codigo": "518018",
+    "descripcion": "PV MAXIVILLA 8 UN 10X544 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 15.0,
+    "precio_unitario": 18600.0,
+    "valor_neto": 279000.0
+  },
+  {
+    "factura": "22586653",
+    "codigo": "327066",
+    "descripcion": "VIVO ORGANICO ZAPALLO ITA MANZ PERA18X90",
+    "unid_vta": "CAJ",
+    "cantidad": 13.0,
+    "precio_unitario": 9558.0,
+    "valor_neto": 124254.0
+  },
+  {
+    "factura": "22586653",
+    "codigo": "122046",
+    "descripcion": "NECTAR VIVO PINA TRIPACK 8X3X190 ML",
+    "unid_vta": "CAJ",
+    "cantidad": 18.0,
+    "precio_unitario": 6896.0,
+    "valor_neto": 124127.0
+  },
+  {
+    "factura": "22586653",
+    "codigo": "122633",
+    "descripcion": "NECTAR VIVO DURAZNO 12X1 LT.",
+    "unid_vta": "CAJ",
+    "cantidad": 3.0,
+    "precio_unitario": 10428.0,
+    "valor_neto": 31284.0
+  },
+  {
+    "factura": "22586653",
+    "codigo": "134715",
+    "descripcion": "SALSA DIP CRACKELET AJO 24X110 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 3.0,
+    "precio_unitario": 18192.0,
+    "valor_neto": 54576.0
+  },
+  {
+    "factura": "22586653",
+    "codigo": "517679",
+    "descripcion": "MIRAFLORES RISOTTO 12X400 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 3.0,
+    "precio_unitario": 17532.0,
+    "valor_neto": 52596.0
+  },
+  {
+    "factura": "22586653",
+    "codigo": "571657",
+    "descripcion": "MIRAFLORES NAC. G2 LAM 10X1 KG.........",
+    "unid_vta": "BOL",
+    "cantidad": 3.0,
+    "precio_unitario": 16350.0,
+    "valor_neto": 49050.0
+  },
+  {
+    "factura": "22586653",
+    "codigo": "517562",
+    "descripcion": "NATUR ARROZ 50X20 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 3.0,
+    "precio_unitario": 14100.0,
+    "valor_neto": 42300.0
+  },
+  {
+    "factura": "22586653",
+    "codigo": "518101",
+    "descripcion": "PV QUESAVILLA M/8U 25X200 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 3.0,
+    "precio_unitario": 16575.0,
+    "valor_neto": 49725.0
+  },
+  {
+    "factura": "22586653",
+    "codigo": "518107",
+    "descripcion": "PV TORTILLA PACK REF 3X2.24 UN 7X600 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 11.0,
+    "precio_unitario": 13580.0,
+    "valor_neto": 149380.0
+  },
+  {
+    "factura": "22586653",
+    "codigo": "327046",
+    "descripcion": "VIVO ORGAN.DURAZ PLATANO ARANDANO 18X90",
+    "unid_vta": "CAJ",
+    "cantidad": 7.0,
+    "precio_unitario": 9558.0,
+    "valor_neto": 66906.0
+  },
+  {
+    "factura": "22586654",
+    "codigo": "135309",
+    "descripcion": "POMAROLA SALSA PIZZA 24X200 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 3.0,
+    "precio_unitario": 14160.0,
+    "valor_neto": 42480.0
+  },
+  {
+    "factura": "22586654",
+    "codigo": "516342",
+    "descripcion": "GRANOLA CHOCOLATE 12X370 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 3.0,
+    "precio_unitario": 20568.0,
+    "valor_neto": 61704.0
+  },
+  {
+    "factura": "22586654",
+    "codigo": "516924",
+    "descripcion": "VIVO LINE YOGURT 10X 350 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 3.0,
+    "precio_unitario": 19250.0,
+    "valor_neto": 57750.0
+  },
+  {
+    "factura": "22586654",
+    "codigo": "340202",
+    "descripcion": "MERMELADA CRACKELET CEBOLLA 24X110G",
+    "unid_vta": "CAJ",
+    "cantidad": 3.0,
+    "precio_unitario": 19560.0,
+    "valor_neto": 58681.0
+  },
+  {
+    "factura": "22586654",
+    "codigo": "518511",
+    "descripcion": "PV PANCHITOS SESAMO 10 UN 10X280GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 3.0,
+    "precio_unitario": 15880.0,
+    "valor_neto": 47640.0
+  },
+  {
+    "factura": "22586654",
+    "codigo": "518504",
+    "descripcion": "PV PANCHITOS REDONDOS 10 UN 10X320 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 17.0,
+    "precio_unitario": 13360.0,
+    "valor_neto": 227120.0
+  },
+  {
+    "factura": "22586654",
+    "codigo": "327060",
+    "descripcion": "VIVO BREAK AVENA YOGURT NAR.PLAT.18X90GR",
+    "unid_vta": "CAJ",
+    "cantidad": 13.0,
+    "precio_unitario": 8460.0,
+    "valor_neto": 109981.0
+  },
+  {
+    "factura": "22586654",
+    "codigo": "516696",
+    "descripcion": "MONO CRUNCH ROLLS 10X360 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 9.0,
+    "precio_unitario": 23250.0,
+    "valor_neto": 209250.0
+  },
+  {
+    "factura": "22586654",
+    "codigo": "517104",
+    "descripcion": "PACK SNACK VIVO SHOT CHECK CACAO 3X7X30",
+    "unid_vta": "CAJ",
+    "cantidad": 60.0,
+    "precio_unitario": 4509.0,
+    "valor_neto": 270538.0
+  },
+  {
+    "factura": "22586654",
+    "codigo": "135308",
+    "descripcion": "POMAROLA CASERA 24X200 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 9.0,
+    "precio_unitario": 14160.0,
+    "valor_neto": 127441.0
+  },
+  {
+    "factura": "22586654",
+    "codigo": "517676",
+    "descripcion": "MIRAFLORES PREP. CAMPESINO 12X210 GR....",
+    "unid_vta": "CAJ",
+    "cantidad": 8.0,
+    "precio_unitario": 10044.0,
+    "valor_neto": 80352.0
+  },
+  {
+    "factura": "22586654",
+    "codigo": "516292",
+    "descripcion": "AVENA SELECTA INSTANTANEA 10X800 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 9.0,
+    "precio_unitario": 14040.0,
+    "valor_neto": 126360.0
+  },
+  {
+    "factura": "22586654",
+    "codigo": "122680",
+    "descripcion": "JUGO 100% FRUTA VIVO PERA 12 X 1LT",
+    "unid_vta": "CAJ",
+    "cantidad": 9.0,
+    "precio_unitario": 21036.0,
+    "valor_neto": 189325.0
+  },
+  {
+    "factura": "22586654",
+    "codigo": "336123",
+    "descripcion": "JALEA VIVO COLAGENO NARANJA 18X100 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 13.0,
+    "precio_unitario": 9000.0,
+    "valor_neto": 117001.0
+  },
+  {
+    "factura": "22586654",
+    "codigo": "122052",
+    "descripcion": "NECTAR VIVO MANZANA TRIPACK 8X3X190 ML",
+    "unid_vta": "CAJ",
+    "cantidad": 23.0,
+    "precio_unitario": 6896.0,
+    "valor_neto": 158607.0
+  },
+  {
+    "factura": "22586654",
+    "codigo": "518005",
+    "descripcion": "PV BURRITO INTEGRAL REF 8 UN 16X380 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 8.0,
+    "precio_unitario": 23440.0,
+    "valor_neto": 187521.0
+  },
+  {
+    "factura": "22586654",
+    "codigo": "104021",
+    "descripcion": "CZZI. TORTELLINI QUESO 12X400 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 3.0,
+    "precio_unitario": 22200.0,
+    "valor_neto": 66600.0
+  },
+  {
+    "factura": "22586655",
+    "codigo": "250558",
+    "descripcion": "COSTA MANTEQUILLA 24X140 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 5.0,
+    "precio_unitario": 15336.0,
+    "valor_neto": 76680.0
+  },
+  {
+    "factura": "22586655",
+    "codigo": "251501",
+    "descripcion": "GRETEL CHOCOLATE 24X85 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 20.0,
+    "precio_unitario": 22512.0,
+    "valor_neto": 450237.0
+  },
+  {
+    "factura": "22586655",
+    "codigo": "250465",
+    "descripcion": "NIK BOCADO 36X71 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 5.0,
+    "precio_unitario": 14256.0,
+    "valor_neto": 71280.0
+  },
+  {
+    "factura": "22586655",
+    "codigo": "250853",
+    "descripcion": "DONUTS BLANCO 24X100 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 4.0,
+    "precio_unitario": 22512.0,
+    "valor_neto": 90048.0
+  },
+  {
+    "factura": "22586655",
+    "codigo": "212125",
+    "descripcion": "ROLLS CROCANTE 15X150 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 18.0,
+    "precio_unitario": 24630.0,
+    "valor_neto": 443337.0
+  },
+  {
+    "factura": "22586655",
+    "codigo": "250502",
+    "descripcion": "OBSESION CLASICA 24X85 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 20.0,
+    "precio_unitario": 22512.0,
+    "valor_neto": 450237.0
+  },
+  {
+    "factura": "22586655",
+    "codigo": "384027",
+    "descripcion": "AMBROSELLA 12 X 350 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 8.0,
+    "precio_unitario": 32724.0,
+    "valor_neto": 261791.0
+  },
+  {
+    "factura": "22586655",
+    "codigo": "384025",
+    "descripcion": "GOLDEN NUSS 15X140 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 10.0,
+    "precio_unitario": 25185.0,
+    "valor_neto": 251849.0
+  },
+  {
+    "factura": "22586655",
+    "codigo": "313006",
+    "descripcion": "GUAGUITA 12X300 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 10.0,
+    "precio_unitario": 15744.0,
+    "valor_neto": 157441.0
+  },
+  {
+    "factura": "22586655",
+    "codigo": "250557",
+    "descripcion": "COSTA LIMON 24X140 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 4.0,
+    "precio_unitario": 15336.0,
+    "valor_neto": 61344.0
+  },
+  {
+    "factura": "22586655",
+    "codigo": "210485",
+    "descripcion": "COSTA RAMA LECHE 16X115 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 20.0,
+    "precio_unitario": 32384.0,
+    "valor_neto": 647677.0
+  },
+  {
+    "factura": "22586655",
+    "codigo": "251502",
+    "descripcion": "GRETEL CHOCOLATE BLANCO 24X85 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 20.0,
+    "precio_unitario": 22512.0,
+    "valor_neto": 450237.0
+  },
+  {
+    "factura": "22586655",
+    "codigo": "250228",
+    "descripcion": "MINI DONUTS 30X40 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 5.0,
+    "precio_unitario": 7770.0,
+    "valor_neto": 38850.0
+  },
+  {
+    "factura": "22586655",
+    "codigo": "210484",
+    "descripcion": "ESTUCHE VIZZIO 34X120 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 5.0,
+    "precio_unitario": 66266.0,
+    "valor_neto": 331330.0
+  },
+  {
+    "factura": "22586655",
+    "codigo": "261508",
+    "descripcion": "CRACKELET TRIPACK 14X255 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 45.0,
+    "precio_unitario": 15736.0,
+    "valor_neto": 708116.0
+  },
+  {
+    "factura": "22586655",
+    "codigo": "212469",
+    "descripcion": "COSTA RAMA BLANCO 16X115 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 5.0,
+    "precio_unitario": 32384.0,
+    "valor_neto": 161919.0
+  },
+  {
+    "factura": "22586655",
+    "codigo": "251432",
+    "descripcion": "OBSESION MENTA 24X85 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 3.0,
+    "precio_unitario": 22512.0,
+    "valor_neto": 67535.0
+  },
+  {
+    "factura": "22586655",
+    "codigo": "250467",
+    "descripcion": "NIK LIMON 36X71 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 3.0,
+    "precio_unitario": 14256.0,
+    "valor_neto": 42768.0
+  },
+  {
+    "factura": "22586655",
+    "codigo": "251534",
+    "descripcion": "COSTA CHAMPANITAS 16X85 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 15.0,
+    "precio_unitario": 9552.0,
+    "valor_neto": 143280.0
+  },
+  {
+    "factura": "22586655",
+    "codigo": "251507",
+    "descripcion": "COSTA CHAMPANA 12X140 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 4.0,
+    "precio_unitario": 13272.0,
+    "valor_neto": 53088.0
+  },
+  {
+    "factura": "22586656",
+    "codigo": "210144",
+    "descripcion": "COSTA CACAO 62% 18X80 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 3.0,
+    "precio_unitario": 31770.0,
+    "valor_neto": 95310.0
+  },
+  {
+    "factura": "22586656",
+    "codigo": "250564",
+    "descripcion": "COSTA CHOCO CHIPS 28X125 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 6.0,
+    "precio_unitario": 19684.0,
+    "valor_neto": 118104.0
+  },
+  {
+    "factura": "22586656",
+    "codigo": "251506",
+    "descripcion": "GRETEL YOGHURT FRUTILLA 24X85 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 20.0,
+    "precio_unitario": 22512.0,
+    "valor_neto": 450237.0
+  },
+  {
+    "factura": "22586656",
+    "codigo": "250505",
+    "descripcion": "COSTA MAXI CHIPS 20X200 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 3.0,
+    "precio_unitario": 22700.0,
+    "valor_neto": 68100.0
+  },
+  {
+    "factura": "22586656",
+    "codigo": "250466",
+    "descripcion": "NIK FRUTILLA 36X71 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 5.0,
+    "precio_unitario": 14256.0,
+    "valor_neto": 71280.0
+  },
+  {
+    "factura": "22586656",
+    "codigo": "250700",
+    "descripcion": "COSTA COCO 28X125 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 3.0,
+    "precio_unitario": 17892.0,
+    "valor_neto": 53677.0
+  },
+  {
+    "factura": "22586656",
+    "codigo": "210146",
+    "descripcion": "COSTAMILK LIBRE DE AZUCAR 18X80 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 6.0,
+    "precio_unitario": 34416.0,
+    "valor_neto": 206495.0
+  },
+  {
+    "factura": "22586656",
+    "codigo": "250386",
+    "descripcion": "MINI LIMON 30X35 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 18.0,
+    "precio_unitario": 6060.0,
+    "valor_neto": 109080.0
+  },
+  {
+    "factura": "22586656",
+    "codigo": "210147",
+    "descripcion": "COSTANUSS LIBRE DE AZUCAR 13X110 G.",
+    "unid_vta": "CAJ",
+    "cantidad": 4.0,
+    "precio_unitario": 24856.0,
+    "valor_neto": 99424.0
+  },
+  {
+    "factura": "22586656",
+    "codigo": "250461",
+    "descripcion": "TUYO 38X5X19 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 3.0,
+    "precio_unitario": 36442.0,
+    "valor_neto": 109326.0
+  },
+  {
+    "factura": "22586656",
+    "codigo": "384080",
+    "descripcion": "OSITO CHOC 8X240 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 15.0,
+    "precio_unitario": 23792.0,
+    "valor_neto": 356881.0
+  },
+  {
+    "factura": "22586656",
+    "codigo": "389337",
+    "descripcion": "ORLY BLANCO EDICION ESPECIAL 15X95 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 7.0,
+    "precio_unitario": 16905.0,
+    "valor_neto": 118336.0
+  },
+  {
+    "factura": "22586656",
+    "codigo": "384043",
+    "descripcion": "HABANITOS AMBROSOLI 24 X 80 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 3.0,
+    "precio_unitario": 20328.0,
+    "valor_neto": 60984.0
+  },
+  {
+    "factura": "22586656",
+    "codigo": "214308",
+    "descripcion": "BANDEJA ALFAJOR PREMIUM 16X4X60 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 6.0,
+    "precio_unitario": 31648.0,
+    "valor_neto": 189887.0
+  },
+  {
+    "factura": "22586656",
+    "codigo": "250340",
+    "descripcion": "MINI MANTEQUILLA 30X35 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 5.0,
+    "precio_unitario": 6060.0,
+    "valor_neto": 30300.0
+  },
+  {
+    "factura": "22586656",
+    "codigo": "210826",
+    "descripcion": "CAREZZA DOBLE RELLENO PIE LIMON 15X95GR",
+    "unid_vta": "CAJ",
+    "cantidad": 5.0,
+    "precio_unitario": 22215.0,
+    "valor_neto": 111075.0
+  },
+  {
+    "factura": "22586656",
+    "codigo": "250339",
+    "descripcion": "MINI DULCITA 30X35 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 18.0,
+    "precio_unitario": 6060.0,
+    "valor_neto": 109080.0
+  },
+  {
+    "factura": "22586656",
+    "codigo": "251239",
+    "descripcion": "FRAC CLASICA 36X110 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 16.0,
+    "precio_unitario": 19908.0,
+    "valor_neto": 318528.0
+  },
+  {
+    "factura": "22586657",
+    "codigo": "313906",
+    "descripcion": "FRUGELE CITRIC 12X350 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 3.0,
+    "precio_unitario": 20232.0,
+    "valor_neto": 60696.0
+  },
+  {
+    "factura": "22586657",
+    "codigo": "250604",
+    "descripcion": "TUAREG COCO INDIV. PACK 10X4X48 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 15.0,
+    "precio_unitario": 8720.0,
+    "valor_neto": 130799.0
+  },
+  {
+    "factura": "22586657",
+    "codigo": "210828",
+    "descripcion": "CAREZZA DOBLE RELLENO TIRAMISU 15X95GR",
+    "unid_vta": "CAJ",
+    "cantidad": 10.0,
+    "precio_unitario": 22215.0,
+    "valor_neto": 222148.0
+  },
+  {
+    "factura": "22586657",
+    "codigo": "250605",
+    "descripcion": "MINI DONUTS BLANCA 30X35 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 18.0,
+    "precio_unitario": 7770.0,
+    "valor_neto": 139859.0
+  },
+  {
+    "factura": "22586657",
+    "codigo": "210827",
+    "descripcion": "CAREZZA DOBLE RELLENO CHEESECAKE 15X95GR",
+    "unid_vta": "CAJ",
+    "cantidad": 5.0,
+    "precio_unitario": 22215.0,
+    "valor_neto": 111075.0
+  },
+  {
+    "factura": "22586657",
+    "codigo": "212213",
+    "descripcion": "MAXIMUSS 8X144 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 3.0,
+    "precio_unitario": 15696.0,
+    "valor_neto": 47087.0
+  },
+  {
+    "factura": "22586657",
+    "codigo": "223029",
+    "descripcion": "SUNY CLASICA 12X360 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 5.0,
+    "precio_unitario": 21648.0,
+    "valor_neto": 108239.0
+  },
+  {
+    "factura": "22586657",
+    "codigo": "250865",
+    "descripcion": "OBSESION CLASICA INDIVIDUAL 32X37GR",
+    "unid_vta": "CAJ",
+    "cantidad": 4.0,
+    "precio_unitario": 10528.0,
+    "valor_neto": 42112.0
+  },
+  {
+    "factura": "22586657",
+    "codigo": "389344",
+    "descripcion": "ORLY BERRIES 15 X 95 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 3.0,
+    "precio_unitario": 16905.0,
+    "valor_neto": 50716.0
+  },
+  {
+    "factura": "22586657",
+    "codigo": "250534",
+    "descripcion": "CREMA DE MANI",
+    "unid_vta": "CAJ",
+    "cantidad": 5.0,
+    "precio_unitario": 22512.0,
+    "valor_neto": 112560.0
+  },
+  {
+    "factura": "22586657",
+    "codigo": "313409",
+    "descripcion": "FRUGELE GUINDA 28X140GR",
+    "unid_vta": "CAJ",
+    "cantidad": 5.0,
+    "precio_unitario": 25340.0,
+    "valor_neto": 126700.0
+  },
+  {
+    "factura": "22586657",
+    "codigo": "380886",
+    "descripcion": "BOLSA GOLAZO 34X4X25 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 8.0,
+    "precio_unitario": 34306.0,
+    "valor_neto": 274447.0
+  },
+  {
+    "factura": "22586657",
+    "codigo": "313408",
+    "descripcion": "LOOP CINTAS FRUTILLA 14 X 67 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 5.0,
+    "precio_unitario": 12278.0,
+    "valor_neto": 61390.0
+  },
+  {
+    "factura": "22586657",
+    "codigo": "312988",
+    "descripcion": "FLIPY 30 X 90 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 16.0,
+    "precio_unitario": 19020.0,
+    "valor_neto": 304320.0
+  },
+  {
+    "factura": "22586657",
+    "codigo": "312986",
+    "descripcion": "LOOP 30 X 90 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 16.0,
+    "precio_unitario": 19020.0,
+    "valor_neto": 304320.0
+  },
+  {
+    "factura": "22586658",
+    "codigo": "251236",
+    "descripcion": "FRAC BI CAPUCCINO 36X110 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 10.0,
+    "precio_unitario": 19908.0,
+    "valor_neto": 199080.0
+  },
+  {
+    "factura": "22586658",
+    "codigo": "250342",
+    "descripcion": "MINI PALMERITA 30X35 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 18.0,
+    "precio_unitario": 6060.0,
+    "valor_neto": 109080.0
+  },
+  {
+    "factura": "22586658",
+    "codigo": "251238",
+    "descripcion": "FRAC CHOCOLATE 36X110GR",
+    "unid_vta": "CAJ",
+    "cantidad": 34.0,
+    "precio_unitario": 19908.0,
+    "valor_neto": 676872.0
+  },
+  {
+    "factura": "22586658",
+    "codigo": "250345",
+    "descripcion": "MINI VINO 30X35 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 5.0,
+    "precio_unitario": 6060.0,
+    "valor_neto": 30300.0
+  },
+  {
+    "factura": "22586658",
+    "codigo": "250350",
+    "descripcion": "MINI COCADITA 30X35 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 5.0,
+    "precio_unitario": 6060.0,
+    "valor_neto": 30300.0
+  },
+  {
+    "factura": "22586658",
+    "codigo": "214058",
+    "descripcion": "IN KAT XL 12 X 90 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 8.0,
+    "precio_unitario": 9204.0,
+    "valor_neto": 73632.0
+  },
+  {
+    "factura": "22586658",
+    "codigo": "312987",
+    "descripcion": "AMBERRIES 30X90 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 8.0,
+    "precio_unitario": 19020.0,
+    "valor_neto": 152160.0
+  },
+  {
+    "factura": "22586658",
+    "codigo": "389347",
+    "descripcion": "ORLY MENTA 15 X 95 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 3.0,
+    "precio_unitario": 16905.0,
+    "valor_neto": 50716.0
+  },
+  {
+    "factura": "22586658",
+    "codigo": "250203",
+    "descripcion": "SODA LINE 24X160 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 5.0,
+    "precio_unitario": 17544.0,
+    "valor_neto": 87720.0
+  },
+  {
+    "factura": "22586658",
+    "codigo": "251247",
+    "descripcion": "DIN DON CHOCOLATE 35X102 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 3.0,
+    "precio_unitario": 17080.0,
+    "valor_neto": 51241.0
+  },
+  {
+    "factura": "22586658",
+    "codigo": "214072",
+    "descripcion": "MALVA CHOC 10 X 196 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 15.0,
+    "precio_unitario": 14910.0,
+    "valor_neto": 223650.0
+  },
+  {
+    "factura": "22586658",
+    "codigo": "250202",
+    "descripcion": "SODA 24X160 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 30.0,
+    "precio_unitario": 17544.0,
+    "valor_neto": 526319.0
+  },
+  {
+    "factura": "22586658",
+    "codigo": "250602",
+    "descripcion": "DINDON INDIV. PACK 10X4X46 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 17.0,
+    "precio_unitario": 8720.0,
+    "valor_neto": 148239.0
+  },
+  {
+    "factura": "22586658",
+    "codigo": "312913",
+    "descripcion": "GUSANOS ACIDOS 30X90 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 8.0,
+    "precio_unitario": 19020.0,
+    "valor_neto": 152160.0
+  },
+  {
+    "factura": "22586658",
+    "codigo": "250457",
+    "descripcion": "NIK BLOCK 16 X 130 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 3.0,
+    "precio_unitario": 15680.0,
+    "valor_neto": 47040.0
+  },
+  {
+    "factura": "22586659",
+    "codigo": "250727",
+    "descripcion": "GRETEL PIE DE LIMON 24X85 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 5.0,
+    "precio_unitario": 22512.0,
+    "valor_neto": 112560.0
+  },
+  {
+    "factura": "22586659",
+    "codigo": "389343",
+    "descripcion": "ORLY ALMENDRA 15 X 95 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 5.0,
+    "precio_unitario": 16905.0,
+    "valor_neto": 84526.0
+  },
+  {
+    "factura": "22586659",
+    "codigo": "313482",
+    "descripcion": "AMBROSITO RELLENOS 24X90 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 20.0,
+    "precio_unitario": 15216.0,
+    "valor_neto": 304320.0
+  },
+  {
+    "factura": "22586659",
+    "codigo": "313401",
+    "descripcion": "AMBROSITO 30 X 90 GR.",
+    "unid_vta": "CAJ",
+    "cantidad": 16.0,
+    "precio_unitario": 19020.0,
+    "valor_neto": 304320.0
+  },
+  {
+    "factura": "22586659",
+    "codigo": "210170",
+    "descripcion": "ROLLS CROCANTE 18 X 100 GR",
+    "unid_vta": "CAJ",
+    "cantidad": 5.0,
+    "precio_unitario": 17730.0,
+    "valor_neto": 88651.0
+  }
+]

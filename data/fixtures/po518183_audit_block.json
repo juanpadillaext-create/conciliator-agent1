@@ -1,0 +1,752 @@
+{
+  "po_order_id": "PO518183",
+  "warehouse_name": "CH_38_Iquique",
+  "supplier_name": "Mercado Lo Valledor (Regiones)",
+  "supplier_tax_id": "78185379-8",
+  "category_manager": "Daniela Catilao",
+  "condicion_aforo": "Frutas y Verduras (Daniela Catilao)",
+  "order_status": "RECEPCION_CERRADA",
+  "total_ordenado_neto": 558807,
+  "total_recepcionado_neto": 465280,
+  "total_facturado_neto": 558807,
+  "total_facturado_con_iva": 664980,
+  "total_monto_reclamar_nc": 93527,
+  "total_facturas": 1,
+  "all_po_items": [
+    {
+      "sku_id": "90I591",
+      "supplier_sku": "90I591",
+      "barcodes": [
+        "02990300001761"
+      ],
+      "product_name": "Choclo Lluta 1 Unidad",
+      "quantity_ordered": 9,
+      "quantity_delivered": 0,
+      "cost_unit_lc": 840,
+      "amt_ordered_lc": 7560,
+      "amt_delivered_lc": 0,
+      "diff_qty": 9,
+      "diff_ordered_delivered": 7560
+    },
+    {
+      "sku_id": "25572040",
+      "supplier_sku": "25572040",
+      "barcodes": [
+        "02990300000931"
+      ],
+      "product_name": "Ciboulete Racimo 30 G",
+      "quantity_ordered": 6,
+      "quantity_delivered": 0,
+      "cost_unit_lc": 840,
+      "amt_ordered_lc": 5042,
+      "amt_delivered_lc": 0,
+      "diff_qty": 6,
+      "diff_ordered_delivered": 5042
+    },
+    {
+      "sku_id": "19175672",
+      "supplier_sku": "19175672",
+      "barcodes": [
+        "02990300000450"
+      ],
+      "product_name": "Lechuga Costina 1 Unidad",
+      "quantity_ordered": 11,
+      "quantity_delivered": 0,
+      "cost_unit_lc": 672,
+      "amt_ordered_lc": 7395,
+      "amt_delivered_lc": 0,
+      "diff_qty": 11,
+      "diff_ordered_delivered": 7395
+    },
+    {
+      "sku_id": "19175673",
+      "supplier_sku": "19175673",
+      "barcodes": [
+        "02990300000467"
+      ],
+      "product_name": "Lechuga Hidroponica Verde 1 Unidad",
+      "quantity_ordered": 20,
+      "quantity_delivered": 0,
+      "cost_unit_lc": 1513,
+      "amt_ordered_lc": 30252,
+      "amt_delivered_lc": 0,
+      "diff_qty": 20,
+      "diff_ordered_delivered": 30252
+    },
+    {
+      "sku_id": "19175670",
+      "supplier_sku": "19175670",
+      "barcodes": [
+        "02990300000511"
+      ],
+      "product_name": "Champiñon En Bandeja 200 g",
+      "quantity_ordered": 25,
+      "quantity_delivered": 0,
+      "cost_unit_lc": 1513,
+      "amt_ordered_lc": 37815,
+      "amt_delivered_lc": 0,
+      "diff_qty": 25,
+      "diff_ordered_delivered": 37815
+    },
+    {
+      "sku_id": "25527230",
+      "supplier_sku": "25527230",
+      "barcodes": [
+        "02990300001044"
+      ],
+      "product_name": "Mango 1 Unidades",
+      "quantity_ordered": 2,
+      "quantity_delivered": 0,
+      "cost_unit_lc": 1218,
+      "amt_ordered_lc": 2437,
+      "amt_delivered_lc": 0,
+      "diff_qty": 2,
+      "diff_ordered_delivered": 2437
+    },
+    {
+      "sku_id": "0SX24L",
+      "supplier_sku": "0SX24L",
+      "barcodes": [
+        "02990300001730"
+      ],
+      "product_name": "Diente De Dragon 1 Unidad",
+      "quantity_ordered": 3,
+      "quantity_delivered": 0,
+      "cost_unit_lc": 1008,
+      "amt_ordered_lc": 3025,
+      "amt_delivered_lc": 0,
+      "diff_qty": 3,
+      "diff_ordered_delivered": 3025
+    },
+    {
+      "sku_id": "23KK7X",
+      "supplier_sku": "23KK7X",
+      "barcodes": [
+        "02990300001518"
+      ],
+      "product_name": "Cebolla Morada Malla 1 kg",
+      "quantity_ordered": 7,
+      "quantity_delivered": 7,
+      "cost_unit_lc": 1176,
+      "amt_ordered_lc": 8232,
+      "amt_delivered_lc": 8232,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "19175668",
+      "supplier_sku": "19175668",
+      "barcodes": [
+        "02990300000504"
+      ],
+      "product_name": "Cilantro Paquete 1 Unidades",
+      "quantity_ordered": 20,
+      "quantity_delivered": 20,
+      "cost_unit_lc": 504,
+      "amt_ordered_lc": 10084,
+      "amt_delivered_lc": 10084,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "19175658",
+      "supplier_sku": "19175658",
+      "barcodes": [
+        "02990300000559"
+      ],
+      "product_name": "Naranja 1 kg",
+      "quantity_ordered": 20,
+      "quantity_delivered": 20,
+      "cost_unit_lc": 1345,
+      "amt_ordered_lc": 26891,
+      "amt_delivered_lc": 26891,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "MMXBK6",
+      "supplier_sku": "MMXBK6",
+      "barcodes": [
+        "02851435699042"
+      ],
+      "product_name": "Tomate",
+      "quantity_ordered": 25000,
+      "quantity_delivered": 25000,
+      "cost_unit_lc": 1,
+      "amt_ordered_lc": 21009,
+      "amt_delivered_lc": 21009,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "EUT9S7",
+      "supplier_sku": "EUT9S7",
+      "barcodes": [
+        "02990300003741"
+      ],
+      "product_name": "Tangelo 1 Kg",
+      "quantity_ordered": 2,
+      "quantity_delivered": 2,
+      "cost_unit_lc": 2101,
+      "amt_ordered_lc": 4202,
+      "amt_delivered_lc": 4202,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "23HHR7",
+      "supplier_sku": "23HHR7",
+      "barcodes": [
+        "02990300003642"
+      ],
+      "product_name": "Apio Baston Bandeja 1 Unidad",
+      "quantity_ordered": 11,
+      "quantity_delivered": 11,
+      "cost_unit_lc": 1008,
+      "amt_ordered_lc": 11092,
+      "amt_delivered_lc": 11092,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "25288332",
+      "supplier_sku": "25288332",
+      "barcodes": [
+        "02990300000870"
+      ],
+      "product_name": "Tomate Cherry 500 g",
+      "quantity_ordered": 6,
+      "quantity_delivered": 6,
+      "cost_unit_lc": 1681,
+      "amt_ordered_lc": 10084,
+      "amt_delivered_lc": 10084,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "381704",
+      "supplier_sku": "381704",
+      "barcodes": [
+        "02990300001525"
+      ],
+      "product_name": "Cebolla Tradicional Malla 1 kg",
+      "quantity_ordered": 9,
+      "quantity_delivered": 9,
+      "cost_unit_lc": 1176,
+      "amt_ordered_lc": 10584,
+      "amt_delivered_lc": 10584,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "21245450",
+      "supplier_sku": "21245450",
+      "barcodes": [
+        "02990300000634"
+      ],
+      "product_name": "Jengibre 120 G",
+      "quantity_ordered": 4,
+      "quantity_delivered": 4,
+      "cost_unit_lc": 420,
+      "amt_ordered_lc": 1681,
+      "amt_delivered_lc": 1681,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "872T9K",
+      "supplier_sku": "872T9K",
+      "barcodes": [
+        "02990300001754"
+      ],
+      "product_name": "Manzana Royal Malla 1 Kg",
+      "quantity_ordered": 2,
+      "quantity_delivered": 2,
+      "cost_unit_lc": 1681,
+      "amt_ordered_lc": 3361,
+      "amt_delivered_lc": 3361,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "25577450",
+      "supplier_sku": "25577450",
+      "barcodes": [
+        "02990300001075"
+      ],
+      "product_name": "Platano Barraganete 1 Unidad",
+      "quantity_ordered": 2,
+      "quantity_delivered": 2,
+      "cost_unit_lc": 588,
+      "amt_ordered_lc": 1176,
+      "amt_delivered_lc": 1176,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "EB6BLS",
+      "supplier_sku": "EB6BLS",
+      "barcodes": [
+        "02851435698045"
+      ],
+      "product_name": "Limón",
+      "quantity_ordered": 10000,
+      "quantity_delivered": 10000,
+      "cost_unit_lc": 2,
+      "amt_ordered_lc": 15126,
+      "amt_delivered_lc": 15126,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "663C74",
+      "supplier_sku": "663C74",
+      "barcodes": [
+        "02990300001839"
+      ],
+      "product_name": "Manzana Fuji Malla 1 Kg",
+      "quantity_ordered": 10,
+      "quantity_delivered": 10,
+      "cost_unit_lc": 1681,
+      "amt_ordered_lc": 16807,
+      "amt_delivered_lc": 16807,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "25527228",
+      "supplier_sku": "25527228",
+      "barcodes": [
+        "02990300001037"
+      ],
+      "product_name": "Kiwi 1 kg",
+      "quantity_ordered": 4,
+      "quantity_delivered": 4,
+      "cost_unit_lc": 2101,
+      "amt_ordered_lc": 8403,
+      "amt_delivered_lc": 8403,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "25288333",
+      "supplier_sku": "25288333",
+      "barcodes": [
+        "02990300000863"
+      ],
+      "product_name": "Espinaca 500 g",
+      "quantity_ordered": 7,
+      "quantity_delivered": 7,
+      "cost_unit_lc": 1008,
+      "amt_ordered_lc": 7059,
+      "amt_delivered_lc": 7059,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "HC4268",
+      "supplier_sku": "HC4268",
+      "barcodes": [
+        "02990300003628"
+      ],
+      "product_name": "Floretes De Brocoli En Bandeja 1 Unidad",
+      "quantity_ordered": 12,
+      "quantity_delivered": 12,
+      "cost_unit_lc": 1261,
+      "amt_ordered_lc": 15126,
+      "amt_delivered_lc": 15126,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "25527231",
+      "supplier_sku": "25527231",
+      "barcodes": [
+        "02990300001051"
+      ],
+      "product_name": "Pera Packams Malla 1 kg",
+      "quantity_ordered": 4,
+      "quantity_delivered": 4,
+      "cost_unit_lc": 1681,
+      "amt_ordered_lc": 6723,
+      "amt_delivered_lc": 6723,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "19175674",
+      "supplier_sku": "19175674",
+      "barcodes": [
+        "02990300000474"
+      ],
+      "product_name": "Cebollin Atado 3 Unidades",
+      "quantity_ordered": 10,
+      "quantity_delivered": 10,
+      "cost_unit_lc": 588,
+      "amt_ordered_lc": 5882,
+      "amt_delivered_lc": 5882,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "25572042",
+      "supplier_sku": "25572042",
+      "barcodes": [
+        "02990300000993"
+      ],
+      "product_name": "Zapallo Camote Corte Film 500 g",
+      "quantity_ordered": 19,
+      "quantity_delivered": 19,
+      "cost_unit_lc": 840,
+      "amt_ordered_lc": 15966,
+      "amt_delivered_lc": 15966,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "25572037",
+      "supplier_sku": "25572037",
+      "barcodes": [
+        "02990300000948"
+      ],
+      "product_name": "Acelga Paquete 1 Unidad",
+      "quantity_ordered": 4,
+      "quantity_delivered": 4,
+      "cost_unit_lc": 504,
+      "amt_ordered_lc": 2017,
+      "amt_delivered_lc": 2017,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "33366237",
+      "supplier_sku": "33366237",
+      "barcodes": [
+        "02990300001358"
+      ],
+      "product_name": "Choclo Dulce 1 Unidad",
+      "quantity_ordered": 25,
+      "quantity_delivered": 25,
+      "cost_unit_lc": 588,
+      "amt_ordered_lc": 14705,
+      "amt_delivered_lc": 14705,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "32Q176",
+      "supplier_sku": "32Q176",
+      "barcodes": [
+        "02990300001778"
+      ],
+      "product_name": "Menta 1 Unidad",
+      "quantity_ordered": 1,
+      "quantity_delivered": 1,
+      "cost_unit_lc": 840,
+      "amt_ordered_lc": 840,
+      "amt_delivered_lc": 840,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "19175666",
+      "supplier_sku": "19175666",
+      "barcodes": [
+        "02990300000498"
+      ],
+      "product_name": "Pimenton Rojo 1 Unidad",
+      "quantity_ordered": 8,
+      "quantity_delivered": 8,
+      "cost_unit_lc": 840,
+      "amt_ordered_lc": 6723,
+      "amt_delivered_lc": 6723,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "25527221",
+      "supplier_sku": "25527221",
+      "barcodes": [
+        "02990300000900"
+      ],
+      "product_name": "Aji Verde 1 Unidad",
+      "quantity_ordered": 10,
+      "quantity_delivered": 10,
+      "cost_unit_lc": 294,
+      "amt_ordered_lc": 2941,
+      "amt_delivered_lc": 2941,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "25572039",
+      "supplier_sku": "25572039",
+      "barcodes": [
+        "02990300001068"
+      ],
+      "product_name": "Perejil 1 Unidad",
+      "quantity_ordered": 4,
+      "quantity_delivered": 4,
+      "cost_unit_lc": 504,
+      "amt_ordered_lc": 2017,
+      "amt_delivered_lc": 2017,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "8776O2",
+      "supplier_sku": "8776O2",
+      "barcodes": [
+        "02990300002713"
+      ],
+      "product_name": "Lechuga crespa 1 Unidad",
+      "quantity_ordered": 6,
+      "quantity_delivered": 6,
+      "cost_unit_lc": 504,
+      "amt_ordered_lc": 3025,
+      "amt_delivered_lc": 3025,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "19175675",
+      "supplier_sku": "19175675",
+      "barcodes": [
+        "02990300000436"
+      ],
+      "product_name": "Zanahoria Malla 1 Kg",
+      "quantity_ordered": 25,
+      "quantity_delivered": 25,
+      "cost_unit_lc": 1008,
+      "amt_ordered_lc": 25210,
+      "amt_delivered_lc": 25210,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "25288334",
+      "supplier_sku": "25288334",
+      "barcodes": [
+        "02990300000894"
+      ],
+      "product_name": "Ajo 2 Unidades",
+      "quantity_ordered": 10,
+      "quantity_delivered": 10,
+      "cost_unit_lc": 588,
+      "amt_ordered_lc": 5882,
+      "amt_delivered_lc": 5882,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "J99O3B",
+      "supplier_sku": "J99O3B",
+      "barcodes": [
+        "02990300001679"
+      ],
+      "product_name": "Papa Camote Malla 1 Kg",
+      "quantity_ordered": 4,
+      "quantity_delivered": 4,
+      "cost_unit_lc": 1260,
+      "amt_ordered_lc": 5040,
+      "amt_delivered_lc": 5040,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "19175664",
+      "supplier_sku": "19175664",
+      "barcodes": [
+        "02990300000481"
+      ],
+      "product_name": "Pepino 1 Unidad",
+      "quantity_ordered": 24,
+      "quantity_delivered": 24,
+      "cost_unit_lc": 420,
+      "amt_ordered_lc": 10084,
+      "amt_delivered_lc": 10084,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "21935053",
+      "supplier_sku": "21935053",
+      "barcodes": [
+        "02990300000801"
+      ],
+      "product_name": "Betarraga 5 Unidades",
+      "quantity_ordered": 5,
+      "quantity_delivered": 5,
+      "cost_unit_lc": 1260,
+      "amt_ordered_lc": 6300,
+      "amt_delivered_lc": 6300,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "SUVIJT",
+      "supplier_sku": "SUVIJT",
+      "barcodes": [
+        "02990300001747"
+      ],
+      "product_name": "Manzana Pink Lady Malla 1 Kg",
+      "quantity_ordered": 5,
+      "quantity_delivered": 5,
+      "cost_unit_lc": 1681,
+      "amt_ordered_lc": 8403,
+      "amt_delivered_lc": 8403,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "1Q110E",
+      "supplier_sku": "1Q110E",
+      "barcodes": [
+        "02990300002959"
+      ],
+      "product_name": "Limon cocktail 500 gr",
+      "quantity_ordered": 10,
+      "quantity_delivered": 10,
+      "cost_unit_lc": 1681,
+      "amt_ordered_lc": 16807,
+      "amt_delivered_lc": 16807,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "25527226",
+      "supplier_sku": "25527226",
+      "barcodes": [
+        "02990300001013"
+      ],
+      "product_name": "Pimenton Verde 1 Unidad",
+      "quantity_ordered": 6,
+      "quantity_delivered": 6,
+      "cost_unit_lc": 840,
+      "amt_ordered_lc": 5042,
+      "amt_delivered_lc": 5042,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "19175671",
+      "supplier_sku": "19175671",
+      "barcodes": [
+        "02990300000443"
+      ],
+      "product_name": "Lechuga Escarola 1 Unidad",
+      "quantity_ordered": 5,
+      "quantity_delivered": 5,
+      "cost_unit_lc": 840,
+      "amt_ordered_lc": 4202,
+      "amt_delivered_lc": 4202,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "25527229",
+      "supplier_sku": "25527229",
+      "barcodes": [
+        "02990300000962"
+      ],
+      "product_name": "Mandarina 1 kg",
+      "quantity_ordered": 10,
+      "quantity_delivered": 10,
+      "cost_unit_lc": 1261,
+      "amt_ordered_lc": 12605,
+      "amt_delivered_lc": 12605,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "19175676",
+      "supplier_sku": "19175676",
+      "barcodes": [
+        "02990300000399"
+      ],
+      "product_name": "Zapallo Italiano 1 Unidad",
+      "quantity_ordered": 10,
+      "quantity_delivered": 10,
+      "cost_unit_lc": 336,
+      "amt_ordered_lc": 3361,
+      "amt_delivered_lc": 3361,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "25527225",
+      "supplier_sku": "25527225",
+      "barcodes": [
+        "02990300001006"
+      ],
+      "product_name": "Manzana Verde 1 kg",
+      "quantity_ordered": 8,
+      "quantity_delivered": 8,
+      "cost_unit_lc": 1681,
+      "amt_ordered_lc": 13445,
+      "amt_delivered_lc": 13445,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "LPNF1O",
+      "supplier_sku": "LPNF1O",
+      "barcodes": [
+        "02990300003635"
+      ],
+      "product_name": "Floretes De Coliflor En Bandeja 1 Unidad",
+      "quantity_ordered": 6,
+      "quantity_delivered": 6,
+      "cost_unit_lc": 1261,
+      "amt_ordered_lc": 7563,
+      "amt_delivered_lc": 7563,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "35817I",
+      "supplier_sku": "35817I",
+      "barcodes": [
+        "02990300001662"
+      ],
+      "product_name": "Albahaca Racimo 1 Unidad",
+      "quantity_ordered": 10,
+      "quantity_delivered": 10,
+      "cost_unit_lc": 504,
+      "amt_ordered_lc": 5042,
+      "amt_delivered_lc": 5042,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "5Y6ZVW",
+      "supplier_sku": "5Y6ZVW",
+      "barcodes": [
+        "02851434038026"
+      ],
+      "product_name": "Plátano",
+      "quantity_ordered": 75000,
+      "quantity_delivered": 75000,
+      "cost_unit_lc": 1,
+      "amt_ordered_lc": 94538,
+      "amt_delivered_lc": 94538,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "DCD3TH",
+      "supplier_sku": "DCD3TH",
+      "barcodes": [
+        "02851405515020"
+      ],
+      "product_name": "Palta Hass Chilena",
+      "quantity_ordered": 2000,
+      "quantity_delivered": 2000,
+      "cost_unit_lc": 5,
+      "amt_ordered_lc": 10000,
+      "amt_delivered_lc": 10000,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    }
+  ]
+}

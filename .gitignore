@@ -1,0 +1,32 @@
+# Environment and secrets
+.env
+*.env
+.env.*
+.clasprc.json
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# Large media files
+*.mp4
+*.avi
+*.mov
+
+# Downloads and raw cache
+descargas_andina/
+descargas_api/
+facturas_xml/
+data/cache/
+
+# OS and logs
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+*.log
+npm-debug.log*
+
+# Test artifacts and screenshots
+tests/puppeteer/screenshots/*.png

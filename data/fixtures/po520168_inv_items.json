@@ -1,0 +1,482 @@
+[
+  {
+    "folio": 105214259,
+    "codigo": "2009",
+    "nombre": "INCA KOLA X06 PET 3000",
+    "cantidad": 1,
+    "precio": 11787,
+    "monto": 11787
+  },
+  {
+    "folio": 105214259,
+    "codigo": "1963",
+    "nombre": "MONSTER ENERGY X06 473 CC",
+    "cantidad": 2,
+    "precio": 4997,
+    "monto": 9994
+  },
+  {
+    "folio": 105214259,
+    "codigo": "1966",
+    "nombre": "MONSTER ULTRA X06 473 CC",
+    "cantidad": 7,
+    "precio": 5307,
+    "monto": 37149
+  },
+  {
+    "folio": 105214259,
+    "codigo": "1978",
+    "nombre": "MONSTER MANGO LOCO X06 LATA 473CC",
+    "cantidad": 1,
+    "precio": 5307,
+    "monto": 5307
+  },
+  {
+    "folio": 105214259,
+    "codigo": "1993",
+    "nombre": "MONSTER ULTRA PEACHY KEEN X06 LAT 473",
+    "cantidad": 1,
+    "precio": 5307,
+    "monto": 5307
+  },
+  {
+    "folio": 105214259,
+    "codigo": "1988",
+    "nombre": "MONSTER RIPPER NON JUICE X06 LAT 473",
+    "cantidad": 1,
+    "precio": 4997,
+    "monto": 4997
+  },
+  {
+    "folio": 105214259,
+    "codigo": "1989",
+    "nombre": "MONSTER ZERO SUGAR GREEN X06 LAT 473",
+    "cantidad": 5,
+    "precio": 5307,
+    "monto": 26535
+  },
+  {
+    "folio": 105214259,
+    "codigo": "0177",
+    "nombre": "COKE X06 PET 591 CC",
+    "cantidad": 2,
+    "precio": 3959,
+    "monto": 7918
+  },
+  {
+    "folio": 105214259,
+    "codigo": "0277",
+    "nombre": "COKE LIGHT X06 PET 591 CC",
+    "cantidad": 1,
+    "precio": 4205,
+    "monto": 4205
+  },
+  {
+    "folio": 105214259,
+    "codigo": "4649",
+    "nombre": "POWERADE FROZEN BLAST X06 PET 1.1",
+    "cantidad": 1,
+    "precio": 5072,
+    "monto": 5072
+  },
+  {
+    "folio": 105214259,
+    "codigo": "4650",
+    "nombre": "POWERADE NARANJA X06 PET 1.1",
+    "cantidad": 1,
+    "precio": 5072,
+    "monto": 5072
+  },
+  {
+    "folio": 105214259,
+    "codigo": "4651",
+    "nombre": "POWERADE ROJO X06 PET 1.1",
+    "cantidad": 1,
+    "precio": 5072,
+    "monto": 5072
+  },
+  {
+    "folio": 105214260,
+    "codigo": "0480",
+    "nombre": "SCHWEPPES TONICA X6 LATA 310 CC",
+    "cantidad": 1,
+    "precio": 2830,
+    "monto": 2830
+  },
+  {
+    "folio": 105214260,
+    "codigo": "0478",
+    "nombre": "SCHWEPPES TONICA SIN AZUCAR X6 LATA 310",
+    "cantidad": 1,
+    "precio": 3006,
+    "monto": 3006
+  },
+  {
+    "folio": 105214260,
+    "codigo": "0476",
+    "nombre": "SCHWEPPES GINGER ALE SA X6 PET 1.5",
+    "cantidad": 1,
+    "precio": 7572,
+    "monto": 7572
+  },
+  {
+    "folio": 105214260,
+    "codigo": "0474",
+    "nombre": "SCHWEPPES TONICA SA X6 PET 1.5",
+    "cantidad": 1,
+    "precio": 7572,
+    "monto": 7572
+  },
+  {
+    "folio": 105214260,
+    "codigo": "0136",
+    "nombre": "COCA COLA X06 PET 1500 CC",
+    "cantidad": 5,
+    "precio": 8189,
+    "monto": 40945
+  },
+  {
+    "folio": 105214260,
+    "codigo": "0336",
+    "nombre": "COCA COLA LIGTH X06 PET 1500 CC",
+    "cantidad": 1,
+    "precio": 8697,
+    "monto": 8697
+  },
+  {
+    "folio": 105214260,
+    "codigo": "0377",
+    "nombre": "COCA COLA SIN AZUCAR X06 PET 1.500 CC",
+    "cantidad": 7,
+    "precio": 8697,
+    "monto": 60879
+  },
+  {
+    "folio": 105214260,
+    "codigo": "4274",
+    "nombre": "FANTA NARANJA ZERO+VITAMC X06 PET 1500",
+    "cantidad": 1,
+    "precio": 7572,
+    "monto": 7572
+  },
+  {
+    "folio": 105214260,
+    "codigo": "0757",
+    "nombre": "SPRITE X06 PET 1.500 CC",
+    "cantidad": 1,
+    "precio": 7572,
+    "monto": 7572
+  },
+  {
+    "folio": 105214260,
+    "codigo": "0694",
+    "nombre": "SPRITE ZERO X06 PET 1500 CC",
+    "cantidad": 3,
+    "precio": 7572,
+    "monto": 22716
+  },
+  {
+    "folio": 105214260,
+    "codigo": "2004",
+    "nombre": "INCA KOLA ZERO X06 PET 1500 CC",
+    "cantidad": 1,
+    "precio": 7572,
+    "monto": 7572
+  },
+  {
+    "folio": 105214260,
+    "codigo": "2005",
+    "nombre": "INCA KOLA X06 PET 1500 CC",
+    "cantidad": 1,
+    "precio": 7130,
+    "monto": 7130
+  },
+  {
+    "folio": 105214261,
+    "codigo": "1401",
+    "nombre": "AND PINA PET1500CC BOCA ANCHA",
+    "cantidad": 1,
+    "precio": 6662,
+    "monto": 6662
+  },
+  {
+    "folio": 105214261,
+    "codigo": "1534",
+    "nombre": "AND NARAN LIGHT PET1500CC BOCAANCHA",
+    "cantidad": 1,
+    "precio": 6662,
+    "monto": 6662
+  },
+  {
+    "folio": 105214261,
+    "codigo": "2557",
+    "nombre": "BENEDICTINO LIMON JENJIBRE X06 PET 1.500",
+    "cantidad": 3,
+    "precio": 3707,
+    "monto": 11121
+  },
+  {
+    "folio": 105214261,
+    "codigo": "2558",
+    "nombre": "BENEDICTINO MANZANA X06 PET 1.500",
+    "cantidad": 4,
+    "precio": 3707,
+    "monto": 14828
+  },
+  {
+    "folio": 105214261,
+    "codigo": "2559",
+    "nombre": "BENEDICTINO PERA X06 PET 1.500",
+    "cantidad": 5,
+    "precio": 3707,
+    "monto": 18535
+  },
+  {
+    "folio": 105214261,
+    "codigo": "2504",
+    "nombre": "BENEDICTINO CON GAS X06 PET 1500 CC",
+    "cantidad": 2,
+    "precio": 2702,
+    "monto": 5404
+  },
+  {
+    "folio": 105214261,
+    "codigo": "2503",
+    "nombre": "BENEDICTINO SIN GAS X06 PET 1500 CC",
+    "cantidad": 1,
+    "precio": 2702,
+    "monto": 2702
+  },
+  {
+    "folio": 105214261,
+    "codigo": "2133",
+    "nombre": "VITAL SIN GAS X06 PET 1.600",
+    "cantidad": 2,
+    "precio": 3400,
+    "monto": 6800
+  },
+  {
+    "folio": 105214261,
+    "codigo": "2233",
+    "nombre": "VITAL CON GAS X06 PET 1.600",
+    "cantidad": 17,
+    "precio": 3400,
+    "monto": 57800
+  },
+  {
+    "folio": 105214261,
+    "codigo": "2521",
+    "nombre": "BENEDICTINO CON GAS X06 PET 3.000 CC",
+    "cantidad": 1,
+    "precio": 3398,
+    "monto": 3398
+  },
+  {
+    "folio": 105214261,
+    "codigo": "2520",
+    "nombre": "BENEDICTINO SIN GAS X06 PET 3.000 CC",
+    "cantidad": 1,
+    "precio": 3398,
+    "monto": 3398
+  },
+  {
+    "folio": 105214261,
+    "codigo": "0154",
+    "nombre": "COCA COLA X06 PET 3000 CC",
+    "cantidad": 18,
+    "precio": 12297,
+    "monto": 221346
+  },
+  {
+    "folio": 105214262,
+    "codigo": "0354",
+    "nombre": "COCA COLA LIGTH X06 PET 3000 CC",
+    "cantidad": 1,
+    "precio": 13059,
+    "monto": 13059
+  },
+  {
+    "folio": 105214262,
+    "codigo": "0379",
+    "nombre": "COCA COLA SIN AZUCAR X06 PET 3.000 CC",
+    "cantidad": 20,
+    "precio": 13059,
+    "monto": 261180
+  },
+  {
+    "folio": 105214262,
+    "codigo": "0579",
+    "nombre": "FANTA ZERO X06 PET 3.000 CC",
+    "cantidad": 2,
+    "precio": 12518,
+    "monto": 25036
+  },
+  {
+    "folio": 105214262,
+    "codigo": "0767",
+    "nombre": "SPRITE X06 PET 3.000 CC",
+    "cantidad": 1,
+    "precio": 12518,
+    "monto": 12518
+  },
+  {
+    "folio": 105214262,
+    "codigo": "0679",
+    "nombre": "SPRITE ZERO X06 PET 3000 CC",
+    "cantidad": 2,
+    "precio": 12518,
+    "monto": 25036
+  },
+  {
+    "folio": 105214262,
+    "codigo": "1679",
+    "nombre": "NORDIC GINGER ALE ZERO X06 PET3000 CC",
+    "cantidad": 1,
+    "precio": 12518,
+    "monto": 12518
+  },
+  {
+    "folio": 105214262,
+    "codigo": "1123",
+    "nombre": "AND DEL VALLE MANZANA X06 TETRA 200 CC",
+    "cantidad": 5,
+    "precio": 1468,
+    "monto": 7340
+  },
+  {
+    "folio": 105214262,
+    "codigo": "1423",
+    "nombre": "AND DEL VALLE PINA X06 TETRA 200 CC",
+    "cantidad": 12,
+    "precio": 1468,
+    "monto": 17616
+  },
+  {
+    "folio": 105214262,
+    "codigo": "1523",
+    "nombre": "AND DEL VALLE NARANJA X06 TETRA 200 CC",
+    "cantidad": 13,
+    "precio": 1468,
+    "monto": 19084
+  },
+  {
+    "folio": 105214262,
+    "codigo": "7223",
+    "nombre": "NEC.DUR X06 TP200CC",
+    "cantidad": 8,
+    "precio": 1468,
+    "monto": 11744
+  },
+  {
+    "folio": 105214262,
+    "codigo": "1514",
+    "nombre": "AND DEL VALLE NARANJA LIGHT X6 TETRA 200",
+    "cantidad": 1,
+    "precio": 1468,
+    "monto": 1468
+  },
+  {
+    "folio": 105214262,
+    "codigo": "1414",
+    "nombre": "AND DEL VALLE PINA LIGHT X06 TETRA 200CC",
+    "cantidad": 1,
+    "precio": 1468,
+    "monto": 1468
+  },
+  {
+    "folio": 105214263,
+    "codigo": "3001",
+    "nombre": "FASTLYTE SANDIA PET X6 625 ML",
+    "cantidad": 2,
+    "precio": 8449,
+    "monto": 16898
+  },
+  {
+    "folio": 105214263,
+    "codigo": "0161",
+    "nombre": "COCA COLA X06 LATA 350 CC",
+    "cantidad": 28,
+    "precio": 2767,
+    "monto": 77476
+  },
+  {
+    "folio": 105214263,
+    "codigo": "0381",
+    "nombre": "COCA COLA SIN AZUCAR X06 LATA 350 CC",
+    "cantidad": 26,
+    "precio": 2939,
+    "monto": 76414
+  },
+  {
+    "folio": 105214263,
+    "codigo": "4272",
+    "nombre": "FANTA NARANJA ZERO+VITAMC X06 LATA 350",
+    "cantidad": 1,
+    "precio": 2939,
+    "monto": 2939
+  },
+  {
+    "folio": 105214263,
+    "codigo": "0781",
+    "nombre": "SPRITE X06 LATA 350 CC",
+    "cantidad": 2,
+    "precio": 2939,
+    "monto": 5878
+  },
+  {
+    "folio": 105214263,
+    "codigo": "0692",
+    "nombre": "SPRITE ZERO X06 LATA 350 CC",
+    "cantidad": 1,
+    "precio": 2939,
+    "monto": 2939
+  },
+  {
+    "folio": 105214263,
+    "codigo": "2524",
+    "nombre": "BENEDICTINO SIN GAS X02 PET 6.500 CC",
+    "cantidad": 4,
+    "precio": 2899,
+    "monto": 11596
+  },
+  {
+    "folio": 105214263,
+    "codigo": "5624",
+    "nombre": "GLL VITAMIN ORANGE x06 PET 1 LT",
+    "cantidad": 1,
+    "precio": 9206,
+    "monto": 9206
+  },
+  {
+    "folio": 105214263,
+    "codigo": "1129",
+    "nombre": "NECTAR DEL VALLE MANZANA X6 LATA 340",
+    "cantidad": 1,
+    "precio": 4041,
+    "monto": 4041
+  },
+  {
+    "folio": 105214263,
+    "codigo": "0929",
+    "nombre": "FANTA NAR FULLSUGAR X06 PET 3000 CC",
+    "cantidad": 2,
+    "precio": 11787,
+    "monto": 23574
+  },
+  {
+    "folio": 105214263,
+    "codigo": "0925",
+    "nombre": "FANTA NAR FULLSUGAR X06 PET 1500 CC",
+    "cantidad": 1,
+    "precio": 7130,
+    "monto": 7130
+  },
+  {
+    "folio": 105214263,
+    "codigo": "0923",
+    "nombre": "FANTA NAR FULLSUGAR X06 PET 591 CC",
+    "cantidad": 1,
+    "precio": 3959,
+    "monto": 3959
+  }
+]

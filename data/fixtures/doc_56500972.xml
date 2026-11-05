@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<DTE version="1.0">
+      <Documento ID="F56500972T33">
+        <Encabezado>
+          <IdDoc>
+            <TipoDTE>33</TipoDTE>
+            <Folio>56500972</Folio>
+            <FchEmis>2026-09-29</FchEmis>
+            <FmaPago>2</FmaPago>
+            <FchVenc>2026-10-29</FchVenc>
+          </IdDoc>
+          <Emisor>
+            <RUTEmisor>82623500-4</RUTEmisor>
+            <RznSoc>Ideal S.A</RznSoc>
+            <GiroEmis>Ideal S.A</GiroEmis>
+            <Telefono />
+            <CorreoEmisor />
+            <Acteco>31171</Acteco>
+            <DirOrigen>Avenida Ca�averal - 870</DirOrigen>
+            <CmnaOrigen>GRANDES CLIENTES</CmnaOrigen>
+            <CiudadOrigen>Santiago</CiudadOrigen>
+          </Emisor>
+          <Receptor>
+            <RUTRecep>77125361-K</RUTRecep>
+            <CdgIntRecep>77125361-K</CdgIntRecep>
+            <RznSocRecep>DELIVERY HERO STORES CHILE SPA.</RznSocRecep>
+            <GiroRecep>SUPERMERCADOS</GiroRecep>
+            <CorreoRecep />
+            <DirRecep>Apoquindo - 3000</DirRecep>
+            <CmnaRecep>Las Condes</CmnaRecep>
+            <CiudadRecep>Santiago</CiudadRecep>
+            <DirPostal>Apoquindo - 3000</DirPostal>
+            <CmnaPostal>Las Condes</CmnaPostal>
+          </Receptor>
+          <Transporte>
+            <Patente>SN</Patente>
+            <PatenteCarro>SN</PatenteCarro>
+            <RUTTrans>15789304-1</RUTTrans>
+            <Chofer>
+              <RUTChofer>15789304-1</RUTChofer>
+              <NombreChofer>Hector Andres Arce Munoz</NombreChofer>
+            </Chofer>
+            <DirDest>Av. Diego Portales - 795</DirDest>
+            <CmnaDest>GRANDES CLIENTES</CmnaDest>
+            <CiudadDest>Santiago</CiudadDest>
+            <Aduana>
+              <NombreTransp>Hector Andres Arce Munoz</NombreTransp>
+              <RUTCiaTransp>15789304-1</RUTCiaTransp>
+              <NomCiaTransp>Hector Andres Arce Munoz</NomCiaTransp>
+            </Aduana>
+            <FchSalida>2026-09-29</FchSalida>
+            <HraSalida>00:00:00</HraSalida>
+            <FchLlegada>2026-09-29</FchLlegada>
+          </Transporte>
+          <Totales>
+            <MntNeto>1968789</MntNeto>
+            <MntBase>1968789</MntBase>
+            <TasaIVA>19</TasaIVA>
+            <IVA>374068</IVA>
+            <MntTotal>2342857</MntTotal>
+          </Totales>
+        </Encabezado>
+        <Detalle>
+          <NroLinDet>1</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>965383</VlrCodigo>
+          </CdgItem>
+          <NmbItem>965383 Takis Buckin Ranch CH 1p 190g FLOW BAR</NmbItem>
+          <DscItem />
+          <QtyItem>14</QtyItem>
+          <PrcItem>1168</PrcItem>
+          <MontoItem>16352</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>2</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>503068</VlrCodigo>
+          </CdgItem>
+          <NmbItem>Alfajor Clasico 4p 180g Dpy LDS</NmbItem>
+          <DscItem />
+          <QtyItem>36</QtyItem>
+          <PrcItem>1411</PrcItem>
+          <MontoItem>50796</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>3</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>21734</VlrCodigo>
+          </CdgItem>
+          <NmbItem>21734 Tortilla Pack Fiesta 24p 600g BOLSA TR</NmbItem>
+          <DscItem />
+          <QtyItem>12</QtyItem>
+          <PrcItem>2013</PrcItem>
+          <MontoItem>24156</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>4</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>504566</VlrCodigo>
+          </CdgItem>
+          <NmbItem>504566 Tortilla Burrera 22cms 8p 400g BOLSA TR</NmbItem>
+          <DscItem />
+          <QtyItem>20</QtyItem>
+          <PrcItem>1531</PrcItem>
+          <MontoItem>30620</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>5</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>44555</VlrCodigo>
+          </CdgItem>
+          <NmbItem>44555 Rapiditas Tortilla 8p 200g ASS ID</NmbItem>
+          <DscItem />
+          <QtyItem>27</QtyItem>
+          <PrcItem>857</PrcItem>
+          <MontoItem>23139</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>6</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>4388</VlrCodigo>
+          </CdgItem>
+          <NmbItem>4388Pan rallado XL 250g ID</NmbItem>
+          <DscItem />
+          <QtyItem>32</QtyItem>
+          <PrcItem>908</PrcItem>
+          <MontoItem>29056</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>7</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>504574</VlrCodigo>
+          </CdgItem>
+          <NmbItem>504574 Tortilla Grandota 8p 620g BOLSA TR</NmbItem>
+          <DscItem />
+          <QtyItem>16</QtyItem>
+          <PrcItem>1955</PrcItem>
+          <MontoItem>31280</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>8</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>500857</VlrCodigo>
+          </CdgItem>
+          <NmbItem>500857 Pizza Piedra 2p 270g ID</NmbItem>
+          <DscItem />
+          <QtyItem>20</QtyItem>
+          <PrcItem>1410</PrcItem>
+          <MontoItem>28200</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>9</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>501107</VlrCodigo>
+          </CdgItem>
+          <NmbItem>501107 Pan Artesano Hamburguesa 8p 720g BOL ID</NmbItem>
+          <DscItem />
+          <QtyItem>15</QtyItem>
+          <PrcItem>2079</PrcItem>
+          <MontoItem>31185</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>10</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>501866</VlrCodigo>
+          </CdgItem>
+          <NmbItem>501866 Pan Completo XL 6p 528g BOLSA ID</NmbItem>
+          <DscItem />
+          <QtyItem>27</QtyItem>
+          <PrcItem>1426</PrcItem>
+          <MontoItem>38502</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>11</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>502988</VlrCodigo>
+          </CdgItem>
+          <NmbItem>Pan Artesano Integral 1p 600g Bolsa ID</NmbItem>
+          <DscItem />
+          <QtyItem>20</QtyItem>
+          <PrcItem>2008</PrcItem>
+          <MontoItem>40160</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>12</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>503413</VlrCodigo>
+          </CdgItem>
+          <NmbItem>503413 Pan Integ masProtein10 1p 640g BOLSA ID</NmbItem>
+          <DscItem />
+          <QtyItem>10</QtyItem>
+          <PrcItem>1865</PrcItem>
+          <MontoItem>18650</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>13</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>503410</VlrCodigo>
+          </CdgItem>
+          <NmbItem>503410 Pan Hotdog 8p 480g Bolsa ID</NmbItem>
+          <DscItem />
+          <QtyItem>36</QtyItem>
+          <PrcItem>1467</PrcItem>
+          <MontoItem>52812</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>14</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>504104</VlrCodigo>
+          </CdgItem>
+          <NmbItem>504104 Pan Blanco Cero Cero 1p 580g BOLS</NmbItem>
+          <DscItem />
+          <QtyItem>20</QtyItem>
+          <PrcItem>1994</PrcItem>
+          <MontoItem>39880</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>15</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>504103</VlrCodigo>
+          </CdgItem>
+          <NmbItem>504103 Pan Integral Cero Cero 1p 600g BO</NmbItem>
+          <DscItem />
+          <QtyItem>30</QtyItem>
+          <PrcItem>2064</PrcItem>
+          <MontoItem>61920</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>16</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>504186</VlrCodigo>
+          </CdgItem>
+          <NmbItem>504186 PanBlanco Artesano 1p 550gBOL</NmbItem>
+          <DscItem />
+          <QtyItem>60</QtyItem>
+          <PrcItem>2008</PrcItem>
+          <MontoItem>120480</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>17</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>504337</VlrCodigo>
+          </CdgItem>
+          <NmbItem>504337 Hamburguesa Brioche 4p 352g BOLSA ID</NmbItem>
+          <DscItem />
+          <QtyItem>20</QtyItem>
+          <PrcItem>1376</PrcItem>
+          <MontoItem>27520</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>18</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>504423</VlrCodigo>
+          </CdgItem>
+          <NmbItem>504423 Rapidita Linaza Chia 8p 200g BOLS</NmbItem>
+          <DscItem />
+          <QtyItem>27</QtyItem>
+          <PrcItem>919</PrcItem>
+          <MontoItem>24813</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>19</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>506369</VlrCodigo>
+          </CdgItem>
+          <NmbItem>506369 Pita Cero Cero Blanca 8p 344g BOLSA ID</NmbItem>
+          <DscItem />
+          <QtyItem>14</QtyItem>
+          <PrcItem>1112</PrcItem>
+          <MontoItem>15568</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>20</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>504001</VlrCodigo>
+          </CdgItem>
+          <NmbItem>504001 Takis Intense Nacho CH 1p 190g FLOW BAR</NmbItem>
+          <DscItem />
+          <QtyItem>21</QtyItem>
+          <PrcItem>1168</PrcItem>
+          <MontoItem>24528</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>21</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>506315</VlrCodigo>
+          </CdgItem>
+          <NmbItem>506315 Pan Blanco 1p 580g BOLSA ID</NmbItem>
+          <DscItem />
+          <QtyItem>30</QtyItem>
+          <PrcItem>1438</PrcItem>
+          <MontoItem>43140</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>22</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>964621</VlrCodigo>
+          </CdgItem>
+          <NmbItem>964621 Takis Original CH 1p 190g FLOW BAR</NmbItem>
+          <DscItem />
+          <QtyItem>21</QtyItem>
+          <PrcItem>1168</PrcItem>
+          <MontoItem>24528</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>23</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>964620</VlrCodigo>
+          </CdgItem>
+          <NmbItem>964620 Takis Fuego CH 1p 190g FLOW BAR</NmbItem>
+          <DscItem />
+          <QtyItem>21</QtyItem>
+          <PrcItem>1168</PrcItem>
+          <MontoItem>24528</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>24</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>964622</VlrCodigo>
+          </CdgItem>
+          <NmbItem>964622 Takis Xplosion CH 1p 190g FLOW BAR</NmbItem>
+          <DscItem />
+          <QtyItem>21</QtyItem>
+          <PrcItem>1168</PrcItem>
+          <MontoItem>24528</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>25</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>964614</VlrCodigo>
+          </CdgItem>
+          <NmbItem>964614 Hot Dog Brioche Artes 6p 370g BOLSA ID</NmbItem>
+          <DscItem />
+          <QtyItem>18</QtyItem>
+          <PrcItem>1524</PrcItem>
+          <MontoItem>27432</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>26</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>503730</VlrCodigo>
+          </CdgItem>
+          <NmbItem>503730 Rapidita XL Integral 8p 415g BOLSA ID</NmbItem>
+          <DscItem />
+          <QtyItem>20</QtyItem>
+          <PrcItem>1350</PrcItem>
+          <MontoItem>27000</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>27</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>964670</VlrCodigo>
+          </CdgItem>
+          <NmbItem>964670 Pan Sin Bordes 1p 400g BOLSA ID</NmbItem>
+          <DscItem />
+          <QtyItem>12</QtyItem>
+          <PrcItem>2147</PrcItem>
+          <MontoItem>25764</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>28</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>964761</VlrCodigo>
+          </CdgItem>
+          <NmbItem>964761 Salmas Clasicas 6p 108g CJ SAN</NmbItem>
+          <DscItem />
+          <QtyItem>28</QtyItem>
+          <PrcItem>1283</PrcItem>
+          <MontoItem>35924</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>29</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>965204</VlrCodigo>
+          </CdgItem>
+          <NmbItem>965204 Mankeke�6p 180g DPY MLA</NmbItem>
+          <DscItem />
+          <QtyItem>31</QtyItem>
+          <PrcItem>1171</PrcItem>
+          <MontoItem>36301</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>30</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>965200</VlrCodigo>
+          </CdgItem>
+          <NmbItem>965200 Pinguinos 6p 240g CJ MLA</NmbItem>
+          <DscItem />
+          <QtyItem>31</QtyItem>
+          <PrcItem>1759</PrcItem>
+          <MontoItem>54529</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>31</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>965201</VlrCodigo>
+          </CdgItem>
+          <NmbItem>965201 Gansito 5p 250g CJ MLA</NmbItem>
+          <DscItem />
+          <QtyItem>31</QtyItem>
+          <PrcItem>2053</PrcItem>
+          <MontoItem>63643</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>32</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>965228</VlrCodigo>
+          </CdgItem>
+          <NmbItem>965228 Rapiditas Cero Cero 8p 200g BOLSA ID</NmbItem>
+          <DscItem />
+          <QtyItem>27</QtyItem>
+          <PrcItem>919</PrcItem>
+          <MontoItem>24813</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>33</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>23211</VlrCodigo>
+          </CdgItem>
+          <NmbItem>23211 Pizza Rectangular 3p 750g ID</NmbItem>
+          <DscItem />
+          <QtyItem>12</QtyItem>
+          <PrcItem>1896</PrcItem>
+          <MontoItem>22752</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>34</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>23634</VlrCodigo>
+          </CdgItem>
+          <NmbItem>23634 Pizza Cl�sica 2p 500g ID</NmbItem>
+          <DscItem />
+          <QtyItem>20</QtyItem>
+          <PrcItem>1337</PrcItem>
+          <MontoItem>26740</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>35</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>0429</VlrCodigo>
+          </CdgItem>
+          <NmbItem>0429 Pan Pita Integral 8p 300g CJ ID</NmbItem>
+          <DscItem />
+          <QtyItem>28</QtyItem>
+          <PrcItem>976</PrcItem>
+          <MontoItem>27328</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>36</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>0428</VlrCodigo>
+          </CdgItem>
+          <NmbItem>0428 Pan Pita Blanco 8p 300g CJ ID</NmbItem>
+          <DscItem />
+          <QtyItem>14</QtyItem>
+          <PrcItem>976</PrcItem>
+          <MontoItem>13664</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>37</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>41671</VlrCodigo>
+          </CdgItem>
+          <NmbItem>41671 Prepizza Toques de Cebolla 2p 500g</NmbItem>
+          <DscItem />
+          <QtyItem>18</QtyItem>
+          <PrcItem>1391</PrcItem>
+          <MontoItem>25038</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>38</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>40279</VlrCodigo>
+          </CdgItem>
+          <NmbItem>40279 Mil Hojas 6p 280g ADP</NmbItem>
+          <DscItem />
+          <QtyItem>44</QtyItem>
+          <PrcItem>2079</PrcItem>
+          <MontoItem>91476</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>39</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>504571</VlrCodigo>
+          </CdgItem>
+          <NmbItem>504571 Tortilla Fajitas 10p 320g BOLSA TR</NmbItem>
+          <DscItem />
+          <QtyItem>20</QtyItem>
+          <PrcItem>1333</PrcItem>
+          <MontoItem>26660</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>40</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>964588</VlrCodigo>
+          </CdgItem>
+          <NmbItem>964588 Pan Blanco XL NC 1p 750g BOLSA ID</NmbItem>
+          <DscItem />
+          <QtyItem>72</QtyItem>
+          <PrcItem>1809</PrcItem>
+          <MontoItem>130248</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>41</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>965202</VlrCodigo>
+          </CdgItem>
+          <NmbItem>965202 Rayita TwinkiesVainillaB�5p 150g DPY MLA</NmbItem>
+          <DscItem />
+          <QtyItem>31</QtyItem>
+          <PrcItem>1171</PrcItem>
+          <MontoItem>36301</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>42</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>22016</VlrCodigo>
+          </CdgItem>
+          <NmbItem>22016 Pan Integral Stuttgart 650g FUC</NmbItem>
+          <DscItem />
+          <QtyItem>20</QtyItem>
+          <PrcItem>1712</PrcItem>
+          <MontoItem>34240</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>43</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>506564</VlrCodigo>
+          </CdgItem>
+          <NmbItem>506564 Pan Multigrano 1p 350g BOLSA FUC</NmbItem>
+          <DscItem />
+          <QtyItem>13</QtyItem>
+          <PrcItem>1283</PrcItem>
+          <MontoItem>16679</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>44</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>506561</VlrCodigo>
+          </CdgItem>
+          <NmbItem>506561 Pan Multigrano Light 1p 620g BOLSA FUC</NmbItem>
+          <DscItem />
+          <QtyItem>20</QtyItem>
+          <PrcItem>1834</PrcItem>
+          <MontoItem>36680</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>45</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>506558</VlrCodigo>
+          </CdgItem>
+          <NmbItem>506558 Pan Calabaza Nuez 1p 600g BOLSA FUC</NmbItem>
+          <DscItem />
+          <QtyItem>10</QtyItem>
+          <PrcItem>1834</PrcItem>
+          <MontoItem>18340</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>46</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>506560</VlrCodigo>
+          </CdgItem>
+          <NmbItem>506560 Pan Linaza Chia 1p 600g BOLSA FUC</NmbItem>
+          <DscItem />
+          <QtyItem>10</QtyItem>
+          <PrcItem>1834</PrcItem>
+          <MontoItem>18340</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>47</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>506559</VlrCodigo>
+          </CdgItem>
+          <NmbItem>506559 Pan Linaza Chia 1p 350g BOLSA FUC</NmbItem>
+          <DscItem />
+          <QtyItem>13</QtyItem>
+          <PrcItem>1283</PrcItem>
+          <MontoItem>16679</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>48</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>502704</VlrCodigo>
+          </CdgItem>
+          <NmbItem>502704Queque Fam Zan Prem 1p 250g BOLSA</NmbItem>
+          <DscItem />
+          <QtyItem>16</QtyItem>
+          <PrcItem>1524</PrcItem>
+          <MontoItem>24384</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>49</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>503170</VlrCodigo>
+          </CdgItem>
+          <NmbItem>503170 Braunichoc 4p 140g ME NUR</NmbItem>
+          <DscItem />
+          <QtyItem>24</QtyItem>
+          <PrcItem>1230</PrcItem>
+          <MontoItem>29520</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>50</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>503375</VlrCodigo>
+          </CdgItem>
+          <NmbItem>503375 Brownie Mini 6p 180g ME NUR</NmbItem>
+          <DscItem />
+          <QtyItem>15</QtyItem>
+          <PrcItem>1465</PrcItem>
+          <MontoItem>21975</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>51</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>964763</VlrCodigo>
+          </CdgItem>
+          <NmbItem>964763 Salmas Camote Zanahoria 6p 108g CJ SAN</NmbItem>
+          <DscItem />
+          <QtyItem>28</QtyItem>
+          <PrcItem>1283</PrcItem>
+          <MontoItem>35924</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>52</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>964847</VlrCodigo>
+          </CdgItem>
+          <NmbItem>964847 Salmas Chia Linaza 6p 108g DPY SAN</NmbItem>
+          <DscItem />
+          <QtyItem>28</QtyItem>
+          <PrcItem>1283</PrcItem>
+          <MontoItem>35924</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>53</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>502685</VlrCodigo>
+          </CdgItem>
+          <NmbItem>502685 Pack Brownie 4p 248g ME NUR</NmbItem>
+          <DscItem />
+          <QtyItem>8</QtyItem>
+          <PrcItem>1935</PrcItem>
+          <MontoItem>15480</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>54</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>964623</VlrCodigo>
+          </CdgItem>
+          <NmbItem>964623 Galleta Almendra SAz NC 1p 128g TUBO NUR</NmbItem>
+          <DscItem />
+          <QtyItem>18</QtyItem>
+          <PrcItem>1031</PrcItem>
+          <MontoItem>18558</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>55</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>502686</VlrCodigo>
+          </CdgItem>
+          <NmbItem>502686 Pack Brownie Chip 4p 248g ME NUR</NmbItem>
+          <DscItem />
+          <QtyItem>8</QtyItem>
+          <PrcItem>1935</PrcItem>
+          <MontoItem>15480</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>56</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>502702</VlrCodigo>
+          </CdgItem>
+          <NmbItem>502702Queque Fam NjaPrem 1p 250g BOLSA</NmbItem>
+          <DscItem />
+          <QtyItem>16</QtyItem>
+          <PrcItem>1524</PrcItem>
+          <MontoItem>24384</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>57</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>502701</VlrCodigo>
+          </CdgItem>
+          <NmbItem>502701Queque Fam Brow Prem 1p 250g BOLSA</NmbItem>
+          <DscItem />
+          <QtyItem>16</QtyItem>
+          <PrcItem>1524</PrcItem>
+          <MontoItem>24384</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>58</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>502700</VlrCodigo>
+          </CdgItem>
+          <NmbItem>502700Quequ Fam Marmol Prem 1p 250g BOLS</NmbItem>
+          <DscItem />
+          <QtyItem>16</QtyItem>
+          <PrcItem>1524</PrcItem>
+          <MontoItem>24384</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>59</NroLinDet>
+          <CdgItem>
+            <TpoCodigo />
+            <VlrCodigo>502687</VlrCodigo>
+          </CdgItem>
+          <NmbItem>502687 Pack Brownie Sin Azucar 4p 200g M</NmbItem>
+          <DscItem />
+          <QtyItem>8</QtyItem>
+          <PrcItem>1935</PrcItem>
+          <MontoItem>15480</MontoItem>
+        </Detalle>
+        <Referencia>
+          <NroLinRef>1</NroLinRef>
+          <TpoDocRef>801</TpoDocRef>
+          <FolioRef>521015</FolioRef>
+          <FchRef>2026-09-29</FchRef>
+          <RazonRef>ORDEN DE COMPRA</RazonRef>
+        </Referencia>
+        <TED version="1.0">
+          <DD>
+            <RE>82623500-4</RE>
+            <TD>33</TD>
+            <F>56500972</F>
+            <FE>2026-09-29</FE>
+            <RR>77125361-K</RR>
+            <RSR>DELIVERY HERO STORES CHILE SPA.</RSR>
+            <MNT>2342857</MNT>
+            <IT1>965383 Takis Buckin Ranch CH 1p 190g FLO</IT1>
+            <CAF version="1.0">
+              <DA>
+                <RE>82623500-4</RE>
+                <RS>IDEAL S.A.</RS>
+                <TD>33</TD>
+                <RNG>
+                  <D>56443885</D>
+                  <H>56643884</H>
+                </RNG>
+                <FA>2026-08-31</FA>
+                <RSAPK>
+                  <M>nMkIj3JwzWQaowq1Hqn4QUS5Q9eLADDqUKT4bhtH/BoAcfr4yjucQe061fwfx7C2Vzbf2pYu7FvrcAYJn+XwSw==</M>
+                  <E>Aw==</E>
+                </RSAPK>
+                <IDK>300</IDK>
+              </DA>
+              <FRMA algoritmo="SHA1withRSA">NHSnWjGYmLGA5nMGc9grB1rkxFE/F0akJDMWAPZcuSfLiax+AlW/tzB9UGQ+9xodtQnG7lH1oPi8bIPeaYr5iw==</FRMA>
+            </CAF>
+            <TSTED>2026-09-29T12:00:42</TSTED>
+          </DD>
+          <FRMT algoritmo="SHA1withRSA">NTGPnTia8gLd9Vp2X1VPUnVcL3taRKXnGvaAV1T4oJOS0UeTsCNy9LrbgfftCRGb6vUaCf+8XPMu4L+nWE+HzA==</FRMT>
+        </TED>
+        <TmstFirma>2026-09-29T13:00:42</TmstFirma>
+      </Documento><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI="#F56500972T33"><Transforms><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>+1sIgCN1Tas/+ofYOTLyukaMs+o=</DigestValue></Reference></SignedInfo><SignatureValue>
+ZuCmXypgTz4zoXmh+OUEZD7l52pRScYaBPKudkLELZIBCUDqjX/pnPAZ5MGzafvH
+jvNaeyNdWFbSi0TgO5gJxaTtjCtxSnvOS5w6VT3OLEZXHCAQyOQ47NbrrsczbegL
+0vLqiZ2qIviQvx11ynoraJOfzMhuVuWbdw9ERRx7aJ/VFBSjlQ4bLg7NxMihoBtk
+5P7kSjMNZaAzkZrkYQfQZBwzfnfSx0ox1w3w8Y0oONezBVChLgfRHfiJSTCa/67B
+JMKczjSLxchQALaHL4IYVmNeXMktv//E/9yuM7hlYogLidZnz15VvoY8gqTdUdUX
+wVl9rV/5ohjZxK/vuzvl6w==
+</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>
+oNVnWgCaA/6mOfDZwzldgn+BNL4CyhCzmzH9yHd0PPs9HiI+K+QDrktp/zeN7hdi
+TvEx6pLQdaLfakLzUhz/+Fw6cUQGat0sK9uCnEgtcYAOLPhSUGppIgqd41Un0gDH
+6JC59ABabTivqfG7nryTeCL5bmk4EBoJaKkbnLOk5CoRvNBPC8IVq9NW8fJDZ+AM
+hPnmDg3WwrChNjJyHXYqxJNnVVuNqkMeLRTptADukddrHECLOeJxE+m1k2gDP1YQ
+MdxaPrpK8iA1Mn0vnSAqLimULM+zQc+KvRwifa4GqgOOp50Yz9rfGTb/fVVSKC6z
+6wm4h/hLPVPEn/NbSKsEdw==
+</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>
+MIIG2DCCBcCgAwIBAgIDBn8lMA0GCSqGSIb3DQEBCwUAMIGmMQswCQYDVQQGEwJD
+TDEYMBYGA1UEChMPQWNlcHRhLmNvbSBTLkEuMUgwRgYDVQQDEz9BY2VwdGEuY29t
+IEF1dG9yaWRhZCBDZXJ0aWZpY2Fkb3JhIENsYXNlIDMgUGVyc29uYSBOYXR1cmFs
+IC0gRzQxHjAcBgkqhkiG9w0BCQEWD2luZm9AYWNlcHRhLmNvbTETMBEGA1UEBRMK
+OTY5MTkwNTAtODAeFw0yNjA3MjIxOTQ3MzJaFw0yOTA3MjIxOTQ3MzJaMIGOMQsw
+CQYDVQQGEwJDTDEYMBYGA1UEDBMPUEVSU09OQSBOQVRVUkFMMSAwHgYDVQQDExdG
+UkFOQ0lTQ08gQlVTVE9TIE9SVEVHQTEuMCwGCSqGSIb3DQEJARYfRlJBTkNJU0NP
+LkJVU1RPU0BHUlVQT0JJTUJPLkNPTTETMBEGA1UEBRMKMTU4MjMxNTgtMTCCASIw
+DQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKDVZ1oAmgP+pjnw2cM5XYJ/gTS+
+AsoQs5sx/ch3dDz7PR4iPivkA65Laf83je4XYk7xMeqS0HWi32pC81Ic//hcOnFE
+BmrdLCvbgpxILXGADiz4UlBqaSIKneNVJ9IAx+iQufQAWm04r6nxu568k3gi+W5p
+OBAaCWipG5yzpOQqEbzQTwvCFavTVvHyQ2fgDIT55g4N1sKwoTYych12KsSTZ1Vb
+japDHi0U6bQA7pHXaxxAiznicRPptZNoAz9WEDHcWj66SvIgNTJ9L50gKi4plCzP
+s0HPir0cIn2uBqoDjqedGM/a3xk2/31VUigus+sJuIf4Sz1TxJ/zW0irBHcCAwEA
+AaOCAyMwggMfMAkGA1UdEwQCMAAwHwYDVR0jBBgwFoAUqv29xek3TfaZTVeOwXEa
++evDBuMwHQYDVR0OBBYEFFUIXqAVQnn7CcADSLN+sj/E6UdYMAsGA1UdDwQEAwIE
+8DAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwQwgfoGA1UdIASB8jCB7zCB
+7AYIKwYBBAG1awIwgd8wMQYIKwYBBQUHAgEWJWh0dHBzOi8vYWNnNC5hY2VwdGEu
+Y29tL0NQUy1BY2VwdGFjb20wgakGCCsGAQUFBwICMIGcMBYWD0FjZXB0YS5jb20g
+Uy5BLjADAgECGoGBRWwgdGl0dWxhciBoYSBzaWRvIHZhbGlkYWRvIGVuIGZvcm1h
+IHByZXNlbmNpYWwsIHF1ZWRhbmRvIGhhYmlsaXRhZG8gZWwgQ2VydGlmaWNhZG8g
+cGFyYSB1c28gdHJpYnV0YXJpbywgcGFnb3MsIGNvbWVyY2lvIHkgb3Ryb3MuMFoG
+A1UdEgRTMFGgGAYIKwYBBAHBAQKgDBYKOTY5MTkwNTAtOKAkBggrBgEFBQcIA6AY
+MBYMCjk2OTE5MDUwLTgGCCsGAQQBwQECgQ9pbmZvQGFjZXB0YS5jb20wagYDVR0R
+BGMwYaAYBggrBgEEAcEBAaAMFgoxNTgyMzE1OC0xoCQGCCsGAQUFBwgDoBgwFgwK
+MTU4MjMxNTgtMQYIKwYBBAHBAQKBH0ZSQU5DSVNDTy5CVVNUT1NAR1JVUE9CSU1C
+Ty5DT00wgZ8GCCsGAQUFBwEBBIGSMIGPMFQGCCsGAQUFBzAChkhodHRwczovL2Fj
+ZzQuYWNlcHRhLmNvbS9kZXNjYXJnYXMvYWNlcHRhLmNvbS5nNC5DbGFzZTNQZXJz
+b25hTmF0dXJhbC5jcnQwNwYIKwYBBQUHMAGGK2h0dHBzOi8vYWNnNC5hY2VwdGEu
+Y29tL2FjZzQvb2NzcC9DbGFzZTMtRzQwPwYDVR0fBDgwNjA0oDKgMIYuaHR0cHM6
+Ly9hY2c0LmFjZXB0YS5jb20vYWNnNC9jcmwvQ2xhc2UzLUc0LmNybDANBgkqhkiG
+9w0BAQsFAAOCAQEAuNkIcxEBhHAsJQDyDUjUCM/jp1fUK3JpOqvNz5wOllu/Os31
+78Xgh1k8Piq1edCgH3B8JhymkbVDkFK5tyUw/2UHN9vk0p/+OFRDL4KKvZ8a4jub
+OwTTO3ivy4BGCH87nOrBzR5Y37IUV/Feh+QhlQcPRZdGnstHJYsasfR1Lrny4c3D
+KU8fE7aGslgB149yOVaURVtZNZsGFB5TA5ofGBmXze4QxxpQdKASH0bPwFXlT6JO
+P81wg3rZfw4yKZukCRrV20INNwf6bB7rRpLlxamWSmElTYL/5KeOZ6Pf0xuu08p1
+qHwcY/uYnXw0EqtginBOKj2TrLWuqyT4n5BdYQ==
+</X509Certificate></X509Data></KeyInfo></Signature>
+    </DTE>

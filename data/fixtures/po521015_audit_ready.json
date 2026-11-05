@@ -1,0 +1,2468 @@
+{
+  "po_order_id": "PO521015",
+  "warehouse_name": "CH_34_Manuel Montt",
+  "supplier_name": "Ideal S.A. (Grupo Bimbo)",
+  "supplier_tax_id": "90297000-0",
+  "order_status": "RECEPCION_CERRADA",
+  "total_ordenado_neto": 2029303,
+  "total_recepcionado_neto": 1789977,
+  "total_facturado_neto": 2009229,
+  "total_facturado_con_iva": 2390983,
+  "total_monto_reclamar_nc": 219252,
+  "total_facturas": 2,
+  "facturas": {
+    "56500937": {
+      "items": [
+        {
+          "linea": 1,
+          "codigo": "502682",
+          "descripcion": "502682Galleton Chocolate Chip 1p 40g BOL",
+          "cantidad_facturada": 60,
+          "unidad_medida": "UN",
+          "precio_facturado": 337,
+          "monto_facturado": 20220
+        },
+        {
+          "linea": 2,
+          "codigo": "502679",
+          "descripcion": "502679Galleton Almendra 1p 40g BOLSA NUR",
+          "cantidad_facturada": 60,
+          "unidad_medida": "UN",
+          "precio_facturado": 337,
+          "monto_facturado": 20220
+        }
+      ],
+      "po_items": [
+        {
+          "sku_id": "X426S2",
+          "supplier_sku": "X426S2",
+          "barcodes": [
+            "X426S2"
+          ],
+          "product_name": "Galleton Almendras Nutrabien 40Gr",
+          "quantity_ordered": 60,
+          "quantity_delivered": 60,
+          "cost_unit_lc": 337,
+          "amt_ordered_lc": 20220,
+          "amt_delivered_lc": 20220,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "3GU09T",
+          "supplier_sku": "3GU09T",
+          "barcodes": [
+            "3GU09T"
+          ],
+          "product_name": "Galleton Chocolate Chip Nutrabien 40Gr",
+          "quantity_ordered": 60,
+          "quantity_delivered": 60,
+          "cost_unit_lc": 337,
+          "amt_ordered_lc": 20220,
+          "amt_delivered_lc": 20220,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        }
+      ]
+    },
+    "56500972": {
+      "items": [
+        {
+          "linea": 1,
+          "codigo": "965383",
+          "descripcion": "965383 Takis Buckin Ranch CH 1p 190g FLOW BAR",
+          "cantidad_facturada": 14,
+          "unidad_medida": "UN",
+          "precio_facturado": 1168,
+          "monto_facturado": 16352
+        },
+        {
+          "linea": 2,
+          "codigo": "503068",
+          "descripcion": "Alfajor Clasico 4p 180g Dpy LDS",
+          "cantidad_facturada": 36,
+          "unidad_medida": "UN",
+          "precio_facturado": 1411,
+          "monto_facturado": 50796
+        },
+        {
+          "linea": 3,
+          "codigo": "21734",
+          "descripcion": "21734 Tortilla Pack Fiesta 24p 600g BOLSA TR",
+          "cantidad_facturada": 12,
+          "unidad_medida": "UN",
+          "precio_facturado": 2013,
+          "monto_facturado": 24156
+        },
+        {
+          "linea": 4,
+          "codigo": "504566",
+          "descripcion": "504566 Tortilla Burrera 22cms 8p 400g BOLSA TR",
+          "cantidad_facturada": 20,
+          "unidad_medida": "UN",
+          "precio_facturado": 1531,
+          "monto_facturado": 30620
+        },
+        {
+          "linea": 5,
+          "codigo": "44555",
+          "descripcion": "44555 Rapiditas Tortilla 8p 200g ASS ID",
+          "cantidad_facturada": 27,
+          "unidad_medida": "UN",
+          "precio_facturado": 857,
+          "monto_facturado": 23139
+        },
+        {
+          "linea": 6,
+          "codigo": "4388",
+          "descripcion": "4388Pan rallado XL 250g ID",
+          "cantidad_facturada": 32,
+          "unidad_medida": "UN",
+          "precio_facturado": 908,
+          "monto_facturado": 29056
+        },
+        {
+          "linea": 7,
+          "codigo": "504574",
+          "descripcion": "504574 Tortilla Grandota 8p 620g BOLSA TR",
+          "cantidad_facturada": 16,
+          "unidad_medida": "UN",
+          "precio_facturado": 1955,
+          "monto_facturado": 31280
+        },
+        {
+          "linea": 8,
+          "codigo": "500857",
+          "descripcion": "500857 Pizza Piedra 2p 270g ID",
+          "cantidad_facturada": 20,
+          "unidad_medida": "UN",
+          "precio_facturado": 1410,
+          "monto_facturado": 28200
+        },
+        {
+          "linea": 9,
+          "codigo": "501107",
+          "descripcion": "501107 Pan Artesano Hamburguesa 8p 720g BOL ID",
+          "cantidad_facturada": 15,
+          "unidad_medida": "UN",
+          "precio_facturado": 2079,
+          "monto_facturado": 31185
+        },
+        {
+          "linea": 10,
+          "codigo": "501866",
+          "descripcion": "501866 Pan Completo XL 6p 528g BOLSA ID",
+          "cantidad_facturada": 27,
+          "unidad_medida": "UN",
+          "precio_facturado": 1426,
+          "monto_facturado": 38502
+        },
+        {
+          "linea": 11,
+          "codigo": "502988",
+          "descripcion": "Pan Artesano Integral 1p 600g Bolsa ID",
+          "cantidad_facturada": 20,
+          "unidad_medida": "UN",
+          "precio_facturado": 2008,
+          "monto_facturado": 40160
+        },
+        {
+          "linea": 12,
+          "codigo": "503413",
+          "descripcion": "503413 Pan Integ masProtein10 1p 640g BOLSA ID",
+          "cantidad_facturada": 10,
+          "unidad_medida": "UN",
+          "precio_facturado": 1865,
+          "monto_facturado": 18650
+        },
+        {
+          "linea": 13,
+          "codigo": "503410",
+          "descripcion": "503410 Pan Hotdog 8p 480g Bolsa ID",
+          "cantidad_facturada": 36,
+          "unidad_medida": "UN",
+          "precio_facturado": 1467,
+          "monto_facturado": 52812
+        },
+        {
+          "linea": 14,
+          "codigo": "504104",
+          "descripcion": "504104 Pan Blanco Cero Cero 1p 580g BOLS",
+          "cantidad_facturada": 20,
+          "unidad_medida": "UN",
+          "precio_facturado": 1994,
+          "monto_facturado": 39880
+        },
+        {
+          "linea": 15,
+          "codigo": "504103",
+          "descripcion": "504103 Pan Integral Cero Cero 1p 600g BO",
+          "cantidad_facturada": 30,
+          "unidad_medida": "UN",
+          "precio_facturado": 2064,
+          "monto_facturado": 61920
+        },
+        {
+          "linea": 16,
+          "codigo": "504186",
+          "descripcion": "504186 PanBlanco Artesano 1p 550gBOL",
+          "cantidad_facturada": 60,
+          "unidad_medida": "UN",
+          "precio_facturado": 2008,
+          "monto_facturado": 120480
+        },
+        {
+          "linea": 17,
+          "codigo": "504337",
+          "descripcion": "504337 Hamburguesa Brioche 4p 352g BOLSA ID",
+          "cantidad_facturada": 20,
+          "unidad_medida": "UN",
+          "precio_facturado": 1376,
+          "monto_facturado": 27520
+        },
+        {
+          "linea": 18,
+          "codigo": "504423",
+          "descripcion": "504423 Rapidita Linaza Chia 8p 200g BOLS",
+          "cantidad_facturada": 27,
+          "unidad_medida": "UN",
+          "precio_facturado": 919,
+          "monto_facturado": 24813
+        },
+        {
+          "linea": 19,
+          "codigo": "506369",
+          "descripcion": "506369 Pita Cero Cero Blanca 8p 344g BOLSA ID",
+          "cantidad_facturada": 14,
+          "unidad_medida": "UN",
+          "precio_facturado": 1112,
+          "monto_facturado": 15568
+        },
+        {
+          "linea": 20,
+          "codigo": "504001",
+          "descripcion": "504001 Takis Intense Nacho CH 1p 190g FLOW BAR",
+          "cantidad_facturada": 21,
+          "unidad_medida": "UN",
+          "precio_facturado": 1168,
+          "monto_facturado": 24528
+        },
+        {
+          "linea": 21,
+          "codigo": "506315",
+          "descripcion": "506315 Pan Blanco 1p 580g BOLSA ID",
+          "cantidad_facturada": 30,
+          "unidad_medida": "UN",
+          "precio_facturado": 1438,
+          "monto_facturado": 43140
+        },
+        {
+          "linea": 22,
+          "codigo": "964621",
+          "descripcion": "964621 Takis Original CH 1p 190g FLOW BAR",
+          "cantidad_facturada": 21,
+          "unidad_medida": "UN",
+          "precio_facturado": 1168,
+          "monto_facturado": 24528
+        },
+        {
+          "linea": 23,
+          "codigo": "964620",
+          "descripcion": "964620 Takis Fuego CH 1p 190g FLOW BAR",
+          "cantidad_facturada": 21,
+          "unidad_medida": "UN",
+          "precio_facturado": 1168,
+          "monto_facturado": 24528
+        },
+        {
+          "linea": 24,
+          "codigo": "964622",
+          "descripcion": "964622 Takis Xplosion CH 1p 190g FLOW BAR",
+          "cantidad_facturada": 21,
+          "unidad_medida": "UN",
+          "precio_facturado": 1168,
+          "monto_facturado": 24528
+        },
+        {
+          "linea": 25,
+          "codigo": "964614",
+          "descripcion": "964614 Hot Dog Brioche Artes 6p 370g BOLSA ID",
+          "cantidad_facturada": 18,
+          "unidad_medida": "UN",
+          "precio_facturado": 1524,
+          "monto_facturado": 27432
+        },
+        {
+          "linea": 26,
+          "codigo": "503730",
+          "descripcion": "503730 Rapidita XL Integral 8p 415g BOLSA ID",
+          "cantidad_facturada": 20,
+          "unidad_medida": "UN",
+          "precio_facturado": 1350,
+          "monto_facturado": 27000
+        },
+        {
+          "linea": 27,
+          "codigo": "964670",
+          "descripcion": "964670 Pan Sin Bordes 1p 400g BOLSA ID",
+          "cantidad_facturada": 12,
+          "unidad_medida": "UN",
+          "precio_facturado": 2147,
+          "monto_facturado": 25764
+        },
+        {
+          "linea": 28,
+          "codigo": "964761",
+          "descripcion": "964761 Salmas Clasicas 6p 108g CJ SAN",
+          "cantidad_facturada": 28,
+          "unidad_medida": "UN",
+          "precio_facturado": 1283,
+          "monto_facturado": 35924
+        },
+        {
+          "linea": 29,
+          "codigo": "965204",
+          "descripcion": "965204 Mankeke�6p 180g DPY MLA",
+          "cantidad_facturada": 31,
+          "unidad_medida": "UN",
+          "precio_facturado": 1171,
+          "monto_facturado": 36301
+        },
+        {
+          "linea": 30,
+          "codigo": "965200",
+          "descripcion": "965200 Pinguinos 6p 240g CJ MLA",
+          "cantidad_facturada": 31,
+          "unidad_medida": "UN",
+          "precio_facturado": 1759,
+          "monto_facturado": 54529
+        },
+        {
+          "linea": 31,
+          "codigo": "965201",
+          "descripcion": "965201 Gansito 5p 250g CJ MLA",
+          "cantidad_facturada": 31,
+          "unidad_medida": "UN",
+          "precio_facturado": 2053,
+          "monto_facturado": 63643
+        },
+        {
+          "linea": 32,
+          "codigo": "965228",
+          "descripcion": "965228 Rapiditas Cero Cero 8p 200g BOLSA ID",
+          "cantidad_facturada": 27,
+          "unidad_medida": "UN",
+          "precio_facturado": 919,
+          "monto_facturado": 24813
+        },
+        {
+          "linea": 33,
+          "codigo": "23211",
+          "descripcion": "23211 Pizza Rectangular 3p 750g ID",
+          "cantidad_facturada": 12,
+          "unidad_medida": "UN",
+          "precio_facturado": 1896,
+          "monto_facturado": 22752
+        },
+        {
+          "linea": 34,
+          "codigo": "23634",
+          "descripcion": "23634 Pizza Cl�sica 2p 500g ID",
+          "cantidad_facturada": 20,
+          "unidad_medida": "UN",
+          "precio_facturado": 1337,
+          "monto_facturado": 26740
+        },
+        {
+          "linea": 35,
+          "codigo": "0429",
+          "descripcion": "0429 Pan Pita Integral 8p 300g CJ ID",
+          "cantidad_facturada": 28,
+          "unidad_medida": "UN",
+          "precio_facturado": 976,
+          "monto_facturado": 27328
+        },
+        {
+          "linea": 36,
+          "codigo": "0428",
+          "descripcion": "0428 Pan Pita Blanco 8p 300g CJ ID",
+          "cantidad_facturada": 14,
+          "unidad_medida": "UN",
+          "precio_facturado": 976,
+          "monto_facturado": 13664
+        },
+        {
+          "linea": 37,
+          "codigo": "41671",
+          "descripcion": "41671 Prepizza Toques de Cebolla 2p 500g",
+          "cantidad_facturada": 18,
+          "unidad_medida": "UN",
+          "precio_facturado": 1391,
+          "monto_facturado": 25038
+        },
+        {
+          "linea": 38,
+          "codigo": "40279",
+          "descripcion": "40279 Mil Hojas 6p 280g ADP",
+          "cantidad_facturada": 44,
+          "unidad_medida": "UN",
+          "precio_facturado": 2079,
+          "monto_facturado": 91476
+        },
+        {
+          "linea": 39,
+          "codigo": "504571",
+          "descripcion": "504571 Tortilla Fajitas 10p 320g BOLSA TR",
+          "cantidad_facturada": 20,
+          "unidad_medida": "UN",
+          "precio_facturado": 1333,
+          "monto_facturado": 26660
+        },
+        {
+          "linea": 40,
+          "codigo": "964588",
+          "descripcion": "964588 Pan Blanco XL NC 1p 750g BOLSA ID",
+          "cantidad_facturada": 72,
+          "unidad_medida": "UN",
+          "precio_facturado": 1809,
+          "monto_facturado": 130248
+        },
+        {
+          "linea": 41,
+          "codigo": "965202",
+          "descripcion": "965202 Rayita TwinkiesVainillaB�5p 150g DPY MLA",
+          "cantidad_facturada": 31,
+          "unidad_medida": "UN",
+          "precio_facturado": 1171,
+          "monto_facturado": 36301
+        },
+        {
+          "linea": 42,
+          "codigo": "22016",
+          "descripcion": "22016 Pan Integral Stuttgart 650g FUC",
+          "cantidad_facturada": 20,
+          "unidad_medida": "UN",
+          "precio_facturado": 1712,
+          "monto_facturado": 34240
+        },
+        {
+          "linea": 43,
+          "codigo": "506564",
+          "descripcion": "506564 Pan Multigrano 1p 350g BOLSA FUC",
+          "cantidad_facturada": 13,
+          "unidad_medida": "UN",
+          "precio_facturado": 1283,
+          "monto_facturado": 16679
+        },
+        {
+          "linea": 44,
+          "codigo": "506561",
+          "descripcion": "506561 Pan Multigrano Light 1p 620g BOLSA FUC",
+          "cantidad_facturada": 20,
+          "unidad_medida": "UN",
+          "precio_facturado": 1834,
+          "monto_facturado": 36680
+        },
+        {
+          "linea": 45,
+          "codigo": "506558",
+          "descripcion": "506558 Pan Calabaza Nuez 1p 600g BOLSA FUC",
+          "cantidad_facturada": 10,
+          "unidad_medida": "UN",
+          "precio_facturado": 1834,
+          "monto_facturado": 18340
+        },
+        {
+          "linea": 46,
+          "codigo": "506560",
+          "descripcion": "506560 Pan Linaza Chia 1p 600g BOLSA FUC",
+          "cantidad_facturada": 10,
+          "unidad_medida": "UN",
+          "precio_facturado": 1834,
+          "monto_facturado": 18340
+        },
+        {
+          "linea": 47,
+          "codigo": "506559",
+          "descripcion": "506559 Pan Linaza Chia 1p 350g BOLSA FUC",
+          "cantidad_facturada": 13,
+          "unidad_medida": "UN",
+          "precio_facturado": 1283,
+          "monto_facturado": 16679
+        },
+        {
+          "linea": 48,
+          "codigo": "502704",
+          "descripcion": "502704Queque Fam Zan Prem 1p 250g BOLSA",
+          "cantidad_facturada": 16,
+          "unidad_medida": "UN",
+          "precio_facturado": 1524,
+          "monto_facturado": 24384
+        },
+        {
+          "linea": 49,
+          "codigo": "503170",
+          "descripcion": "503170 Braunichoc 4p 140g ME NUR",
+          "cantidad_facturada": 24,
+          "unidad_medida": "UN",
+          "precio_facturado": 1230,
+          "monto_facturado": 29520
+        },
+        {
+          "linea": 50,
+          "codigo": "503375",
+          "descripcion": "503375 Brownie Mini 6p 180g ME NUR",
+          "cantidad_facturada": 15,
+          "unidad_medida": "UN",
+          "precio_facturado": 1465,
+          "monto_facturado": 21975
+        },
+        {
+          "linea": 51,
+          "codigo": "964763",
+          "descripcion": "964763 Salmas Camote Zanahoria 6p 108g CJ SAN",
+          "cantidad_facturada": 28,
+          "unidad_medida": "UN",
+          "precio_facturado": 1283,
+          "monto_facturado": 35924
+        },
+        {
+          "linea": 52,
+          "codigo": "964847",
+          "descripcion": "964847 Salmas Chia Linaza 6p 108g DPY SAN",
+          "cantidad_facturada": 28,
+          "unidad_medida": "UN",
+          "precio_facturado": 1283,
+          "monto_facturado": 35924
+        },
+        {
+          "linea": 53,
+          "codigo": "502685",
+          "descripcion": "502685 Pack Brownie 4p 248g ME NUR",
+          "cantidad_facturada": 8,
+          "unidad_medida": "UN",
+          "precio_facturado": 1935,
+          "monto_facturado": 15480
+        },
+        {
+          "linea": 54,
+          "codigo": "964623",
+          "descripcion": "964623 Galleta Almendra SAz NC 1p 128g TUBO NUR",
+          "cantidad_facturada": 18,
+          "unidad_medida": "UN",
+          "precio_facturado": 1031,
+          "monto_facturado": 18558
+        },
+        {
+          "linea": 55,
+          "codigo": "502686",
+          "descripcion": "502686 Pack Brownie Chip 4p 248g ME NUR",
+          "cantidad_facturada": 8,
+          "unidad_medida": "UN",
+          "precio_facturado": 1935,
+          "monto_facturado": 15480
+        },
+        {
+          "linea": 56,
+          "codigo": "502702",
+          "descripcion": "502702Queque Fam NjaPrem 1p 250g BOLSA",
+          "cantidad_facturada": 16,
+          "unidad_medida": "UN",
+          "precio_facturado": 1524,
+          "monto_facturado": 24384
+        },
+        {
+          "linea": 57,
+          "codigo": "502701",
+          "descripcion": "502701Queque Fam Brow Prem 1p 250g BOLSA",
+          "cantidad_facturada": 16,
+          "unidad_medida": "UN",
+          "precio_facturado": 1524,
+          "monto_facturado": 24384
+        },
+        {
+          "linea": 58,
+          "codigo": "502700",
+          "descripcion": "502700Quequ Fam Marmol Prem 1p 250g BOLS",
+          "cantidad_facturada": 16,
+          "unidad_medida": "UN",
+          "precio_facturado": 1524,
+          "monto_facturado": 24384
+        },
+        {
+          "linea": 59,
+          "codigo": "502687",
+          "descripcion": "502687 Pack Brownie Sin Azucar 4p 200g M",
+          "cantidad_facturada": 8,
+          "unidad_medida": "UN",
+          "precio_facturado": 1935,
+          "monto_facturado": 15480
+        }
+      ],
+      "po_items": [
+        {
+          "sku_id": "80AZ5R",
+          "supplier_sku": "80AZ5R",
+          "barcodes": [
+            "80AZ5R"
+          ],
+          "product_name": "Pan Molde Cero Integral Ideal 600 g",
+          "quantity_ordered": 30,
+          "quantity_delivered": 0,
+          "cost_unit_lc": 1942,
+          "amt_ordered_lc": 58260,
+          "amt_delivered_lc": 0,
+          "diff_qty": 30,
+          "diff_ordered_delivered": 58260
+        },
+        {
+          "sku_id": "QJSXU0",
+          "supplier_sku": "QJSXU0",
+          "barcodes": [
+            "QJSXU0"
+          ],
+          "product_name": "Pan De Molde Ideal 580 g",
+          "quantity_ordered": 60,
+          "quantity_delivered": 30,
+          "cost_unit_lc": 1438,
+          "amt_ordered_lc": 86280,
+          "amt_delivered_lc": 43140,
+          "diff_qty": 30,
+          "diff_ordered_delivered": 43140
+        },
+        {
+          "sku_id": "57800104",
+          "supplier_sku": "57800104",
+          "barcodes": [
+            "57800104"
+          ],
+          "product_name": "Pan Hamburguesa Ideal Artesano (720 g), 8 Unidades",
+          "quantity_ordered": 15,
+          "quantity_delivered": 0,
+          "cost_unit_lc": 2024,
+          "amt_ordered_lc": 30360,
+          "amt_delivered_lc": 0,
+          "diff_qty": 15,
+          "diff_ordered_delivered": 30360
+        },
+        {
+          "sku_id": "AF9QGW",
+          "supplier_sku": "AF9QGW",
+          "barcodes": [
+            "AF9QGW"
+          ],
+          "product_name": "Pan Hot Dog Brioche Artesano Ideal 6 Unidades",
+          "quantity_ordered": 18,
+          "quantity_delivered": 0,
+          "cost_unit_lc": 1524,
+          "amt_ordered_lc": 27432,
+          "amt_delivered_lc": 0,
+          "diff_qty": 18,
+          "diff_ordered_delivered": 27432
+        },
+        {
+          "sku_id": "15132657",
+          "supplier_sku": "15132657",
+          "barcodes": [
+            "15132657"
+          ],
+          "product_name": "Pan Completo XL Ideal 6 Unidades 528 g",
+          "quantity_ordered": 27,
+          "quantity_delivered": 9,
+          "cost_unit_lc": 1343,
+          "amt_ordered_lc": 36261,
+          "amt_delivered_lc": 12087,
+          "diff_qty": 18,
+          "diff_ordered_delivered": 24174
+        },
+        {
+          "sku_id": "21653363",
+          "supplier_sku": "21653363",
+          "barcodes": [
+            "21653363"
+          ],
+          "product_name": "Queque Nutrabien! Brownie Sin Az·car 250 g",
+          "quantity_ordered": 16,
+          "quantity_delivered": 0,
+          "cost_unit_lc": 1465,
+          "amt_ordered_lc": 23440,
+          "amt_delivered_lc": 0,
+          "diff_qty": 16,
+          "diff_ordered_delivered": 23440
+        },
+        {
+          "sku_id": "G45RIF",
+          "supplier_sku": "G45RIF",
+          "barcodes": [
+            "G45RIF"
+          ],
+          "product_name": "Pan Blanco Ideal Cero Cero Bolsa 580 g",
+          "quantity_ordered": 20,
+          "quantity_delivered": 10,
+          "cost_unit_lc": 1876,
+          "amt_ordered_lc": 37520,
+          "amt_delivered_lc": 18760,
+          "diff_qty": 10,
+          "diff_ordered_delivered": 18760
+        },
+        {
+          "sku_id": "JQK9E0",
+          "supplier_sku": "JQK9E0",
+          "barcodes": [
+            "JQK9E0"
+          ],
+          "product_name": "Pan Hamburguesa Artesano Brioche 4 Uni Ideal 352 G",
+          "quantity_ordered": 20,
+          "quantity_delivered": 10,
+          "cost_unit_lc": 1376,
+          "amt_ordered_lc": 27520,
+          "amt_delivered_lc": 13760,
+          "diff_qty": 10,
+          "diff_ordered_delivered": 13760
+        },
+        {
+          "sku_id": "L7S6M7",
+          "supplier_sku": "L7S6M7",
+          "barcodes": [
+            "L7S6M7"
+          ],
+          "product_name": "Queque Familiar Marmolado Nutrabien 1 Paquete 250G G",
+          "quantity_ordered": 16,
+          "quantity_delivered": 16,
+          "cost_unit_lc": 1524,
+          "amt_ordered_lc": 24384,
+          "amt_delivered_lc": 24384,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "7WR04L",
+          "supplier_sku": "7WR04L",
+          "barcodes": [
+            "7WR04L"
+          ],
+          "product_name": "Pan De Molde Ideal Artesano Blanco 550 g",
+          "quantity_ordered": 60,
+          "quantity_delivered": 60,
+          "cost_unit_lc": 1896,
+          "amt_ordered_lc": 113760,
+          "amt_delivered_lc": 113760,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "XFA4RH",
+          "supplier_sku": "XFA4RH",
+          "barcodes": [
+            "XFA4RH"
+          ],
+          "product_name": "Pan Integral Linaza Chia Fuchs 600 g",
+          "quantity_ordered": 10,
+          "quantity_delivered": 10,
+          "cost_unit_lc": 1834.2,
+          "amt_ordered_lc": 18342,
+          "amt_delivered_lc": 18342,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "OPOC5G",
+          "supplier_sku": "OPOC5G",
+          "barcodes": [
+            "OPOC5G"
+          ],
+          "product_name": "Pack Brownie Chips 4 Unidades",
+          "quantity_ordered": 8,
+          "quantity_delivered": 8,
+          "cost_unit_lc": 1935,
+          "amt_ordered_lc": 15480,
+          "amt_delivered_lc": 15480,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "K6SYAN",
+          "supplier_sku": "K6SYAN",
+          "barcodes": [
+            "K6SYAN"
+          ],
+          "product_name": "Takis Fuego 190 g",
+          "quantity_ordered": 21,
+          "quantity_delivered": 21,
+          "cost_unit_lc": 1294,
+          "amt_ordered_lc": 27174,
+          "amt_delivered_lc": 27174,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "Y77GO8",
+          "supplier_sku": "Y77GO8",
+          "barcodes": [
+            "Y77GO8"
+          ],
+          "product_name": "Galletas Nutra Bien! Con Almendras Sin Az·car 128 g",
+          "quantity_ordered": 18,
+          "quantity_delivered": 18,
+          "cost_unit_lc": 1031,
+          "amt_ordered_lc": 18558,
+          "amt_delivered_lc": 18558,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "PZKG2J",
+          "supplier_sku": "PZKG2J",
+          "barcodes": [
+            "PZKG2J"
+          ],
+          "product_name": "Brownie Nutra Bien! Sin Az·cares 200 g",
+          "quantity_ordered": 8,
+          "quantity_delivered": 8,
+          "cost_unit_lc": 1759,
+          "amt_ordered_lc": 14072,
+          "amt_delivered_lc": 14072,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "57800096",
+          "supplier_sku": "57800096",
+          "barcodes": [
+            "57800096"
+          ],
+          "product_name": "Tortilla Tia Rosa Grandota (620 g) 8 Unidades",
+          "quantity_ordered": 16,
+          "quantity_delivered": 16,
+          "cost_unit_lc": 1955,
+          "amt_ordered_lc": 31280,
+          "amt_delivered_lc": 31280,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "KUPQHW",
+          "supplier_sku": "KUPQHW",
+          "barcodes": [
+            "KUPQHW"
+          ],
+          "product_name": "Pita Ideal Cero & Cero Blanco 8 Piezas 344 g",
+          "quantity_ordered": 14,
+          "quantity_delivered": 14,
+          "cost_unit_lc": 685,
+          "amt_ordered_lc": 9590,
+          "amt_delivered_lc": 9590,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "SDZUIN",
+          "supplier_sku": "SDZUIN",
+          "barcodes": [
+            "SDZUIN"
+          ],
+          "product_name": "Rayita (150 g)  5 Unidades",
+          "quantity_ordered": 31,
+          "quantity_delivered": 31,
+          "cost_unit_lc": 1171,
+          "amt_ordered_lc": 36301,
+          "amt_delivered_lc": 36301,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "POE65F",
+          "supplier_sku": "POE65F",
+          "barcodes": [
+            "POE65F"
+          ],
+          "product_name": "Pan Integral Calabaza Nuez Fuchs 600 g",
+          "quantity_ordered": 10,
+          "quantity_delivered": 10,
+          "cost_unit_lc": 1834.2,
+          "amt_ordered_lc": 18342,
+          "amt_delivered_lc": 18342,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "YCVU0B",
+          "supplier_sku": "YCVU0B",
+          "barcodes": [
+            "YCVU0B"
+          ],
+          "product_name": "Pack Brownie Nutra Bien! Braunichoc (140 g) 4 Unidades",
+          "quantity_ordered": 24,
+          "quantity_delivered": 24,
+          "cost_unit_lc": 1118,
+          "amt_ordered_lc": 26832,
+          "amt_delivered_lc": 26832,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "YN667H",
+          "supplier_sku": "YN667H",
+          "barcodes": [
+            "YN667H"
+          ],
+          "product_name": "Pan Molde Ideal Integral Protein10 650 g",
+          "quantity_ordered": 10,
+          "quantity_delivered": 10,
+          "cost_unit_lc": 1755,
+          "amt_ordered_lc": 17550,
+          "amt_delivered_lc": 17550,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "21653387",
+          "supplier_sku": "21653387",
+          "barcodes": [
+            "21653387"
+          ],
+          "product_name": "Queque Zanahoria Nutra Bien! 250 g",
+          "quantity_ordered": 16,
+          "quantity_delivered": 16,
+          "cost_unit_lc": 1465,
+          "amt_ordered_lc": 23440,
+          "amt_delivered_lc": 23440,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "DOK63T",
+          "supplier_sku": "DOK63T",
+          "barcodes": [
+            "DOK63T"
+          ],
+          "product_name": "Tortillas Takis Intense Nacho 190 g",
+          "quantity_ordered": 21,
+          "quantity_delivered": 21,
+          "cost_unit_lc": 1168,
+          "amt_ordered_lc": 24528,
+          "amt_delivered_lc": 24528,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "I8HIXF",
+          "supplier_sku": "I8HIXF",
+          "barcodes": [
+            "I8HIXF"
+          ],
+          "product_name": "Rapiditas Cero Cero (200 g) 8 Unidades",
+          "quantity_ordered": 27,
+          "quantity_delivered": 27,
+          "cost_unit_lc": 919,
+          "amt_ordered_lc": 24813,
+          "amt_delivered_lc": 24813,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "15132843",
+          "supplier_sku": "15132843",
+          "barcodes": [
+            "15132843"
+          ],
+          "product_name": "Pan Pita Blanco Ideal 8 Unidades 300 g",
+          "quantity_ordered": 14,
+          "quantity_delivered": 14,
+          "cost_unit_lc": 951,
+          "amt_ordered_lc": 13314,
+          "amt_delivered_lc": 13314,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "DZLM2M",
+          "supplier_sku": "DZLM2M",
+          "barcodes": [
+            "DZLM2M"
+          ],
+          "product_name": "Salmas Sanissimo Camote Zanahoria 6 Paquetes 108 g",
+          "quantity_ordered": 28,
+          "quantity_delivered": 28,
+          "cost_unit_lc": 1171,
+          "amt_ordered_lc": 32788,
+          "amt_delivered_lc": 32788,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "3ONI9R",
+          "supplier_sku": "3ONI9R",
+          "barcodes": [
+            "3ONI9R"
+          ],
+          "product_name": "Gansito (250 g) 5 Unidades",
+          "quantity_ordered": 31,
+          "quantity_delivered": 31,
+          "cost_unit_lc": 2053,
+          "amt_ordered_lc": 63643,
+          "amt_delivered_lc": 63643,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "0OZS1W",
+          "supplier_sku": "0OZS1W",
+          "barcodes": [
+            "0OZS1W"
+          ],
+          "product_name": "Pan Molde Ideal Artesano Integral 600 g",
+          "quantity_ordered": 20,
+          "quantity_delivered": 20,
+          "cost_unit_lc": 1890,
+          "amt_ordered_lc": 37800,
+          "amt_delivered_lc": 37800,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "Z9H766",
+          "supplier_sku": "Z9H766",
+          "barcodes": [
+            "Z9H766"
+          ],
+          "product_name": "Mankeke (180 g) 6 Unidades",
+          "quantity_ordered": 31,
+          "quantity_delivered": 31,
+          "cost_unit_lc": 1171,
+          "amt_ordered_lc": 36301,
+          "amt_delivered_lc": 36301,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "8DJDNS",
+          "supplier_sku": "8DJDNS",
+          "barcodes": [
+            "8DJDNS"
+          ],
+          "product_name": "Salmas Sanissimo Chia Linaza 6 Paquetes 108 g",
+          "quantity_ordered": 28,
+          "quantity_delivered": 28,
+          "cost_unit_lc": 1171,
+          "amt_ordered_lc": 32788,
+          "amt_delivered_lc": 32788,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "46229092",
+          "supplier_sku": "46229092",
+          "barcodes": [
+            "46229092"
+          ],
+          "product_name": "Brownies Nutra Bien! 4 Unidades",
+          "quantity_ordered": 8,
+          "quantity_delivered": 8,
+          "cost_unit_lc": 1759,
+          "amt_ordered_lc": 14072,
+          "amt_delivered_lc": 14072,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "15133050",
+          "supplier_sku": "15133050",
+          "barcodes": [
+            "15133050"
+          ],
+          "product_name": "Tortilla Mexicana Grande Tia Rosa 17cm 10 Unidades 320 g",
+          "quantity_ordered": 20,
+          "quantity_delivered": 20,
+          "cost_unit_lc": 1221,
+          "amt_ordered_lc": 24420,
+          "amt_delivered_lc": 24420,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "UL1N30",
+          "supplier_sku": "UL1N30",
+          "barcodes": [
+            "UL1N30"
+          ],
+          "product_name": "Pastel Mil Hojas Manjar Agua de Piedra 6 Unidades",
+          "quantity_ordered": 44,
+          "quantity_delivered": 44,
+          "cost_unit_lc": 2079,
+          "amt_ordered_lc": 91476,
+          "amt_delivered_lc": 91476,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "15132888",
+          "supplier_sku": "15132888",
+          "barcodes": [
+            "15132888"
+          ],
+          "product_name": "Pan Rallado Ideal Xl 250 g",
+          "quantity_ordered": 32,
+          "quantity_delivered": 32,
+          "cost_unit_lc": 767,
+          "amt_ordered_lc": 24544,
+          "amt_delivered_lc": 24544,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "8V8Z6E",
+          "supplier_sku": "8V8Z6E",
+          "barcodes": [
+            "8V8Z6E"
+          ],
+          "product_name": "Pre Pizza Ideal Toques De Cebolla (2 Unidades) 500 g",
+          "quantity_ordered": 18,
+          "quantity_delivered": 18,
+          "cost_unit_lc": 1337,
+          "amt_ordered_lc": 24066,
+          "amt_delivered_lc": 24066,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "6Y3825",
+          "supplier_sku": "6Y3825",
+          "barcodes": [
+            "6Y3825"
+          ],
+          "product_name": "Brownie Mini Marinela 6 Unidades 180g",
+          "quantity_ordered": 15,
+          "quantity_delivered": 15,
+          "cost_unit_lc": 1465,
+          "amt_ordered_lc": 21975,
+          "amt_delivered_lc": 21975,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "D5WBYD",
+          "supplier_sku": "D5WBYD",
+          "barcodes": [
+            "D5WBYD"
+          ],
+          "product_name": "Takis Original 190 g",
+          "quantity_ordered": 21,
+          "quantity_delivered": 21,
+          "cost_unit_lc": 1294,
+          "amt_ordered_lc": 27174,
+          "amt_delivered_lc": 27174,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "6QGNAW",
+          "supplier_sku": "6QGNAW",
+          "barcodes": [
+            "6QGNAW"
+          ],
+          "product_name": "Pan Linaza Chia Fuchs 350 g",
+          "quantity_ordered": 13,
+          "quantity_delivered": 13,
+          "cost_unit_lc": 1283,
+          "amt_ordered_lc": 16679,
+          "amt_delivered_lc": 16679,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "15133056",
+          "supplier_sku": "15133056",
+          "barcodes": [
+            "15133056"
+          ],
+          "product_name": "Tortilla Rapiditas Ideal (200 g) 8 Unidades",
+          "quantity_ordered": 27,
+          "quantity_delivered": 27,
+          "cost_unit_lc": 857,
+          "amt_ordered_lc": 23139,
+          "amt_delivered_lc": 23139,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "4KHQJ1",
+          "supplier_sku": "4KHQJ1",
+          "barcodes": [
+            "4KHQJ1"
+          ],
+          "product_name": "Alfajor Clasico Lagos Del Sur (180 g) 4 Unidades",
+          "quantity_ordered": 36,
+          "quantity_delivered": 36,
+          "cost_unit_lc": 1411,
+          "amt_ordered_lc": 50796,
+          "amt_delivered_lc": 50796,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "X426S2",
+          "supplier_sku": "X426S2",
+          "barcodes": [
+            "X426S2"
+          ],
+          "product_name": "Galleton Almendras Nutrabien 40Gr",
+          "quantity_ordered": 60,
+          "quantity_delivered": 60,
+          "cost_unit_lc": 337,
+          "amt_ordered_lc": 20220,
+          "amt_delivered_lc": 20220,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "RF77WG",
+          "supplier_sku": "RF77WG",
+          "barcodes": [
+            "RF77WG"
+          ],
+          "product_name": "Pinguinos (240 g) 6 Unidades",
+          "quantity_ordered": 31,
+          "quantity_delivered": 31,
+          "cost_unit_lc": 1759,
+          "amt_ordered_lc": 54529,
+          "amt_delivered_lc": 54529,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "JHN454",
+          "supplier_sku": "JHN454",
+          "barcodes": [
+            "JHN454"
+          ],
+          "product_name": "Pre Pizza Ideal A La Piedra (2 Unidades) 270 g",
+          "quantity_ordered": 20,
+          "quantity_delivered": 20,
+          "cost_unit_lc": 1410,
+          "amt_ordered_lc": 28200,
+          "amt_delivered_lc": 28200,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "4FM9KH",
+          "supplier_sku": "4FM9KH",
+          "barcodes": [
+            "4FM9KH"
+          ],
+          "product_name": "Tortillas de MaÝz Takis Buckin Ranch 190 g",
+          "quantity_ordered": 14,
+          "quantity_delivered": 14,
+          "cost_unit_lc": 1168,
+          "amt_ordered_lc": 16352,
+          "amt_delivered_lc": 16352,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "5DB8MI",
+          "supplier_sku": "5DB8MI",
+          "barcodes": [
+            "5DB8MI"
+          ],
+          "product_name": "Pan Completo HotDog 8un 480 g Ideal",
+          "quantity_ordered": 36,
+          "quantity_delivered": 36,
+          "cost_unit_lc": 1405,
+          "amt_ordered_lc": 50580,
+          "amt_delivered_lc": 50580,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "PSCFJ0",
+          "supplier_sku": "PSCFJ0",
+          "barcodes": [
+            "PSCFJ0"
+          ],
+          "product_name": "Pan Integral Fuch's Multigrano 350 g",
+          "quantity_ordered": 13,
+          "quantity_delivered": 13,
+          "cost_unit_lc": 1283,
+          "amt_ordered_lc": 16679,
+          "amt_delivered_lc": 16679,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "3GU09T",
+          "supplier_sku": "3GU09T",
+          "barcodes": [
+            "3GU09T"
+          ],
+          "product_name": "Galleton Chocolate Chip Nutrabien 40Gr",
+          "quantity_ordered": 60,
+          "quantity_delivered": 60,
+          "cost_unit_lc": 337,
+          "amt_ordered_lc": 20220,
+          "amt_delivered_lc": 20220,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "21653364",
+          "supplier_sku": "21653364",
+          "barcodes": [
+            "21653364"
+          ],
+          "product_name": "Queque Nutrabien! Brownie 250 g",
+          "quantity_ordered": 16,
+          "quantity_delivered": 16,
+          "cost_unit_lc": 1465,
+          "amt_ordered_lc": 23440,
+          "amt_delivered_lc": 23440,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "15132866",
+          "supplier_sku": "15132866",
+          "barcodes": [
+            "15132866"
+          ],
+          "product_name": "Pan Pita Ideal Integral (300 g) 8 Unidades",
+          "quantity_ordered": 28,
+          "quantity_delivered": 28,
+          "cost_unit_lc": 951,
+          "amt_ordered_lc": 26628,
+          "amt_delivered_lc": 26628,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "15132900",
+          "supplier_sku": "15132900",
+          "barcodes": [
+            "15132900"
+          ],
+          "product_name": "Pre Pizza Rectangular Ideal (750g) 3 Unidades",
+          "quantity_ordered": 12,
+          "quantity_delivered": 12,
+          "cost_unit_lc": 1895.55,
+          "amt_ordered_lc": 22746.6,
+          "amt_delivered_lc": 22746.6,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "SOEO96",
+          "supplier_sku": "SOEO96",
+          "barcodes": [
+            "SOEO96"
+          ],
+          "product_name": "Tortillas Ideal Rapiditas XL Integral 8 Unidades",
+          "quantity_ordered": 20,
+          "quantity_delivered": 20,
+          "cost_unit_lc": 1350,
+          "amt_ordered_lc": 27000,
+          "amt_delivered_lc": 27000,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "FXNTHP",
+          "supplier_sku": "FXNTHP",
+          "barcodes": [
+            "FXNTHP"
+          ],
+          "product_name": "Salmas Sanissimo Clasicas 6 Paquetes 108 g",
+          "quantity_ordered": 28,
+          "quantity_delivered": 28,
+          "cost_unit_lc": 1171,
+          "amt_ordered_lc": 32788,
+          "amt_delivered_lc": 32788,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "O846UX",
+          "supplier_sku": "O846UX",
+          "barcodes": [
+            "O846UX"
+          ],
+          "product_name": "Pan De Molde Light Multigrano Fuchs 620 g",
+          "quantity_ordered": 20,
+          "quantity_delivered": 20,
+          "cost_unit_lc": 1834.2,
+          "amt_ordered_lc": 36684,
+          "amt_delivered_lc": 36684,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "D0B1PL",
+          "supplier_sku": "D0B1PL",
+          "barcodes": [
+            "D0B1PL"
+          ],
+          "product_name": "Pan De Molde Blanco Sin Bordes Ideal 400 g",
+          "quantity_ordered": 12,
+          "quantity_delivered": 12,
+          "cost_unit_lc": 1994,
+          "amt_ordered_lc": 23928,
+          "amt_delivered_lc": 23928,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "1JJ80H",
+          "supplier_sku": "1JJ80H",
+          "barcodes": [
+            "1JJ80H"
+          ],
+          "product_name": "Tortilla Tia Rosa Pack Fiesta 24 Unidades",
+          "quantity_ordered": 12,
+          "quantity_delivered": 12,
+          "cost_unit_lc": 2013,
+          "amt_ordered_lc": 24156,
+          "amt_delivered_lc": 24156,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "15132703",
+          "supplier_sku": "15132703",
+          "barcodes": [
+            "15132703"
+          ],
+          "product_name": "Pan Ideal De Molde Blanco 750 g",
+          "quantity_ordered": 72,
+          "quantity_delivered": 72,
+          "cost_unit_lc": 1809,
+          "amt_ordered_lc": 130248,
+          "amt_delivered_lc": 130248,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "54622823",
+          "supplier_sku": "54622823",
+          "barcodes": [
+            "54622823"
+          ],
+          "product_name": "Pan De Molde Fuchs Integral 650 g",
+          "quantity_ordered": 20,
+          "quantity_delivered": 20,
+          "cost_unit_lc": 1712,
+          "amt_ordered_lc": 34240,
+          "amt_delivered_lc": 34240,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "15133037",
+          "supplier_sku": "15133037",
+          "barcodes": [
+            "15133037"
+          ],
+          "product_name": "Tortillas Tia Rosa Burreras 22 cm (400 g) 8 Unidades",
+          "quantity_ordered": 20,
+          "quantity_delivered": 20,
+          "cost_unit_lc": 1531,
+          "amt_ordered_lc": 30620,
+          "amt_delivered_lc": 30620,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "15132899",
+          "supplier_sku": "15132899",
+          "barcodes": [
+            "15132899"
+          ],
+          "product_name": "Pre Pizza Redonda 500 g Ideal 2 Unidades",
+          "quantity_ordered": 20,
+          "quantity_delivered": 20,
+          "cost_unit_lc": 1337.31,
+          "amt_ordered_lc": 26746.2,
+          "amt_delivered_lc": 26746.2,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "21653362",
+          "supplier_sku": "21653362",
+          "barcodes": [
+            "21653362"
+          ],
+          "product_name": "Queque Nutrabien! Naranja 250 g",
+          "quantity_ordered": 16,
+          "quantity_delivered": 16,
+          "cost_unit_lc": 1465,
+          "amt_ordered_lc": 23440,
+          "amt_delivered_lc": 23440,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "AOJ5WX",
+          "supplier_sku": "AOJ5WX",
+          "barcodes": [
+            "AOJ5WX"
+          ],
+          "product_name": "Tortillas Ideal Rapiditas Linaza ChÝa 200 g",
+          "quantity_ordered": 27,
+          "quantity_delivered": 27,
+          "cost_unit_lc": 970,
+          "amt_ordered_lc": 26190,
+          "amt_delivered_lc": 26190,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        },
+        {
+          "sku_id": "DK0V3H",
+          "supplier_sku": "DK0V3H",
+          "barcodes": [
+            "DK0V3H"
+          ],
+          "product_name": "Takis Xplosion 190 g",
+          "quantity_ordered": 21,
+          "quantity_delivered": 21,
+          "cost_unit_lc": 1294,
+          "amt_ordered_lc": 27174,
+          "amt_delivered_lc": 27174,
+          "diff_qty": 0,
+          "diff_ordered_delivered": 0
+        }
+      ]
+    }
+  },
+  "all_po_items": [
+    {
+      "sku_id": "80AZ5R",
+      "supplier_sku": "80AZ5R",
+      "barcodes": [
+        "80AZ5R"
+      ],
+      "product_name": "Pan Molde Cero Integral Ideal 600 g",
+      "quantity_ordered": 30,
+      "quantity_delivered": 0,
+      "cost_unit_lc": 1942,
+      "amt_ordered_lc": 58260,
+      "amt_delivered_lc": 0,
+      "diff_qty": 30,
+      "diff_ordered_delivered": 58260
+    },
+    {
+      "sku_id": "QJSXU0",
+      "supplier_sku": "QJSXU0",
+      "barcodes": [
+        "QJSXU0"
+      ],
+      "product_name": "Pan De Molde Ideal 580 g",
+      "quantity_ordered": 60,
+      "quantity_delivered": 30,
+      "cost_unit_lc": 1438,
+      "amt_ordered_lc": 86280,
+      "amt_delivered_lc": 43140,
+      "diff_qty": 30,
+      "diff_ordered_delivered": 43140
+    },
+    {
+      "sku_id": "57800104",
+      "supplier_sku": "57800104",
+      "barcodes": [
+        "57800104"
+      ],
+      "product_name": "Pan Hamburguesa Ideal Artesano (720 g), 8 Unidades",
+      "quantity_ordered": 15,
+      "quantity_delivered": 0,
+      "cost_unit_lc": 2024,
+      "amt_ordered_lc": 30360,
+      "amt_delivered_lc": 0,
+      "diff_qty": 15,
+      "diff_ordered_delivered": 30360
+    },
+    {
+      "sku_id": "AF9QGW",
+      "supplier_sku": "AF9QGW",
+      "barcodes": [
+        "AF9QGW"
+      ],
+      "product_name": "Pan Hot Dog Brioche Artesano Ideal 6 Unidades",
+      "quantity_ordered": 18,
+      "quantity_delivered": 0,
+      "cost_unit_lc": 1524,
+      "amt_ordered_lc": 27432,
+      "amt_delivered_lc": 0,
+      "diff_qty": 18,
+      "diff_ordered_delivered": 27432
+    },
+    {
+      "sku_id": "15132657",
+      "supplier_sku": "15132657",
+      "barcodes": [
+        "15132657"
+      ],
+      "product_name": "Pan Completo XL Ideal 6 Unidades 528 g",
+      "quantity_ordered": 27,
+      "quantity_delivered": 9,
+      "cost_unit_lc": 1343,
+      "amt_ordered_lc": 36261,
+      "amt_delivered_lc": 12087,
+      "diff_qty": 18,
+      "diff_ordered_delivered": 24174
+    },
+    {
+      "sku_id": "21653363",
+      "supplier_sku": "21653363",
+      "barcodes": [
+        "21653363"
+      ],
+      "product_name": "Queque Nutrabien! Brownie Sin Az·car 250 g",
+      "quantity_ordered": 16,
+      "quantity_delivered": 0,
+      "cost_unit_lc": 1465,
+      "amt_ordered_lc": 23440,
+      "amt_delivered_lc": 0,
+      "diff_qty": 16,
+      "diff_ordered_delivered": 23440
+    },
+    {
+      "sku_id": "G45RIF",
+      "supplier_sku": "G45RIF",
+      "barcodes": [
+        "G45RIF"
+      ],
+      "product_name": "Pan Blanco Ideal Cero Cero Bolsa 580 g",
+      "quantity_ordered": 20,
+      "quantity_delivered": 10,
+      "cost_unit_lc": 1876,
+      "amt_ordered_lc": 37520,
+      "amt_delivered_lc": 18760,
+      "diff_qty": 10,
+      "diff_ordered_delivered": 18760
+    },
+    {
+      "sku_id": "JQK9E0",
+      "supplier_sku": "JQK9E0",
+      "barcodes": [
+        "JQK9E0"
+      ],
+      "product_name": "Pan Hamburguesa Artesano Brioche 4 Uni Ideal 352 G",
+      "quantity_ordered": 20,
+      "quantity_delivered": 10,
+      "cost_unit_lc": 1376,
+      "amt_ordered_lc": 27520,
+      "amt_delivered_lc": 13760,
+      "diff_qty": 10,
+      "diff_ordered_delivered": 13760
+    },
+    {
+      "sku_id": "L7S6M7",
+      "supplier_sku": "L7S6M7",
+      "barcodes": [
+        "L7S6M7"
+      ],
+      "product_name": "Queque Familiar Marmolado Nutrabien 1 Paquete 250G G",
+      "quantity_ordered": 16,
+      "quantity_delivered": 16,
+      "cost_unit_lc": 1524,
+      "amt_ordered_lc": 24384,
+      "amt_delivered_lc": 24384,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "7WR04L",
+      "supplier_sku": "7WR04L",
+      "barcodes": [
+        "7WR04L"
+      ],
+      "product_name": "Pan De Molde Ideal Artesano Blanco 550 g",
+      "quantity_ordered": 60,
+      "quantity_delivered": 60,
+      "cost_unit_lc": 1896,
+      "amt_ordered_lc": 113760,
+      "amt_delivered_lc": 113760,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "XFA4RH",
+      "supplier_sku": "XFA4RH",
+      "barcodes": [
+        "XFA4RH"
+      ],
+      "product_name": "Pan Integral Linaza Chia Fuchs 600 g",
+      "quantity_ordered": 10,
+      "quantity_delivered": 10,
+      "cost_unit_lc": 1834.2,
+      "amt_ordered_lc": 18342,
+      "amt_delivered_lc": 18342,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "OPOC5G",
+      "supplier_sku": "OPOC5G",
+      "barcodes": [
+        "OPOC5G"
+      ],
+      "product_name": "Pack Brownie Chips 4 Unidades",
+      "quantity_ordered": 8,
+      "quantity_delivered": 8,
+      "cost_unit_lc": 1935,
+      "amt_ordered_lc": 15480,
+      "amt_delivered_lc": 15480,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "K6SYAN",
+      "supplier_sku": "K6SYAN",
+      "barcodes": [
+        "K6SYAN"
+      ],
+      "product_name": "Takis Fuego 190 g",
+      "quantity_ordered": 21,
+      "quantity_delivered": 21,
+      "cost_unit_lc": 1294,
+      "amt_ordered_lc": 27174,
+      "amt_delivered_lc": 27174,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "Y77GO8",
+      "supplier_sku": "Y77GO8",
+      "barcodes": [
+        "Y77GO8"
+      ],
+      "product_name": "Galletas Nutra Bien! Con Almendras Sin Az·car 128 g",
+      "quantity_ordered": 18,
+      "quantity_delivered": 18,
+      "cost_unit_lc": 1031,
+      "amt_ordered_lc": 18558,
+      "amt_delivered_lc": 18558,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "PZKG2J",
+      "supplier_sku": "PZKG2J",
+      "barcodes": [
+        "PZKG2J"
+      ],
+      "product_name": "Brownie Nutra Bien! Sin Az·cares 200 g",
+      "quantity_ordered": 8,
+      "quantity_delivered": 8,
+      "cost_unit_lc": 1759,
+      "amt_ordered_lc": 14072,
+      "amt_delivered_lc": 14072,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "57800096",
+      "supplier_sku": "57800096",
+      "barcodes": [
+        "57800096"
+      ],
+      "product_name": "Tortilla Tia Rosa Grandota (620 g) 8 Unidades",
+      "quantity_ordered": 16,
+      "quantity_delivered": 16,
+      "cost_unit_lc": 1955,
+      "amt_ordered_lc": 31280,
+      "amt_delivered_lc": 31280,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "KUPQHW",
+      "supplier_sku": "KUPQHW",
+      "barcodes": [
+        "KUPQHW"
+      ],
+      "product_name": "Pita Ideal Cero & Cero Blanco 8 Piezas 344 g",
+      "quantity_ordered": 14,
+      "quantity_delivered": 14,
+      "cost_unit_lc": 685,
+      "amt_ordered_lc": 9590,
+      "amt_delivered_lc": 9590,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "SDZUIN",
+      "supplier_sku": "SDZUIN",
+      "barcodes": [
+        "SDZUIN"
+      ],
+      "product_name": "Rayita (150 g)  5 Unidades",
+      "quantity_ordered": 31,
+      "quantity_delivered": 31,
+      "cost_unit_lc": 1171,
+      "amt_ordered_lc": 36301,
+      "amt_delivered_lc": 36301,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "POE65F",
+      "supplier_sku": "POE65F",
+      "barcodes": [
+        "POE65F"
+      ],
+      "product_name": "Pan Integral Calabaza Nuez Fuchs 600 g",
+      "quantity_ordered": 10,
+      "quantity_delivered": 10,
+      "cost_unit_lc": 1834.2,
+      "amt_ordered_lc": 18342,
+      "amt_delivered_lc": 18342,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "YCVU0B",
+      "supplier_sku": "YCVU0B",
+      "barcodes": [
+        "YCVU0B"
+      ],
+      "product_name": "Pack Brownie Nutra Bien! Braunichoc (140 g) 4 Unidades",
+      "quantity_ordered": 24,
+      "quantity_delivered": 24,
+      "cost_unit_lc": 1118,
+      "amt_ordered_lc": 26832,
+      "amt_delivered_lc": 26832,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "YN667H",
+      "supplier_sku": "YN667H",
+      "barcodes": [
+        "YN667H"
+      ],
+      "product_name": "Pan Molde Ideal Integral Protein10 650 g",
+      "quantity_ordered": 10,
+      "quantity_delivered": 10,
+      "cost_unit_lc": 1755,
+      "amt_ordered_lc": 17550,
+      "amt_delivered_lc": 17550,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "21653387",
+      "supplier_sku": "21653387",
+      "barcodes": [
+        "21653387"
+      ],
+      "product_name": "Queque Zanahoria Nutra Bien! 250 g",
+      "quantity_ordered": 16,
+      "quantity_delivered": 16,
+      "cost_unit_lc": 1465,
+      "amt_ordered_lc": 23440,
+      "amt_delivered_lc": 23440,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "DOK63T",
+      "supplier_sku": "DOK63T",
+      "barcodes": [
+        "DOK63T"
+      ],
+      "product_name": "Tortillas Takis Intense Nacho 190 g",
+      "quantity_ordered": 21,
+      "quantity_delivered": 21,
+      "cost_unit_lc": 1168,
+      "amt_ordered_lc": 24528,
+      "amt_delivered_lc": 24528,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "I8HIXF",
+      "supplier_sku": "I8HIXF",
+      "barcodes": [
+        "I8HIXF"
+      ],
+      "product_name": "Rapiditas Cero Cero (200 g) 8 Unidades",
+      "quantity_ordered": 27,
+      "quantity_delivered": 27,
+      "cost_unit_lc": 919,
+      "amt_ordered_lc": 24813,
+      "amt_delivered_lc": 24813,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "15132843",
+      "supplier_sku": "15132843",
+      "barcodes": [
+        "15132843"
+      ],
+      "product_name": "Pan Pita Blanco Ideal 8 Unidades 300 g",
+      "quantity_ordered": 14,
+      "quantity_delivered": 14,
+      "cost_unit_lc": 951,
+      "amt_ordered_lc": 13314,
+      "amt_delivered_lc": 13314,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "DZLM2M",
+      "supplier_sku": "DZLM2M",
+      "barcodes": [
+        "DZLM2M"
+      ],
+      "product_name": "Salmas Sanissimo Camote Zanahoria 6 Paquetes 108 g",
+      "quantity_ordered": 28,
+      "quantity_delivered": 28,
+      "cost_unit_lc": 1171,
+      "amt_ordered_lc": 32788,
+      "amt_delivered_lc": 32788,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "3ONI9R",
+      "supplier_sku": "3ONI9R",
+      "barcodes": [
+        "3ONI9R"
+      ],
+      "product_name": "Gansito (250 g) 5 Unidades",
+      "quantity_ordered": 31,
+      "quantity_delivered": 31,
+      "cost_unit_lc": 2053,
+      "amt_ordered_lc": 63643,
+      "amt_delivered_lc": 63643,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "0OZS1W",
+      "supplier_sku": "0OZS1W",
+      "barcodes": [
+        "0OZS1W"
+      ],
+      "product_name": "Pan Molde Ideal Artesano Integral 600 g",
+      "quantity_ordered": 20,
+      "quantity_delivered": 20,
+      "cost_unit_lc": 1890,
+      "amt_ordered_lc": 37800,
+      "amt_delivered_lc": 37800,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "Z9H766",
+      "supplier_sku": "Z9H766",
+      "barcodes": [
+        "Z9H766"
+      ],
+      "product_name": "Mankeke (180 g) 6 Unidades",
+      "quantity_ordered": 31,
+      "quantity_delivered": 31,
+      "cost_unit_lc": 1171,
+      "amt_ordered_lc": 36301,
+      "amt_delivered_lc": 36301,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "8DJDNS",
+      "supplier_sku": "8DJDNS",
+      "barcodes": [
+        "8DJDNS"
+      ],
+      "product_name": "Salmas Sanissimo Chia Linaza 6 Paquetes 108 g",
+      "quantity_ordered": 28,
+      "quantity_delivered": 28,
+      "cost_unit_lc": 1171,
+      "amt_ordered_lc": 32788,
+      "amt_delivered_lc": 32788,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "46229092",
+      "supplier_sku": "46229092",
+      "barcodes": [
+        "46229092"
+      ],
+      "product_name": "Brownies Nutra Bien! 4 Unidades",
+      "quantity_ordered": 8,
+      "quantity_delivered": 8,
+      "cost_unit_lc": 1759,
+      "amt_ordered_lc": 14072,
+      "amt_delivered_lc": 14072,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "15133050",
+      "supplier_sku": "15133050",
+      "barcodes": [
+        "15133050"
+      ],
+      "product_name": "Tortilla Mexicana Grande Tia Rosa 17cm 10 Unidades 320 g",
+      "quantity_ordered": 20,
+      "quantity_delivered": 20,
+      "cost_unit_lc": 1221,
+      "amt_ordered_lc": 24420,
+      "amt_delivered_lc": 24420,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "UL1N30",
+      "supplier_sku": "UL1N30",
+      "barcodes": [
+        "UL1N30"
+      ],
+      "product_name": "Pastel Mil Hojas Manjar Agua de Piedra 6 Unidades",
+      "quantity_ordered": 44,
+      "quantity_delivered": 44,
+      "cost_unit_lc": 2079,
+      "amt_ordered_lc": 91476,
+      "amt_delivered_lc": 91476,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "15132888",
+      "supplier_sku": "15132888",
+      "barcodes": [
+        "15132888"
+      ],
+      "product_name": "Pan Rallado Ideal Xl 250 g",
+      "quantity_ordered": 32,
+      "quantity_delivered": 32,
+      "cost_unit_lc": 767,
+      "amt_ordered_lc": 24544,
+      "amt_delivered_lc": 24544,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "8V8Z6E",
+      "supplier_sku": "8V8Z6E",
+      "barcodes": [
+        "8V8Z6E"
+      ],
+      "product_name": "Pre Pizza Ideal Toques De Cebolla (2 Unidades) 500 g",
+      "quantity_ordered": 18,
+      "quantity_delivered": 18,
+      "cost_unit_lc": 1337,
+      "amt_ordered_lc": 24066,
+      "amt_delivered_lc": 24066,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "6Y3825",
+      "supplier_sku": "6Y3825",
+      "barcodes": [
+        "6Y3825"
+      ],
+      "product_name": "Brownie Mini Marinela 6 Unidades 180g",
+      "quantity_ordered": 15,
+      "quantity_delivered": 15,
+      "cost_unit_lc": 1465,
+      "amt_ordered_lc": 21975,
+      "amt_delivered_lc": 21975,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "D5WBYD",
+      "supplier_sku": "D5WBYD",
+      "barcodes": [
+        "D5WBYD"
+      ],
+      "product_name": "Takis Original 190 g",
+      "quantity_ordered": 21,
+      "quantity_delivered": 21,
+      "cost_unit_lc": 1294,
+      "amt_ordered_lc": 27174,
+      "amt_delivered_lc": 27174,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "6QGNAW",
+      "supplier_sku": "6QGNAW",
+      "barcodes": [
+        "6QGNAW"
+      ],
+      "product_name": "Pan Linaza Chia Fuchs 350 g",
+      "quantity_ordered": 13,
+      "quantity_delivered": 13,
+      "cost_unit_lc": 1283,
+      "amt_ordered_lc": 16679,
+      "amt_delivered_lc": 16679,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "15133056",
+      "supplier_sku": "15133056",
+      "barcodes": [
+        "15133056"
+      ],
+      "product_name": "Tortilla Rapiditas Ideal (200 g) 8 Unidades",
+      "quantity_ordered": 27,
+      "quantity_delivered": 27,
+      "cost_unit_lc": 857,
+      "amt_ordered_lc": 23139,
+      "amt_delivered_lc": 23139,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "4KHQJ1",
+      "supplier_sku": "4KHQJ1",
+      "barcodes": [
+        "4KHQJ1"
+      ],
+      "product_name": "Alfajor Clasico Lagos Del Sur (180 g) 4 Unidades",
+      "quantity_ordered": 36,
+      "quantity_delivered": 36,
+      "cost_unit_lc": 1411,
+      "amt_ordered_lc": 50796,
+      "amt_delivered_lc": 50796,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "X426S2",
+      "supplier_sku": "X426S2",
+      "barcodes": [
+        "X426S2"
+      ],
+      "product_name": "Galleton Almendras Nutrabien 40Gr",
+      "quantity_ordered": 60,
+      "quantity_delivered": 60,
+      "cost_unit_lc": 337,
+      "amt_ordered_lc": 20220,
+      "amt_delivered_lc": 20220,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "RF77WG",
+      "supplier_sku": "RF77WG",
+      "barcodes": [
+        "RF77WG"
+      ],
+      "product_name": "Pinguinos (240 g) 6 Unidades",
+      "quantity_ordered": 31,
+      "quantity_delivered": 31,
+      "cost_unit_lc": 1759,
+      "amt_ordered_lc": 54529,
+      "amt_delivered_lc": 54529,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "JHN454",
+      "supplier_sku": "JHN454",
+      "barcodes": [
+        "JHN454"
+      ],
+      "product_name": "Pre Pizza Ideal A La Piedra (2 Unidades) 270 g",
+      "quantity_ordered": 20,
+      "quantity_delivered": 20,
+      "cost_unit_lc": 1410,
+      "amt_ordered_lc": 28200,
+      "amt_delivered_lc": 28200,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "4FM9KH",
+      "supplier_sku": "4FM9KH",
+      "barcodes": [
+        "4FM9KH"
+      ],
+      "product_name": "Tortillas de MaÝz Takis Buckin Ranch 190 g",
+      "quantity_ordered": 14,
+      "quantity_delivered": 14,
+      "cost_unit_lc": 1168,
+      "amt_ordered_lc": 16352,
+      "amt_delivered_lc": 16352,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "5DB8MI",
+      "supplier_sku": "5DB8MI",
+      "barcodes": [
+        "5DB8MI"
+      ],
+      "product_name": "Pan Completo HotDog 8un 480 g Ideal",
+      "quantity_ordered": 36,
+      "quantity_delivered": 36,
+      "cost_unit_lc": 1405,
+      "amt_ordered_lc": 50580,
+      "amt_delivered_lc": 50580,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "PSCFJ0",
+      "supplier_sku": "PSCFJ0",
+      "barcodes": [
+        "PSCFJ0"
+      ],
+      "product_name": "Pan Integral Fuch's Multigrano 350 g",
+      "quantity_ordered": 13,
+      "quantity_delivered": 13,
+      "cost_unit_lc": 1283,
+      "amt_ordered_lc": 16679,
+      "amt_delivered_lc": 16679,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "3GU09T",
+      "supplier_sku": "3GU09T",
+      "barcodes": [
+        "3GU09T"
+      ],
+      "product_name": "Galleton Chocolate Chip Nutrabien 40Gr",
+      "quantity_ordered": 60,
+      "quantity_delivered": 60,
+      "cost_unit_lc": 337,
+      "amt_ordered_lc": 20220,
+      "amt_delivered_lc": 20220,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "21653364",
+      "supplier_sku": "21653364",
+      "barcodes": [
+        "21653364"
+      ],
+      "product_name": "Queque Nutrabien! Brownie 250 g",
+      "quantity_ordered": 16,
+      "quantity_delivered": 16,
+      "cost_unit_lc": 1465,
+      "amt_ordered_lc": 23440,
+      "amt_delivered_lc": 23440,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "15132866",
+      "supplier_sku": "15132866",
+      "barcodes": [
+        "15132866"
+      ],
+      "product_name": "Pan Pita Ideal Integral (300 g) 8 Unidades",
+      "quantity_ordered": 28,
+      "quantity_delivered": 28,
+      "cost_unit_lc": 951,
+      "amt_ordered_lc": 26628,
+      "amt_delivered_lc": 26628,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "15132900",
+      "supplier_sku": "15132900",
+      "barcodes": [
+        "15132900"
+      ],
+      "product_name": "Pre Pizza Rectangular Ideal (750g) 3 Unidades",
+      "quantity_ordered": 12,
+      "quantity_delivered": 12,
+      "cost_unit_lc": 1895.55,
+      "amt_ordered_lc": 22746.6,
+      "amt_delivered_lc": 22746.6,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "SOEO96",
+      "supplier_sku": "SOEO96",
+      "barcodes": [
+        "SOEO96"
+      ],
+      "product_name": "Tortillas Ideal Rapiditas XL Integral 8 Unidades",
+      "quantity_ordered": 20,
+      "quantity_delivered": 20,
+      "cost_unit_lc": 1350,
+      "amt_ordered_lc": 27000,
+      "amt_delivered_lc": 27000,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "FXNTHP",
+      "supplier_sku": "FXNTHP",
+      "barcodes": [
+        "FXNTHP"
+      ],
+      "product_name": "Salmas Sanissimo Clasicas 6 Paquetes 108 g",
+      "quantity_ordered": 28,
+      "quantity_delivered": 28,
+      "cost_unit_lc": 1171,
+      "amt_ordered_lc": 32788,
+      "amt_delivered_lc": 32788,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "O846UX",
+      "supplier_sku": "O846UX",
+      "barcodes": [
+        "O846UX"
+      ],
+      "product_name": "Pan De Molde Light Multigrano Fuchs 620 g",
+      "quantity_ordered": 20,
+      "quantity_delivered": 20,
+      "cost_unit_lc": 1834.2,
+      "amt_ordered_lc": 36684,
+      "amt_delivered_lc": 36684,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "D0B1PL",
+      "supplier_sku": "D0B1PL",
+      "barcodes": [
+        "D0B1PL"
+      ],
+      "product_name": "Pan De Molde Blanco Sin Bordes Ideal 400 g",
+      "quantity_ordered": 12,
+      "quantity_delivered": 12,
+      "cost_unit_lc": 1994,
+      "amt_ordered_lc": 23928,
+      "amt_delivered_lc": 23928,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "1JJ80H",
+      "supplier_sku": "1JJ80H",
+      "barcodes": [
+        "1JJ80H"
+      ],
+      "product_name": "Tortilla Tia Rosa Pack Fiesta 24 Unidades",
+      "quantity_ordered": 12,
+      "quantity_delivered": 12,
+      "cost_unit_lc": 2013,
+      "amt_ordered_lc": 24156,
+      "amt_delivered_lc": 24156,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "15132703",
+      "supplier_sku": "15132703",
+      "barcodes": [
+        "15132703"
+      ],
+      "product_name": "Pan Ideal De Molde Blanco 750 g",
+      "quantity_ordered": 72,
+      "quantity_delivered": 72,
+      "cost_unit_lc": 1809,
+      "amt_ordered_lc": 130248,
+      "amt_delivered_lc": 130248,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "54622823",
+      "supplier_sku": "54622823",
+      "barcodes": [
+        "54622823"
+      ],
+      "product_name": "Pan De Molde Fuchs Integral 650 g",
+      "quantity_ordered": 20,
+      "quantity_delivered": 20,
+      "cost_unit_lc": 1712,
+      "amt_ordered_lc": 34240,
+      "amt_delivered_lc": 34240,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "15133037",
+      "supplier_sku": "15133037",
+      "barcodes": [
+        "15133037"
+      ],
+      "product_name": "Tortillas Tia Rosa Burreras 22 cm (400 g) 8 Unidades",
+      "quantity_ordered": 20,
+      "quantity_delivered": 20,
+      "cost_unit_lc": 1531,
+      "amt_ordered_lc": 30620,
+      "amt_delivered_lc": 30620,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "15132899",
+      "supplier_sku": "15132899",
+      "barcodes": [
+        "15132899"
+      ],
+      "product_name": "Pre Pizza Redonda 500 g Ideal 2 Unidades",
+      "quantity_ordered": 20,
+      "quantity_delivered": 20,
+      "cost_unit_lc": 1337.31,
+      "amt_ordered_lc": 26746.2,
+      "amt_delivered_lc": 26746.2,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "21653362",
+      "supplier_sku": "21653362",
+      "barcodes": [
+        "21653362"
+      ],
+      "product_name": "Queque Nutrabien! Naranja 250 g",
+      "quantity_ordered": 16,
+      "quantity_delivered": 16,
+      "cost_unit_lc": 1465,
+      "amt_ordered_lc": 23440,
+      "amt_delivered_lc": 23440,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "AOJ5WX",
+      "supplier_sku": "AOJ5WX",
+      "barcodes": [
+        "AOJ5WX"
+      ],
+      "product_name": "Tortillas Ideal Rapiditas Linaza ChÝa 200 g",
+      "quantity_ordered": 27,
+      "quantity_delivered": 27,
+      "cost_unit_lc": 970,
+      "amt_ordered_lc": 26190,
+      "amt_delivered_lc": 26190,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    },
+    {
+      "sku_id": "DK0V3H",
+      "supplier_sku": "DK0V3H",
+      "barcodes": [
+        "DK0V3H"
+      ],
+      "product_name": "Takis Xplosion 190 g",
+      "quantity_ordered": 21,
+      "quantity_delivered": 21,
+      "cost_unit_lc": 1294,
+      "amt_ordered_lc": 27174,
+      "amt_delivered_lc": 27174,
+      "diff_qty": 0,
+      "diff_ordered_delivered": 0
+    }
+  ]
+}

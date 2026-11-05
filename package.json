@@ -1,0 +1,27 @@
+{
+  "name": "axteroid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "push": "npx clasp push",
+    "deploy": "npx clasp deploy --description \"v2.1 Fix universal search bar in Paso 1 for POs, Folios and Suppliers\"",
+    "status": "npx clasp status",
+    "open": "npx clasp open",
+    "test": "npm run test:nc && npm run test:buscador && npm run test:dif_ml && npm run test:botones",
+    "test:buscador": "node tests/puppeteer/test_buscador_universal.js",
+    "test:dif_ml": "node tests/puppeteer/test_full_suite_dif_ml.js",
+    "test:botones": "node tests/puppeteer/test_all_buttons.js",
+    "test:legacy_paso1": "node tests/puppeteer/test_paso1_suite.js",
+    "test:legacy_po_index": "node tests/puppeteer/test_po_master_index.js",
+    "test:nc": "node tests/test_nc_detection.js && node tests/test_paso3_resumen.js && node tests/test_origen_descuento.js && node tests/test_consistencia_pasos.js && node tests/test_emparejamiento_monto.js && node tests/test_pasos_fusionados.js && node tests/test_casos_proveedores.js && node tests/test_po530316.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@google/clasp": "^3.4.1",
+    "puppeteer-core": "^25.13.0"
+  }
+}

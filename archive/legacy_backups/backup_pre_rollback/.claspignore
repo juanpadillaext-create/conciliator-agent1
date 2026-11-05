@@ -1,0 +1,6 @@
+# Archivos que no deben subirse a Apps Script
+README.md
+*.md
+.claspignore
+node_modules/**
+package*.json

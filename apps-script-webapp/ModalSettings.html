@@ -1,0 +1,82 @@
+<!-- ================================================================= -->
+<!-- MODAL: CONFIGURACIÓN DEL SISTEMA & PARÁMETROS ERP / SAP 6202        -->
+<!-- ================================================================= -->
+<div class="modal-overlay" id="settingsModal" role="dialog" aria-modal="true" aria-labelledby="settingsModalTitle">
+  <div class="modal-container" style="max-width: 600px;">
+    <div class="modal-header">
+      <div>
+        <h3 class="modal-title" id="settingsModalTitle">⚙️ Configuración del Sistema</h3>
+        <p class="modal-subtitle">Ajustes de conexión y parámetros</p>
+      </div>
+      <button type="button" class="btn-close" id="btnSettingsClose" aria-label="Cerrar modal de configuración">&times;</button>
+    </div>
+    <div class="modal-body">
+      <form id="settingsForm">
+        <div class="form-group">
+          <label for="cfgWorkspace">Workspace / Tenant Axteroid</label>
+          <input type="text" id="cfgWorkspace" class="form-control" value="peya_cl">
+        </div>
+        <div class="form-group">
+          <label for="cfgToken">Token API Axteroid</label>
+          <input type="password" id="cfgToken" class="form-control" placeholder="Token activo (deja en blanco para conservar)" autocomplete="off">
+        </div>
+        <div class="form-group">
+          <label for="cfgEmail">Email para Notificaciones y Alertas</label>
+          <input type="email" id="cfgEmail" class="form-control" placeholder="alertas@pedidosya.com">
+        </div>
+        <div class="form-group">
+          <label for="cfgThreshold">Umbral de Alerta de Descalce (CLP)</label>
+          <input type="number" id="cfgThreshold" class="form-control font-mono" value="1000000">
+        </div>
+        <div class="form-group">
+          <label for="cfgSpreadsheetId">ID Google Spreadsheet de Casos Tribu</label>
+          <input type="text" id="cfgSpreadsheetId" class="form-control"
+            placeholder="ID de Spreadsheet Casos Tribu (se carga desde configuración)">
+        </div>
+        <div class="form-group">
+          <label for="cfgAforosSpreadsheetId">ID Google Spreadsheet de Aforos Chile</label>
+          <input type="text" id="cfgAforosSpreadsheetId" class="form-control"
+            placeholder="ID de Spreadsheet Aforos Chile (se carga desde configuración)">
+        </div>
+        <div class="form-group" style="display:flex; align-items:center; gap:8px; margin-top:10px;">
+          <input type="checkbox" id="cfgAutoSync" style="width:auto; cursor:pointer;">
+          <label for="cfgAutoSync" style="margin:0; cursor:pointer; font-size:0.88rem;">Habilitar Sincronización Automática con Axteroid</label>
+        </div>
+        <div style="margin-top:10px; font-size:0.8rem; color:var(--text-secondary); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+          <div>Última Sincronización: <strong id="cfgLastSyncTime">Aún no ejecutada</strong> (<span id="cfgLastSyncStatus">-</span>)</div>
+          <button type="button" class="btn btn-secondary btn-sm" id="btnRunManualSync">🔄 Sincronizar Ahora</button>
+        </div>
+        <div style="margin-top:16px; padding-top:12px; border-top:1px dashed var(--border-color);">
+          <div
+            style="font-weight:700; font-size:0.85rem; color:var(--accent-purple); margin-bottom:10px; display:flex; align-items:center; gap:6px;">
+            <span>⚡ Parámetros TypeSafe AI Jev (System-1 Decision)</span>
+          </div>
+          <div class="form-group">
+            <label for="cfgJevApiKey">API Key TypeSafe AI Jev (Opcional - usa motor local si está vacío)</label>
+            <input type="password" id="cfgJevApiKey" class="form-control" placeholder="ts-jev-..." autocomplete="off">
+          </div>
+        </div>
+        <div style="margin-top:16px; padding-top:12px; border-top:1px dashed var(--border-color);">
+          <div
+            style="font-weight:700; font-size:0.85rem; color:var(--accent-cyan); margin-bottom:10px; display:flex; align-items:center; gap:6px;">
+            <span>📑 Parámetros Contables ERP / SAP (JEV)</span>
+          </div>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+            <div class="form-group">
+              <label for="cfgSapCompanyCode">Sociedad SAP</label>
+              <input type="text" id="cfgSapCompanyCode" class="form-control font-mono" value="6202">
+            </div>
+            <div class="form-group">
+              <label for="cfgSapCostCenter">Centro de Costo</label>
+              <input type="text" id="cfgSapCostCenter" class="form-control font-mono" value="CD_36_CD_Chile">
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" id="btnSettingsCancel">Cancelar</button>
+      <button type="button" class="btn btn-primary" id="btnSaveSettings">Guardar Configuración</button>
+    </div>
+  </div>
+</div>

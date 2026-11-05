@@ -1,0 +1,156 @@
+<!-- ================================================================= -->
+<!-- MODAL: AUDITORÍA & CORROBORACIÓN MATEMÁTICA LÍNEA A LÍNEA (SKU)     -->
+<!-- ================================================================= -->
+<div class="modal-overlay" id="modalDetalleCalculoLinea" role="dialog" aria-modal="true" aria-labelledby="calcModalTitulo">
+  <div class="modal-container" style="max-width: 780px;">
+    <div class="modal-header" style="border-bottom: 2px solid var(--border-color);">
+      <div>
+        <h3 class="modal-title" id="calcModalTitulo" style="display:flex; align-items:center; gap:8px;">
+          <span>🔍 Auditoría & Corroboración Matemática</span>
+          <span id="calcBadgeEstadoModal" class="badge badge-danger">DESCALCE</span>
+        </h3>
+        <p class="modal-subtitle" id="calcModalSubtitulo">Desglose analítico paso a paso para corroborar la
+          discrepancia con el proveedor.</p>
+      </div>
+      <button type="button" class="btn-close" id="btnCerrarModalCalculo" aria-label="Cerrar modal de auditoría matemática">&times;</button>
+    </div>
+    <div class="modal-body" style="padding: 20px 24px;">
+
+      <!-- Ficha Resumen del Producto -->
+      <div
+        style="background:var(--bg-surface); border:1px solid var(--border-color); border-radius:var(--radius-md); padding:14px 18px; margin-bottom:18px;">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:gap:8px;">
+          <div>
+            <div style="font-size:0.75rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.05em;">
+              PRODUCTO AUDITADO (LÍNEA <span id="calcNumLinea">1</span>)</div>
+            <div style="font-size:1.05rem; font-weight:700; color:var(--text-primary);" id="calcDescProducto">-</div>
+          </div>
+          <div style="text-align:right;">
+            <div class="font-mono" style="font-size:0.85rem; font-weight:700; color:var(--accent-cyan);"
+              id="calcSkuCodigo">-</div>
+            <div style="font-size:0.75rem; color:var(--text-secondary);" id="calcEan">-</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 Dimensiones de Verificación (Física, Comercial, Financiera) -->
+      <div
+        style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:14px; margin-bottom:18px;">
+
+        <!-- 1. Dimensión Física -->
+        <div
+          style="background:var(--bg-surface); border:1px solid rgba(245,158,11,0.3); border-radius:var(--radius-md); padding:14px; border-top:3px solid var(--accent-amber);">
+          <div
+            style="font-size:0.75rem; font-weight:700; color:var(--accent-amber); margin-bottom:10px; display:flex; align-items:center; gap:6px;">
+            <span>⚖️ DIMENSIÓN FÍSICA</span>
+          </div>
+          <div style="font-size:0.8rem; display:flex; justify-content:space-between; margin-bottom:6px;">
+            <span style="color:var(--text-secondary);">Ordenada en OC:</span>
+            <strong id="calcCantOrdenada">0</strong>
+          </div>
+          <div style="font-size:0.8rem; display:flex; justify-content:space-between; margin-bottom:6px;">
+            <span style="color:var(--text-secondary);">Cobrada en Factura:</span>
+            <strong id="calcCantFacturada">0</strong>
+          </div>
+          <div style="font-size:0.8rem; display:flex; justify-content:space-between; margin-bottom:8px;">
+            <span style="color:var(--text-secondary);">Entregada en Bodega:</span>
+            <strong id="calcCantRecepcionada">0</strong>
+          </div>
+          <div
+            style="border-top:1px dashed var(--border-color); padding-top:8px; display:flex; justify-content:space-between; font-size:0.85rem;">
+            <span style="font-weight:600;">Δ Faltante Físico:</span>
+            <span id="calcDifFaltante" class="font-mono" style="font-weight:700;">0</span>
+          </div>
+        </div>
+
+        <!-- 2. Dimensión Comercial -->
+        <div
+          style="background:var(--bg-surface); border:1px solid rgba(139,92,246,0.3); border-radius:var(--radius-md); padding:14px; border-top:3px solid var(--accent-purple);">
+          <div
+            style="font-size:0.75rem; font-weight:700; color:var(--accent-purple); margin-bottom:10px; display:flex; align-items:center; gap:6px;">
+            <span>💵 DIMENSIÓN COMERCIAL</span>
+          </div>
+          <div style="font-size:0.8rem; display:flex; justify-content:space-between; margin-bottom:6px;">
+            <span style="color:var(--text-secondary);">Costo Pactado OC:</span>
+            <strong class="font-mono" id="calcCostoOc">$0</strong>
+          </div>
+          <div style="font-size:0.8rem; display:flex; justify-content:space-between; margin-bottom:6px;">
+            <span style="color:var(--text-secondary);">Precio Facturado:</span>
+            <strong class="font-mono" id="calcPrecioFac">$0</strong>
+          </div>
+          <div style="font-size:0.8rem; display:flex; justify-content:space-between; margin-bottom:8px;">
+            <span style="color:var(--text-secondary);">Presentación / UOM:</span>
+            <strong id="calcUom">UN</strong>
+          </div>
+          <div
+            style="border-top:1px dashed var(--border-color); padding-top:8px; display:flex; justify-content:space-between; font-size:0.85rem;">
+            <span style="font-weight:600;">Δ Sobreprecio Unit.:</span>
+            <span id="calcDifPrecio" class="font-mono" style="font-weight:700;">$0</span>
+          </div>
+        </div>
+
+        <!-- 3. Dimensión Financiera -->
+        <div
+          style="background:var(--bg-surface); border:1px solid rgba(239,68,68,0.3); border-radius:var(--radius-md); padding:14px; border-top:3px solid var(--accent-red);">
+          <div
+            style="font-size:0.75rem; font-weight:700; color:var(--accent-red); margin-bottom:10px; display:flex; align-items:center; gap:6px;">
+            <span>💰 LIQUIDACIÓN & RECLAMO</span>
+          </div>
+          <div style="font-size:0.8rem; display:flex; justify-content:space-between; margin-bottom:6px;">
+            <span style="color:var(--text-secondary);">Total Facturado:</span>
+            <strong class="font-mono" id="calcTotalFacturado">$0</strong>
+          </div>
+          <div style="font-size:0.8rem; display:flex; justify-content:space-between; margin-bottom:6px;">
+            <span style="color:var(--text-secondary);">Válido a Pagar:</span>
+            <strong class="font-mono" id="calcTotalValido" style="color:var(--accent-green);">$0</strong>
+          </div>
+          <div style="font-size:0.8rem; display:flex; justify-content:space-between; margin-bottom:8px;">
+            <span style="color:var(--text-secondary);">Tipo Reclamo:</span>
+            <span id="calcTipoReclamoTexto" style="font-size:0.75rem; font-weight:600;">-</span>
+          </div>
+          <div
+            style="border-top:1px dashed var(--border-color); padding-top:8px; display:flex; justify-content:space-between; font-size:0.9rem;">
+            <span style="font-weight:700; color:var(--accent-red);">Monto NC:</span>
+            <span id="calcMontoTotalNc" class="font-mono"
+              style="font-weight:800; color:var(--accent-red); font-size:1.05rem;">$0</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Caja de Fórmulas Matemáticas Explícitas -->
+      <div
+        style="background:var(--bg-card); border:1px solid var(--border-color); border-radius:var(--radius-md); padding:14px 18px; margin-bottom:16px;">
+        <div
+          style="font-size:0.78rem; font-weight:700; color:var(--text-secondary); margin-bottom:8px; text-transform:uppercase; letter-spacing:0.04em;">
+          📐 DEMOSTRACIÓN MATEMÁTICA DEL CÁLCULO
+        </div>
+        <div id="calcFormulaExplicacion"
+          style="font-family:var(--font-mono); font-size:0.82rem; color:var(--text-primary); line-height:1.6; background:var(--bg-surface); padding:12px; border-radius:6px; border:1px solid var(--border-color);">
+          <!-- Se llena con las ecuaciones exactas -->
+        </div>
+      </div>
+
+      <!-- Diagnóstico Causa Raíz y Acción Sugerida -->
+      <div style="display:flex; flex-direction:column; gap:8px;">
+        <div style="font-size:0.82rem; line-height:1.45;">
+          <strong style="color:var(--text-primary);">Diagnóstico Auditoría:</strong>
+          <span id="calcDiagnosticoTexto" style="color:var(--text-secondary);">-</span>
+        </div>
+        <div style="font-size:0.82rem; line-height:1.45;">
+          <strong style="color:var(--accent-blue);">Acción Inmediata Sugerida:</strong>
+          <span id="calcAccionTexto" style="color:var(--text-primary); font-weight:600;">-</span>
+        </div>
+      </div>
+
+    </div>
+    <div class="modal-footer" style="border-top:1px solid var(--border-color); justify-content:space-between;">
+      <button type="button" class="btn btn-secondary btn-sm" id="btnCopiarFormulaLinea">
+        📋 Copiar Fórmula para Correo / Reclamo
+      </button>
+      <button type="button" class="btn btn-primary btn-sm" id="btnCerrarModalCalculo2">
+        Entendido / Cerrar
+      </button>
+    </div>
+  </div>
+</div>

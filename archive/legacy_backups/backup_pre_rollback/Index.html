@@ -1,0 +1,1638 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PedidosYa Dmarts Chile | Cruce Facturas y Órdenes de Compra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <?!= include('Estilos'); ?>
+</head>
+<body>
+
+  <!-- ======================================================== -->
+  <!-- BARRA SUPERIOR LIMPIA                                    -->
+  <!-- ======================================================== -->
+  <header class="app-header">
+    <div class="logo-area">
+      <div class="logo-badge">Peya</div>
+      <div class="header-titles">
+        <h1 class="app-title">Conciliación Dmarts Chile</h1>
+        <div class="app-subtitle">
+          Sociedad SAP 6202 (Delivery Hero) &bull; Cruce Facturas DTE vs Órdenes de Compra
+        </div>
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <div class="sync-status" title="Conexión en tiempo real con BigQuery y Axteroid">
+        <span class="status-indicator"></span>
+        <span class="status-text">Axteroid & BigQuery Conectados</span>
+      </div>
+      <button type="button" class="btn btn-secondary" id="btnThemeToggleApp" style="padding: 6px 14px; font-size: 0.85rem;" title="Alternar entre modo claro y oscuro">
+        <span>☀️</span> <span id="lblThemeToggleApp">Modo Claro</span>
+      </button>
+      <button type="button" class="btn btn-secondary" id="btnOpenSettings" style="padding: 6px 14px; font-size: 0.85rem;" title="Configuraciones">
+        ⚙️ Configuración
+      </button>
+    </div>
+  </header>
+
+  <!-- ======================================================== -->
+  <!-- BARRA DE NAVEGACIÓN PRINCIPAL: CONCILIADOR vs DASHBOARD  -->
+  <!-- ======================================================== -->
+  <div style="max-width: 1300px; margin: 0 auto 16px auto; padding: 0 20px;">
+    <div class="app-navigation-bar">
+      <div style="display:flex; gap:8px;">
+        <button type="button" class="nav-view-btn active tab-wizard" id="btnNavVistaWizard" onclick="cambiarVistaPrincipal('wizard')">
+          <span>⚡</span> Asistente 3-Way Matching
+        </button>
+        <button type="button" class="nav-view-btn" id="btnNavVistaDashboard" onclick="cambiarVistaPrincipal('dashboard')">
+          <span>🏆</span> Dashboard TOP Diferencias (Facturas & OCs)
+          <span class="badge badge-danger font-mono" style="margin-left:6px; font-size:0.72rem; padding:2px 6px;">TOP 15</span>
+        </button>
+      </div>
+      <div style="font-size:0.8rem; color:var(--text-muted); display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+        <span>🏢 Tienda: <strong>CH_36_CD_Chile (Sociedad 6202)</strong></span>
+        <span>&bull;</span>
+        <span style="color:var(--accent-red); font-weight:700;">NO AFORADO POR SOLICITUD DE COMERCIAL</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================== -->
+  <!-- CONTENEDOR PRINCIPAL: FLUJO GUIADO EN 3 PASOS O DASHBOARD -->
+  <!-- ======================================================== -->
+  <main class="main-content" style="max-width: 1300px; margin: 0 auto; padding: 0 20px 24px 20px;">
+
+    <!-- CONTENEDOR 1: ASISTENTE DE 3 PASOS -->
+    <div id="vistaContenedorWizard">
+
+      <!-- BARRA DE PROGRESO DE 3 PASOS -->
+      <div class="wizard-progress-bar">
+        <!-- Paso 1 -->
+        <div class="wizard-step active" id="wstep1" onclick="irAPasoWizard(1)">
+          <div class="wizard-step-circle">1</div>
+          <div class="wizard-step-info">
+            <span class="wizard-step-title">Elegir Factura</span>
+            <span class="wizard-step-sub">Buscar DTE por Folio / Proveedor</span>
+          </div>
+        </div>
+
+        <div class="wizard-step-arrow">➔</div>
+
+        <!-- Paso 2 -->
+        <div class="wizard-step" id="wstep2" onclick="irAPasoWizard(2)">
+          <div class="wizard-step-circle">2</div>
+          <div class="wizard-step-info">
+            <span class="wizard-step-title">Asociar Orden de Compra</span>
+            <span class="wizard-step-sub">Vínculo con OC y Aforo</span>
+          </div>
+        </div>
+
+        <div class="wizard-step-arrow">➔</div>
+
+        <!-- Paso 3 -->
+        <div class="wizard-step" id="wstep3" onclick="irAPasoWizard(3)">
+          <div class="wizard-step-circle">3</div>
+          <div class="wizard-step-info">
+            <span class="wizard-step-title">Diferencias & Reclamo</span>
+            <span class="wizard-step-sub">Auditoría SKU x SKU y Nota de Crédito</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ======================================================== -->
+      <!-- PASO 1: SELECCIONAR FACTURA (VISTA LIMPIA Y DESPEJADA)    -->
+      <!-- ======================================================== -->
+      <div class="step-pane active" id="panePaso1">
+        <div class="cockpit-card">
+          <div class="cockpit-card-header">
+            <div style="display:flex; align-items:center; gap:10px;">
+              <span style="font-size:1.2rem;">🔍</span>
+              <div>
+                <h3 style="margin:0; font-size:1.1rem; font-weight:700;">Paso 1: ¿Qué Factura deseas conciliar?</h3>
+                <p style="margin:2px 0 0 0; font-size:0.8rem; color:var(--text-secondary);">
+                  Selecciona una factura de la lista o búscala por Folio, Proveedor o RUT. Al seleccionarla, su <strong>Orden de Compra se asociará automáticamente</strong>.
+                </p>
+              </div>
+            </div>
+            <div style="display:flex; gap:8px;">
+              <button type="button" class="btn btn-secondary btn-sm" id="btnCargarDemoCarozzi" style="border-color:rgba(239,68,68,0.4); color:var(--accent-red); font-weight:700;">
+                ✨ Demo Carozzi (Con Descalces)
+              </button>
+              <button type="button" class="btn btn-secondary btn-sm" id="btnCargarDemoConforme" style="border-color:rgba(16,185,129,0.4); color:var(--accent-green); font-weight:700;">
+                ✨ Demo Nestlé (Calce OK)
+              </button>
+            </div>
+          </div>
+
+          <div class="cockpit-card-body">
+            <!-- Banner Atajo al Dashboard TOP Diferencias -->
+            <div style="margin-bottom:16px; background:linear-gradient(90deg, rgba(220,38,38,0.06) 0%, rgba(124,58,237,0.06) 100%); border:1px solid rgba(220,38,38,0.22); border-radius:var(--radius-md); padding:12px 18px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
+              <div style="display:flex; align-items:center; gap:12px;">
+                <span style="font-size:1.4rem;">🏆</span>
+                <div>
+                  <strong style="color:var(--text-primary); font-size:0.92rem;">Dashboard TOP Facturas & Órdenes de Compra con Mayor Descuadre</strong>
+                  <div style="font-size:0.8rem; color:var(--text-secondary);">Descubre las OCs con hasta $18.5M en faltantes y las facturas con mayor sobrefacturación o reclamo de Nota de Crédito.</div>
+                </div>
+              </div>
+              <button type="button" class="btn btn-secondary btn-sm" onclick="cambiarVistaPrincipal('dashboard')" style="border-color:rgba(220,38,38,0.4); color:var(--accent-red); font-weight:700;">
+                Ver Ranking TOP Diferencias ➔
+              </button>
+            </div>
+
+            <!-- Buscador y Filtros Rápidos -->
+            <div style="display:flex; gap:12px; align-items:center; margin-bottom:16px; flex-wrap:wrap;">
+              <div style="flex:1; min-width:320px; position:relative;">
+                <input type="text" id="txtBuscarFactura" class="form-control" placeholder="Buscar por OC individual o masiva (ej: PO517979, PO521015, PO519527), Folio Factura, Proveedor, RUT o SKU..." style="font-size:0.95rem; padding:12px 16px; width:100%;">
+              </div>
+              <button type="button" class="btn btn-primary" id="btnEjecutarBusquedaFacturas" style="padding:12px 24px; font-weight:700; white-space:nowrap;">
+                🔍 Buscar
+              </button>
+            </div>
+
+          <!-- Contador de Facturas Recibidas -->
+          <div style="display:flex; justify-content:flex-end; align-items:center; margin-bottom:14px;">
+            <div id="lblConteoFacturasPaso1" style="font-size:0.85rem; color:var(--text-secondary); font-weight:500;">
+              Mostrando facturas recibidas
+            </div>
+          </div>
+
+          <!-- BANNER / TARJETA DE VÍNCULO DE PO Y FACTURAS ASOCIADAS (Se muestra al buscar por PO) -->
+          <div id="cardVinculoPoFacturas" style="display:none; margin-bottom:16px; background:linear-gradient(135deg, rgba(79,70,229,0.14) 0%, rgba(6,182,212,0.12) 100%); border:1px solid rgba(79,70,229,0.35); border-radius:var(--radius-md); padding:16px 20px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:12px;">
+              <div style="display:flex; align-items:center; gap:10px;">
+                <span style="font-size:1.6rem;">📦</span>
+                <div>
+                  <div style="display:flex; align-items:center; gap:8px;">
+                    <span style="font-weight:800; font-size:1.1rem; color:var(--text-primary);" id="lblPoVinculoTitulo">Orden de Compra: PO...</span>
+                    <span class="badge badge-success font-mono" id="lblPoVinculoBadge">0 Facturas Asociadas</span>
+                  </div>
+                  <div style="font-size:0.8rem; color:var(--text-secondary); margin-top:2px;" id="lblPoVinculoSub">
+                    Proveedor: - &bull; Almacén: -
+                  </div>
+                </div>
+              </div>
+
+              <div style="display:flex; gap:8px; align-items:center;">
+                <button type="button" class="btn btn-primary btn-sm" id="btnCruzarPoConsolidada" style="font-weight:700; background:linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%); box-shadow:0 0 15px rgba(79,70,229,0.3);">
+                  ⚡ Cruzar Todas las Facturas de esta PO (Consolidado) ➔
+                </button>
+              </div>
+            </div>
+
+            <!-- Métricas Clave del Vínculo OC vs Facturas -->
+            <div class="kpi-grid" style="grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:10px; margin:0 0 10px 0;">
+              <div style="background:var(--bg-surface); padding:10px 14px; border-radius:var(--radius-sm); border:1px solid var(--border-color);">
+                <div style="font-size:0.72rem; color:var(--text-muted); text-transform:uppercase;">Total Ordenado (OC SAP)</div>
+                <div class="font-mono" id="lblPoTotalOrdenado" style="font-size:1.05rem; font-weight:700; color:var(--accent-blue);">$0</div>
+                <div style="font-size:0.68rem; color:var(--text-muted);">Monto Neto Solicitado</div>
+              </div>
+              <div style="background:var(--bg-surface); padding:10px 14px; border-radius:var(--radius-sm); border:1px solid var(--border-color);">
+                <div style="font-size:0.72rem; color:var(--text-muted); text-transform:uppercase;">Total Recepcionado Bodega</div>
+                <div class="font-mono" id="lblPoTotalRecepcionado" style="font-size:1.05rem; font-weight:700; color:var(--accent-green);">$0</div>
+                <div style="font-size:0.68rem; color:var(--text-muted);">Monto Neto Físico en Bodega</div>
+              </div>
+              <div style="background:var(--bg-surface); padding:10px 14px; border-radius:var(--radius-sm); border:1px solid var(--border-color);">
+                <div style="font-size:0.72rem; color:var(--text-muted); text-transform:uppercase;">Total Facturado (<span id="lblPoCountFacturas">0</span> Facturas)</div>
+                <div class="font-mono" id="lblPoTotalFacturado" style="font-size:1.05rem; font-weight:700; color:var(--accent-cyan);">$0 Neto</div>
+                <div id="lblPoTotalFacturadoIva" style="font-size:0.68rem; color:var(--text-muted);">$0 con IVA</div>
+              </div>
+              <div style="background:var(--bg-surface); padding:10px 14px; border-radius:var(--radius-sm); border:1px solid var(--border-color);">
+                <div style="font-size:0.72rem; color:var(--text-muted); text-transform:uppercase; font-weight:700;">Diferencia en Moneda Local (Dif ML)</div>
+                <div class="font-mono" id="lblPoDifPreliminar" style="font-size:1.05rem; font-weight:700; color:var(--accent-red);">$0</div>
+                <div id="lblPoDifSubtexto" style="font-size:0.68rem; color:var(--text-muted);">Total Facturado - Recepcionado en Bodega</div>
+              </div>
+            </div>
+
+            <!-- Panel Destacado de Control de Transacción y Auditoría de la Orden -->
+            <div id="boxControlTransaccionPo" style="display:none; margin:12px 0; background:linear-gradient(135deg, rgba(15,23,42,0.94) 0%, rgba(30,41,59,0.96) 100%); border:1px solid rgba(14,165,233,0.45); border-left:4px solid #06b6d4; border-radius:var(--radius-sm); padding:14px 16px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:10px;">
+                <div style="display:flex; align-items:center; gap:8px;">
+                  <span style="font-size:1.15rem;">🛡️</span>
+                  <span style="font-weight:800; font-size:0.9rem; color:#38bdf8; letter-spacing:0.02em;">CONTROL AUDITADO DE TRANSACCIÓN</span>
+                </div>
+                <span class="badge badge-warning font-mono" id="badgePoAuditoriaStatus" style="font-size:0.75rem; font-weight:700;">CONCILIACIÓN MULTI-FACTURA</span>
+              </div>
+              <div id="contenidoControlTransaccionPo" style="font-size:0.82rem; line-height:1.55; color:var(--text-secondary);">
+                <!-- Se llena dinámicamente -->
+              </div>
+            </div>
+            
+            <div style="font-size:0.78rem; color:var(--text-secondary); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+              <span>💡 A continuación se listan las facturas individuales asociadas a esta Orden de Compra. Puedes asociar y cruzar una factura individual o cruzar el consolidado completo arriba.</span>
+              <button type="button" class="btn btn-secondary btn-sm" id="btnLimpiarFiltroPo" style="font-size:0.75rem; padding:2px 8px;">✕ Quitar filtro PO</button>
+            </div>
+          </div>
+
+          <!-- Selector de Modo de Exploración: Órdenes de Compra Indexadas vs Facturas Individuales -->
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:12px; border-bottom:1px solid var(--border-color); padding-bottom:8px;">
+            <div style="display:flex; gap:8px;">
+              <button type="button" class="btn btn-sm btn-secondary active-mode-tab" id="btnTabModoFacturas" style="font-weight:700; border-color:var(--accent-blue); color:var(--accent-blue); background:rgba(59,130,246,0.1);">
+                🧾 Facturas Individuales
+              </button>
+              <button type="button" class="btn btn-sm btn-secondary" id="btnTabModoPosIndexadas" style="font-weight:700;">
+                📦 Órdenes de Compra Indexadas (1.315 OCs con Facturas)
+              </button>
+            </div>
+            <div id="lblSubinfoModoPaso1" style="font-size:0.8rem; color:var(--text-secondary);">
+              Visualizando facturas electrónicas recibidas
+            </div>
+          </div>
+
+          <!-- Contenedor 1: Tabla Limpia de Facturas Individuales -->
+          <div id="containerTablaFacturasIndividuales">
+            <div class="table-scroll" style="max-height:450px;">
+              <table id="tablaFacturasPaso1">
+                <thead>
+                  <tr>
+                    <th style="width:100px;">Folio DTE</th>
+                    <th>Proveedor & Razón Social</th>
+                    <th>RUT Emisor</th>
+                    <th>Fecha Emisión</th>
+                    <th style="text-align:right;">Monto Neto</th>
+                    <th style="text-align:right;">Recepcionado Bodega</th>
+                    <th style="text-align:right; color:var(--accent-red); font-weight:800;">Dif ML (Moneda Local)</th>
+                    <th>Orden de Compra Asociada</th>
+                    <th>Condición Aforo</th>
+                    <th style="text-align:center; width:160px;">Acción</th>
+                  </tr>
+                </thead>
+                <tbody id="tbodyFacturasPaso1">
+                  <!-- Se llena dinámicamente -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Contenedor 2: Órdenes de Compra Indexadas con sus Facturas Respectivas -->
+          <div id="containerTablaPosIndexadas" style="display:none;">
+            <!-- Barra de Filtros Rápida de POs -->
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:10px; background:var(--bg-hover); padding:10px 14px; border-radius:var(--radius-sm); border:1px solid var(--border-color);">
+              <div style="display:flex; gap:14px; align-items:center; flex-wrap:wrap;">
+                <label style="font-size:0.8rem; display:flex; align-items:center; gap:6px; cursor:pointer; color:var(--text-secondary);">
+                  <input type="checkbox" id="chkSoloPosConFacturas" checked>
+                  <span style="font-weight:600;">Solo con Facturas Vinculadas</span>
+                </label>
+                <label style="font-size:0.8rem; display:flex; align-items:center; gap:6px; cursor:pointer; color:var(--text-secondary);">
+                  <input type="checkbox" id="chkSoloPosConDiferencias">
+                  <span style="font-weight:600;">Solo con Discrepancias (&gt; $100)</span>
+                </label>
+              </div>
+              <div id="lblPaginacionPosInfo" style="font-size:0.8rem; color:var(--text-secondary); font-weight:600;">
+                Cargando índice maestro de POs...
+              </div>
+            </div>
+
+            <!-- Tabla de Órdenes de Compra Indexadas -->
+            <div class="table-scroll" style="max-height:500px;">
+              <table id="tablaPosIndexadas">
+                <thead>
+                  <tr>
+                    <th style="width:120px;">Orden de Compra</th>
+                    <th>Proveedor & Razón Social</th>
+                    <th>Almacén / Centro Bodega</th>
+                    <th style="text-align:center; width:140px;">Facturas (DTEs)</th>
+                    <th style="text-align:right;">Total OC (Neto)</th>
+                    <th style="text-align:right;">Total Facturado</th>
+                    <th style="text-align:right; color:var(--accent-red); font-weight:800;">Dif ML (Moneda Local)</th>
+                    <th style="text-align:center; width:180px;">Acción</th>
+                  </tr>
+                </thead>
+                <tbody id="tbodyPosIndexadas">
+                  <!-- Se llena dinámicamente -->
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Controles de Paginación -->
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-top:12px; padding:0 4px;">
+              <button type="button" class="btn btn-secondary btn-sm" id="btnPaginaPoAnterior" disabled>
+                ◀ Anterior
+              </button>
+              <span id="lblPaginaPoActual" style="font-size:0.85rem; font-weight:700; color:var(--text-primary);">
+                Página 1
+              </span>
+              <button type="button" class="btn btn-secondary btn-sm" id="btnPaginaPoSiguiente">
+                Siguiente ▶
+              </button>
+            </div>
+          </div>
+
+          <!-- Alternativa Discreta de Subida -->
+          <div style="margin-top:20px; padding:12px 16px; background:var(--bg-hover); border:1px dashed var(--border-color); border-radius:var(--radius-md); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+            <span style="font-size:0.82rem; color:var(--text-secondary);">
+              💡 ¿Tienes el archivo DTE XML o CSV en tu computador?
+            </span>
+            <div style="display:flex; gap:8px;">
+              <button type="button" class="btn btn-secondary btn-sm" onclick="document.getElementById('inputUploadFacturaFile').click()">
+                📁 Subir Archivo DTE / CSV
+              </button>
+              <button type="button" class="btn btn-secondary btn-sm" id="btnPegarFacturaModal">
+                📋 Pegar Datos de Factura
+              </button>
+              <input type="file" id="inputUploadFacturaFile" accept=".xml,.csv,.txt" style="display:none;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================================== -->
+    <!-- PASO 2: ASOCIAR Y CONFIRMAR LA ORDEN DE COMPRA           -->
+    <!-- ======================================================== -->
+    <div class="step-pane" id="panePaso2">
+      <div class="cockpit-card">
+        <div class="cockpit-card-header">
+          <div style="display:flex; align-items:center; gap:10px;">
+            <span style="font-size:1.2rem;">🔗</span>
+            <div>
+              <h3 style="margin:0; font-size:1.1rem; font-weight:700;">Paso 2: Factura con su Orden de Compra Asociada</h3>
+              <p style="margin:2px 0 0 0; font-size:0.8rem; color:var(--text-secondary);">
+                La Orden de Compra fue asociada automáticamente a partir de la factura. Revisa y confirma el vínculo antes de cruzar.
+              </p>
+            </div>
+          </div>
+          <button type="button" class="btn btn-secondary btn-sm" onclick="irAPasoWizard(1)">
+            ⬅ Volver a Elegir Factura
+          </button>
+        </div>
+
+        <div class="cockpit-card-body">
+          <!-- Tarjetas Lado a Lado: Factura vs OC Asociada -->
+          <div class="document-card-pair">
+            <!-- Tarjeta 1: Factura -->
+            <div class="doc-card" style="border-left: 4px solid var(--accent-cyan);">
+              <div class="doc-card-header">
+                <div class="doc-card-title">
+                  <span>🧾</span> Factura Electrónica (DTE)
+                </div>
+                <span class="badge badge-info" id="p2InvFolioBadge">Folio ...</span>
+              </div>
+
+              <div class="doc-prop-row">
+                <span class="doc-prop-label">Proveedor:</span>
+                <span class="doc-prop-value" id="p2InvProveedor">-</span>
+              </div>
+              <div class="doc-prop-row">
+                <span class="doc-prop-label">RUT Emisor:</span>
+                <span class="doc-prop-value font-mono" id="p2InvRut">-</span>
+              </div>
+              <div class="doc-prop-row">
+                <span class="doc-prop-label">Fecha Emisión:</span>
+                <span class="doc-prop-value font-mono" id="p2InvFecha">-</span>
+              </div>
+              <div class="doc-prop-row">
+                <span class="doc-prop-label">Monto Facturado Neto:</span>
+                <span class="doc-prop-value font-mono monto-neto-cell" id="p2InvMontoNeto" style="color:var(--color-monto-neto, #0f172a); font-weight:800; font-size:1.15rem;">$0</span>
+              </div>
+              <div class="doc-prop-row">
+                <span class="doc-prop-label">Cantidad de Productos:</span>
+                <span class="doc-prop-value" id="p2InvItemsCount">0 ítems</span>
+              </div>
+              <div class="doc-prop-row">
+                <span class="doc-prop-label">Condición de Aforo:</span>
+                <span class="doc-prop-value" id="p2InvAforoStatus">-</span>
+              </div>
+              <div class="doc-prop-row">
+                <span class="doc-prop-label">Respaldo Axteroid:</span>
+                <span class="doc-prop-value font-mono" id="p2InvAxteroidDocId">
+                  <span class="badge badge-success" style="font-size:0.75rem; padding:3px 8px;">🛡️ Respaldo Oficial Axteroid</span>
+                </span>
+              </div>
+              <div style="margin-top:12px; padding-top:10px; border-top:1px dashed var(--border-color); display:flex; gap:8px; align-items:center;">
+                <button type="button" class="btn btn-secondary btn-sm" id="btnP2VerPdfAxteroid" style="font-size:0.78rem; padding:5px 12px; border-radius:14px;">
+                  📄 PDF Oficial Axteroid
+                </button>
+                <button type="button" class="btn btn-secondary btn-sm" id="btnP2VerXmlAxteroid" style="font-size:0.78rem; padding:5px 12px; border-radius:14px;">
+                  📑 XML DTE (SII)
+                </button>
+              </div>
+            </div>
+
+            <!-- Tarjeta 2: Orden de Compra Asociada -->
+            <div class="doc-card" style="border-left: 4px solid var(--accent-blue);">
+              <div class="doc-card-header">
+                <div class="doc-card-title">
+                  <span>📦</span> Orden de Compra Asociada (SAP)
+                </div>
+                <span class="badge badge-success" id="p2PoAsociacionBadge">🟢 Asociada Automáticamente</span>
+              </div>
+
+              <div class="doc-prop-row">
+                <span class="doc-prop-label">N° Orden de Compra:</span>
+                <span class="doc-prop-value font-mono" id="p2PoNumero" style="font-size:1.05rem; color:var(--accent-blue);">-</span>
+              </div>
+              <div class="doc-prop-row">
+                <span class="doc-prop-label">Almacén de Destino:</span>
+                <span class="doc-prop-value" id="p2PoAlmacen">Almacén Central (Sociedad 6202)</span>
+              </div>
+              <div class="doc-prop-row">
+                <span class="doc-prop-label">Monto Ordenado en OC:</span>
+                <span class="doc-prop-value font-mono" id="p2PoMontoOrdenado" style="color:var(--text-primary); font-weight:700;">$0</span>
+              </div>
+              <div class="doc-prop-row">
+                <span class="doc-prop-label">Total Recepcionado Bodega:</span>
+                <span class="doc-prop-value font-mono" id="p2PoMontoRecepcionado" style="color:var(--text-primary); font-weight:700;">$0</span>
+              </div>
+              <div class="doc-prop-row">
+                <span class="doc-prop-label">Estado de Entrega:</span>
+                <span class="doc-prop-value" id="p2PoEstadoEntrega">Recepción Registrada</span>
+              </div>
+
+              <!-- Opción para modificar o asociar otra OC -->
+              <div style="margin-top:12px; padding-top:12px; border-top:1px dashed var(--border-color); display:flex; gap:8px; align-items:center;">
+                <span style="font-size:0.75rem; color:var(--text-muted);">¿Cambiar OC?</span>
+                <input type="text" id="txtP2CambiarOc" placeholder="N° OC: 4500..." style="flex:1; font-size:0.8rem; padding:4px 8px; background:var(--bg-hover); border:1px solid var(--border-color); border-radius:var(--radius-sm); color:var(--text-primary);">
+                <button type="button" class="btn btn-secondary btn-sm" id="btnP2BuscarOtraOc" style="font-size:0.75rem;">
+                  Vincular Otra OC
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Banner Informativo del Aforo y Category Manager -->
+          <div id="p2BannerAforoInfo" class="aforo-banner-box whitelist" style="margin-bottom:20px;">
+            <!-- Contenido dinámico con la directriz del CM -->
+          </div>
+
+          <!-- TABLA DE VISTA PREVIA Y TRAZABILIDAD DE LÍNEAS (PASO 2) -->
+          <div id="boxLineasPreviaPaso2" style="margin-bottom:24px; background:var(--bg-surface); border:1px solid var(--border-color); border-radius:var(--radius-md); padding:16px 20px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:14px;">
+              <div style="display:flex; align-items:center; gap:8px;">
+                <span style="font-size:1.2rem;">🔍</span>
+                <div>
+                  <h4 style="margin:0; font-size:0.95rem; font-weight:800; color:var(--text-primary);">
+                    Trazabilidad de Datos: Vista Previa de Líneas a Conciliar
+                  </h4>
+                  <p style="margin:2px 0 0 0; font-size:0.78rem; color:var(--text-secondary);">
+                    Revisa el detalle de los productos facturados en Axteroid contra las líneas registradas en SAP BigQuery antes de cruzar.
+                  </p>
+                </div>
+              </div>
+              <div style="display:flex; gap:6px;">
+                <button type="button" class="btn-chip active" id="tabP2PreviaFactura" onclick="cambiarTabPreviaPaso2('factura')">
+                  🧾 Líneas Factura (<span id="cntP2PreviaFactura">0</span>)
+                </button>
+                <button type="button" class="btn-chip" id="tabP2PreviaPo" onclick="cambiarTabPreviaPaso2('po')">
+                  📦 Líneas OC (<span id="cntP2PreviaPo">0</span>)
+                </button>
+              </div>
+            </div>
+
+            <!-- Contenedor Tab 1: Líneas Factura (Axteroid) -->
+            <div id="vistaP2LineasFactura" class="table-scroll" style="max-height:280px; border:1px solid var(--border-color); border-radius:var(--radius-sm);">
+              <table class="audit-sku-table" style="font-size:0.8rem;">
+                <thead>
+                  <tr style="background:rgba(6,182,212,0.1);">
+                    <th style="width:30px; text-align:center;">#</th>
+                    <th style="width:110px;">Código DTE</th>
+                    <th>Descripción Producto (Factura Oficial Axteroid API)</th>
+                    <th style="text-align:right; width:80px;">Cant.</th>
+                    <th style="text-align:right; width:100px;">Precio Unit.</th>
+                    <th style="text-align:right; width:110px;">Monto Neto</th>
+                  </tr>
+                </thead>
+                <tbody id="tbodyP2LineasFactura">
+                  <tr><td colspan="6" style="text-align:center; padding:18px; color:var(--text-muted);">Cargando líneas de la factura...</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Contenedor Tab 2: Líneas OC (BigQuery) -->
+            <div id="vistaP2LineasPo" class="table-scroll" style="display:none; max-height:280px; border:1px solid var(--border-color); border-radius:var(--radius-sm);">
+              <table class="audit-sku-table" style="font-size:0.8rem;">
+                <thead>
+                  <tr style="background:rgba(59,130,246,0.1);">
+                    <th style="width:30px; text-align:center;">#</th>
+                    <th style="width:110px;">SKU PedidosYa</th>
+                    <th>Producto (Orden de Compra BigQuery SAP 6202)</th>
+                    <th style="text-align:right; width:80px;">Cant. Ord.</th>
+                    <th style="text-align:right; width:80px;">Cant. Rec.</th>
+                    <th style="text-align:right; width:100px;">Costo Pactado</th>
+                    <th style="text-align:right; width:110px;">Monto Total</th>
+                  </tr>
+                </thead>
+                <tbody id="tbodyP2LineasPo">
+                  <tr><td colspan="7" style="text-align:center; padding:18px; color:var(--text-muted);">Cargando líneas de la Orden de Compra...</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div style="margin-top:10px; display:flex; justify-content:space-between; align-items:center; font-size:0.75rem; color:var(--text-muted);">
+              <span>🛡️ <strong>Orígenes de Datos:</strong> DTE vía API REST Axteroid / OC vía BigQuery <code>peya-data-origins-pro.cl_dmarts.purchase_orders</code>.</span>
+              <span id="lblP2LineasStatus" style="font-weight:600; color:var(--accent-cyan);">Líneas sincronizadas para cruce</span>
+            </div>
+          </div>
+
+          <!-- Botón Principal para Pasar al Paso 3 -->
+          <div style="text-align:center;">
+            <button type="button" class="btn btn-primary" id="btnIrACrucePaso3" style="padding:15px 48px; font-size:1.1rem; font-weight:800; border-radius:30px; box-shadow:0 0 25px rgba(79,70,229,0.4); background:linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);">
+              ⚡ EJECUTAR CRUCE DE DIFERENCIAS (Paso 3) ➔
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================================== -->
+    <!-- PASO 3: AUDITORÍA SKU X SKU & NOTA DE CRÉDITO A RECLAMAR -->
+    <!-- ======================================================== -->
+    <div class="step-pane" id="panePaso3">
+      <div class="cockpit-card">
+        <div class="cockpit-card-header">
+          <div style="display:flex; align-items:center; gap:10px;">
+            <span style="font-size:1.2rem;">📊</span>
+            <div>
+              <h3 style="margin:0; font-size:1.1rem; font-weight:700;">Paso 3: Auditoría y Detección de Diferencias SKU x SKU</h3>
+              <p style="margin:2px 0 0 0; font-size:0.8rem; color:var(--text-secondary);" id="p3HeaderSubtext">
+                Comparativa línea por línea entre Factura y Orden de Compra.
+              </p>
+            </div>
+          </div>
+          <div style="display:flex; gap:8px;">
+            <button type="button" class="btn btn-secondary btn-sm" onclick="irAPasoWizard(2)">
+              ⬅ Revisar OC Asociada
+            </button>
+            <button type="button" class="btn btn-secondary btn-sm" onclick="irAPasoWizard(1)">
+              🔄 Conciliar Otra Factura
+            </button>
+          </div>
+        </div>
+
+        <div class="cockpit-card-body">
+          <!-- BANNER DE LINAJE Y TRAZABILIDAD DE DATOS (DATA LINEAGE) -->
+          <div id="boxDataLineagePaso3" style="margin-bottom:16px; background:linear-gradient(135deg, rgba(15,23,42,0.9) 0%, rgba(30,41,59,0.9) 100%); border:1px solid rgba(56,189,248,0.3); border-radius:var(--radius-md); padding:12px 18px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+              <div style="display:flex; align-items:center; gap:8px;">
+                <span style="font-size:1.1rem;">🔗</span>
+                <span style="font-size:0.85rem; font-weight:800; color:#38bdf8; text-transform:uppercase; letter-spacing:0.03em;">
+                  Trazabilidad de Fuentes de Datos (Linaje 3-Way Matching)
+                </span>
+              </div>
+              <div style="display:flex; gap:6px; flex-wrap:wrap;">
+                <span class="badge" style="background:rgba(6,182,212,0.15); color:var(--accent-cyan); border:1px solid rgba(6,182,212,0.3); font-size:0.73rem;" id="badgeLineageInvoice">
+                  🧾 DTE: Axteroid REST API
+                </span>
+                <span class="badge" style="background:rgba(59,130,246,0.15); color:var(--accent-blue); border:1px solid rgba(59,130,246,0.3); font-size:0.73rem;" id="badgeLineagePo">
+                  📦 OC: BigQuery cl_dmarts (SAP 6202)
+                </span>
+                <span class="badge" style="background:rgba(16,185,129,0.15); color:var(--accent-green); border:1px solid rgba(16,185,129,0.3); font-size:0.73rem;" id="badgeLineageEngine">
+                  ⚡ Motor: Cruce Inteligente v4.0 Multi-Tier
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Banner de Veredicto Global -->
+          <div id="bannerVeredicto1a1" class="recon-result-banner danger" style="margin-bottom:20px;">
+            <div>
+              <div style="font-size:1.2rem; font-weight:800; margin-bottom:4px;" id="lblVeredictoTitulo">
+                🚨 DESCALCE CONFIRMADO
+              </div>
+              <div style="font-size:0.88rem;" id="lblVeredictoDetalle">
+                Se detectaron diferencias de precio y faltantes físicos en bodega.
+              </div>
+            </div>
+            <div style="text-align:right;">
+              <div style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-secondary); font-weight:700;">Diferencia en Moneda Local (Dif ML):</div>
+              <div style="font-size:1.75rem; font-weight:800; color:var(--accent-red);" id="lblMontoReclamarTotal">$0 CLP</div>
+              <div id="lblCorroboracionPaso3" style="font-size:0.75rem; font-weight:700; color:#34d399; margin-top:2px;">
+                ⚖️ Facturado Neto - Recepcionado Bodega
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel Destacado de Control de Transacción en Paso 3 -->
+          <div id="boxControlTransaccionPaso3" style="display:none; margin-bottom:20px; background:linear-gradient(135deg, rgba(15,23,42,0.95) 0%, rgba(30,41,59,0.97) 100%); border:1px solid rgba(14,165,233,0.45); border-left:4px solid #06b6d4; border-radius:var(--radius-md); padding:14px 18px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:10px;">
+              <div style="display:flex; align-items:center; gap:8px;">
+                <span style="font-size:1.15rem;">🎯</span>
+                <span style="font-weight:800; font-size:0.92rem; color:#38bdf8;">CONTROL DE AUDITORÍA Y TRAZABILIDAD DE LA TRANSACCIÓN</span>
+              </div>
+              <span class="badge badge-info font-mono" id="badgePaso3AuditoriaStatus" style="font-size:0.75rem; font-weight:700;">SAP SOCIEDAD 6202</span>
+            </div>
+            <div id="contenidoControlTransaccionPaso3" style="font-size:0.84rem; line-height:1.55; color:var(--text-secondary);">
+              <!-- Se llena dinámicamente -->
+            </div>
+          </div>
+
+          <!-- 4 Tarjetas Clave de Desglose del Descalce & Corroboración Dif ML -->
+          <div class="kpi-grid" style="grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); margin-bottom:20px;">
+            <div class="kpi-card" style="border-left:4px solid var(--accent-cyan); background:rgba(6,182,212,0.06);">
+              <div class="kpi-label" style="color:var(--accent-cyan); font-weight:800;">DIFERENCIA MONEDA LOCAL (DIF ML)</div>
+              <div class="kpi-value font-mono" id="kpiDifMlPaso3" style="color:var(--accent-cyan);">$0</div>
+              <div class="kpi-subtext" id="kpiDifMlSubtext">Facturado ML - Recepcionado ML</div>
+            </div>
+            <div class="kpi-card" style="border-left:4px solid var(--accent-red);">
+              <div class="kpi-label">POR SOBREPRECIO (Δ PRECIO)</div>
+              <div class="kpi-value font-mono" id="kpiDescalcePrecio" style="color:var(--accent-red);">$0</div>
+              <div class="kpi-subtext">Precio facturado > Costo pactado en OC</div>
+            </div>
+            <div class="kpi-card" style="border-left:4px solid var(--accent-amber);">
+              <div class="kpi-label">POR FALTANTE FÍSICO (Δ CANTIDAD)</div>
+              <div class="kpi-value font-mono" id="kpiFaltanteRecepcion" style="color:var(--accent-amber);">$0</div>
+              <div class="kpi-subtext">Unidades no entregadas en bodega</div>
+            </div>
+            <div class="kpi-card" style="border-left:4px solid var(--accent-purple);">
+              <div class="kpi-label">POR ÍTEMS NO EN OC</div>
+              <div class="kpi-value font-mono" id="kpiNoEnOc" style="color:var(--accent-purple);">$0</div>
+              <div class="kpi-subtext">Artículos cobrados sin orden de compra</div>
+            </div>
+          </div>
+
+          <!-- BANNER PRINCIPAL DESTACADO: PLANILLA OFICIAL DE CONCILIACIÓN PARA ENTREGA AL PROVEEDOR -->
+          <div id="boxPlanillaProveedorPaso3" style="margin-bottom:18px; background:linear-gradient(135deg, rgba(6,78,59,0.35) 0%, rgba(15,23,42,0.6) 100%); border:1px solid rgba(16,185,129,0.4); border-left:5px solid #10b981; border-radius:var(--radius-md); padding:16px 20px; box-shadow:0 4px 14px rgba(0,0,0,0.25);">
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:12px;">
+              <div style="display:flex; align-items:center; gap:10px;">
+                <span style="font-size:1.4rem;">📊</span>
+                <div>
+                  <div style="font-weight:800; font-size:0.98rem; color:#34d399; letter-spacing:0.02em;">
+                    DOCUMENTO OFICIAL DE CONCILIACIÓN PARA ENTREGA AL PROVEEDOR
+                  </div>
+                  <div style="font-size:0.8rem; color:var(--text-secondary); margin-top:2px;">
+                    Planilla de trabajo oficial (Google Sheets & Excel .xlsx) con 17 columnas de Cuentas por Pagar, fórmulas de descalce y detalle DTE para solicitar Nota de Crédito.
+                  </div>
+                </div>
+              </div>
+              <div style="display:flex; align-items:center; gap:8px;">
+                <span class="badge badge-success font-mono" id="badgeEstadoPlanillaProveedor" style="font-size:0.75rem; font-weight:700; padding:4px 10px;">
+                  ⚪ LISTA PARA GENERAR
+                </span>
+              </div>
+            </div>
+
+            <!-- Resumen y Botonera Directa de Acción -->
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; background:rgba(0,0,0,0.25); border:1px solid rgba(255,255,255,0.06); border-radius:6px; padding:12px 16px;">
+              <div style="font-size:0.82rem; color:var(--text-secondary); line-height:1.5;">
+                <div>🏢 <strong style="color:var(--text-primary);" id="lblBannerProvNombre">Proveedor Auditado</strong> • OC: <strong class="font-mono" style="color:var(--accent-cyan);" id="lblBannerPoNumber">-</strong></div>
+                <div>📑 <span id="lblBannerResumenFolios">Facturas DTE asociadas a la conciliación</span> • Reclamo NC: <strong class="font-mono" style="color:var(--accent-red);" id="lblBannerMontoNc">$0 CLP</strong></div>
+              </div>
+              <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+                <!-- Botón Principal: Generar / Abrir Google Sheets -->
+                <button type="button" class="btn btn-success btn-sm" id="btnBannerGenerarPlanilla" style="font-weight:700; background:linear-gradient(135deg, #059669 0%, #10b981 100%); color:#ffffff; border:none; box-shadow:0 2px 6px rgba(16,185,129,0.35); padding:8px 14px;" title="Crear Spreadsheet oficial en Google Drive con formato de Cuentas por Pagar">
+                  📊 Generar Planilla Google Sheets
+                </button>
+                <!-- Botón Descargar Excel (.xlsx) -->
+                <button type="button" class="btn btn-secondary btn-sm" id="btnBannerDescargarExcel" style="font-weight:600; padding:8px 12px;" title="Descargar copia del documento en Microsoft Excel">
+                  📥 Descargar Excel (.xlsx)
+                </button>
+                <!-- Botón Ver Carpeta y Correo Proveedor -->
+                <button type="button" class="btn btn-secondary btn-sm" id="btnBannerVerCarpetaCorreo" style="font-weight:600; padding:8px 12px;" title="Abrir carpeta compartible y plantilla de correo formal para entregar al proveedor">
+                  ✉️ Ver Correo y Enlace
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Filtros de la Tabla y Botonera de Resolución Limpia -->
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:14px;">
+            <div class="quick-actions" style="margin:0; display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+              <span style="font-size:0.8rem; color:var(--text-muted); align-self:center;">Filtrar Líneas:</span>
+              <button type="button" class="btn-chip active" id="chipFiltroLineasTodos">Todas (<span id="cntLineasTodos">0</span>)</button>
+              <button type="button" class="btn-chip" id="chipFiltroLineasDescalce" style="border-color:rgba(220,38,38,0.4); color:var(--accent-red); font-weight:700;">🚨 Solo Descalces (<span id="cntLineasDescalce">0</span>)</button>
+              <button type="button" class="btn-chip" id="chipFiltroLineasConformes" style="border-color:rgba(5,150,105,0.4); color:var(--accent-green); font-weight:700;">✅ Conformes (<span id="cntLineasConformes">0</span>)</button>
+              
+              <!-- Buscador Rápido de Ítems en esta Auditoría -->
+              <div style="position:relative; margin-left:6px;">
+                <input type="text" id="txtFiltroSkuPaso3" placeholder="🔍 Buscar SKU, EAN o producto..." class="form-control" style="font-size:0.82rem; padding:6px 12px; min-width:210px; border-radius:18px;">
+              </div>
+
+              <!-- Indicador de Triage Inteligente (Ejecución Automática en Background) -->
+              <span id="badgeJevAiStatus" style="font-size:0.75rem; background:rgba(124,58,237,0.1); color:var(--accent-purple); font-weight:700; padding:4px 10px; border-radius:14px; border:1px solid rgba(124,58,237,0.25); display:inline-flex; align-items:center; gap:4px;" title="Triage de causas raíz asistido por IA TypeSafe">
+                ⚡ AI Triage Activo
+              </span>
+            </div>
+
+            <!-- Botonera Limpia y Jerárquica por Rol (Comercial, Finanzas, SAP, Bitácora) -->
+            <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+              <!-- 1. Acción Comercial / Reclamo Inmediato -->
+              <button type="button" class="btn btn-primary btn-sm" id="btnCopiarResumenPortapapeles" title="Copiar correo formal con desglose SKU x SKU para Daniela Reyes o Carozzi">
+                📋 Copiar Reclamo (Email / CM)
+              </button>
+
+              <!-- 2. Acción Finanzas / Auditoría Formal: Muy Destacado para Entrega al Proveedor -->
+              <button type="button" class="btn btn-success btn-sm" id="btnExportarPlanillaFinanzas" style="font-weight:700; background:linear-gradient(135deg, #059669 0%, #10b981 100%); color:#ffffff; border:none; box-shadow:0 2px 4px rgba(16,185,129,0.3);" title="Generar o abrir Spreadsheet oficial en Google Drive para entregar al proveedor">
+                📊 Planilla Proveedor (Sheets / Excel)
+              </button>
+
+              <!-- 3. Acción Contabilidad SAP -->
+              <button type="button" class="btn btn-secondary btn-sm" id="btnGenerarJevPaso3" style="font-weight:600;" title="Ver póliza contable cuadrada de partida doble para SAP Sociedad 6202">
+                📑 Asiento JEV (SAP 6202)
+              </button>
+
+              <!-- 4. Seguimiento / Tracking -->
+              <button type="button" class="btn btn-secondary btn-sm" id="btnEnviarCasoSheet" style="font-weight:600;" title="Registrar este caso en la bitácora central de seguimiento de reclamos">
+                💾 Guardar en Bitácora
+              </button>
+            </div>
+          </div>
+
+          <!-- Tabla Detallada de Auditoría SKU x SKU -->
+          <div class="table-scroll" style="max-height:560px; border:1px solid var(--border-color); border-radius:var(--radius-md);">
+            <table id="tablaDetalleConciliacion1a1" class="audit-sku-table">
+              <thead>
+                <!-- Nivel 1: Super-headers Jerárquicos Agrupados por Dimensión de Auditoría -->
+                <tr class="super-header-row">
+                  <th colspan="3" class="th-group-item">📦 IDENTIFICACIÓN DEL ÍTEM</th>
+                  <th colspan="4" class="th-group-qty">⚖️ AUDITORÍA FÍSICA (CANTIDADES)</th>
+                  <th colspan="3" class="th-group-prc">💵 AUDITORÍA COMERCIAL (PRECIOS)</th>
+                  <th colspan="3" class="th-group-tot">💰 AUDITORÍA FINANCIERA (TOTALES & DIF ML)</th>
+                  <th colspan="2" class="th-group-dec">🎯 DICTAMEN & ACCIÓN</th>
+                </tr>
+                <!-- Nivel 2: Sub-headers Específicos por Columna -->
+                <tr class="sub-header-row">
+                  <th style="width:30px; text-align:center;">#</th>
+                  <th>SKU / Cód. / EAN</th>
+                  <th>Descripción Ítem & UOM</th>
+                  <th style="text-align:right;">Cant. Ord. (OC)</th>
+                  <th style="text-align:right;">Cant. Fac. (DTE)</th>
+                  <th style="text-align:right;">Cant. Rec. (Bodega)</th>
+                  <th style="text-align:right;">Δ Faltante</th>
+                  <th style="text-align:right;">Costo OC (Pactado)</th>
+                  <th style="text-align:right;">Precio Fac. (Cobrado)</th>
+                  <th style="text-align:right;">Δ Sobreprecio</th>
+                  <th style="text-align:right;">Total Facturado</th>
+                  <th style="text-align:right;">Total Válido (Pagar)</th>
+                  <th style="text-align:right; color:var(--accent-red); font-weight:800;">Dif ML (Reclamo NC)</th>
+                  <th style="text-align:center;">Dictamen</th>
+                  <th>Diagnóstico & Desglose</th>
+                </tr>
+              </thead>
+              <tbody id="tbodyDetalleConciliacion1a1">
+                <!-- Se llena dinámicamente -->
+              </tbody>
+              <tfoot id="tfootDetalleConciliacion1a1" class="audit-table-footer">
+                <!-- Se llena dinámicamente con totales globales -->
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div> <!-- /#vistaContenedorWizard -->
+
+    <!-- ======================================================== -->
+    <!-- VISTA PRINCIPAL 2: DASHBOARD TOP DIFERENCIAS (FACTURAS & OCs) -->
+    <!-- ======================================================== -->
+    <div id="vistaContenedorDashboard" style="display:none;" class="dash-top-container">
+      
+      <!-- Encabezado Ejecutivo del Dashboard -->
+      <div class="cockpit-card" style="margin-bottom:20px; background:linear-gradient(135deg, var(--bg-surface) 0%, rgba(220,38,38,0.04) 100%);">
+        <div class="cockpit-card-header" style="flex-wrap:wrap; gap:16px;">
+          <div>
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
+              <span class="badge badge-danger font-mono" style="font-weight:800; font-size:0.75rem;">AUDITORÍA FINANCIERA & OPERATIVA</span>
+              <span class="badge badge-purple font-mono" style="font-size:0.75rem;">SOCIEDAD 6202 &bull; CD36</span>
+            </div>
+            <h2 style="font-size:1.45rem; font-weight:800; letter-spacing:-0.02em; margin:0; display:flex; align-items:center; gap:8px;">
+              <span>🏆</span> Dashboard TOP Facturas & OCs con Mayor Descuadre
+            </h2>
+            <p style="margin:4px 0 0 0; font-size:0.85rem; color:var(--text-secondary);">
+              Ranking de órdenes de compra con mayor faltante físico en bodega y facturas electrónicas con mayor sobrefacturación o reclamo de Nota de Crédito.
+            </p>
+          </div>
+
+          <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
+            <button type="button" class="btn btn-secondary btn-sm" id="btnExportarTopCsv" style="font-weight:600;" title="Descargar ranking consolidado en CSV">
+              📥 Exportar CSV
+            </button>
+            <button type="button" class="btn btn-secondary btn-sm" id="btnExportarTopSheets" style="font-weight:700; border-color:rgba(220,38,38,0.4); color:var(--accent-red);" title="Generar Spreadsheet en Google Drive">
+              📊 Planilla Oficial Finanzas
+            </button>
+            <button type="button" class="btn btn-primary btn-sm" id="btnRecargarTopData">
+              🔄 Actualizar Datos
+            </button>
+          </div>
+        </div>
+
+        <div class="cockpit-card-body" style="padding-top:16px;">
+          <!-- 4 KPIs Ejecutivos Impactantes -->
+          <div class="dash-top-kpi-grid">
+            <!-- KPI 1: Monto Total en Riesgo -->
+            <div class="dash-top-kpi-card kpi-danger">
+              <div class="dash-kpi-header">
+                <span class="dash-kpi-title">Monto Total en Riesgo (Descalces)</span>
+                <span class="dash-kpi-icon">🚨</span>
+              </div>
+              <div class="dash-kpi-val" id="topKpiMontoRiesgo" style="color:var(--accent-red);">$120.4M</div>
+              <div class="dash-kpi-desc">
+                <span>Diferencias acumuladas detectadas en CD36</span>
+              </div>
+            </div>
+
+            <!-- KPI 2: Top PO con Mayor Faltante -->
+            <div class="dash-top-kpi-card kpi-purple">
+              <div class="dash-kpi-header">
+                <span class="dash-kpi-title">Top 1 Orden de Compra (Faltante)</span>
+                <span class="dash-kpi-icon">📦</span>
+              </div>
+              <div class="dash-kpi-val" id="topKpiTopPo" style="color:var(--accent-purple);">$18.5M</div>
+              <div class="dash-kpi-desc">
+                <span id="topKpiTopPoDesc">PO509014 &bull; 17.046 unidades no recibidas</span>
+              </div>
+            </div>
+
+            <!-- KPI 3: Top Factura con Descalce Unitario -->
+            <div class="dash-top-kpi-card kpi-amber">
+              <div class="dash-kpi-header">
+                <span class="dash-kpi-title">Top Factura Reclamo NC</span>
+                <span class="dash-kpi-icon">📄</span>
+              </div>
+              <div class="dash-kpi-val" id="topKpiTopFactura" style="color:var(--accent-amber);">$2.44M</div>
+              <div class="dash-kpi-desc">
+                <span id="topKpiTopFacturaDesc">Folio 22587396 (Carozzi) &bull; OC 0000519039</span>
+              </div>
+            </div>
+
+            <!-- KPI 4: Proveedor y Categoría en Foco -->
+            <div class="dash-top-kpi-card kpi-cyan">
+              <div class="dash-kpi-header">
+                <span class="dash-kpi-title">Proveedor & CM en Foco</span>
+                <span class="dash-kpi-icon">🏢</span>
+              </div>
+              <div class="dash-kpi-val" id="topKpiTopProveedor" style="font-size:1.35rem; color:var(--accent-cyan);">Carozzi (30.6%)</div>
+              <div class="dash-kpi-desc">
+                <span id="topKpiTopCmDesc">CM: Daniela Reyes &bull; $9.68M auditados en PO517979</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Barra de Filtros y Sub-navegación del Dashboard -->
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:12px;">
+        <div class="dashboard-subnav-pills" style="margin:0;">
+          <button type="button" class="subnav-pill active" id="pillSubnavPos" onclick="cambiarPestanaTopDashboard('pos')">
+            🏆 Top Órdenes de Compra (Mayor Brecha Físico vs SAP)
+          </button>
+          <button type="button" class="subnav-pill" id="pillSubnavFacturas" onclick="cambiarPestanaTopDashboard('facturas')">
+            📄 Top Facturas DTE (Mayor Reclamo NC / Sobrefacturación)
+          </button>
+          <button type="button" class="subnav-pill" id="pillSubnavSinOc" onclick="cambiarPestanaTopDashboard('sin_oc')">
+            ❌ Facturas Sin OC (Rechazo Comercial Inmediato)
+          </button>
+        </div>
+
+        <div style="position:relative; min-width:240px; flex:1; max-width:320px;">
+          <input type="text" id="txtFiltroTopDashboard" class="form-control" placeholder="🔍 Filtrar por PO, Folio o Proveedor..." style="font-size:0.84rem; padding:8px 14px; border-radius:18px; width:100%;">
+        </div>
+      </div>
+
+      <!-- Barra de Filtros Avanzados: Empresa Proveedora y Category Manager -->
+      <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px; margin-bottom:16px; padding:10px 16px; background:var(--bg-card); border:1px solid var(--border-color); border-radius:var(--radius-md);">
+        <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+          <div style="display:flex; align-items:center; gap:6px;">
+            <span style="font-size:0.8rem; font-weight:700; color:var(--text-secondary);">🏢 Empresa:</span>
+            <select id="selectFiltroProveedorTop" class="form-control" onchange="filtrarDashboardAvanzado()" style="font-size:0.8rem; padding:5px 10px; min-width:200px;">
+              <option value="todos">🌐 Todas las Empresas (32 Proveedores)</option>
+              <option value="Unilever">Unilever Chile Ltda.</option>
+              <option value="Carozzi">Empresas Carozzi S.A.</option>
+              <option value="Panini">Panini Chile S.A.</option>
+              <option value="Mars">Mars Chile SpA</option>
+              <option value="Colgate">Colgate-Palmolive Chile S.A.</option>
+              <option value="L'Oréal">L'Oréal Chile S.A.</option>
+              <option value="Nestlé">Nestlé Chile S.A.</option>
+              <option value="Softys">Softys Chile SpA</option>
+              <option value="Procter">Procter & Gamble Chile Ltda.</option>
+              <option value="CCU">Comercial CCU SpA</option>
+              <option value="Evercrisp">Evercrisp Snack (PepsiCo)</option>
+              <option value="Nutrisco">Nutrisco Chile S.A.</option>
+              <option value="Mondelez">Mondelez Chile S.A.</option>
+              <option value="Arcor">Arcor Dos en Uno S.A.</option>
+              <option value="Virutex">Virutex Ilko S.A.</option>
+              <option value="Starbri">Starbri Chile Ltda.</option>
+              <option value="Grupo Lagos">Grupo Lagos SpA</option>
+              <option value="Iansa">Empresas Iansa S.A.</option>
+              <option value="Ditab">Ditab Chile SpA</option>
+              <option value="Grupo Mor">Grupo Mor Chile SpA</option>
+              <option value="Reckitt">Reckitt Benckiser Chile S.A.</option>
+              <option value="SC Johnson">SC Johnson & Son Chile</option>
+            </select>
+          </div>
+
+          <div style="display:flex; align-items:center; gap:6px;">
+            <span style="font-size:0.8rem; font-weight:700; color:var(--text-secondary);">👤 Category Manager:</span>
+            <select id="selectFiltroCategoryManagerTop" class="form-control" onchange="filtrarDashboardAvanzado()" style="font-size:0.8rem; padding:5px 10px; min-width:220px;">
+              <option value="todos">👥 Todos los Category Managers</option>
+              <option value="Nicolas Lopez">Nicolas Lopez (Higiene, Unilever, Softys, Virutex)</option>
+              <option value="Daniela Reyes">Daniela Reyes (Carozzi, Arcor, Mondelez, Iansa)</option>
+              <option value="Constanza Urra">Constanza Urra (Nestlé, Mars, PepsiCo, Panini)</option>
+              <option value="Joaquin Mardones">Joaquin Mardones (Colgate, L'Oréal, P&G)</option>
+              <option value="Javiera Rogers">Javiera Rogers (CCU, Bebidas, Licores)</option>
+              <option value="Maria Paz Devés">Maria Paz Devés (Nutrisco, Carnes, Congelados)</option>
+              <option value="Daniela Catilao">Daniela Catilao (Grupo Lagos, Frescos & Verduras)</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+          <span style="font-size:0.75rem; color:var(--text-muted);">Atajos:</span>
+          <button type="button" class="btn-chip active" id="chipTopFiltroTodos" onclick="aplicarChipProveedorTop('todos')" style="font-size:0.72rem; padding:3px 8px;">🌐 Todos</button>
+          <button type="button" class="btn-chip" id="chipTopFiltroUnilever" onclick="aplicarChipProveedorTop('Unilever')" style="font-size:0.72rem; padding:3px 8px;">Unilever</button>
+          <button type="button" class="btn-chip" id="chipTopFiltroCarozzi" onclick="aplicarChipProveedorTop('Carozzi')" style="font-size:0.72rem; padding:3px 8px;">Carozzi</button>
+          <button type="button" class="btn-chip" id="chipTopFiltroNestle" onclick="aplicarChipProveedorTop('Nestlé')" style="font-size:0.72rem; padding:3px 8px;">Nestlé</button>
+          <button type="button" class="btn-chip" id="chipTopFiltroColgate" onclick="aplicarChipProveedorTop('Colgate')" style="font-size:0.72rem; padding:3px 8px;">Colgate</button>
+          <button type="button" class="btn-chip" id="chipTopFiltroSoftys" onclick="aplicarChipProveedorTop('Softys')" style="font-size:0.72rem; padding:3px 8px;">Softys</button>
+          <button type="button" class="btn-chip" id="chipTopFiltroLoreal" onclick="aplicarChipProveedorTop('L\'Oréal')" style="font-size:0.72rem; padding:3px 8px;">L'Oréal</button>
+          <button type="button" class="btn-chip" id="chipTopFiltroMars" onclick="aplicarChipProveedorTop('Mars')" style="font-size:0.72rem; padding:3px 8px;">Mars</button>
+          <button type="button" class="btn-chip" id="chipTopFiltroCCU" onclick="aplicarChipProveedorTop('CCU')" style="font-size:0.72rem; padding:3px 8px;">CCU</button>
+        </div>
+      </div>
+
+      <!-- SECCIÓN 1: TABLA TOP ÓRDENES DE COMPRA CON MAYOR BRECHA -->
+      <div id="seccionTopPos" class="cockpit-card" style="margin-bottom:24px;">
+        <div class="cockpit-card-header" style="background:rgba(220,38,38,0.03);">
+          <div style="display:flex; align-items:center; gap:8px;">
+            <span style="font-size:1.15rem;">📦</span>
+            <div>
+              <h3 style="margin:0; font-size:1.05rem; font-weight:700;">Ranking: Órdenes de Compra con Mayor Descalce Físico de Bodega</h3>
+              <p style="margin:2px 0 0 0; font-size:0.78rem; color:var(--text-secondary);">
+                Comparativa entre lo valorizado en la OC de SAP y lo efectivamente recepcionado físicamente en CD36. Haz clic en <strong>⚡ Auditar PO</strong> para abrir su cruce.
+              </p>
+            </div>
+          </div>
+          <span class="badge badge-danger font-mono" id="badgeTotalPosCount">12 OCs en foco</span>
+        </div>
+        <div class="cockpit-card-body" style="padding:0;">
+          <div class="table-scroll" style="max-height:560px;">
+            <table class="data-table" id="tablaTopPos">
+              <thead>
+                <tr>
+                  <th style="width:48px; text-align:center;">#</th>
+                  <th>Orden de Compra</th>
+                  <th>Proveedor</th>
+                  <th>Almacén</th>
+                  <th style="text-align:right;">Monto Ordenado</th>
+                  <th style="text-align:right;">Monto Bodega</th>
+                  <th style="text-align:right; color:var(--accent-red);">Δ Faltante ($ CLP)</th>
+                  <th style="width:160px;">Cumplimiento Físico</th>
+                  <th style="text-align:right;">Δ Unids Faltantes</th>
+                  <th style="text-align:center;">Acción Directa</th>
+                </tr>
+              </thead>
+              <tbody id="tbodyTopPos">
+                <!-- Rendered dynamically -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECCIÓN 2: TABLA TOP FACTURAS DTE CON MAYOR SOBREFACTURACIÓN / RECLAMO NC -->
+      <div id="seccionTopFacturas" class="cockpit-card" style="margin-bottom:24px; display:none;">
+        <div class="cockpit-card-header" style="background:rgba(220,38,38,0.03);">
+          <div style="display:flex; align-items:center; gap:8px;">
+            <span style="font-size:1.15rem;">📄</span>
+            <div>
+              <h3 style="margin:0; font-size:1.05rem; font-weight:700;">Ranking: Facturas Electrónicas con Mayor Monto a Reclamar (Nota de Crédito)</h3>
+              <p style="margin:2px 0 0 0; font-size:0.78rem; color:var(--text-secondary);">
+                Facturas emitidas con faltantes físicos en recepción o desvíos de precio unitario respecto al pactado en OC.
+              </p>
+            </div>
+          </div>
+          <span class="badge badge-warning font-mono" id="badgeTotalFacturasCount">15 Facturas críticas</span>
+        </div>
+        <div class="cockpit-card-body" style="padding:0;">
+          <div class="table-scroll" style="max-height:560px;">
+            <table class="data-table" id="tablaTopFacturas">
+              <thead>
+                <tr>
+                  <th style="width:48px; text-align:center;">#</th>
+                  <th>Folio DTE & Fecha</th>
+                  <th>Proveedor</th>
+                  <th>OC Referenciada</th>
+                  <th style="text-align:right;">Facturado Total</th>
+                  <th style="text-align:right;">Válido a Pagar</th>
+                  <th style="text-align:right; color:var(--accent-red);">Monto a Reclamar (NC)</th>
+                  <th>Causa Raíz / Diagnóstico</th>
+                  <th style="text-align:center;">Acción Directa</th>
+                </tr>
+              </thead>
+              <tbody id="tbodyTopFacturas">
+                <!-- Rendered dynamically -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECCIÓN 3: TABLA TOP FACTURAS SIN OC (RECHAZO COMERCIAL INMEDIATO) -->
+      <div id="seccionTopSinOc" class="cockpit-card" style="margin-bottom:24px; display:none;">
+        <div class="cockpit-card-header" style="background:rgba(220,38,38,0.05);">
+          <div style="display:flex; align-items:center; gap:8px;">
+            <span style="font-size:1.15rem;">❌</span>
+            <div>
+              <h3 style="margin:0; font-size:1.05rem; font-weight:700; color:var(--accent-red);">Facturas Sin Orden de Compra (Rechazo Comercial Inmediato)</h3>
+              <p style="margin:2px 0 0 0; font-size:0.78rem; color:var(--text-secondary);">
+                Documentos tributarios recibidos en Axteroid sin número de orden de compra SAP. Según la política contable de Sociedad 6202, no se autoriza ningún pago sin OC.
+              </p>
+            </div>
+          </div>
+          <span class="badge badge-danger font-mono">Rechazo 100%</span>
+        </div>
+        <div class="cockpit-card-body" style="padding:0;">
+          <div class="table-scroll" style="max-height:450px;">
+            <table class="data-table" id="tablaTopSinOc">
+              <thead>
+                <tr>
+                  <th style="width:48px; text-align:center;">#</th>
+                  <th>Folio DTE</th>
+                  <th>Fecha Emisión</th>
+                  <th>Proveedor Emisor</th>
+                  <th style="text-align:right; color:var(--accent-red);">Monto No Autorizado ($ CLP)</th>
+                  <th>Dictamen Contable</th>
+                  <th>Acción Requerida</th>
+                </tr>
+              </thead>
+              <tbody id="tbodyTopSinOc">
+                <!-- Rendered dynamically -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Modal para Pegar Datos Manuales (CSV / Excel / Texto) -->
+  <div class="modal-overlay" id="pasteDataModal">
+    <div class="modal-container" style="max-width: 650px;">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title" id="pasteModalTitle">📋 Pegar Datos de Factura</h3>
+          <p class="modal-subtitle" id="pasteModalSubtitle">Pega filas copiadas desde Excel o Google Sheets.</p>
+        </div>
+        <button type="button" class="btn-close" id="btnClosePasteModal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <textarea id="txtPasteDataContent" class="form-control" rows="8" placeholder="SKU;Descripción;Cantidad;Precio&#10;120524;Galleta Tritón 126g;100;450&#10;151326;Fideos Spaghetti 400g;50;890" style="font-family:var(--font-mono); font-size:0.82rem;"></textarea>
+        <div style="margin-top:8px; font-size:0.78rem; color:var(--text-secondary);">
+          Formato admitido: Columnas con encabezados (SKU/Código, Descripción, Cantidad, Precio/Costo) separadas por tabulador, punto y coma o coma.
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="btnCancelPasteModal">Cancelar</button>
+        <button type="button" class="btn btn-primary" id="btnConfirmPasteModal">Cargar Datos</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Configuración del Sistema -->
+  <div class="modal-overlay" id="settingsModal">
+    <div class="modal-container" style="max-width: 580px;">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title">⚙️ Configuración del Sistema</h3>
+          <p class="modal-subtitle">Ajustes de conexión y parámetros</p>
+        </div>
+        <button type="button" class="btn-close" id="btnSettingsClose">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="settingsForm">
+          <div class="form-group">
+            <label for="cfgWorkspace">Workspace / Tenant Axteroid</label>
+            <input type="text" id="cfgWorkspace" class="form-control" value="peya_cl">
+          </div>
+          <div class="form-group">
+            <label for="cfgSpreadsheetId">ID Google Spreadsheet de Casos Tribu</label>
+            <input type="text" id="cfgSpreadsheetId" class="form-control" value="1duL91e3BFgAIeUXjhWhZsEcVgha_ZZZ38xbN0W2ibjo">
+          </div>
+          <div class="form-group">
+            <label for="cfgAforosSpreadsheetId">ID Google Spreadsheet de Aforos Chile</label>
+            <input type="text" id="cfgAforosSpreadsheetId" class="form-control" value="1do-TBEM_QbNoVzWxns7-2nfGTLXvHFTaaruI-1E-KrI">
+          </div>
+          <div style="margin-top:16px; padding-top:12px; border-top:1px dashed var(--border-color);">
+            <div style="font-weight:700; font-size:0.85rem; color:var(--accent-purple); margin-bottom:10px; display:flex; align-items:center; gap:6px;">
+              <span>⚡ Parámetros TypeSafe AI Jev (System-1 Decision)</span>
+            </div>
+            <div class="form-group">
+              <label for="cfgJevApiKey">API Key TypeSafe AI Jev (Opcional - usa motor local si está vacío)</label>
+              <input type="password" id="cfgJevApiKey" class="form-control" placeholder="ts-jev-..." autocomplete="off">
+            </div>
+          </div>
+          <div style="margin-top:16px; padding-top:12px; border-top:1px dashed var(--border-color);">
+            <div style="font-weight:700; font-size:0.85rem; color:var(--accent-cyan); margin-bottom:10px; display:flex; align-items:center; gap:6px;">
+              <span>📑 Parámetros Contables ERP / SAP (JEV)</span>
+            </div>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+              <div class="form-group">
+                <label for="cfgSapCompanyCode">Sociedad SAP</label>
+                <input type="text" id="cfgSapCompanyCode" class="form-control font-mono" value="6202">
+              </div>
+              <div class="form-group">
+                <label for="cfgSapCostCenter">Centro de Costo</label>
+                <input type="text" id="cfgSapCostCenter" class="form-control font-mono" value="CD_36_CD_Chile">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="btnSettingsCancel">Cancelar</button>
+        <button type="button" class="btn btn-primary" id="btnSettingsSave">Guardar Configuración</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de Detalle Preciso de Factura (Paso 1) -->
+  <div class="modal-overlay" id="modalDetalleFacturaPaso1" style="display:none;">
+    <div class="modal-container" style="max-width: 900px; max-height: 90vh; display:flex; flex-direction:column;">
+      <div class="modal-header" style="border-bottom: 2px solid var(--border-color); display:flex; justify-content:space-between; align-items:center;">
+        <div>
+          <h3 class="modal-title" id="modalDetFacTitulo" style="display:flex; align-items:center; gap:8px;">
+            <span>📑 Detalle Preciso de Factura DTE</span>
+            <span id="modalDetFacBadgeFolio" class="badge badge-info font-mono">Folio -</span>
+          </h3>
+          <p class="modal-subtitle" id="modalDetFacSubtitulo" style="margin:4px 0 0 0; font-size:0.85rem; color:var(--text-secondary);">
+            Desglose SKU x SKU con precios unitarios, cantidades e integración con BigQuery.
+          </p>
+        </div>
+        <button type="button" class="btn-close" id="btnCerrarModalDetalleFactura" onclick="cerrarModalDetalleFacturaPaso1()">&times;</button>
+      </div>
+      <div class="modal-body" style="padding: 18px 24px; overflow-y:auto; flex:1;">
+        <!-- Ficha de Encabezado -->
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:12px; margin-bottom:16px;">
+          <div style="background:var(--bg-surface); border:1px solid var(--border-color); border-radius:6px; padding:10px 14px;">
+            <div style="font-size:0.75rem; color:var(--text-muted);">Proveedor / Emisor</div>
+            <div style="font-weight:700; color:var(--text-primary); font-size:0.9rem;" id="modalDetFacProveedor">-</div>
+            <div style="font-size:0.75rem; color:var(--text-secondary); font-family:var(--font-mono);" id="modalDetFacRut">-</div>
+          </div>
+          <div style="background:var(--bg-surface); border:1px solid var(--border-color); border-radius:6px; padding:10px 14px;">
+            <div style="font-size:0.75rem; color:var(--text-muted);">Monto Facturado</div>
+            <div style="font-weight:700; color:var(--color-monto-neto, #0f172a); font-size:1.05rem; font-family:var(--font-mono);" id="modalDetFacMontoNeto">$0 Neto</div>
+            <div style="font-size:0.75rem; color:var(--text-secondary);" id="modalDetFacMontoTotal">Total: $0</div>
+          </div>
+          <div style="background:var(--bg-surface); border:1px solid var(--border-color); border-radius:6px; padding:10px 14px;">
+            <div style="font-size:0.75rem; color:var(--text-muted);">Orden de Compra Asociada</div>
+            <div style="font-weight:700; color:var(--accent-cyan); font-size:0.95rem; font-family:var(--font-mono);" id="modalDetFacPo">-</div>
+            <div style="font-size:0.75rem; color:var(--text-secondary);" id="modalDetFacAlmacen">Chile CD36</div>
+          </div>
+        </div>
+
+        <!-- Tabla Detalle de SKUs -->
+        <div style="font-weight:700; font-size:0.9rem; margin-bottom:8px; color:var(--text-primary); display:flex; justify-content:space-between; align-items:center;">
+          <span>📦 Ítems Facturados (<span id="modalDetFacCantItems">0</span> SKUs)</span>
+          <span style="font-size:0.75rem; color:var(--text-muted);">Precios y Cantidades DTE Oficial</span>
+        </div>
+        <div style="overflow-x:auto; border:1px solid var(--border-color); border-radius:6px;">
+          <table class="audit-sku-table" style="width:100%; border-collapse:collapse; font-size:0.83rem;">
+            <thead>
+              <tr style="background:var(--bg-surface); text-align:left;">
+                <th style="padding:8px 10px;">#</th>
+                <th style="padding:8px 10px;">Código / SKU</th>
+                <th style="padding:8px 10px;">Descripción</th>
+                <th style="padding:8px 10px; text-align:right;">Cantidad</th>
+                <th style="padding:8px 10px; text-align:right;">Precio Unit.</th>
+                <th style="padding:8px 10px; text-align:right;">Monto Neto</th>
+              </tr>
+            </thead>
+            <tbody id="modalDetFacTbodyItems">
+              <!-- Rellenado dinámicamente -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer" style="padding:14px 24px; border-top:1px solid var(--border-color); display:flex; justify-content:space-between;">
+        <button type="button" class="btn btn-secondary btn-sm" onclick="cerrarModalDetalleFacturaPaso1()">Cerrar</button>
+        <button type="button" class="btn btn-primary btn-sm" id="modalDetFacBtnCruzar" style="padding:8px 22px; font-weight:700;">
+          Asociar y Cruzar esta Factura ⚡
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de Corroboración y Desglose Matemático de la Línea -->
+  <div class="modal-overlay" id="modalDetalleCalculoLinea">
+    <div class="modal-container" style="max-width: 780px;">
+      <div class="modal-header" style="border-bottom: 2px solid var(--border-color);">
+        <div>
+          <h3 class="modal-title" id="calcModalTitulo" style="display:flex; align-items:center; gap:8px;">
+            <span>🔍 Auditoría & Corroboración Matemática</span>
+            <span id="calcBadgeEstadoModal" class="badge badge-danger">DESCALCE</span>
+          </h3>
+          <p class="modal-subtitle" id="calcModalSubtitulo">Desglose analítico paso a paso para corroborar la discrepancia con el proveedor.</p>
+        </div>
+        <button type="button" class="btn-close" id="btnCerrarModalCalculo">&times;</button>
+      </div>
+      <div class="modal-body" style="padding: 20px 24px;">
+        
+        <!-- Ficha Resumen del Producto -->
+        <div style="background:var(--bg-surface); border:1px solid var(--border-color); border-radius:var(--radius-md); padding:14px 18px; margin-bottom:18px;">
+          <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:8px;">
+            <div>
+              <div style="font-size:0.75rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.05em;">PRODUCTO AUDITADO (LÍNEA <span id="calcNumLinea">1</span>)</div>
+              <div style="font-size:1.05rem; font-weight:700; color:var(--text-primary);" id="calcDescProducto">-</div>
+            </div>
+            <div style="text-align:right;">
+              <div class="font-mono" style="font-size:0.85rem; font-weight:700; color:var(--accent-cyan);" id="calcSkuCodigo">-</div>
+              <div style="font-size:0.75rem; color:var(--text-secondary);" id="calcEan">-</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Dimensiones de Verificación (Física, Comercial, Financiera) -->
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:14px; margin-bottom:18px;">
+          
+          <!-- 1. Dimensión Física -->
+          <div style="background:var(--bg-surface); border:1px solid rgba(245,158,11,0.3); border-radius:var(--radius-md); padding:14px; border-top:3px solid var(--accent-amber);">
+            <div style="font-size:0.75rem; font-weight:700; color:var(--accent-amber); margin-bottom:10px; display:flex; align-items:center; gap:6px;">
+              <span>⚖️ DIMENSIÓN FÍSICA</span>
+            </div>
+            <div style="font-size:0.8rem; display:flex; justify-content:space-between; margin-bottom:6px;">
+              <span style="color:var(--text-secondary);">Ordenada en OC:</span>
+              <strong id="calcCantOrdenada">0</strong>
+            </div>
+            <div style="font-size:0.8rem; display:flex; justify-content:space-between; margin-bottom:6px;">
+              <span style="color:var(--text-secondary);">Cobrada en Factura:</span>
+              <strong id="calcCantFacturada">0</strong>
+            </div>
+            <div style="font-size:0.8rem; display:flex; justify-content:space-between; margin-bottom:8px;">
+              <span style="color:var(--text-secondary);">Entregada en Bodega:</span>
+              <strong id="calcCantRecepcionada">0</strong>
+            </div>
+            <div style="border-top:1px dashed var(--border-color); padding-top:8px; display:flex; justify-content:space-between; font-size:0.85rem;">
+              <span style="font-weight:600;">Δ Faltante Físico:</span>
+              <span id="calcDifFaltante" class="font-mono" style="font-weight:700;">0</span>
+            </div>
+          </div>
+
+          <!-- 2. Dimensión Comercial -->
+          <div style="background:var(--bg-surface); border:1px solid rgba(139,92,246,0.3); border-radius:var(--radius-md); padding:14px; border-top:3px solid var(--accent-purple);">
+            <div style="font-size:0.75rem; font-weight:700; color:var(--accent-purple); margin-bottom:10px; display:flex; align-items:center; gap:6px;">
+              <span>💵 DIMENSIÓN COMERCIAL</span>
+            </div>
+            <div style="font-size:0.8rem; display:flex; justify-content:space-between; margin-bottom:6px;">
+              <span style="color:var(--text-secondary);">Costo Pactado OC:</span>
+              <strong class="font-mono" id="calcCostoOc">$0</strong>
+            </div>
+            <div style="font-size:0.8rem; display:flex; justify-content:space-between; margin-bottom:6px;">
+              <span style="color:var(--text-secondary);">Precio Facturado:</span>
+              <strong class="font-mono" id="calcPrecioFac">$0</strong>
+            </div>
+            <div style="font-size:0.8rem; display:flex; justify-content:space-between; margin-bottom:8px;">
+              <span style="color:var(--text-secondary);">Presentación / UOM:</span>
+              <strong id="calcUom">UN</strong>
+            </div>
+            <div style="border-top:1px dashed var(--border-color); padding-top:8px; display:flex; justify-content:space-between; font-size:0.85rem;">
+              <span style="font-weight:600;">Δ Sobreprecio Unit.:</span>
+              <span id="calcDifPrecio" class="font-mono" style="font-weight:700;">$0</span>
+            </div>
+          </div>
+
+          <!-- 3. Dimensión Financiera -->
+          <div style="background:var(--bg-surface); border:1px solid rgba(239,68,68,0.3); border-radius:var(--radius-md); padding:14px; border-top:3px solid var(--accent-red);">
+            <div style="font-size:0.75rem; font-weight:700; color:var(--accent-red); margin-bottom:10px; display:flex; align-items:center; gap:6px;">
+              <span>💰 LIQUIDACIÓN & RECLAMO</span>
+            </div>
+            <div style="font-size:0.8rem; display:flex; justify-content:space-between; margin-bottom:6px;">
+              <span style="color:var(--text-secondary);">Total Facturado:</span>
+              <strong class="font-mono" id="calcTotalFacturado">$0</strong>
+            </div>
+            <div style="font-size:0.8rem; display:flex; justify-content:space-between; margin-bottom:6px;">
+              <span style="color:var(--text-secondary);">Válido a Pagar:</span>
+              <strong class="font-mono" id="calcTotalValido" style="color:var(--accent-green);">$0</strong>
+            </div>
+            <div style="font-size:0.8rem; display:flex; justify-content:space-between; margin-bottom:8px;">
+              <span style="color:var(--text-secondary);">Tipo Reclamo:</span>
+              <span id="calcTipoReclamoTexto" style="font-size:0.75rem; font-weight:600;">-</span>
+            </div>
+            <div style="border-top:1px dashed var(--border-color); padding-top:8px; display:flex; justify-content:space-between; font-size:0.9rem;">
+              <span style="font-weight:700; color:var(--accent-red);">Monto NC:</span>
+              <span id="calcMontoTotalNc" class="font-mono" style="font-weight:800; color:var(--accent-red); font-size:1.05rem;">$0</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Caja de Fórmulas Matemáticas Explícitas -->
+        <div style="background:var(--bg-card); border:1px solid var(--border-color); border-radius:var(--radius-md); padding:14px 18px; margin-bottom:16px;">
+          <div style="font-size:0.78rem; font-weight:700; color:var(--text-secondary); margin-bottom:8px; text-transform:uppercase; letter-spacing:0.04em;">
+            📐 DEMOSTRACIÓN MATEMÁTICA DEL CÁLCULO
+          </div>
+          <div id="calcFormulaExplicacion" style="font-family:var(--font-mono); font-size:0.82rem; color:var(--text-primary); line-height:1.6; background:var(--bg-surface); padding:12px; border-radius:6px; border:1px solid var(--border-color);">
+            <!-- Se llena con las ecuaciones exactas -->
+          </div>
+        </div>
+
+        <!-- Diagnóstico Causa Raíz y Acción Sugerida -->
+        <div style="display:flex; flex-direction:column; gap:8px;">
+          <div style="font-size:0.82rem; line-height:1.45;">
+            <strong style="color:var(--text-primary);">Diagnóstico Auditoría:</strong>
+            <span id="calcDiagnosticoTexto" style="color:var(--text-secondary);">-</span>
+          </div>
+          <div style="font-size:0.82rem; line-height:1.45;">
+            <strong style="color:var(--accent-blue);">Acción Inmediata Sugerida:</strong>
+            <span id="calcAccionTexto" style="color:var(--text-primary); font-weight:600;">-</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="modal-footer" style="border-top:1px solid var(--border-color); justify-content:space-between;">
+        <button type="button" class="btn btn-secondary btn-sm" id="btnCopiarFormulaLinea">
+          📋 Copiar Fórmula para Correo / Reclamo
+        </button>
+        <button type="button" class="btn btn-primary btn-sm" id="btnCerrarModalCalculo2">
+          Entendido / Cerrar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================================================================= -->
+  <!-- MODAL: JOURNAL ENTRY VOUCHER (JEV) - SAP / SOCIEDAD 6202           -->
+  <!-- ================================================================= -->
+  <div class="modal-overlay" id="modalJournalEntryVoucher">
+    <div class="modal-container" style="max-width: 960px;">
+      <div class="modal-header" style="border-bottom: 2px solid var(--border-color); background: linear-gradient(135deg, rgba(2,132,199,0.08) 0%, rgba(124,58,237,0.08) 100%);">
+        <div>
+          <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+            <span style="font-size:1.3rem;">📑</span>
+            <h3 class="modal-title" style="margin:0;">Journal Entry Voucher (JEV) Contable</h3>
+            <span class="badge badge-info font-mono" id="jevVoucherIdBadge">JEV-6202-...</span>
+            <span class="badge badge-success font-mono" id="jevBalancedBadge">⚖️ BALANCEADO</span>
+          </div>
+          <p class="modal-subtitle" style="margin-top:4px;">
+            Póliza y Asiento Contable formal para registro y compensación en ERP / SAP (Sociedad 6202 Delivery Hero Dmarts Chile).
+          </p>
+        </div>
+        <button type="button" class="btn-close" id="btnCerrarModalJev">&times;</button>
+      </div>
+      
+      <div class="modal-body" style="padding: 20px 24px;">
+        <!-- Cabecera de Datos Contables JEV -->
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:12px; margin-bottom:18px; background:var(--bg-surface); border:1px solid var(--border-color); border-radius:var(--radius-md); padding:14px 18px;">
+          <div>
+            <div style="font-size:0.75rem; color:var(--text-muted); text-transform:uppercase;">Sociedad / Empresa:</div>
+            <strong style="font-size:0.9rem; color:var(--text-primary);" id="jevHeaderSociedad">6202 - Delivery Hero Dmarts Chile</strong>
+          </div>
+          <div>
+            <div style="font-size:0.75rem; color:var(--text-muted); text-transform:uppercase;">Fecha Contabilización:</div>
+            <strong class="font-mono" style="font-size:0.9rem; color:var(--text-primary);" id="jevHeaderFecha">-</strong>
+          </div>
+          <div>
+            <div style="font-size:0.75rem; color:var(--text-muted); text-transform:uppercase;">Moneda & Clase Doc.:</div>
+            <strong class="font-mono" style="font-size:0.9rem; color:var(--text-primary);">CLP (KR - Factura Prov.)</strong>
+          </div>
+          <div>
+            <div style="font-size:0.75rem; color:var(--text-muted); text-transform:uppercase;">Referencia / DTE:</div>
+            <strong class="font-mono" style="font-size:0.9rem; color:var(--accent-cyan);" id="jevHeaderRef">-</strong>
+          </div>
+        </div>
+
+        <!-- 3 KPIs Contables: Total Débito, Total Crédito, Cuadratura -->
+        <div class="kpi-grid" style="grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:12px; margin-bottom:18px;">
+          <div class="kpi-card" style="border-left:4px solid var(--accent-blue);">
+            <div class="kpi-label">TOTAL DÉBITO (DEBE)</div>
+            <div class="kpi-value font-mono" id="jevKpiDebitos" style="color:var(--accent-blue);">$0 CLP</div>
+            <div class="kpi-subtext">Compensación EM/RF + Reclamos + IVA</div>
+          </div>
+          <div class="kpi-card" style="border-left:4px solid var(--accent-green);">
+            <div class="kpi-label">TOTAL CRÉDITO (HABER)</div>
+            <div class="kpi-value font-mono" id="jevKpiCreditos" style="color:var(--accent-green);">$0 CLP</div>
+            <div class="kpi-subtext">Cuentas x Pagar Proveedor / Retenciones</div>
+          </div>
+          <div class="kpi-card" style="border-left:4px solid var(--accent-purple);">
+            <div class="kpi-label">CUADRATURA ASIENTO (Δ)</div>
+            <div class="kpi-value font-mono" id="jevKpiDiferencia" style="color:var(--accent-purple);">$0 CLP</div>
+            <div class="kpi-subtext" id="jevKpiCuadraturaSub">Asiento balanceado matemáticamente</div>
+          </div>
+        </div>
+
+        <!-- Opciones de Generación JEV -->
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:12px; padding:8px 12px; background:var(--bg-hover); border-radius:var(--radius-sm); border:1px solid var(--border-color);">
+          <div style="display:flex; gap:16px; align-items:center; font-size:0.82rem; flex-wrap:wrap;">
+            <label style="display:flex; align-items:center; gap:6px; cursor:pointer;">
+              <input type="checkbox" id="chkJevIncluirIva" checked>
+              <span>Incluir IVA Crédito Fiscal (19%)</span>
+            </label>
+            <label style="display:flex; align-items:center; gap:6px; cursor:pointer;">
+              <input type="checkbox" id="chkJevAplicarAforo" checked>
+              <span>Descontar Retención de Aforo si aplica</span>
+            </label>
+          </div>
+          <div style="font-size:0.78rem; color:var(--text-muted);">
+            Centro de Costos: <strong class="font-mono" id="lblJevCostCenter">CD_36_CD_Chile</strong>
+          </div>
+        </div>
+
+        <!-- Tabla de Asiento Contable (Debe / Haber) -->
+        <div class="table-scroll" style="max-height:360px; border:1px solid var(--border-color); border-radius:var(--radius-md);">
+          <table class="audit-sku-table" id="tablaLineasJev">
+            <thead>
+              <tr>
+                <th style="width:40px; text-align:center;">Pos</th>
+                <th style="width:40px; text-align:center;">D/C</th>
+                <th style="width:110px;">Cuenta Mayor</th>
+                <th>Nombre de Cuenta</th>
+                <th style="text-align:right; width:130px;">Debe (CLP)</th>
+                <th style="text-align:right; width:130px;">Haber (CLP)</th>
+                <th style="width:120px;">Ce.Co</th>
+                <th>Texto de Posición</th>
+              </tr>
+            </thead>
+            <tbody id="tbodyLineasJev">
+              <!-- Se llena dinámicamente -->
+            </tbody>
+            <tfoot>
+              <tr style="font-weight:800; background:var(--bg-hover);">
+                <td colspan="4" style="text-align:right; padding:10px;">TOTALES ASIENTO CONTABLE:</td>
+                <td id="tfootJevDebe" style="text-align:right; color:var(--accent-blue); font-family:var(--font-mono); font-size:0.95rem;">$0</td>
+                <td id="tfootJevHaber" style="text-align:right; color:var(--accent-green); font-family:var(--font-mono); font-size:0.95rem;">$0</td>
+                <td colspan="2" id="tfootJevEstado" style="text-align:center; font-size:0.8rem; color:var(--accent-green);">BALANCEADO</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+      </div>
+
+      <div class="modal-footer" style="border-top:1px solid var(--border-color); justify-content:space-between; flex-wrap:wrap; gap:10px;">
+        <div style="display:flex; gap:8px; flex-wrap:wrap;">
+          <button type="button" class="btn btn-secondary btn-sm" id="btnCopiarJevPortapapeles">
+            📋 Copiar Asiento para ERP
+          </button>
+          <button type="button" class="btn btn-secondary btn-sm" id="btnExportarJevCsvModal">
+            📥 Descargar Plantilla SAP (CSV)
+          </button>
+        </div>
+        <button type="button" class="btn btn-primary btn-sm" id="btnCerrarModalJevBottom">
+          Cerrar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================================================================= -->
+  <!-- MODAL: DOCUMENTO OFICIAL PARA ENTREGA AL PROVEEDOR (SHEETS/EXCEL)  -->
+  <!-- ================================================================= -->
+  <div class="modal-overlay" id="modalPlanillaProveedor">
+    <div class="modal-container" style="max-width: 920px;">
+      <div class="modal-header" style="border-bottom: 2px solid var(--border-color); background: linear-gradient(135deg, rgba(5,150,105,0.12) 0%, rgba(16,185,129,0.06) 100%);">
+        <div>
+          <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+            <span style="font-size:1.4rem;">📊</span>
+            <h3 class="modal-title" style="margin:0; color:#10b981;">Documento Oficial para Entrega al Proveedor</h3>
+            <span class="badge badge-success font-mono" id="badgeModalPlanillaEstado">DRIVE SHEETS LISTO</span>
+          </div>
+          <p class="modal-subtitle" style="margin-top:4px;">
+            Planilla de auditoría y respaldo formal para solicitar Nota de Crédito o refacturación ante Cuentas por Cobrar del proveedor.
+          </p>
+        </div>
+        <button type="button" class="btn-close" id="btnCerrarModalPlanillaProveedor">&times;</button>
+      </div>
+
+      <div class="modal-body" style="padding: 20px 24px;">
+        <!-- Card 1: Enlace Compartible y Descarga Directa -->
+        <div style="background:var(--bg-surface); border:1px solid rgba(16,185,129,0.35); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:18px;">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:12px;">
+            <div style="font-weight:700; font-size:0.92rem; color:var(--text-primary); display:flex; align-items:center; gap:6px;">
+              <span>🔗</span> Enlace Compartible del Spreadsheet en Google Drive
+            </div>
+            <div style="display:flex; gap:8px;">
+              <a href="#" target="_blank" id="btnModalAbrirSheets" class="btn btn-success btn-sm" style="font-weight:700; text-decoration:none; background:linear-gradient(135deg, #059669 0%, #10b981 100%); color:#ffffff;">
+                ↗️ Abrir en Google Sheets
+              </a>
+              <a href="#" target="_blank" id="btnModalDescargarExcel" class="btn btn-secondary btn-sm" style="font-weight:600; text-decoration:none;">
+                📥 Descargar Excel (.xlsx)
+              </a>
+            </div>
+          </div>
+          <div style="display:flex; gap:8px; align-items:center;">
+            <input type="text" id="txtModalUrlPlanilla" readonly class="form-control font-mono" style="font-size:0.82rem; background:var(--bg-card); color:var(--text-primary);" placeholder="https://docs.google.com/spreadsheets/d/...">
+            <button type="button" class="btn btn-secondary btn-sm" id="btnCopiarUrlPlanilla" style="white-space:nowrap; font-weight:600;">
+              📋 Copiar Enlace
+            </button>
+          </div>
+          <div style="font-size:0.75rem; color:var(--text-muted); margin-top:8px;">
+            💡 El archivo cuenta con permisos de solo lectura configurados para ser compartido directamente con Cuentas por Cobrar del proveedor o adjuntado en Excel (.xlsx).
+          </div>
+        </div>
+
+        <!-- Card 2: Resumen Financiero del Reclamo para el Proveedor -->
+        <div class="kpi-grid" style="grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:10px; margin-bottom:18px;">
+          <div class="kpi-card" style="padding:10px 14px; border-left:3px solid var(--accent-blue);">
+            <div class="kpi-label" style="font-size:0.7rem;">PROVEEDOR & RUT</div>
+            <div class="font-mono" id="modalPlanillaProvLabel" style="font-weight:700; font-size:0.88rem; color:var(--text-primary); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">-</div>
+            <div class="kpi-subtext" id="modalPlanillaRutLabel" style="font-size:0.72rem;">-</div>
+          </div>
+          <div class="kpi-card" style="padding:10px 14px; border-left:3px solid var(--accent-cyan);">
+            <div class="kpi-label" style="font-size:0.7rem;">ORDEN DE COMPRA</div>
+            <div class="font-mono" id="modalPlanillaPoLabel" style="font-weight:700; font-size:0.95rem; color:var(--accent-cyan);">-</div>
+            <div class="kpi-subtext" id="modalPlanillaAlmacenLabel" style="font-size:0.72rem;">CD Chile</div>
+          </div>
+          <div class="kpi-card" style="padding:10px 14px; border-left:3px solid var(--accent-amber);">
+            <div class="kpi-label" style="font-size:0.7rem;">FACTURAS AUDITADAS</div>
+            <div class="font-mono" id="modalPlanillaFoliosLabel" style="font-weight:700; font-size:0.85rem; color:var(--accent-amber); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">-</div>
+            <div class="kpi-subtext" id="modalPlanillaCantFacturasLabel" style="font-size:0.72rem;">0 facturas DTE</div>
+          </div>
+          <div class="kpi-card" style="padding:10px 14px; border-left:3px solid var(--accent-red);">
+            <div class="kpi-label" style="font-size:0.7rem;">MONTO NOTA DE CRÉDITO</div>
+            <div class="font-mono" id="modalPlanillaNcLabel" style="font-weight:800; font-size:1.05rem; color:var(--accent-red);">$0 CLP</div>
+            <div class="kpi-subtext" id="modalPlanillaDescalcesLabel" style="font-size:0.72rem;">0 descalces detectados</div>
+          </div>
+        </div>
+
+        <!-- Card 3: Plantilla de Correo Formal Redactada para el Proveedor -->
+        <div style="background:var(--bg-surface); border:1px solid var(--border-color); border-radius:var(--radius-md); padding:16px 20px;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; flex-wrap:wrap; gap:8px;">
+            <div style="font-weight:700; font-size:0.88rem; color:var(--text-primary); display:flex; align-items:center; gap:6px;">
+              <span>✉️</span> Correo Formal para Cuentas por Cobrar del Proveedor
+            </div>
+            <button type="button" class="btn btn-primary btn-sm" id="btnCopiarCorreoProveedor" style="font-weight:700;">
+              📋 Copiar Correo Completo
+            </button>
+          </div>
+          <div style="margin-bottom:8px;">
+            <span style="font-size:0.75rem; color:var(--text-muted); text-transform:uppercase; font-weight:700;">Asunto sugerido:</span>
+            <input type="text" id="txtModalAsuntoCorreo" readonly class="form-control" style="font-size:0.82rem; margin-top:3px; background:var(--bg-card); font-weight:600;">
+          </div>
+          <div>
+            <span style="font-size:0.75rem; color:var(--text-muted); text-transform:uppercase; font-weight:700;">Cuerpo del mensaje:</span>
+            <textarea id="txtModalCuerpoCorreo" readonly rows="10" class="form-control font-mono" style="font-size:0.8rem; line-height:1.45; margin-top:3px; background:var(--bg-card); resize:vertical;"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer" style="border-top:1px solid var(--border-color); justify-content:space-between; flex-wrap:wrap; gap:10px;">
+        <div style="font-size:0.78rem; color:var(--text-muted);">
+          🏢 Sociedad 6202 - Delivery Hero Dmarts Chile (Cuentas por Pagar)
+        </div>
+        <button type="button" class="btn btn-primary btn-sm" id="btnCerrarModalPlanillaProveedorBottom">
+          Cerrar
+        </button>
+      </div>
+  <!-- MODAL DE REASIGNACIÓN Y EMPAREJAMIENTO MANUAL DE SKU -->
+  <div class="modal" id="modalReasignarSkuPaso3">
+    <div class="modal-content" style="max-width:680px;">
+      <div class="modal-header">
+        <div style="display:flex; align-items:center; gap:10px;">
+          <span style="font-size:1.3rem;">🔗</span>
+          <div>
+            <h3 style="margin:0; font-size:1.1rem; font-weight:800;">Homologación y Asignación Manual de SKU</h3>
+            <p style="margin:2px 0 0 0; font-size:0.78rem; color:var(--text-secondary);">
+              Vincula manualmente esta línea facturada con la línea correspondiente de la Orden de Compra.
+            </p>
+          </div>
+        </div>
+        <button type="button" class="btn-close" id="btnCerrarModalReasignarSku">&times;</button>
+      </div>
+
+      <div class="modal-body" style="padding:18px 24px;">
+        <!-- Ficha de la Línea de Factura -->
+        <div style="background:rgba(6,182,212,0.08); border:1px solid rgba(6,182,212,0.3); border-radius:var(--radius-sm); padding:12px 16px; margin-bottom:16px;">
+          <div style="font-size:0.75rem; text-transform:uppercase; color:var(--accent-cyan); font-weight:800; letter-spacing:0.04em; margin-bottom:4px;">
+            🧾 Producto Facturado (DTE Axteroid):
+          </div>
+          <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:10px;">
+            <div>
+              <div style="font-weight:700; font-size:0.95rem; color:var(--text-primary);" id="reasignarInvDesc">-</div>
+              <div style="font-size:0.8rem; color:var(--text-secondary); margin-top:2px;">
+                Cód Prov: <strong class="font-mono" id="reasignarInvCod">-</strong> &bull; EAN: <span class="font-mono" id="reasignarInvEan">-</span>
+              </div>
+            </div>
+            <div style="text-align:right;">
+              <div class="font-mono" style="font-weight:700; color:var(--text-primary);" id="reasignarInvCant">- unids</div>
+              <div class="font-mono" style="font-size:0.82rem; color:var(--accent-cyan); font-weight:700;" id="reasignarInvMonto">$0</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Selector de Línea de la OC -->
+        <div style="margin-bottom:16px;">
+          <label style="display:block; font-size:0.82rem; font-weight:700; color:var(--text-primary); margin-bottom:6px;">
+            📦 Selecciona la Línea Correspondiente de la Orden de Compra:
+          </label>
+          <select id="selReasignarPoItem" class="form-control font-mono" style="font-size:0.82rem; padding:8px 12px; width:100%;">
+            <!-- Opciones dinámicas -->
+          </select>
+          <div style="font-size:0.75rem; color:var(--text-muted); margin-top:4px;">
+            💡 Al reasignar, el motor recalculará inmediatamente las discrepancias de precio y cantidades para esta línea y actualizará el total general.
+          </div>
+        </div>
+
+        <input type="hidden" id="hdnReasignarLineaIdx" value="-1">
+      </div>
+
+      <div class="modal-footer" style="border-top:1px solid var(--border-color); justify-content:space-between;">
+        <button type="button" class="btn btn-secondary btn-sm" id="btnCancelarReasignarSku">
+          Cancelar
+        </button>
+        <div style="display:flex; gap:8px;">
+          <button type="button" class="btn btn-secondary btn-sm" id="btnDesvincularSkuManual" style="color:var(--accent-red); border-color:rgba(239,68,68,0.4);">
+            ⚠️ Marcar Como "NO EN OC"
+          </button>
+          <button type="button" class="btn btn-primary btn-sm" id="btnConfirmarReasignarSku" style="font-weight:700;">
+            ✅ Aplicar Vinculación
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <?!= include('JavaScript'); ?>
+</body>
+</html>

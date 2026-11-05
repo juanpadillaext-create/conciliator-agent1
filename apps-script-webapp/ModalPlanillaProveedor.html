@@ -1,0 +1,139 @@
+<!-- ================================================================= -->
+<!-- MODAL: DOCUMENTO OFICIAL PARA ENTREGA AL PROVEEDOR (SHEETS/EXCEL)  -->
+<!-- ================================================================= -->
+<div class="modal-overlay" id="modalPlanillaProveedor" role="dialog" aria-modal="true" aria-labelledby="planillaModalTitle">
+  <div class="modal-container" style="max-width: 920px;">
+    <div class="modal-header"
+      style="border-bottom: 2px solid var(--border-color); background: linear-gradient(135deg, rgba(5,150,105,0.12) 0%, rgba(16,185,129,0.06) 100%);">
+      <div>
+        <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+          <span style="font-size:1.4rem;">📊</span>
+          <h3 class="modal-title" id="planillaModalTitle" style="margin:0; color:#10b981;">Documento Oficial para Entrega al Proveedor</h3>
+          <span class="badge badge-success font-mono" id="badgeModalPlanillaEstado">DRIVE SHEETS LISTO</span>
+        </div>
+        <p class="modal-subtitle" style="margin-top:4px;">
+          Planilla de auditoría y respaldo formal para solicitar Nota de Crédito o refacturación ante Cuentas por
+          Cobrar del proveedor.
+        </p>
+      </div>
+      <button type="button" class="btn-close" id="btnCerrarModalPlanillaProveedor" aria-label="Cerrar modal de planilla oficial">&times;</button>
+    </div>
+
+    <div class="modal-body" style="padding: 20px 24px;">
+      <!-- Card 1: Enlace Compartible y Descarga Directa -->
+      <div
+        style="background:var(--bg-surface); border:1px solid rgba(16,185,129,0.35); border-radius:var(--radius-md); padding:16px 20px; margin-bottom:18px;">
+        <div
+          style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:12px;">
+          <div
+            style="font-weight:700; font-size:0.92rem; color:var(--text-primary); display:flex; align-items:center; gap:6px;">
+            <span>🔗</span> Enlace Compartible del Spreadsheet en Google Drive
+          </div>
+          <div style="display:flex; gap:8px;">
+            <a href="#" target="_blank" id="btnModalAbrirSheets" class="btn btn-success btn-sm"
+              style="font-weight:700; text-decoration:none; background:linear-gradient(135deg, #059669 0%, #10b981 100%); color:#ffffff;">
+              ↗️ Abrir en Google Sheets
+            </a>
+            <a href="#" target="_blank" id="btnModalDescargarExcel" class="btn btn-secondary btn-sm"
+              onclick="generarYDescargarExcelClientSide({ soloDescalces: false }); return false;"
+              style="font-weight:600; text-decoration:none;"
+              title="Descargar archivo Excel oficial con datos completos de la PO y desglose de diferencias en moneda local">
+              📥 Descargar Excel PO Completa (.xlsx)
+            </a>
+            <a href="#" target="_blank" id="btnModalDescargarSoloDescalces" class="btn btn-warning btn-sm"
+              onclick="generarYDescargarExcelClientSide({ soloDescalces: true }); return false;"
+              style="font-weight:600; text-decoration:none;"
+              title="Descargar únicamente las líneas con diferencias confirmadas">
+              📑 Solo Descalces (.xlsx)
+            </a>
+          </div>
+        </div>
+        <div style="display:flex; gap:8px; align-items:center;">
+          <input type="text" id="txtModalUrlPlanilla" readonly class="form-control font-mono"
+            aria-label="Enlace del documento en Google Sheets"
+            style="font-size:0.82rem; background:var(--bg-card); color:var(--text-primary);"
+            placeholder="https://docs.google.com/spreadsheets/d/...">
+          <button type="button" class="btn btn-secondary btn-sm" id="btnCopiarUrlPlanilla"
+            style="white-space:nowrap; font-weight:600;">
+            📋 Copiar Enlace
+          </button>
+        </div>
+        <div style="font-size:0.75rem; color:var(--text-muted); margin-top:8px;">
+          💡 El archivo cuenta con permisos de solo lectura configurados para ser compartido directamente con Cuentas
+          por Cobrar del proveedor o adjuntado en Excel (.xlsx).
+        </div>
+      </div>
+
+      <!-- Card 2: Resumen Financiero del Reclamo para el Proveedor -->
+      <div class="kpi-grid"
+        style="grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:10px; margin-bottom:18px;">
+        <div class="kpi-card" style="padding:10px 14px; border-left:3px solid var(--accent-blue);">
+          <div class="kpi-label" style="font-size:0.7rem;">PROVEEDOR & RUT</div>
+          <div class="font-mono" id="modalPlanillaProvLabel"
+            style="font-weight:700; font-size:0.88rem; color:var(--text-primary); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">
+            -</div>
+          <div class="kpi-subtext" id="modalPlanillaRutLabel" style="font-size:0.72rem;">-</div>
+        </div>
+        <div class="kpi-card" style="padding:10px 14px; border-left:3px solid var(--accent-cyan);">
+          <div class="kpi-label" style="font-size:0.7rem;">ORDEN DE COMPRA</div>
+          <div class="font-mono" id="modalPlanillaPoLabel"
+            style="font-weight:700; font-size:0.95rem; color:var(--accent-cyan);">-</div>
+          <div class="kpi-subtext" id="modalPlanillaAlmacenLabel" style="font-size:0.72rem;">CD Chile</div>
+        </div>
+        <div class="kpi-card" style="padding:10px 14px; border-left:3px solid var(--accent-amber);">
+          <div class="kpi-label" style="font-size:0.7rem;">FACTURAS AUDITADAS</div>
+          <div class="font-mono" id="modalPlanillaFoliosLabel"
+            style="font-weight:700; font-size:0.85rem; color:var(--accent-amber); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">
+            -</div>
+          <div class="kpi-subtext" id="modalPlanillaCantFacturasLabel" style="font-size:0.72rem;">0 facturas DTE</div>
+        </div>
+        <div class="kpi-card" style="padding:10px 14px; border-left:3px solid var(--accent-red);">
+          <div class="kpi-label" style="font-size:0.7rem;">MONTO NOTA DE CRÉDITO</div>
+          <div class="font-mono" id="modalPlanillaNcLabel"
+            style="font-weight:800; font-size:1.05rem; color:var(--accent-red);">$0 CLP</div>
+          <div class="kpi-subtext" id="modalPlanillaDescalcesLabel" style="font-size:0.72rem;">0 descalces detectados
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Plantilla de Correo Formal Redactada para el Proveedor -->
+      <div
+        style="background:var(--bg-surface); border:1px solid var(--border-color); border-radius:var(--radius-md); padding:16px 20px;">
+        <div
+          style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; flex-wrap:wrap; gap:8px;">
+          <div
+            style="font-weight:700; font-size:0.88rem; color:var(--text-primary); display:flex; align-items:center; gap:6px;">
+            <span>✉️</span> Correo Formal para Cuentas por Cobrar del Proveedor
+          </div>
+          <button type="button" class="btn btn-primary btn-sm" id="btnCopiarCorreoProveedor" style="font-weight:700;">
+            📋 Copiar Correo Completo
+          </button>
+        </div>
+        <div style="margin-bottom:8px;">
+          <span style="font-size:0.75rem; color:var(--text-muted); text-transform:uppercase; font-weight:700;">Asunto
+            sugerido:</span>
+          <input type="text" id="txtModalAsuntoCorreo" readonly class="form-control"
+            aria-label="Asunto sugerido para el correo"
+            style="font-size:0.82rem; margin-top:3px; background:var(--bg-card); font-weight:600;">
+        </div>
+        <div>
+          <span style="font-size:0.75rem; color:var(--text-muted); text-transform:uppercase; font-weight:700;">Cuerpo
+            del mensaje:</span>
+          <textarea id="txtModalCuerpoCorreo" readonly rows="10" class="form-control font-mono"
+            aria-label="Cuerpo del mensaje para el correo"
+            style="font-size:0.8rem; line-height:1.45; margin-top:3px; background:var(--bg-card); resize:vertical;"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-footer"
+      style="border-top:1px solid var(--border-color); justify-content:space-between; flex-wrap:wrap; gap:10px;">
+      <div style="font-size:0.78rem; color:var(--text-muted);">
+        🏢 Sociedad 6202 - Delivery Hero Dmarts Chile (Cuentas por Pagar)
+      </div>
+      <button type="button" class="btn btn-primary btn-sm" id="btnCerrarModalPlanillaProveedorBottom">
+        Cerrar
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<DTE version="1.0">
+      <Documento ID="F10207759T33">
+        <Encabezado>
+          <IdDoc>
+            <TipoDTE>33</TipoDTE>
+            <Folio>10207759</Folio>
+            <FchEmis>2026-10-09</FchEmis>
+            <FmaPago>2</FmaPago>
+            <TermPagoGlosa>30 DIAS</TermPagoGlosa>
+            <FchVenc>2026-11-08</FchVenc>
+          </IdDoc>
+          <Emisor>
+            <RUTEmisor>96568970-2</RUTEmisor>
+            <RznSoc>Distribuci�n y Excelencia S.A.</RznSoc>
+            <GiroEmis>DISTRIBUIDORA Y COMERCIALIZADORA DE VINOS Y LICORES</GiroEmis>
+            <Telefono>248 91 500</Telefono>
+            <CorreoEmisor>ventas@desa.cl</CorreoEmisor>
+            <Acteco>512240</Acteco>
+            <DirOrigen>Av. La Monta�a 776 Panamericana Norte KM 16 1/2</DirOrigen>
+            <CmnaOrigen>Lampa</CmnaOrigen>
+            <CiudadOrigen>SANTIAGO</CiudadOrigen>
+          </Emisor>
+          <Receptor>
+            <RUTRecep>77125361-K</RUTRecep>
+            <CdgIntRecep>77125361-K 3</CdgIntRecep>
+            <RznSocRecep>DELIVERY HERO STORES CHILE SPA</RznSocRecep>
+            <GiroRecep>OTROS</GiroRecep>
+            <Contacto>0</Contacto>
+            <DirRecep>APOQUINDO 3000 PISO 7..</DirRecep>
+            <CmnaRecep>LA SERENA</CmnaRecep>
+            <CiudadRecep>LA SERENA</CiudadRecep>
+            <DirPostal>APOQUINDO 3000 PISO 7..</DirPostal>
+            <CmnaPostal>LA SERENA</CmnaPostal>
+            <CiudadPostal>LA SERENA</CiudadPostal>
+          </Receptor>
+          <Transporte>
+            <DirDest>HUANHUALI 839</DirDest>
+            <CmnaDest>LA SERENA</CmnaDest>
+            <CiudadDest>LA SERENA</CiudadDest>
+          </Transporte>
+          <Totales>
+            <MntNeto>477667</MntNeto>
+            <MntExe>0</MntExe>
+            <TasaIVA>19.00</TasaIVA>
+            <IVA>90757</IVA>
+            <ImptoReten>
+              <TipoImp>27</TipoImp>
+              <TasaImp>10</TasaImp>
+              <MontoImp>3912</MontoImp>
+            </ImptoReten>
+            <ImptoReten>
+              <TipoImp>26</TipoImp>
+              <TasaImp>20.5</TasaImp>
+              <MontoImp>1560</MontoImp>
+            </ImptoReten>
+            <ImptoReten>
+              <TipoImp>25</TipoImp>
+              <TasaImp>20.5</TasaImp>
+              <MontoImp>50356</MontoImp>
+            </ImptoReten>
+            <ImptoReten>
+              <TipoImp>24</TipoImp>
+              <TasaImp>31.5</TasaImp>
+              <MontoImp>36106</MontoImp>
+            </ImptoReten>
+            <MntTotal>660358</MntTotal>
+          </Totales>
+        </Encabezado>
+        <Detalle>
+          <NroLinDet>1</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>LI30300</VlrCodigo>
+          </CdgItem>
+          <NmbItem>APEROL 6X750CC LICOR 11� BOTELLA</NmbItem>
+          <QtyItem>6.000000</QtyItem>
+          <PrcItem>8422.000000</PrcItem>
+          <DescuentoPct>35.25</DescuentoPct>
+          <DescuentoMonto>17813</DescuentoMonto>
+          <RecargoMonto>4560</RecargoMonto>
+          <CodImpAdic>24</CodImpAdic>
+          <MontoItem>32719</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>2</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>BE50055</VlrCodigo>
+          </CdgItem>
+          <NmbItem>BEBIDA ENERGETICA MR. BIG 6X2500CC BOT</NmbItem>
+          <QtyItem>6.000000</QtyItem>
+          <PrcItem>2718.000000</PrcItem>
+          <DescuentoPct>51.93</DescuentoPct>
+          <DescuentoMonto>8469</DescuentoMonto>
+          <RecargoMonto>4560</RecargoMonto>
+          <CodImpAdic>27</CodImpAdic>
+          <MontoItem>7839</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>3</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>CI25000</VlrCodigo>
+          </CdgItem>
+          <NmbItem>BEAR BEER LAGER LATA 500CC 4X6PACK 5,0� CERVEZA</NmbItem>
+          <QtyItem>24.000000</QtyItem>
+          <PrcItem>402.000000</PrcItem>
+          <DescuentoPct>21.14</DescuentoPct>
+          <DescuentoMonto>2040</DescuentoMonto>
+          <RecargoMonto>4560</RecargoMonto>
+          <CodImpAdic>26</CodImpAdic>
+          <MontoItem>7608</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>4</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>CO30006</VlrCodigo>
+          </CdgItem>
+          <NmbItem>SECRETO PERUANO SOUR LIMON 12X1000CC 14� BOTELLA</NmbItem>
+          <QtyItem>12.000000</QtyItem>
+          <PrcItem>3480.000000</PrcItem>
+          <DescuentoPct>39.90</DescuentoPct>
+          <DescuentoMonto>16662</DescuentoMonto>
+          <RecargoMonto>4560</RecargoMonto>
+          <CodImpAdic>24</CodImpAdic>
+          <MontoItem>25098</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>5</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>VI37003</VlrCodigo>
+          </CdgItem>
+          <NmbItem>RICCADONNA ASTI 6X750CC 7� BOTELLA ESPUMANTE</NmbItem>
+          <QtyItem>6.000000</QtyItem>
+          <PrcItem>10418.000000</PrcItem>
+          <DescuentoPct>31.98</DescuentoPct>
+          <DescuentoMonto>19990</DescuentoMonto>
+          <RecargoMonto>4560</RecargoMonto>
+          <CodImpAdic>25</CodImpAdic>
+          <MontoItem>42518</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>6</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>VI37030</VlrCodigo>
+          </CdgItem>
+          <NmbItem>RICCADONNA MOSCATO ROSE 6X750CC 8�BOT</NmbItem>
+          <QtyItem>6.000000</QtyItem>
+          <PrcItem>10418.000000</PrcItem>
+          <DescuentoPct>31.98</DescuentoPct>
+          <DescuentoMonto>19990</DescuentoMonto>
+          <RecargoMonto>4560</RecargoMonto>
+          <CodImpAdic>25</CodImpAdic>
+          <MontoItem>42518</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>7</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>VN18345</VlrCodigo>
+          </CdgItem>
+          <NmbItem>UNDURRAGA FREE 0�ALCOHOL 6X750CC ESPUMANTE 0� BOTELLA</NmbItem>
+          <QtyItem>12.000000</QtyItem>
+          <PrcItem>5200.000000</PrcItem>
+          <DescuentoPct>49.87</DescuentoPct>
+          <DescuentoMonto>31119</DescuentoMonto>
+          <RecargoMonto>9120</RecargoMonto>
+          <CodImpAdic>27</CodImpAdic>
+          <MontoItem>31281</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>8</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>VN18558</VlrCodigo>
+          </CdgItem>
+          <NmbItem>UNDURRAGA MIXED DRINK ROSATO RTD 12X310CC ESPUMANTE 13� LATA</NmbItem>
+          <QtyItem>12.000000</QtyItem>
+          <PrcItem>1547.000000</PrcItem>
+          <DescuentoPct>39.86</DescuentoPct>
+          <DescuentoMonto>7400</DescuentoMonto>
+          <RecargoMonto>4560</RecargoMonto>
+          <CodImpAdic>25</CodImpAdic>
+          <MontoItem>11164</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>9</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>LI40890</VlrCodigo>
+          </CdgItem>
+          <NmbItem>EL JIMADOR REPOSADO 6X700CC TEQUILA 38� BOTELLA</NmbItem>
+          <QtyItem>6.000000</QtyItem>
+          <PrcItem>13387.000000</PrcItem>
+          <DescuentoPct>29.28</DescuentoPct>
+          <DescuentoMonto>23518</DescuentoMonto>
+          <RecargoMonto>2280</RecargoMonto>
+          <CodImpAdic>24</CodImpAdic>
+          <MontoItem>56804</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>10</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>VN18084</VlrCodigo>
+          </CdgItem>
+          <NmbItem>UNDURRAGA ALIWEN CHARDO 6X750CC VINO 12,5�BOT</NmbItem>
+          <QtyItem>6.000000</QtyItem>
+          <PrcItem>3099.000000</PrcItem>
+          <DescuentoPct>41.76</DescuentoPct>
+          <DescuentoMonto>7765</DescuentoMonto>
+          <RecargoMonto>4560</RecargoMonto>
+          <CodImpAdic>25</CodImpAdic>
+          <MontoItem>10829</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>11</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>VN18306</VlrCodigo>
+          </CdgItem>
+          <NmbItem>UNDURRAGA B.L BRUT 12X750CC 12�ESPUMANTE BOT</NmbItem>
+          <QtyItem>12.000000</QtyItem>
+          <PrcItem>3201.000000</PrcItem>
+          <DescuentoPct>39.96</DescuentoPct>
+          <DescuentoMonto>15349</DescuentoMonto>
+          <RecargoMonto>4560</RecargoMonto>
+          <CodImpAdic>25</CodImpAdic>
+          <MontoItem>23063</MontoItem>
+        </Detalle>
+        <Detalle>
+          <NroLinDet>12</NroLinDet>
+          <CdgItem>
+            <TpoCodigo>INT1</TpoCodigo>
+            <VlrCodigo>VN18251</VlrCodigo>
+          </CdgItem>
+          <NmbItem>UNDURRAGA BRUT 12X750CC ESPUMANTE 13� BOTELLA</NmbItem>
+          <QtyItem>48.000000</QtyItem>
+          <PrcItem>4253.000000</PrcItem>
+          <DescuentoPct>43.40</DescuentoPct>
+          <DescuentoMonto>88598</DescuentoMonto>
+          <RecargoMonto>18240</RecargoMonto>
+          <CodImpAdic>25</CodImpAdic>
+          <MontoItem>115546</MontoItem>
+        </Detalle>
+        <DscRcgGlobal>
+          <NroLinDR>1</NroLinDR>
+          <TpoMov>R</TpoMov>
+          <TpoValor>$</TpoValor>
+          <ValorDR>70680.00</ValorDR>
+        </DscRcgGlobal>
+        <Referencia>
+          <NroLinRef>1</NroLinRef>
+          <TpoDocRef>801</TpoDocRef>
+          <FolioRef>po524064</FolioRef>
+          <FchRef>2026-10-07</FchRef>
+        </Referencia>
+        <TED version="1.0">
+          <DD>
+            <RE>96568970-2</RE>
+            <TD>33</TD>
+            <F>10207759</F>
+            <FE>2026-10-09</FE>
+            <RR>77125361-K</RR>
+            <RSR>DELIVERY HERO STORES CHILE SPA</RSR>
+            <MNT>660358</MNT>
+            <IT1>APEROL 6X750CC LICOR 11� BOTELLA</IT1>
+            <CAF version="1.0">
+              <DA>
+                <RE>96568970-2</RE>
+                <RS>DISTRIBUCION Y EXCELENCIA S.A.</RS>
+                <TD>33</TD>
+                <RNG>
+                  <D>10206001</D>
+                  <H>10306000</H>
+                </RNG>
+                <FA>2026-10-05</FA>
+                <RSAPK>
+                  <M>0eWFcf8NEXErd54xOuvAeAWxhReq16jnmryeE7IUJ7QWYSCfo6cClbM+X477zcjFTba4zD2kZrpMGCs40RbBnQ==</M>
+                  <E>Aw==</E>
+                </RSAPK>
+                <IDK>300</IDK>
+              </DA>
+              <FRMA algoritmo="SHA1withRSA">VKDNlxOrrk1eyxdFjXacvMMUV5Pw4ncVBOncH180Vohj2gzC4jc+PZspBDaZFKc85Btv7IcGwSITJWp+bjUAEw==</FRMA>
+            </CAF>
+            <TSTED>2026-10-08T13:56:48</TSTED>
+          </DD>
+          <FRMT algoritmo="SHA1withRSA">qkhogUrwlt7GCCJsTmXVpc5b5n9WMLHdzwCIZjH7m6HTlBAjPorPNRqZnMmZutvgUV0KkT/aMoho/qE0DTtzIg==</FRMT>
+        </TED>
+        <TmstFirma>2026-10-08T13:56:51</TmstFirma>
+      </Documento><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI="#F10207759T33"><Transforms><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>IzHoHToRBV6PNsCqWjrvERFS4uI=</DigestValue></Reference></SignedInfo><SignatureValue>
+KkaRZH0aO2CObW8jp7bttH2EnfemihNrfOEMSsfg89loUwFk4eo0BgYXLKF4oC0P
+JvrJSyY7MF8S1eoPh1XhyPwGYUTEsJcycMq+7dof66yEhzkkDdWOEs0KrY2r0MP/
+hhjMoYaWlJ7l5LUhHOgcUOfg0S7dqIHBc+YhoG+1XV7ZdKexAYgma5ecUV/0kQlr
+zjsAfCXdll+fjxFz3ktkvBd3whCSXHw9VtvQ67kbh672ofUWavV0RSZMfp3qz28L
+CEbwzqXKLHOiY4HSQ6Gg4YOSrfUW3PQLHFy3A1fA2coeNbqjGtU/3iyCY1l9++ic
+RBH5eWdnuMIs+lXewxphGw==
+</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>
+ocu1ELnLSczyqo+BPnvSbJy5yo4uIjhvonFqHvOup8IA67oqd5e1XvGQaHDmwips
+Ex8LGgmxD7LYb9MNnxloC787BG1n29KD1RWetdPfIG2otlE4s8eCgb9cuXj7mI4h
+mVeB2x2McUwidC4TXXXR8H1DK5XYRweiwJwxwyMaFSHkPqFSiooFQF7QEmJB4rvv
+2KMrd8clnCz/fvTM7+Ct0VPWul2a89AwALEUnRioZGj9nxEVMLTimrm6SchjKyfG
+HhybPlfmxo7W2isBBF07Qke1gon80Eo/Pnsb0LRNsVZJRjzQga7AmoM8vgZaqWsV
+w3wnT98/3iLpNx2zYhS+7Q==
+</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>
+MIIGbDCCBVSgAwIBAgIDBjoxMA0GCSqGSIb3DQEBCwUAMIGmMQswCQYDVQQGEwJD
+TDEYMBYGA1UEChMPQWNlcHRhLmNvbSBTLkEuMUgwRgYDVQQDEz9BY2VwdGEuY29t
+IEF1dG9yaWRhZCBDZXJ0aWZpY2Fkb3JhIENsYXNlIDIgUGVyc29uYSBOYXR1cmFs
+IC0gRzQxHjAcBgkqhkiG9w0BCQEWD2luZm9AYWNlcHRhLmNvbTETMBEGA1UEBRMK
+OTY5MTkwNTAtODAeFw0yMzEwMTcxNDM5MzlaFw0yNjEwMTcxNDM5MzlaMIGHMQsw
+CQYDVQQGEwJDTDEYMBYGA1UEDBMPUEVSU09OQSBOQVRVUkFMMScwJQYDVQQDEx5K
+VUFOIENBUkxPUyBCQVJSQVpBIExVU0NISU5HRVIxITAfBgkqhkiG9w0BCQEWEmpj
+YmFycmF6YWxAZGVzYS5jbDESMBAGA1UEBRMJODExODE3NC04MIIBIjANBgkqhkiG
+9w0BAQEFAAOCAQ8AMIIBCgKCAQEAocu1ELnLSczyqo+BPnvSbJy5yo4uIjhvonFq
+HvOup8IA67oqd5e1XvGQaHDmwipsEx8LGgmxD7LYb9MNnxloC787BG1n29KD1RWe
+tdPfIG2otlE4s8eCgb9cuXj7mI4hmVeB2x2McUwidC4TXXXR8H1DK5XYRweiwJwx
+wyMaFSHkPqFSiooFQF7QEmJB4rvv2KMrd8clnCz/fvTM7+Ct0VPWul2a89AwALEU
+nRioZGj9nxEVMLTimrm6SchjKyfGHhybPlfmxo7W2isBBF07Qke1gon80Eo/Pnsb
+0LRNsVZJRjzQga7AmoM8vgZaqWsVw3wnT98/3iLpNx2zYhS+7QIDAQABo4ICvjCC
+ArowHwYDVR0jBBgwFoAUZaWrPj/ItlFtEX5fwwoH5kOgCLYwHQYDVR0OBBYEFOID
+PfdgdueEj57oPwkimXPBE6ybMAsGA1UdDwQEAwIE8DAdBgNVHSUEFjAUBggrBgEF
+BQcDAgYIKwYBBQUHAwQwEQYJYIZIAYb4QgEBBAQDAgWgMIH1BgNVHSAEge0wgeow
+gecGCCsGAQQBtWsCMIHaMDEGCCsGAQUFBwIBFiVodHRwczovL2FjZzQuYWNlcHRh
+LmNvbS9DUFMtQWNlcHRhY29tMIGkBggrBgEFBQcCAjCBlzAWFg9BY2VwdGEuY29t
+IFMuQS4wAwIBCRp9RWwgdGl0dWxhciBoYSBzaWRvIHZhbGlkYWRvIGVuIGZvcm1h
+IG9ubGluZSwgcXVlZGFuZG8gaGFiaWxpdGFkbyBlbCBDZXJ0aWZpY2FkbyBwYXJh
+IHVzbyB0cmlidXRhcmlvLCBwYWdvcywgY29tZXJjaW8geSBvdHJvcy4wWgYDVR0S
+BFMwUaAYBggrBgEEAcEBAqAMFgo5NjkxOTA1MC04oCQGCCsGAQUFBwgDoBgwFgwK
+OTY5MTkwNTAtOAYIKwYBBAHBAQKBD2luZm9AYWNlcHRhLmNvbTBbBgNVHREEVDBS
+oBcGCCsGAQQBwQEBoAsWCTgxMTgxNzQtOKAjBggrBgEFBQcIA6AXMBUMCTgxMTgx
+NzQtOAYIKwYBBAHBAQKBEmpjYmFycmF6YWxAZGVzYS5jbDBHBggrBgEFBQcBAQQ7
+MDkwNwYIKwYBBQUHMAGGK2h0dHBzOi8vYWNnNC5hY2VwdGEuY29tL2FjZzQvb2Nz
+cC9DbGFzZTItRzQwPwYDVR0fBDgwNjA0oDKgMIYuaHR0cHM6Ly9hY2c0LmFjZXB0
+YS5jb20vYWNnNC9jcmwvQ2xhc2UyLUc0LmNybDANBgkqhkiG9w0BAQsFAAOCAQEA
+esyBBNTIp6mj83Z5xgK7vxb0uWuYnynjAAGjt9mRHtEIgb0DHh64RyT+PZUGq4va
+Cpsb4MfR0pK7vJSKJX+KmE4bygp3aWqHG00+NxQV/Wwb1x/6ZH6FEYfyzwal02DX
+7uw1Qc90LNsop5knBuwGbO9BRAxOBzcWSUZQq1/+YHyGo74Ycqtv/2Ea/xfgox2o
+7K8Bqu0i3Cld0fWe8v6EJadn6NzhaTwWd2tYgjmKt4Tn4DVtjZLbpx5Za12T/eqI
+hjzDV7XOp2l33dBvXAcbEf0OjqOoa1Xtg6bCGqv+5jfZpnhQrB1Y7QaJsZ/jIUME
+PWThRC0/4nHW/8QzBG4k6w==
+</X509Certificate></X509Data></KeyInfo></Signature>
+    </DTE>

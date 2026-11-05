@@ -1,0 +1,140 @@
+<!-- ================================================================= -->
+<!-- MODAL: JOURNAL ENTRY VOUCHER (JEV) - SAP / SOCIEDAD 6202           -->
+<!-- ================================================================= -->
+<div class="modal-overlay" id="modalJournalEntryVoucher" role="dialog" aria-modal="true" aria-labelledby="jevModalTitle">
+  <div class="modal-container" style="max-width: 960px;">
+    <div class="modal-header"
+      style="border-bottom: 2px solid var(--border-color); background: linear-gradient(135deg, rgba(2,132,199,0.08) 0%, rgba(124,58,237,0.08) 100%);">
+      <div>
+        <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+          <span style="font-size:1.3rem;">📑</span>
+          <h3 class="modal-title" id="jevModalTitle" style="margin:0;">Journal Entry Voucher (JEV) Contable</h3>
+          <span class="badge badge-info font-mono" id="jevVoucherIdBadge">JEV-6202-...</span>
+          <span class="badge badge-success font-mono" id="jevBalancedBadge">⚖️ BALANCEADO</span>
+        </div>
+        <p class="modal-subtitle" style="margin-top:4px;">
+          Póliza y Asiento Contable formal para registro y compensación en ERP / SAP (Sociedad 6202 Delivery Hero
+          Dmarts Chile).
+        </p>
+      </div>
+      <button type="button" class="btn-close" id="btnCerrarModalJev" aria-label="Cerrar modal de póliza JEV">&times;</button>
+    </div>
+
+    <div class="modal-body" style="padding: 20px 24px;">
+      <!-- Cabecera de Datos Contables JEV -->
+      <div
+        style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:12px; margin-bottom:18px; background:var(--bg-surface); border:1px solid var(--border-color); border-radius:var(--radius-md); padding:14px 18px;">
+        <div>
+          <div style="font-size:0.75rem; color:var(--text-muted); text-transform:uppercase;">Sociedad / Empresa:</div>
+          <strong style="font-size:0.9rem; color:var(--text-primary);" id="jevHeaderSociedad">6202 - Delivery Hero
+            Dmarts Chile</strong>
+        </div>
+        <div>
+          <div style="font-size:0.75rem; color:var(--text-muted); text-transform:uppercase;">Fecha Contabilización:
+          </div>
+          <strong class="font-mono" style="font-size:0.9rem; color:var(--text-primary);"
+            id="jevHeaderFecha">-</strong>
+        </div>
+        <div>
+          <div style="font-size:0.75rem; color:var(--text-muted); text-transform:uppercase;">Moneda & Clase Doc.:
+          </div>
+          <strong class="font-mono" style="font-size:0.9rem; color:var(--text-primary);">CLP (KR - Factura
+            Prov.)</strong>
+        </div>
+        <div>
+          <div style="font-size:0.75rem; color:var(--text-muted); text-transform:uppercase;">Referencia / DTE:</div>
+          <strong class="font-mono" style="font-size:0.9rem; color:var(--accent-cyan);" id="jevHeaderRef">-</strong>
+        </div>
+      </div>
+
+      <!-- 3 KPIs Contables: Total Débito, Total Crédito, Cuadratura -->
+      <div class="kpi-grid"
+        style="grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:12px; margin-bottom:18px;">
+        <div class="kpi-card" style="border-left:4px solid var(--accent-blue);">
+          <div class="kpi-label">TOTAL DÉBITO (DEBE)</div>
+          <div class="kpi-value font-mono" id="jevKpiDebitos" style="color:var(--accent-blue);">$0 CLP</div>
+          <div class="kpi-subtext">Compensación EM/RF + Reclamos + IVA</div>
+        </div>
+        <div class="kpi-card" style="border-left:4px solid var(--accent-green);">
+          <div class="kpi-label">TOTAL CRÉDITO (HABER)</div>
+          <div class="kpi-value font-mono" id="jevKpiCreditos" style="color:var(--accent-green);">$0 CLP</div>
+          <div class="kpi-subtext">Cuentas x Pagar Proveedor / Retenciones</div>
+        </div>
+        <div class="kpi-card" style="border-left:4px solid var(--accent-purple);">
+          <div class="kpi-label">CUADRATURA ASIENTO (Δ)</div>
+          <div class="kpi-value font-mono" id="jevKpiDiferencia" style="color:var(--accent-purple);">$0 CLP</div>
+          <div class="kpi-subtext" id="jevKpiCuadraturaSub">Asiento balanceado matemáticamente</div>
+        </div>
+      </div>
+
+      <!-- Opciones de Generación JEV -->
+      <div
+        style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:12px; padding:8px 12px; background:var(--bg-hover); border-radius:var(--radius-sm); border:1px solid var(--border-color);">
+        <div style="display:flex; gap:16px; align-items:center; font-size:0.82rem; flex-wrap:wrap;">
+          <label style="display:flex; align-items:center; gap:6px; cursor:pointer;">
+            <input type="checkbox" id="chkJevIncluirIva" checked>
+            <span>Incluir IVA Crédito Fiscal (19%)</span>
+          </label>
+          <label style="display:flex; align-items:center; gap:6px; cursor:pointer;">
+            <input type="checkbox" id="chkJevAplicarAforo" checked>
+            <span>Descontar Retención de Aforo si aplica</span>
+          </label>
+        </div>
+        <div style="font-size:0.78rem; color:var(--text-muted);">
+          Centro de Costos: <strong class="font-mono" id="lblJevCostCenter">CD_36_CD_Chile</strong>
+        </div>
+      </div>
+
+      <!-- Tabla de Asiento Contable (Debe / Haber) -->
+      <div class="table-scroll"
+        style="max-height:360px; border:1px solid var(--border-color); border-radius:var(--radius-md);">
+        <table class="audit-sku-table" id="tablaLineasJev">
+          <thead>
+            <tr>
+              <th style="width:40px; text-align:center;">Pos</th>
+              <th style="width:40px; text-align:center;">D/C</th>
+              <th style="width:110px;">Cuenta Mayor</th>
+              <th>Nombre de Cuenta</th>
+              <th style="text-align:right; width:130px;">Debe (CLP)</th>
+              <th style="text-align:right; width:130px;">Haber (CLP)</th>
+              <th style="width:120px;">Ce.Co</th>
+              <th>Texto de Posición</th>
+            </tr>
+          </thead>
+          <tbody id="tbodyLineasJev">
+            <!-- Se llena dinámicamente -->
+          </tbody>
+          <tfoot>
+            <tr style="font-weight:800; background:var(--bg-hover);">
+              <td colspan="4" style="text-align:right; padding:10px;">TOTALES ASIENTO CONTABLE:</td>
+              <td id="tfootJevDebe"
+                style="text-align:right; color:var(--accent-blue); font-family:var(--font-mono); font-size:0.95rem;">
+                $0</td>
+              <td id="tfootJevHaber"
+                style="text-align:right; color:var(--accent-green); font-family:var(--font-mono); font-size:0.95rem;">
+                $0</td>
+              <td colspan="2" id="tfootJevEstado"
+                style="text-align:center; font-size:0.8rem; color:var(--accent-green);">BALANCEADO</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+    </div>
+
+    <div class="modal-footer"
+      style="border-top:1px solid var(--border-color); justify-content:space-between; flex-wrap:wrap; gap:10px;">
+      <div style="display:flex; gap:8px; flex-wrap:wrap;">
+        <button type="button" class="btn btn-secondary btn-sm" id="btnCopiarJevPortapapeles">
+          📋 Copiar Asiento para ERP
+        </button>
+        <button type="button" class="btn btn-secondary btn-sm" id="btnExportarJevCsvModal">
+          📥 Descargar Plantilla SAP (CSV)
+        </button>
+      </div>
+      <button type="button" class="btn btn-primary btn-sm" id="btnCerrarModalJevBottom">
+        Cerrar
+      </button>
+    </div>
+  </div>
+</div>

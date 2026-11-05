@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard de Conciliación y Cruce de Facturas — CH_36_CD_Chile</title>
+  <meta name="description" content="Dashboard operativo para el Agente Conciliador de facturas, órdenes de compra y recepciones físicas de bodega en PedidosYa Market Chile.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="brand-wrapper">
+      <div class="brand-logo" id="brandLogo">Py</div>
+      <div class="brand-titles">
+        <h1>Conciliación Operativa de Facturas vs. Bodega</h1>
+        <p>Delivery Hero Stores Chile • Cuentas por Pagar & Axteroid API</p>
+      </div>
+    </div>
+
+    <div class="header-badges">
+      <div class="badge-store">
+        <span style="display: inline-block; width: 8px; height: 8px; background: #38bdf8; border-radius: 50%;"></span>
+        Tienda: CH_36_CD_Chile (Central)
+      </div>
+      <div class="badge-condition">
+        NO AFORADO POR SOLICITUD DE COMERCIAL
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <button class="btn-secondary" id="btnThemeToggle" title="Cambiar tema claro / oscuro">
+        <span>☀️</span> <span id="lblThemeToggle">Modo Claro</span>
+      </button>
+      <button class="btn-secondary" id="btnExportCsv">
+        <span>📥</span> Exportar CSV
+      </button>
+      <button class="btn-secondary" id="btnExportOfficialSheets" style="border-color: #c00000; color: #c00000; font-weight: 700;" title="Descargar Planilla Oficial Formato Finanzas (Google Sheets / Excel)">
+        <span>📊</span> Planilla Finanzas (.xlsx)
+      </button>
+      <button class="btn-primary" onclick="window.location.reload()">
+        <span>🔄</span> Actualizar Datos
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="main-container">
+
+    <!-- KPI Summary Grid (Grounded in Looker Studio) -->
+    <section class="kpi-grid" aria-label="Métricas Principales">
+      <div class="kpi-card highlight-red">
+        <div class="kpi-label">
+          <span>Monto ML Observado</span>
+          <span>📊</span>
+        </div>
+        <div class="kpi-value" id="kpiMontoTotal">$32.1M</div>
+        <div class="kpi-desc">Total retenido por condición de aforo</div>
+      </div>
+
+      <div class="kpi-card highlight-darkred">
+        <div class="kpi-label">
+          <span>Total Facturas Observadas</span>
+          <span>📄</span>
+        </div>
+        <div class="kpi-value" id="kpiTotalFacturas">84</div>
+        <div class="kpi-desc">Pendientes de recibir y conciliar</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-label">
+          <span>Carozzi (En Foco)</span>
+          <span style="color: #fca5a5;">30.6%</span>
+        </div>
+        <div class="kpi-value" id="kpiCarozziMonto">$9.8M</div>
+        <div class="kpi-desc" id="kpiCarozziFacturas">44 Facturas • CM: Daniela Reyes</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-label">
+          <span>Descalce Detectado en POs</span>
+          <span style="color: #f87171;">🚨 Faltante</span>
+        </div>
+        <div class="kpi-value" id="kpiDescalceMonto">$7.6M</div>
+        <div class="kpi-desc" id="kpiDescalceFacturas">Exigir Nota de Crédito</div>
+      </div>
+    </section>
+
+    <!-- Provider Selection Carousel -->
+    <section class="section-container" style="margin-bottom: 2rem;">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span>🏢</span> APERTURA POR PROVEEDOR (Looker Studio Mirror)
+        </h2>
+        <span style="font-size: 0.8rem; color: var(--text-muted);">
+          Haz clic en un proveedor para filtrar la lista de facturas
+        </span>
+      </div>
+
+      <div class="providers-grid" id="providersGrid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </section>
+
+    <!-- Toolbar Filters -->
+    <section class="toolbar" aria-label="Filtros de Búsqueda">
+      <div class="toolbar-top">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input 
+            type="text" 
+            class="search-input" 
+            id="searchInput" 
+            placeholder="Buscar por PO (ej: PO521257), EAN, Folio (22591481), Razón Social o SKU..."
+          >
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <label for="channelSelect" style="font-size: 0.8rem; color: var(--text-secondary); font-weight: 600;">Canal Axteroid:</label>
+          <select id="channelSelect" class="btn-secondary" style="outline: none;">
+            <option value="all">Todos los Canales</option>
+            <option value="rec-docs">Recibidos en Casilla (rec-docs)</option>
+            <option value="woemail">Pendientes de Recibir (woemail)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="filter-pills" role="tablist">
+        <button class="filter-pill active" data-filter="all">Todos los Estados</button>
+        <button class="filter-pill pill-danger" data-filter="descalce">🚨 Sobrefacturación / Descalces</button>
+        <button class="filter-pill pill-warning" data-filter="pending">⏳ Pendiente Recepción Bodega</button>
+        <button class="filter-pill pill-danger" data-filter="no_oc">❌ Sin OC o No Encontrada en CD36</button>
+        <button class="filter-pill pill-success" data-filter="ok">✅ Conciliado Conforme</button>
+      </div>
+    </section>
+
+    <!-- Invoices Data Table -->
+    <section class="table-container" aria-label="Tabla de Facturas">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Folio DTE & Canal</th>
+            <th>Orden Compra (OC)</th>
+            <th>Monto Factura & Fecha</th>
+            <th>Recepción Bodega CD_36</th>
+            <th>Delta Descalce</th>
+            <th>Estado & Resolución</th>
+            <th>Acción</th>
+          </tr>
+        </thead>
+        <tbody id="invoicesTableBody">
+          <!-- Rendered dynamically by app.js -->
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <!-- Detail Modal Drawer -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modalTitle">
+          <span>🔍</span> Auditoría de Cruce Agente Conciliador
+        </h3>
+        <button class="btn-close" id="btnCloseModal">&times;</button>
+      </div>
+      <div class="modal-body" id="modalContent">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">Notificación</div>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

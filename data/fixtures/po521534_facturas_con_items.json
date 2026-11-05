@@ -1,0 +1,832 @@
+[
+  {
+    "id": "do_AAABoPDUbqdD-9ZI",
+    "serial": "105275609",
+    "type": "CL33",
+    "supplier_name": "Coca Cola Embonor S.A.",
+    "supplier_tax_id": "93281000-K",
+    "amount_net": 36589,
+    "amount_total": 54687,
+    "date": "2026-09-30",
+    "order_reference": "0000521534",
+    "status": "APR",
+    "rec_status": "ROK",
+    "items": [
+      {
+        "line": 1,
+        "codigo": "9507",
+        "nombre": "ALTO DEL CARMEN TRANSP 40 X01 VID 750CC",
+        "cantidad": 7,
+        "precio": 5055,
+        "total_neto": 35385
+      }
+    ]
+  },
+  {
+    "id": "do_AAABoPDUbn_HbAKX",
+    "serial": "105275608",
+    "type": "CL33",
+    "supplier_name": "Coca Cola Embonor S.A.",
+    "supplier_tax_id": "93281000-K",
+    "amount_net": 144911,
+    "amount_total": 185966,
+    "date": "2026-09-30",
+    "order_reference": "0000521534",
+    "status": "APR",
+    "rec_status": "ROK",
+    "items": [
+      {
+        "line": 1,
+        "codigo": "2009",
+        "nombre": "INCA KOLA X06 PET 3000",
+        "cantidad": 1,
+        "precio": 11787,
+        "total_neto": 11787
+      },
+      {
+        "line": 2,
+        "codigo": "1993",
+        "nombre": "MONSTER ULTRA PEACHY KEEN X06 LAT 473",
+        "cantidad": 1,
+        "precio": 5307,
+        "total_neto": 5307
+      },
+      {
+        "line": 3,
+        "codigo": "1989",
+        "nombre": "MONSTER ZERO SUGAR GREEN X06 LAT 473",
+        "cantidad": 2,
+        "precio": 5307,
+        "total_neto": 10614
+      },
+      {
+        "line": 4,
+        "codigo": "1988",
+        "nombre": "MONSTER RIPPER NON JUICE X06 LAT 473",
+        "cantidad": 2,
+        "precio": 4997,
+        "total_neto": 9994
+      },
+      {
+        "line": 5,
+        "codigo": "1987",
+        "nombre": "MONSTER AUSSIE LEMONADE X06 LAT 473",
+        "cantidad": 1,
+        "precio": 5307,
+        "total_neto": 5307
+      },
+      {
+        "line": 6,
+        "codigo": "1980",
+        "nombre": "MONSTER ULTRA PARADISE x06 LATA 473 cc",
+        "cantidad": 1,
+        "precio": 5307,
+        "total_neto": 5307
+      },
+      {
+        "line": 7,
+        "codigo": "1978",
+        "nombre": "MONSTER MANGO LOCO X06 LATA 473CC",
+        "cantidad": 1,
+        "precio": 5307,
+        "total_neto": 5307
+      },
+      {
+        "line": 8,
+        "codigo": "1966",
+        "nombre": "MONSTER ULTRA X06 473 CC",
+        "cantidad": 8,
+        "precio": 5307,
+        "total_neto": 42456
+      },
+      {
+        "line": 9,
+        "codigo": "1963",
+        "nombre": "MONSTER ENERGY X06 473 CC",
+        "cantidad": 2,
+        "precio": 4997,
+        "total_neto": 9994
+      },
+      {
+        "line": 10,
+        "codigo": "2583",
+        "nombre": "AQUARIUS LIMONADA X06 PET 1.600 CC",
+        "cantidad": 1,
+        "precio": 3718,
+        "total_neto": 3718
+      },
+      {
+        "line": 11,
+        "codigo": "2508",
+        "nombre": "BENEDICTINO SIN GAS X06 PET 500 CC",
+        "cantidad": 1,
+        "precio": 2288,
+        "total_neto": 2288
+      },
+      {
+        "line": 12,
+        "codigo": "2509",
+        "nombre": "BENEDICTINO CON GAS X06 PET 500 CC",
+        "cantidad": 1,
+        "precio": 2288,
+        "total_neto": 2288
+      }
+    ]
+  },
+  {
+    "id": "do_AAABoPDUblJ--tLK",
+    "serial": "105275606",
+    "type": "CL33",
+    "supplier_name": "Coca Cola Embonor S.A.",
+    "supplier_tax_id": "93281000-K",
+    "amount_net": 277986,
+    "amount_total": 352065,
+    "date": "2026-09-30",
+    "order_reference": "0000521534",
+    "status": "APR",
+    "rec_status": "ROK",
+    "items": [
+      {
+        "line": 1,
+        "codigo": "0476",
+        "nombre": "SCHWEPPES GINGER ALE SA X6 PET 1.5",
+        "cantidad": 1,
+        "precio": 7572,
+        "total_neto": 7572
+      },
+      {
+        "line": 2,
+        "codigo": "0336",
+        "nombre": "COCA COLA LIGTH X06 PET 1500 CC",
+        "cantidad": 5,
+        "precio": 8697,
+        "total_neto": 43485
+      },
+      {
+        "line": 3,
+        "codigo": "0377",
+        "nombre": "COCA COLA SIN AZUCAR X06 PET 1.500 CC",
+        "cantidad": 9,
+        "precio": 8697,
+        "total_neto": 78273
+      },
+      {
+        "line": 4,
+        "codigo": "4274",
+        "nombre": "FANTA NARANJA ZERO+VITAMC X06 PET 1500",
+        "cantidad": 1,
+        "precio": 7572,
+        "total_neto": 7572
+      },
+      {
+        "line": 5,
+        "codigo": "0757",
+        "nombre": "SPRITE X06 PET 1.500 CC",
+        "cantidad": 4,
+        "precio": 7572,
+        "total_neto": 30288
+      },
+      {
+        "line": 6,
+        "codigo": "0694",
+        "nombre": "SPRITE ZERO X06 PET 1500 CC",
+        "cantidad": 4,
+        "precio": 7572,
+        "total_neto": 30288
+      },
+      {
+        "line": 7,
+        "codigo": "2004",
+        "nombre": "INCA KOLA ZERO X06 PET 1500 CC",
+        "cantidad": 2,
+        "precio": 7572,
+        "total_neto": 15144
+      },
+      {
+        "line": 8,
+        "codigo": "1136",
+        "nombre": "AND MANZANA 1500CC OW X06",
+        "cantidad": 1,
+        "precio": 6662,
+        "total_neto": 6662
+      },
+      {
+        "line": 9,
+        "codigo": "1362",
+        "nombre": "AND DURAZNO LIGHT X06 PET 1500",
+        "cantidad": 2,
+        "precio": 6662,
+        "total_neto": 13324
+      },
+      {
+        "line": 10,
+        "codigo": "1462",
+        "nombre": "AND PINA LIGHT X06 PET 1500",
+        "cantidad": 1,
+        "precio": 6662,
+        "total_neto": 6662
+      },
+      {
+        "line": 11,
+        "codigo": "1534",
+        "nombre": "AND NARAN LIGHT PET1500CC BOCAANCHA",
+        "cantidad": 1,
+        "precio": 6662,
+        "total_neto": 6662
+      }
+    ]
+  },
+  {
+    "id": "do_AAABoPDUbiVoxQMw",
+    "serial": "105275605",
+    "type": "CL33",
+    "supplier_name": "Coca Cola Embonor S.A.",
+    "supplier_tax_id": "93281000-K",
+    "amount_net": 166643,
+    "amount_total": 204136,
+    "date": "2026-09-30",
+    "order_reference": "0000521534",
+    "status": "APR",
+    "rec_status": "ROK",
+    "items": [
+      {
+        "line": 1,
+        "codigo": "2625",
+        "nombre": "BENEDICTINO FRUTOS ROJOS X6 PET 500 CC",
+        "cantidad": 1,
+        "precio": 2707,
+        "total_neto": 2707
+      },
+      {
+        "line": 2,
+        "codigo": "2624",
+        "nombre": "BENEDICTINO FRUTOS ROJOS X06 PET 1.500 C",
+        "cantidad": 1,
+        "precio": 3707,
+        "total_neto": 3707
+      },
+      {
+        "line": 3,
+        "codigo": "2560",
+        "nombre": "BENEDICTINO POMELO MENTA X06 PET 1.500CC",
+        "cantidad": 2,
+        "precio": 3707,
+        "total_neto": 7414
+      },
+      {
+        "line": 4,
+        "codigo": "2559",
+        "nombre": "BENEDICTINO PERA X06 PET 1.500",
+        "cantidad": 4,
+        "precio": 3707,
+        "total_neto": 14828
+      },
+      {
+        "line": 5,
+        "codigo": "2558",
+        "nombre": "BENEDICTINO MANZANA X06 PET 1.500",
+        "cantidad": 6,
+        "precio": 3707,
+        "total_neto": 22242
+      },
+      {
+        "line": 6,
+        "codigo": "2557",
+        "nombre": "BENEDICTINO LIMON JENJIBRE X06 PET 1.500",
+        "cantidad": 2,
+        "precio": 3707,
+        "total_neto": 7414
+      },
+      {
+        "line": 7,
+        "codigo": "2504",
+        "nombre": "BENEDICTINO CON GAS X06 PET 1500 CC",
+        "cantidad": 2,
+        "precio": 2702,
+        "total_neto": 5404
+      },
+      {
+        "line": 8,
+        "codigo": "2503",
+        "nombre": "BENEDICTINO SIN GAS X06 PET 1500 CC",
+        "cantidad": 4,
+        "precio": 2702,
+        "total_neto": 10808
+      },
+      {
+        "line": 9,
+        "codigo": "2244",
+        "nombre": "VITAL SG X06 PET 2500",
+        "cantidad": 3,
+        "precio": 4267,
+        "total_neto": 12801
+      },
+      {
+        "line": 10,
+        "codigo": "2133",
+        "nombre": "VITAL SIN GAS X06 PET 1.600",
+        "cantidad": 9,
+        "precio": 3400,
+        "total_neto": 30600
+      },
+      {
+        "line": 11,
+        "codigo": "2233",
+        "nombre": "VITAL CON GAS X06 PET 1.600",
+        "cantidad": 3,
+        "precio": 3400,
+        "total_neto": 10200
+      }
+    ]
+  },
+  {
+    "id": "do_AAABoPDUbfl899yJ",
+    "serial": "105275603",
+    "type": "CL33",
+    "supplier_name": "Coca Cola Embonor S.A.",
+    "supplier_tax_id": "93281000-K",
+    "amount_net": 413439,
+    "amount_total": 522773,
+    "date": "2026-09-30",
+    "order_reference": "0000521534",
+    "status": "APR",
+    "rec_status": "ROK",
+    "items": [
+      {
+        "line": 1,
+        "codigo": "7223",
+        "nombre": "NEC.DUR X06 TP200CC",
+        "cantidad": 6,
+        "precio": 1468,
+        "total_neto": 8808
+      },
+      {
+        "line": 2,
+        "codigo": "1414",
+        "nombre": "AND DEL VALLE PINA LIGHT X06 TETRA 200CC",
+        "cantidad": 1,
+        "precio": 1468,
+        "total_neto": 1468
+      },
+      {
+        "line": 3,
+        "codigo": "3000",
+        "nombre": "FASTLYTE FRUTILLA PET X6 625 ML",
+        "cantidad": 1,
+        "precio": 8449,
+        "total_neto": 8449
+      },
+      {
+        "line": 4,
+        "codigo": "0161",
+        "nombre": "COCA COLA X06 LATA 350 CC",
+        "cantidad": 49,
+        "precio": 2767,
+        "total_neto": 135583
+      },
+      {
+        "line": 5,
+        "codigo": "0381",
+        "nombre": "COCA COLA SIN AZUCAR X06 LATA 350 CC",
+        "cantidad": 18,
+        "precio": 2939,
+        "total_neto": 52902
+      },
+      {
+        "line": 6,
+        "codigo": "4272",
+        "nombre": "FANTA NARANJA ZERO+VITAMC X06 LATA 350",
+        "cantidad": 1,
+        "precio": 2939,
+        "total_neto": 2939
+      },
+      {
+        "line": 7,
+        "codigo": "0692",
+        "nombre": "SPRITE ZERO X06 LATA 350 CC",
+        "cantidad": 1,
+        "precio": 2939,
+        "total_neto": 2939
+      },
+      {
+        "line": 8,
+        "codigo": "2524",
+        "nombre": "BENEDICTINO SIN GAS X02 PET 6.500 CC",
+        "cantidad": 34,
+        "precio": 2899,
+        "total_neto": 98566
+      },
+      {
+        "line": 9,
+        "codigo": "5625",
+        "nombre": "GLL VITAMIN RED x06 PET 1 LT",
+        "cantidad": 1,
+        "precio": 9206,
+        "total_neto": 9206
+      },
+      {
+        "line": 10,
+        "codigo": "5624",
+        "nombre": "GLL VITAMIN ORANGE x06 PET 1 LT",
+        "cantidad": 1,
+        "precio": 9206,
+        "total_neto": 9206
+      },
+      {
+        "line": 11,
+        "codigo": "5575",
+        "nombre": "GLL JUGO MANGO X06 PET 1 LT",
+        "cantidad": 1,
+        "precio": 8516,
+        "total_neto": 8516
+      },
+      {
+        "line": 12,
+        "codigo": "0922",
+        "nombre": "FANTA NAR FULLSUGAR X06 LATA 350 CC",
+        "cantidad": 1,
+        "precio": 2767,
+        "total_neto": 2767
+      }
+    ]
+  },
+  {
+    "id": "do_AAABoPDUbcP1knBA",
+    "serial": "105275602",
+    "type": "CL33",
+    "supplier_name": "Coca Cola Embonor S.A.",
+    "supplier_tax_id": "93281000-K",
+    "amount_net": 34844,
+    "amount_total": 46991,
+    "date": "2026-09-30",
+    "order_reference": "0000521534",
+    "status": "APR",
+    "rec_status": "ROK",
+    "items": [
+      {
+        "line": 1,
+        "codigo": "0929",
+        "nombre": "FANTA NAR FULLSUGAR X06 PET 3000 CC",
+        "cantidad": 2,
+        "precio": 11787,
+        "total_neto": 23574
+      },
+      {
+        "line": 2,
+        "codigo": "0933",
+        "nombre": "FANTA POMELO FULLSUGAR X06 PET 1500 CC",
+        "cantidad": 1,
+        "precio": 7130,
+        "total_neto": 7130
+      }
+    ]
+  },
+  {
+    "id": "do_AAABoPDURlT_jkxu",
+    "serial": "105275607",
+    "type": "CL33",
+    "supplier_name": "Coca Cola Embonor S.A.",
+    "supplier_tax_id": "93281000-K",
+    "amount_net": 122979,
+    "amount_total": 158076,
+    "date": "2026-09-30",
+    "order_reference": "0000521534",
+    "status": "APR",
+    "rec_status": "ROK",
+    "items": [
+      {
+        "line": 1,
+        "codigo": "2529",
+        "nombre": "BENEDICTINO PERA X06 PET 500 CC",
+        "cantidad": 1,
+        "precio": 2707,
+        "total_neto": 2707
+      },
+      {
+        "line": 2,
+        "codigo": "2528",
+        "nombre": "BENEDICTINO MANZANA X06 PET 500 CC",
+        "cantidad": 1,
+        "precio": 2707,
+        "total_neto": 2707
+      },
+      {
+        "line": 3,
+        "codigo": "0177",
+        "nombre": "COKE X06 PET 591 CC",
+        "cantidad": 3,
+        "precio": 3959,
+        "total_neto": 11877
+      },
+      {
+        "line": 4,
+        "codigo": "0388",
+        "nombre": "COCA COLA SIN AZUCAR X06 PET 591 CC",
+        "cantidad": 1,
+        "precio": 4205,
+        "total_neto": 4205
+      },
+      {
+        "line": 5,
+        "codigo": "4269",
+        "nombre": "FANTA NAR ZERO X06 PET 591 CC",
+        "cantidad": 1,
+        "precio": 4205,
+        "total_neto": 4205
+      },
+      {
+        "line": 6,
+        "codigo": "0742",
+        "nombre": "SPRITE X06 PET 591 CC",
+        "cantidad": 1,
+        "precio": 4205,
+        "total_neto": 4205
+      },
+      {
+        "line": 7,
+        "codigo": "0688",
+        "nombre": "SPRITE ZERO X06 PET 591 CC",
+        "cantidad": 1,
+        "precio": 4205,
+        "total_neto": 4205
+      },
+      {
+        "line": 8,
+        "codigo": "4654",
+        "nombre": "POWERADE ZERO UVA X06 PET 1.1",
+        "cantidad": 2,
+        "precio": 5072,
+        "total_neto": 10144
+      },
+      {
+        "line": 9,
+        "codigo": "4652",
+        "nombre": "POWERADE ZERO FROZEN BLAST X06 PET 1.1",
+        "cantidad": 1,
+        "precio": 5072,
+        "total_neto": 5072
+      },
+      {
+        "line": 10,
+        "codigo": "4651",
+        "nombre": "POWERADE ROJO X06 PET 1.1",
+        "cantidad": 1,
+        "precio": 5072,
+        "total_neto": 5072
+      },
+      {
+        "line": 11,
+        "codigo": "4649",
+        "nombre": "POWERADE FROZEN BLAST X06 PET 1.1",
+        "cantidad": 2,
+        "precio": 5072,
+        "total_neto": 10144
+      },
+      {
+        "line": 12,
+        "codigo": "0136",
+        "nombre": "COCA COLA X06 PET 1500 CC",
+        "cantidad": 5,
+        "precio": 8189,
+        "total_neto": 40945
+      }
+    ]
+  },
+  {
+    "id": "do_AAABoPDUOaXZbdxF",
+    "serial": "105275604",
+    "type": "CL33",
+    "supplier_name": "Coca Cola Embonor S.A.",
+    "supplier_tax_id": "93281000-K",
+    "amount_net": 695468,
+    "amount_total": 896939,
+    "date": "2026-09-30",
+    "order_reference": "0000521534",
+    "status": "APR",
+    "rec_status": "ROK",
+    "items": [
+      {
+        "line": 1,
+        "codigo": "2520",
+        "nombre": "BENEDICTINO SIN GAS X06 PET 3.000 CC",
+        "cantidad": 1,
+        "precio": 3398,
+        "total_neto": 3398
+      },
+      {
+        "line": 2,
+        "codigo": "2521",
+        "nombre": "BENEDICTINO CON GAS X06 PET 3.000 CC",
+        "cantidad": 1,
+        "precio": 3398,
+        "total_neto": 3398
+      },
+      {
+        "line": 3,
+        "codigo": "0154",
+        "nombre": "COCA COLA X06 PET 3000 CC",
+        "cantidad": 12,
+        "precio": 12297,
+        "total_neto": 147564
+      },
+      {
+        "line": 4,
+        "codigo": "0354",
+        "nombre": "COCA COLA LIGTH X06 PET 3000 CC",
+        "cantidad": 2,
+        "precio": 13059,
+        "total_neto": 26118
+      },
+      {
+        "line": 5,
+        "codigo": "0379",
+        "nombre": "COCA COLA SIN AZUCAR X06 PET 3.000 CC",
+        "cantidad": 25,
+        "precio": 13059,
+        "total_neto": 326475
+      },
+      {
+        "line": 6,
+        "codigo": "0579",
+        "nombre": "FANTA ZERO X06 PET 3.000 CC",
+        "cantidad": 2,
+        "precio": 12518,
+        "total_neto": 25036
+      },
+      {
+        "line": 7,
+        "codigo": "0767",
+        "nombre": "SPRITE X06 PET 3.000 CC",
+        "cantidad": 2,
+        "precio": 12518,
+        "total_neto": 25036
+      },
+      {
+        "line": 8,
+        "codigo": "0679",
+        "nombre": "SPRITE ZERO X06 PET 3000 CC",
+        "cantidad": 2,
+        "precio": 12518,
+        "total_neto": 25036
+      },
+      {
+        "line": 9,
+        "codigo": "1423",
+        "nombre": "AND DEL VALLE PINA X06 TETRA 200 CC",
+        "cantidad": 9,
+        "precio": 1468,
+        "total_neto": 13212
+      },
+      {
+        "line": 10,
+        "codigo": "1523",
+        "nombre": "AND DEL VALLE NARANJA X06 TETRA 200 CC",
+        "cantidad": 6,
+        "precio": 1468,
+        "total_neto": 8808
+      },
+      {
+        "line": 11,
+        "codigo": "1123",
+        "nombre": "AND DEL VALLE MANZANA X06 TETRA 200 CC",
+        "cantidad": 8,
+        "precio": 1468,
+        "total_neto": 11744
+      },
+      {
+        "line": 12,
+        "codigo": "1514",
+        "nombre": "AND DEL VALLE NARANJA LIGHT X6 TETRA 200",
+        "cantidad": 1,
+        "precio": 1468,
+        "total_neto": 1468
+      }
+    ]
+  },
+  {
+    "id": "do_AAABoPDUOXlpu9FC",
+    "serial": "105275601",
+    "type": "CL33",
+    "supplier_name": "Coca Cola Embonor S.A.",
+    "supplier_tax_id": "93281000-K",
+    "amount_net": 136777,
+    "amount_total": 204279,
+    "date": "2026-09-30",
+    "order_reference": "0000521534",
+    "status": "APR",
+    "rec_status": "ROK",
+    "items": [
+      {
+        "line": 1,
+        "codigo": "9501",
+        "nombre": "ALTO DEL CARMEN ESPEC 35 X06 VID 1000CC",
+        "cantidad": 2,
+        "precio": 33883,
+        "total_neto": 67766
+      },
+      {
+        "line": 2,
+        "codigo": "9507",
+        "nombre": "ALTO DEL CARMEN TRANSP 40 X01 VID 750CC",
+        "cantidad": 7,
+        "precio": 5055,
+        "total_neto": 35385
+      },
+      {
+        "line": 3,
+        "codigo": "9517",
+        "nombre": "ALTO DEL CARMEN ESPEC 35 X06 VID 750CC",
+        "cantidad": 1,
+        "precio": 28638,
+        "total_neto": 28638
+      }
+    ]
+  },
+  {
+    "id": "do_AAABoPDUOUIBkxMc",
+    "serial": "105275600",
+    "type": "CL33",
+    "supplier_name": "Coca Cola Embonor S.A.",
+    "supplier_tax_id": "93281000-K",
+    "amount_net": 357471,
+    "amount_total": 491118,
+    "date": "2026-09-30",
+    "order_reference": "0000521534",
+    "status": "APR",
+    "rec_status": "ROK",
+    "items": [
+      {
+        "line": 1,
+        "codigo": "9410",
+        "nombre": "CERV QUILMES 4,9 1X12 LATA 354CC",
+        "cantidad": 1,
+        "precio": 6506,
+        "total_neto": 6506
+      },
+      {
+        "line": 2,
+        "codigo": "9817",
+        "nombre": "CERV BECKER 4,5 4X6 LATA 473 CC",
+        "cantidad": 1,
+        "precio": 15131,
+        "total_neto": 15131
+      },
+      {
+        "line": 3,
+        "codigo": "9840",
+        "nombre": "CERV CORONA 4,5 X12 VIDRIO 330 CC",
+        "cantidad": 3,
+        "precio": 10597,
+        "total_neto": 31791
+      },
+      {
+        "line": 4,
+        "codigo": "9841",
+        "nombre": "CERV CORONA 4,5 X18 VIDRIO 330 CC",
+        "cantidad": 2,
+        "precio": 11522,
+        "total_neto": 23044
+      },
+      {
+        "line": 5,
+        "codigo": "9843",
+        "nombre": "CERV CORONA 4,5 4X6 VIDRIO 330 CC",
+        "cantidad": 5,
+        "precio": 20762,
+        "total_neto": 103810
+      },
+      {
+        "line": 6,
+        "codigo": "9898",
+        "nombre": "STELLA ARTOIS 5 4X6 VIDRIO 330 CC",
+        "cantidad": 1,
+        "precio": 19038,
+        "total_neto": 19038
+      },
+      {
+        "line": 7,
+        "codigo": "1700",
+        "nombre": "CERV. BALTICA 5,8o 1X6 LATA 473 CC",
+        "cantidad": 1,
+        "precio": 1871,
+        "total_neto": 1871
+      },
+      {
+        "line": 8,
+        "codigo": "1718",
+        "nombre": "CERV. QUILMES 4,9o 1X6 LATA 473",
+        "cantidad": 12,
+        "precio": 4314,
+        "total_neto": 51768
+      },
+      {
+        "line": 9,
+        "codigo": "1719",
+        "nombre": "CERV.STELLA ARTOIS 5o 1X6 LATA 473",
+        "cantidad": 13,
+        "precio": 5205,
+        "total_neto": 67665
+      }
+    ]
+  }
+]
